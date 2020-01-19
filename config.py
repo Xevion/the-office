@@ -5,7 +5,6 @@ keys = json.load(open(os.path.join(basedir, 'keys.json'), 'r'))
 
 class Config(object):
     SECRET_KEY = keys['SECRET_KEY']
-    HIDDEN_NUMBER = keys['HIDDEN_NUMBER']
     TEMPLATES_AUTO_RELOAD=True
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
         'sqlite:///' + os.path.join(basedir, 'app.db')
