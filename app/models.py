@@ -3,6 +3,7 @@ from app import db, login
 class Season(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     episode = db.Column(db.Integer)
+    sections = db.relationship('Episode', backref='season', lazy='dynamic')
 
     def __init__(self, **kwargs):
         super(Season, self).__init__(**kwargs)
@@ -26,7 +27,7 @@ class Episode(db.Model):
 class Section(db.Model):
     """represents a Section of Quotes, a specific scene with relevant dialog"""
     id = db.Column(db.Integer, primary_key=True)
-    episode_id = db.Column(db.Integer, db.ForeignKey('section.id'))
+    episode_id = db.Column(db.Integer, db.ForeignKey('episode.id'))
     quotes = db.relationship('Quote', backref='section', lazy='dynamic')
 
 class Quote(db.Model):
