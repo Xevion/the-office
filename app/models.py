@@ -1,3 +1,5 @@
+import re
+
 from app import db, login
 
 episodes = [5, 6, 22, 23, 14, 26, 24, 24, 24, 23]
@@ -43,15 +45,24 @@ class Episode(db.Model):
     season_id = db.Column(db.Integer, db.ForeignKey('season.id')) # correlating season number
     sections = db.relationship('Section', backref='episode', lazy='dynamic') # sections of quotes under this episode
 
+    def build(self):
+        """Downloads, processes, and automatically creates Sections and Quotes"""
+
     @property
     def scrapeURL(self):
         return f'http://officequotes.net/no{self.season_id}-{str(self.number).zfill(2)}.php'
-
+    
 class Section(db.Model):
     """represents a Section of Quotes, a specific scene with relevant dialog"""
     id = db.Column(db.Integer, primary_key=True)
     episode_id = db.Column(db.Integer, db.ForeignKey('episode.id'))
     quotes = db.relationship('Quote', backref='section', lazy='dynamic')
+
+    def build(self, quotes):
+        """given an List of unformatted script quotes, automatically creates Quotes"""
+        for quote in quotes:
+            match = re.match(r'()')
+            assert match != None, "Quote '{}' could not be processed.".format(quote)
 
 class Quote(db.Model):
     """represents a specific quote by a specific speaker"""
