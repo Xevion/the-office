@@ -62,7 +62,7 @@ class Section(db.Model):
         """given an List of unformatted script quotes, automatically creates Quotes assigned to this Section"""
         for quote in quotes:
             match = re.match()
-            assert match != None, "Quote '{}' could not be processed.".format(quote)
+            assert match != None, f"Quote '{quote}' could not be processed."
             q = Quote(section=self, speaker=match[1], text=match[2])
             db.session.add(q)
         if commit: db.session.commit()
