@@ -34,7 +34,7 @@ class Season(db.Model):
     @property
     def episodes(self):
         """returns a List of Episodes under this Season"""
-        return Episode.query.filter_by(season=self).all()
+        return Episode.query.filter_by(season=self).all().sort(key=lambda ep : ep.number)
 
     @property
     def characters(self, sort):
@@ -55,11 +55,12 @@ class Episode(db.Model):
         soup = BeautifulSoup(data, 'html.parser')
 
         sections = soup.find_all(attrs={'class' : 'quote'})
+        deleted = 0
         for section in sections:
-            quotes = []
-            for quote in section.find_all("b"):
-                quotes.append(quote.string + quote.next_sibling.string)
-            deleted = quotes[0].startswith('Deleted Scene'):
+            quotes = [quote.string + quote.next_sibling.string for quote in section.find_all('b')]
+            isDeletedScene = quotes[0].lower().startswith('deleted scene')
+            if isDeletedScene: deleted += 1
+            s = Section(episode=self, deleted=deleted if isDeletedScene else -1, quotes=)
 
     @property
     def scrapeURL(self):
@@ -69,7 +70,7 @@ class Section(db.Model):
     """represents a Section of Quotes, a specific scene with relevant dialog"""
     id = db.Column(db.Integer, primary_key=True)
     episode_id = db.Column(db.Integer, db.ForeignKey('episode.id'))
-    deleted = db.Column(db.Boolean)
+    deleted = db.Column(db.Integer, default=-1)
     quotes = db.relationship('Quote', backref='section', lazy='dynamic')
 
     def build(self, quotes, commit=False):
