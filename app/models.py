@@ -91,6 +91,7 @@ class Episode(db.Model):
         db.session.commit()
 
     def clear(self):
+        """delete all sections relevant to this episode in order to reprocess"""
         sections = Section.query.filter_by(episode_id=self.id).all()
         print(f'Clearing {len(sections)} Sections of Ep {self.number} Season {self.season_id}')
         for section in sections:
@@ -98,10 +99,6 @@ class Episode(db.Model):
             db.session.delete(section)
         db.session.commit()
 
-    @property
-    def scrapeURL(self):
-        return f'http://officequotes.net/no{self.season_id}-{str(self.number).zfill(2)}.php'
-    
     @staticmethod
     def clear_all():
         """runs clear() on every episode in the database"""
@@ -121,20 +118,21 @@ class Section(db.Model):
 
     def build(self, quotes, commit=False, reset=False):
         """given an List of unformatted script quotes, automatically creates Quotes assigned to this Section"""
-        for quote in quotes:
+        for i, quote in enumerate(quotes):
             if quote.lower().startswith('deleted scene'):
                 raise Exception(f'Deleted Scene Quote passed to Section Builder: "{quote}"')
             # match = re.match(quotePattern, quote)
             # assert match != None, f"Quote '{quote}' could not be processed."
             # q = Quote(section=self, speaker=match[1].strip(), text=match[2].strip())
             mark = quote.find(':')
-            q = Quote(section=self, speaker=quote[:mark], text=quote[mark + 1:])
+            q = Quote(section=self, speaker=quote[:mark], text=quote[mark + 1:], section_index=i)
             db.session.add(q)
         if commit: db.session.commit()
         
-    def clear(self, commit=True):
+    def clear(self, doprint=True, commit=True):
+        """delete all quotes relevant to this section"""
         quotes = Quote.query.filter_by(section_id=self.id).all()
-        print(f'Clearing {len(quotes)} quotes from Section ID {self.id}')
+        if doprint: print(f'Clearing {len(quotes)} quotes from Section ID {self.id}')
         for quote in quotes:
             db.session.delete(quote)
         if commit: db.session.commit()
