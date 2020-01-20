@@ -3,6 +3,7 @@ import re
 from app import db, login
 
 episodes = [5, 6, 22, 23, 14, 26, 24, 24, 24, 23]
+quotePattern = r'(\w+):.+'
 
 class Season(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -61,7 +62,9 @@ class Section(db.Model):
     def build(self, quotes, commit=False):
         """given an List of unformatted script quotes, automatically creates Quotes assigned to this Section"""
         for quote in quotes:
-            match = re.match()
+            if quote.lower().startswith('deleted scene'):
+                raise Exception(f'Deleted Scene Quote passed to Section Builder: "{quote}"')
+            match = re.match(quotePattern, quote)
             assert match != None, f"Quote '{quote}' could not be processed."
             q = Quote(section=self, speaker=match[1], text=match[2])
             db.session.add(q)
