@@ -15,10 +15,10 @@ class Season(db.Model):
         assert 0 <= kwargs.get('id') <= 9, "Season ID must be 0-9 inclusive"
         super(Season, self).__init__(**kwargs)
 
-    def build(self):
+    def build(self, rebuild=False):
         """runs build operations on every Episode under this season"""
+        print(f'Running build() on Season {self.id}')
         for episode in range(1, episodes[self.id - 1] + 1):
-            print(f'Running build() on Season {self.id}')
             ep = Episode.query.filter_by(season_id=self.id, number=episode).first()
             if ep is None:
                 # Add the episode, then build
@@ -29,7 +29,8 @@ class Season(db.Model):
                 db.session.commit()
                 ep.build()
             else:
-                # Regardless of whether it existended before hand, the episode will be built.
+                if rebuild:
+                    ep.build()
                 pass
         
     @staticmethod
