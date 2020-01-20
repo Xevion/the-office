@@ -31,6 +31,16 @@ class Season(db.Model):
             else:
                 # Regardless of whether it existended before hand, the episode will be built.
                 pass
+        
+    @staticmethod
+    def create_all(build=True):
+        """creates new Season objects and runs build() on them"""
+        for i in range(1, 10):
+            if Season.query.get(i) is None:
+                s = Season(id=i)
+                db.session.add(s)
+                s.build()
+        db.session.commit()
 
     @property
     def episodes(self):
