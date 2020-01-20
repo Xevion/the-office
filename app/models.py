@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from app import db, login
 
 episodes = [5, 6, 22, 23, 14, 26, 24, 24, 24, 23]
-quotePattern = r'([\w\s]+):(.+)'
+quotePattern = r'([\w\s\.]+):(.+)'
 
 class Season(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -18,18 +18,19 @@ class Season(db.Model):
     def build(self):
         """runs build operations on every Episode under this season"""
         for episode in range(1, episodes[self.id - 1] + 1):
-            ep = Episode.query.filter_by(season=self, number=episode).first()
+            print('Running build()')
+            ep = Episode.query.filter_by(season_id=self.id, number=episode).first()
             if ep is None:
                 # Add the episode, then build
                 print(f'Creating new Episode, Season {self.id}, Episode {episode}')
-                ep = Episode(season=self, number=episode)
+                ep = Episode(season_id=self.id, number=episode)
                 db.session.add(ep)
                 # I'm commiting early, which is a bit taboo, but I'm more worried about what the Episode object will need while building.
                 db.session.commit()
+                ep.build()
             else:
                 # Regardless of whether it existended before hand, the episode will be built.
                 pass
-            ep.build()
 
     @property
     def episodes(self):
@@ -122,4 +123,4 @@ class Quote(db.Model):
     section_index = db.Column(db.Integer) # The index of this quote in the section
 
     def __repr__(self):
-        return f"Quote(speaker='{self.speaker}' text={self.text[:50]}{'...' if len(self.text) > 51 else ''})"
+        return f"Quote(speaker='{self.speaker}' text='{self.text[:50]}{'...' if len(self.text) > 51 else ''}')"
