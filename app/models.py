@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from app import db, login
 
 episodes = [5, 6, 22, 23, 14, 26, 24, 24, 24, 23]
-quotePattern = r'([\w\s\.\',-\[\]\d&\"]+):(.+)'
+quotePattern = r'([\w\s\.\',-\[\]\d&\"#]+):(.+)'
 
 class Season(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -18,7 +18,7 @@ class Season(db.Model):
     def build(self):
         """runs build operations on every Episode under this season"""
         for episode in range(1, episodes[self.id - 1] + 1):
-            print('Running build()')
+            print(f'Running build() on Season {self.id}')
             ep = Episode.query.filter_by(season_id=self.id, number=episode).first()
             if ep is None:
                 # Add the episode, then build
@@ -45,6 +45,8 @@ class Season(db.Model):
     @staticmethod
     def rebuild_all():
         """runs build() on all Season objects in database"""
+        for season in Season.query.all():
+            season.build()
 
     @property
     def episodes(self): 
