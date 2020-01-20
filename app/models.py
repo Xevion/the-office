@@ -69,15 +69,20 @@ class Episode(db.Model):
 
     def clear(self):
         sections = Section.query.filter_by(episode_id=self.id).all()
-        print(f'Clearing {len(sections)} from Databse for Episode {self.number} of Season {self.season_id}')
+        print(f'Clearing {len(sections)} Sections of Ep {self.number} Season {self.season_id}')
         for section in sections:
             section.clear(commit=False)
+            db.session.delete(section)
         db.session.commit()
 
     @property
     def scrapeURL(self):
         return f'http://officequotes.net/no{self.season_id}-{str(self.number).zfill(2)}.php'
     
+    def __repr__(self):
+        sections = len(Section.query.filter_by(episode_id=self.id).all())
+        return f'Episode(s={self.season_id} ep={self.number} sects=[{sections}...])'
+
 class Section(db.Model):
     """represents a Section of Quotes, a specific scene with relevant dialog"""
     id = db.Column(db.Integer, primary_key=True)
@@ -104,9 +109,9 @@ class Section(db.Model):
         if commit: db.session.commit()
 
     def __repr__(self):
-        season = Episode.query.get(self.episode_id).first().id
+        season = Episode.query.get(self.episode_id).id
         quotes = len(Quote.query.filter_by(section_id=self.id).all())
-        return f'Section(id={self.id} episode={self.episode_id} season={season} quotes=[{quotes}...])'
+        return f'Section(id={self.id} S-EP={season}/{self.episode_id} quotes=[{quotes}...])'
 
 class Quote(db.Model):
     """represents a specific quote by a specific speaker"""
