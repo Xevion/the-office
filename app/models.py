@@ -43,6 +43,10 @@ class Episode(db.Model):
     season_id = db.Column(db.Integer, db.ForeignKey('season.id')) # correlating season number
     sections = db.relationship('Section', backref='episode', lazy='dynamic') # sections of quotes under this episode
 
+    @property
+    def scrapeURL(self):
+        return f'http://officequotes.net/no{self.season_id}-{str(self.number).zfill(2)}.php'
+
 class Section(db.Model):
     """represents a Section of Quotes, a specific scene with relevant dialog"""
     id = db.Column(db.Integer, primary_key=True)
