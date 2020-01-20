@@ -120,3 +120,6 @@ class Quote(db.Model):
     speaker = db.Column(db.String(32)) # The name of a character
     text = db.Column(db.String(512)) # The content of the Quote. Usually a sentence, sometimes more.
     section_index = db.Column(db.Integer) # The index of this quote in the section
+
+    def __repr__(self):
+        return f"Quote(speaker='{self.speaker}' text={self.text[:50]}{'...' if len(self.text) > 51 else ''})"
