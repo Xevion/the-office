@@ -4,7 +4,7 @@ import re
 from bs4 import BeautifulSoup
 from app import db, login
 
-episodes = [5, 6, 22, 23, 14, 26, 24, 24, 24, 23]
+episodes = [5, 6, 22, 23, 14, 26, 24, 24, 24, 23] # Episode counts. Index 0 is for Webisodes.
 quotePattern = r'([\w\s\.\',-\[\]\d&\"#]+):(.+)'
 
 class Season(db.Model):
@@ -29,6 +29,7 @@ class Season(db.Model):
                 db.session.commit()
                 ep.build()
             else:
+                print(f'Rebuilding Season {self.id}, Episode {episode}')
                 if rebuild:
                     ep.build()
                 pass
@@ -47,7 +48,7 @@ class Season(db.Model):
     def rebuild_all():
         """runs build() on all Season objects in database"""
         for season in Season.query.all():
-            season.build()
+            season.build(rebuild=True)
 
     @property
     def episodes(self): 
@@ -76,7 +77,11 @@ class Episode(db.Model):
         deleted = 0
 
         for section in sections:
-            quotes = [quote.string + quote.next_sibling.string for quote in section.find_all('b')]
+            try:
+                quotes = [quote.string + quote.next_sibling.string for quote in section.find_all('b')]
+            except BaseException as e:
+                print(section)
+                raise e
             isDeletedScene = quotes[0].lower().startswith('deleted scene')
             if isDeletedScene:
                 deleted += 1
@@ -105,7 +110,7 @@ class Episode(db.Model):
 
     def __repr__(self):
         sections = len(Section.query.filter_by(episode_id=self.id).all())
-        return f'Episode(s={self.season_id} ep={self.number} sects=[{sections}...])'
+        return f'Episode(id={self.id} s={self.season_id} ep={self.number} sects=[{sections}...])'
 
 class Section(db.Model):
     """represents a Section of Quotes, a specific scene with relevant dialog"""
@@ -119,9 +124,11 @@ class Section(db.Model):
         for quote in quotes:
             if quote.lower().startswith('deleted scene'):
                 raise Exception(f'Deleted Scene Quote passed to Section Builder: "{quote}"')
-            match = re.match(quotePattern, quote)
-            assert match != None, f"Quote '{quote}' could not be processed."
-            q = Quote(section=self, speaker=match[1].strip(), text=match[2].strip())
+            # match = re.match(quotePattern, quote)
+            # assert match != None, f"Quote '{quote}' could not be processed."
+            # q = Quote(section=self, speaker=match[1].strip(), text=match[2].strip())
+            mark = quote.find(':')
+            q = Quote(section=self, speaker=quote[:mark], text=quote[mark + 1:])
             db.session.add(q)
         if commit: db.session.commit()
         
