@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from app import db, login
 
 episodes = [5, 6, 22, 23, 14, 26, 24, 24, 24, 23]
-quotePattern = r'([\w\s\.]+):(.+)'
+quotePattern = r'([\w\s\.\',-\[\]\d&\"]+):(.+)'
 
 class Season(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -39,11 +39,15 @@ class Season(db.Model):
             if Season.query.get(i) is None:
                 s = Season(id=i)
                 db.session.add(s)
-                s.build()
+                if build: s.build()
         db.session.commit()
+    
+    @staticmethod
+    def rebuild_all():
+        """runs build() on all Season objects in database"""
 
     @property
-    def episodes(self):
+    def episodes(self): 
         """returns a List of Episodes under this Season"""
         return Episode.query.filter_by(season=self).all().sort(key=lambda ep : ep.number)
 
@@ -90,6 +94,12 @@ class Episode(db.Model):
     def scrapeURL(self):
         return f'http://officequotes.net/no{self.season_id}-{str(self.number).zfill(2)}.php'
     
+    @staticmethod
+    def clear_all():
+        """runs clear() on every episode in the database"""
+        for episode in Episode.query.all():
+            episode.clear()
+
     def __repr__(self):
         sections = len(Section.query.filter_by(episode_id=self.id).all())
         return f'Episode(s={self.season_id} ep={self.number} sects=[{sections}...])'
