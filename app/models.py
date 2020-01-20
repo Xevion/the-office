@@ -60,7 +60,9 @@ class Episode(db.Model):
             quotes = [quote.string + quote.next_sibling.string for quote in section.find_all('b')]
             isDeletedScene = quotes[0].lower().startswith('deleted scene')
             if isDeletedScene: deleted += 1
-            s = Section(episode=self, deleted=deleted if isDeletedScene else -1, quotes=)
+            s = Section(episode=self, deleted=deleted if isDeletedScene else -1, quotes=quotes)
+            db.session.add(s)
+        db.session.commit()
 
     @property
     def scrapeURL(self):
