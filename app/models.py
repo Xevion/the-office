@@ -1,5 +1,7 @@
+import requests
 import re
 
+from bs4 import BeautifulSoup
 from app import db, login
 
 episodes = [5, 6, 22, 23, 14, 26, 24, 24, 24, 23]
@@ -47,7 +49,17 @@ class Episode(db.Model):
     sections = db.relationship('Section', backref='episode', lazy='dynamic') # sections of quotes under this episode
 
     def build(self):
-        """Downloads, processes, and automatically creates Sections and Quotes"""
+        """downloads, processes, and automatically creates Sections and Quotes"""
+        link = f'http://officequotes.net/no{self.season_id}-{str(self.episode).zfill(2)}.php'
+        data = requests.get(link).text
+        soup = BeautifulSoup(data, 'html.parser')
+
+        sections = soup.find_all(attrs={'class' : 'quote'})
+        for section in sections:
+            quotes = []
+            for quote in section.find_all("b"):
+                quotes.append(quote.string + quote.next_sibling.string)
+            deleted = quotes[0].startswith('Deleted Scene'):
 
     @property
     def scrapeURL(self):
@@ -57,6 +69,7 @@ class Section(db.Model):
     """represents a Section of Quotes, a specific scene with relevant dialog"""
     id = db.Column(db.Integer, primary_key=True)
     episode_id = db.Column(db.Integer, db.ForeignKey('episode.id'))
+    deleted = db.Column(db.Boolean)
     quotes = db.relationship('Quote', backref='section', lazy='dynamic')
 
     def build(self, quotes, commit=False):
@@ -73,6 +86,7 @@ class Section(db.Model):
 class Quote(db.Model):
     """represents a specific quote by a specific speaker"""
     id = db.Column(db.Integer, primary_key=True)
-    section_id = db.Column(db.Integer, db.ForeignKey('section.id'))
-    speaker = db.Column(db.String(32))
-    text = db.Column(db.String(512))
+    section_id = db.Column(db.Integer, db.ForeignKey('section.id')) # The section this quote belongs to.
+    speaker = db.Column(db.String(32)) # The name of a character
+    text = db.Column(db.String(512)) # The content of the Quote. Usually a sentence, sometimes more.
+    section_index = db.Column(db.Integer) # The index of this quote in the section
