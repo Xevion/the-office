@@ -58,12 +58,15 @@ class Section(db.Model):
     episode_id = db.Column(db.Integer, db.ForeignKey('episode.id'))
     quotes = db.relationship('Quote', backref='section', lazy='dynamic')
 
-    def build(self, quotes):
-        """given an List of unformatted script quotes, automatically creates Quotes"""
+    def build(self, quotes, commit=False):
+        """given an List of unformatted script quotes, automatically creates Quotes assigned to this Section"""
         for quote in quotes:
-            match = re.match(r'()')
+            match = re.match()
             assert match != None, "Quote '{}' could not be processed.".format(quote)
-
+            q = Quote(section=self, speaker=match[1], text=match[2])
+            db.session.add(q)
+        if commit: db.session.commit()
+        
 class Quote(db.Model):
     """represents a specific quote by a specific speaker"""
     id = db.Column(db.Integer, primary_key=True)
