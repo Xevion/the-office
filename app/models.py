@@ -1,11 +1,14 @@
 from app import db, login
 
+episodes = [0, 6, 22, 23, 14, 26, 24, 24, 24, 23]
+
 class Season(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     episode = db.Column(db.Integer)
     sections = db.relationship('Episode', backref='season', lazy='dynamic')
 
     def __init__(self, **kwargs):
+        assert 0 >= kwargs.get('id') <= 9, "Season ID must be 0-9 inclusive"
         super(Season, self).__init__(**kwargs)
 
     @property
