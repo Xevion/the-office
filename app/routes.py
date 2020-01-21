@@ -8,15 +8,12 @@ def index():
 
 @app.route('/view')
 def view():
-    seasonID = request.args.get('season')
-    episodeNUM = request.args.get('episode')
+    season = request.args.get('season', default=-1, type=int)
+    episode = request.args.get('episode', default=-1, type=int)
 
-    season = Season.query.get(int(seasonID))
-    episode = Episode.query.filter_by(season_id=season.id, number=int(episodeNUM))
-
-    if season:
-        if episode:
-            return render_template('episode.html')
+    if season != -1:
+        if episode != -1:
+            return render_template('episode.html', episode=Episode.query.filter_by(season_id=season, episode=episode).first_or_404())
         else:
-            return render_template('season.html', season=Season.query.get())
+            return render_template('season.html', season=Season.query.filter_by(id=season).first_or_404())
     return redirect(url_for('index'))
