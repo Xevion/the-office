@@ -1,0 +1,10 @@
+{% extends 'content.html' %}
+{% block body %}
+{% for section in episode.sections %}
+{% for quote in section.quotes %}
+<b>{{ quote.speaker }}:</b> {{ quote.text }}
+<br>
+{% endfor %}
+<br>
+{% endfor %}
+{% endblock body %}

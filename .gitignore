@@ -4,6 +4,8 @@ migrations/**
 app.db
 keys.json
 process.py
+app.db-journal
+test.html
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
