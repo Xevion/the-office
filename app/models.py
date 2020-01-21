@@ -71,21 +71,26 @@ class Episode(db.Model):
         """downloads, processes, and automatically creates Sections and Quotes"""
         link = f'http://officequotes.net/no{self.season_id}-{str(self.number).zfill(2)}.php'
         data = requests.get(link).text
+        open('test.html', 'w+', encoding='utf-8').write(data)
         soup = BeautifulSoup(data, 'html.parser')
 
-        sections = soup.find_all(attrs={'class' : 'quote'})
+        sections = soup.find_all(attrs={'class' : 'quote'}) 
         deleted = 0
 
         for section in sections:
-            try:
-                isNewpeat = False
-                quotes = []
-                for quote in section.find_all('b'):
-                    print(quote.string.lower())
-                    if 'newpeat' in quote.string.lower():
-                        isNewPeat = True
-                    else:
-                        quotes.append(quote.string + quote.next_sibling.string)
+            isNewpeat = False
+            quotes = []
+            for quote in section.find_all('b'):
+                if 'Newpeat' in quote.string:
+                    quote = quote.next_sibling
+                    isNewpeat = True
+                if quote is None or quote.next_sibling is None:
+                    print('Quote is None or next sibling is None')
+                    continue
+                quotes.append(quote.string + quote.next_sibling.string)
+            if len(quotes) == 0:
+                print(f'Section found with Zero quotes. Newpeat: {isNewpeat}')
+                continue
             isDeletedScene = quotes[0].lower().startswith('deleted scene')
             if isDeletedScene:
                 deleted += 1
