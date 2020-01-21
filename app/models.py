@@ -53,7 +53,7 @@ class Season(db.Model):
     @property
     def episodes(self): 
         """returns a List of Episodes under this Season"""
-        return Episode.query.filter_by(season=self).all().sort(key=lambda ep : ep.number)
+        return Episode.query.filter_by(season_id=self.id).all().sort(key=lambda ep : ep.number)
 
     @property
     def characters(self, sort):
