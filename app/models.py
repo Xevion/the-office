@@ -78,14 +78,18 @@ class Episode(db.Model):
 
         for section in sections:
             try:
-                quotes = [quote.string + quote.next_sibling.string for quote in section.find_all('b')]
-            except BaseException as e:
-                print(section)
-                raise e
+                isNewpeat = False
+                quotes = []
+                for quote in section.find_all('b'):
+                    print(quote.string.lower())
+                    if 'newpeat' in quote.string.lower():
+                        isNewPeat = True
+                    else:
+                        quotes.append(quote.string + quote.next_sibling.string)
             isDeletedScene = quotes[0].lower().startswith('deleted scene')
             if isDeletedScene:
                 deleted += 1
-            s = Section(episode_id=self.id, deleted=deleted if isDeletedScene else -1)
+            s = Section(episode_id=self.id, deleted=deleted if isDeletedScene else -1, newpeat=isNewpeat)
             s.build(quotes[1:] if isDeletedScene else quotes)
             db.session.add(s)
         db.session.commit()
@@ -114,6 +118,7 @@ class Section(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     episode_id = db.Column(db.Integer, db.ForeignKey('episode.id'))
     deleted = db.Column(db.Integer, default=-1)
+    newpeat = db.Column(db.Boolean, default=False)
     quotes = db.relationship('Quote', backref='section', lazy='dynamic')
 
     def build(self, quotes, commit=False, reset=False):
