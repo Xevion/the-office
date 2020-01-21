@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body %}
+{{ super() }}
+Season {{ season.id }}
+{% for episode in season.episodes %}
+<a href="/view?season={{ season.id }}&episode={{ episode.number }}" >Episode {{ episode.number }}</a>    
+{% endfor %}
+
+{% endblock body %} 

@@ -13,7 +13,7 @@ def view():
 
     if season != -1:
         if episode != -1:
-            return render_template('episode.html', episode=Episode.query.filter_by(season_id=season, episode=episode).first_or_404())
+            return render_template('episode.html', episode=Episode.query.filter_by(season_id=season, number=episode).first_or_404())
         else:
             return render_template('season.html', season=Season.query.filter_by(id=season).first_or_404())
     return redirect(url_for('index'))
