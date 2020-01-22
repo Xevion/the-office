@@ -99,13 +99,16 @@ class Episode(db.Model):
             db.session.add(s)
         db.session.commit()
 
+    def rebuild(self):
+        self.clear()
+        self.build()
+
     def clear(self):
         """delete all sections relevant to this episode in order to reprocess"""
         sections = Section.query.filter_by(episode_id=self.id).all()
         print(f'Clearing {len(sections)} Sections of Ep {self.number} Season {self.season_id}')
         for section in sections:
-            section.clear(commit=False)
-            db.session.delete(section)
+            section.clear(commit=False, delete=True)
         db.session.commit()
 
     @staticmethod
@@ -139,12 +142,13 @@ class Section(db.Model):
             db.session.add(q)
         if commit: db.session.commit()
         
-    def clear(self, doprint=True, commit=True):
+    def clear(self, doprint=True, commit=True, delete=False):
         """delete all quotes relevant to this section"""
         quotes = Quote.query.filter_by(section_id=self.id).all()
         if doprint: print(f'Clearing {len(quotes)} quotes from Section ID {self.id}')
         for quote in quotes:
             db.session.delete(quote)
+        if delete: db.session.delete(self)
         if commit: db.session.commit()
 
     def __repr__(self):

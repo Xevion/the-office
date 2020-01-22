@@ -1,5 +1,10 @@
 {% extends 'content.html' %}
 {% block body %}
+<a href="{{ url_for('viewSeason', season=episode.season_id) }}" >Go to Season {{ episode.season_id }}</a>
+<br>
+<a href="{{ url_for('rebuildEpisode', season=episode.season_id, episode=episode.number) }}">Rebuild Episode</a>
+<br>
+<br>
 {% for section in episode.sections %}
 {% for quote in section.quotes %}
 <b>{{ quote.speaker }}:</b> {{ quote.text }}

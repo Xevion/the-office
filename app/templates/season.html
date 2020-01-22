@@ -1,6 +1,10 @@
 {% extends 'base.html' %}
 {% block body %}
 {{ super() }}
+
+<a href="{{ url_for('index') }}" >See all Seasons</a>
+<br><br>
+
 Season {{ season.id }}
 <br>
 {% for episode in season.episodes %}
