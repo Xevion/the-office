@@ -12,7 +12,11 @@ def viewSeason(season):
     
 @app.route('/season/<season>/<episode>/')
 def viewEpisode(season, episode):
-    return render_template('episode.html', episode=Episode.query.filter_by(season_id=season, number=episode).first_or_404())
+    e = Episode.query.filter_by(season_id=season, number=episode).first_or_404()
+    if not e.built:
+        print('Rebuilding')
+        e.build()
+    return render_template('episode.html', episode=e)
 
 @app.route('/season/<season>/<episode>/rebuild')
 def rebuildEpisode(season, episode):

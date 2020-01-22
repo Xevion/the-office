@@ -65,6 +65,7 @@ class Episode(db.Model):
     id = db.Column(db.Integer, primary_key=True) # arbitrary ID, should NOT be relied on to determine episode number or correlating season
     number = db.Column(db.Integer) # episode number
     season_id = db.Column(db.Integer, db.ForeignKey('season.id')) # correlating season number
+    built = db.Column(db.Boolean, default=False)
     sections = db.relationship('Section', backref='episode', lazy='dynamic') # sections of quotes under this episode
 
     def build(self):
@@ -97,9 +98,11 @@ class Episode(db.Model):
             s = Section(episode_id=self.id, deleted=deleted if isDeletedScene else -1, newpeat=isNewpeat)
             s.build(quotes[1:] if isDeletedScene else quotes)
             db.session.add(s)
+        self.built = True
         db.session.commit()
 
     def rebuild(self):
+        """functions that clears relevant sections from this Episode"""
         self.clear()
         self.build()
 
@@ -109,6 +112,7 @@ class Episode(db.Model):
         print(f'Clearing {len(sections)} Sections of Ep {self.number} Season {self.season_id}')
         for section in sections:
             section.clear(commit=False, delete=True)
+        self.built = False
         db.session.commit()
 
     @staticmethod

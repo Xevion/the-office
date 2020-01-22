@@ -1,15 +1,26 @@
 {% extends 'content.html' %}
+{% block head %}
+{{ super() }}
+<style>
+    .quote {
+        text-align: left;
+    }
+</style>
+{% endblock head %}
 {% block content %}
-<a href="{{ url_for('viewSeason', season=episode.season_id) }}" >Go to Season {{ episode.season_id }}</a>
+<a href="{{ url_for('viewSeason', season=episode.season_id) }}">Go to Season {{ episode.season_id }}</a>
 <br>
 <a href="{{ url_for('rebuildEpisode', season=episode.season_id, episode=episode.number) }}">Rebuild Episode</a>
 <br>
 <br>
 {% for section in episode.sections %}
-{% for quote in section.quotes %}
-<b>{{ quote.speaker }}:</b> {{ quote.text }}
-<br>
-{% endfor %}
-<br>
+<div style="padding: 2rem 1rem 1rem 2rem;">
+    <p>
+        {% for quote in section.quotes %}
+        <span class="quote"><b>{{ quote.speaker }}:</b> {{ quote.text }}</span>
+        <br>
+        {% endfor %}
+    </p>
+</div>
 {% endfor %}
 {% endblock content %}
