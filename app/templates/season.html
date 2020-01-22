@@ -1,5 +1,5 @@
-{% extends 'base.html' %}
-{% block body %}
+{% extends 'content.html' %}
+{% block content %}
 {{ super() }}
 
 <a href="{{ url_for('index') }}" >See all Seasons</a>
@@ -12,4 +12,4 @@ Season {{ season.id }}
 <br>
 {% endfor %}
 
-{% endblock body %} 
+{% endblock content %} 
