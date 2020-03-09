@@ -103,8 +103,8 @@ class Episode(db.Model):
 
     def download(self, force=False):
         """downloads data"""
-        print(f'Downloading e{self.number}/s{self.season_id} from {self.link}')
         if not self.downloaded or force:
+            print(f'Downloading e{self.number}/s{self.season_id} from {self.link}')
             data = requests.get(self.link).text
             open(self.path, "w+", encoding="utf-8").write(data)
 

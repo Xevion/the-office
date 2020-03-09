@@ -8,8 +8,8 @@
 Season {{ season.id }}
 <br>
 {% for episode in season.episodes %}
-<a href="/season/{{ season.id }}/{{ episode.number }}/" >Episode {{ episode.number }}</a>
-<br>
+    <a href="{{ url_for("viewEpisode", season=season.id, episode=episode.number) }}" >Episode {{ episode.number }}</a>
+    <br>
 {% endfor %}
 
 {% endblock content %} 

@@ -6,22 +6,34 @@
         text-align: left;
         color: black;
     }
+    .section {
+        padding: 1rem 1rem 1rem 2rem;
+    }
 </style>
 {% endblock head %}
 {% block content %}
-<a href="{{ url_for('viewSeason', season=episode.season_id) }}">Go to Season {{ episode.season_id }}</a>
-<br>
-<a href="{{ url_for('rebuildEpisode', season=episode.season_id, episode=episode.number) }}">Rebuild Episode</a>
-<br>
-<br>
-{% for section in episode.sections %}
-<div style="padding: 2rem 1rem 1rem 2rem;">
-    <p class="quote">
-        {% for quote in section.quotes %}
-        <span class="quote"><b>{{ quote.speaker }}:</b> {{ quote.text }}</span>
-        <br>
-        {% endfor %}
-    </p>
-</div>
-{% endfor %}
+    {{ super() }}section
+    <div class="field is-grouped" style="justify-content: center;">
+        <p class="control is-link">
+            <a class="button" href="{{ url_for('viewSeason', season=episode.season_id) }}">Go to Season {{ episode.season_id }}</a>
+        </p>
+        <p class="control is-link">
+            <a class="button" href="{{ url_for('rebuildEpisode', season=episode.season_id, episode=episode.number) }}">Rebuild Episode</a>
+        </p>
+        <p class="control is-link">
+            <a class="button" href="{{ url_for('redownloadEpisode', season=episode.season_id, episode=episode.number) }}">Redownload Episode</a>
+        </p>
+    </div>
+
+    {% for section in episode.sections %}
+        <div class="section">
+            <p class="quote">
+                {% for quote in section.quotes %}
+                <span class="quote"><b>{{ quote.speaker }}:</b> {{ quote.text }}</span>
+                <br>
+                {% endfor %}
+            </p>
+        </div>
+    {% endfor %}
+
 {% endblock content %}

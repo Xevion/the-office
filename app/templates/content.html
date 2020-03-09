@@ -2,41 +2,37 @@
 {% block head %}
 {{ super() }}
 <style>
-        .card {
-            background-color: white;
-            border-radius: 0.25rem;
-            box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.25);
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-            position: relative;
-            min-height: 180px;
-            padding: 2.4rem 2.4rem 1.2rem 2.4rem;
-            border: solid transparent;
-            border-bottom-color: transparent;
-            border-bottom-color: rgb(38, 43, 44);
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 4rem;
-        }
-    </style>
+    .tab {margin-left: 2rem;}
+</style>
 {% endblock head %}
 {% block body %}
 {{ super() }}
-<div class="container" style="text-align: center; margin-top: 30rem;">
-    <div class="row">
-        <div class="column column-25">
-            <div class="card">
-                Test
-            </div>
-        </div>
-        <div class="column column-40">
-            <div class="card">
-                {% block content %}
-                {% endblock content %}
-            </div>
-        </div>
-{#        <div class="column column-20"></div>#}
+    <div class="level" style="margin-top: 3rem; justify-content: center;">
+        <h1 class="title">The Office Quotes</h1>
+        <br>
+        <h6 class="subtitle is-6" style="padding-top: 2rem;">Source for all The Office Quotes</h6>
     </div>
-</div>
+    <div class="columns is-centered">
+        <div class="column is-4"></div>
+        {# Site Directory #}
+        <div class="column is-2 is-narrow">
+            <div class="box">
+                {# List of Seasons/Episodes #}
+                {% for season in seasons %}
+                    <b><a href="{{ url_for("viewSeason", season=season.id) }}" >Season {{ season.id }}</a></b><br>
+                    {% for episode in season.episodes %}
+                        <a class="tab" href="{{ url_for("viewEpisode", season=season.id, episode=episode.number) }}" >  e{{ episode.number }} - "Episode Name"</a><br>
+                    {% endfor %}
+                {% endfor %}
+            </div>
+        </div>
+        {# Main Body of Content #}
+        <div class="column is-6">
+            <div class="box">
+                {% block content %}
+                {% endblock content%}
+            </div>
+        </div>
+        <div class="column is-3"></div>
+    </div>
 {% endblock body %}

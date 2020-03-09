@@ -1,8 +1,4 @@
 {% extends 'content.html' %}
 {% block content %}
 {{ super() }}
-{% for season in seasons %}
-<a href="/season/{{ season.id }}/" >Season {{ season.id }}</a>
-<br>
-{% endfor %}
-{% endblock content %} 
+{% endblock content %}
