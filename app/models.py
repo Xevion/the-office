@@ -1,5 +1,5 @@
 import requests
-import re
+import os
 
 from bs4 import BeautifulSoup
 from app import db, login
@@ -89,11 +89,25 @@ class Episode(db.Model):
         "Section", backref="episode", lazy="dynamic"
     )  # sections of quotes under this episode
 
+    @property
+    def links(self):
+        return f"http://officequotes.net/no{self.season_id}-{str(self.number).zfill(2)}.php"
+
+    @property
+    def path(self):
+        return os.path.join('app', 'data', f'{self.season_id}-{self.number}')
+
+    @property
+    def downloaded(self):
+        return os.path.exists(self.path)
+
+    def download(self):
+        """downloads data"""
+        data = requests.get(link).text
+        open(self.path, "w+", encoding="utf-8").write(data)
+
     def build(self):
         """downloads, processes, and automatically creates Sections and Quotes"""
-        link = f"http://officequotes.net/no{self.season_id}-{str(self.number).zfill(2)}.php"
-        data = requests.get(link).text
-        open("test.html", "w+", encoding="utf-8").write(data)
         soup = BeautifulSoup(data, "html.parser")
 
         sections = soup.find_all(attrs={"class": "quote"})

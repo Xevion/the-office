@@ -4,6 +4,7 @@
 <style>
     .quote {
         text-align: left;
+        color: black;
     }
 </style>
 {% endblock head %}
@@ -15,7 +16,7 @@
 <br>
 {% for section in episode.sections %}
 <div style="padding: 2rem 1rem 1rem 2rem;">
-    <p>
+    <p class="quote">
         {% for quote in section.quotes %}
         <span class="quote"><b>{{ quote.speaker }}:</b> {{ quote.text }}</span>
         <br>

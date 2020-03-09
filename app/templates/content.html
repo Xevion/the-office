@@ -25,14 +25,18 @@
 {{ super() }}
 <div class="container" style="text-align: center; margin-top: 30rem;">
     <div class="row">
-        <div class="column column-20"></div>
-        <div class="column column-60">
+        <div class="column column-25">
+            <div class="card">
+                Test
+            </div>
+        </div>
+        <div class="column column-40">
             <div class="card">
                 {% block content %}
                 {% endblock content %}
             </div>
         </div>
-        <div class="column column-20"></div>
+{#        <div class="column column-20"></div>#}
     </div>
 </div>
 {% endblock body %}
