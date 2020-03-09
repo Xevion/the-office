@@ -1,5 +1,6 @@
 # Repository specific
 .vscode/**
+.idea/**
 migrations/**
 app.db
 keys.json
