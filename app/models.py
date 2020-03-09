@@ -90,25 +90,32 @@ class Episode(db.Model):
     )  # sections of quotes under this episode
 
     @property
-    def links(self):
+    def link(self):
         return f"http://officequotes.net/no{self.season_id}-{str(self.number).zfill(2)}.php"
 
     @property
     def path(self):
-        return os.path.join('app', 'data', f'{self.season_id}-{self.number}')
+        return os.path.join('app', 'data', f'{self.season_id}-{self.number}.html')
 
     @property
     def downloaded(self):
         return os.path.exists(self.path)
 
-    def download(self):
+    def download(self, force=False):
         """downloads data"""
-        data = requests.get(link).text
-        open(self.path, "w+", encoding="utf-8").write(data)
+        print(f'Downloading e{self.number}/s{self.season_id} from {self.link}')
+        if not self.downloaded or force:
+            data = requests.get(self.link).text
+            open(self.path, "w+", encoding="utf-8").write(data)
+
+    @property
+    def data(self):
+        return open(self.path, 'r', encoding="utf-8").read()
 
     def build(self):
         """downloads, processes, and automatically creates Sections and Quotes"""
-        soup = BeautifulSoup(data, "html.parser")
+        self.download()
+        soup = BeautifulSoup(self.data, "html.parser")
 
         sections = soup.find_all(attrs={"class": "quote"})
         deleted = 0
