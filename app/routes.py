@@ -1,17 +1,17 @@
 from flask import send_from_directory, redirect, url_for, render_template, request
-from app.models import Season, Episode
+from app.models import Season, Episode, Quote
 from app import app
 
 
 @app.route("/")
 def index():
-    return render_template("view.html", seasons=Season.query.all())
+    return render_template("home.html", seasons=Season.query.all(), nquotes=len(Quote.query.all()), nepisodes=len(Episode.query.all()))
 
 
 @app.route("/view/<season>/")
 def viewSeason(season):
     return render_template(
-        "season.html", season=Season.query.filter_by(id=season).first_or_404()
+        "season.html", season=Season.query.filter_by(id=season).first_or_404(), seasons=Season.query.all()
     )
 
 @app.route("/view/<season>/<episode>/")
@@ -20,7 +20,7 @@ def viewEpisode(season, episode):
     if not e.built:
         print("Rebuilding")
         e.build()
-    return render_template("episode.html", episode=e)
+    return render_template("episode.html", episode=e, seasons=Season.query.all())
 
 
 @app.route("/rebuild/<season>/<episode>/")

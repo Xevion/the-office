@@ -12,7 +12,6 @@
 </style>
 {% endblock head %}
 {% block content %}
-    {{ super() }}section
     <div class="field is-grouped" style="justify-content: center;">
         <p class="control is-link">
             <a class="button" href="{{ url_for('viewSeason', season=episode.season_id) }}">Go to Season {{ episode.season_id }}</a>
