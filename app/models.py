@@ -189,14 +189,19 @@ class Episode(db.Model):
 
 
     def build(self):
-        """downloads, processes, and automatically creates Sections and Quotes"""
+        """
+        Downloads, Processes, and Automatically creates Sections and Quotes
+        """
+
         self.built = True
         self.title = titles[self.season_id][self.number - 1]
         print(self.title)
         db.session.commit()
 
     def rebuild(self):
-        """functions that clears relevant sections from this Episode"""
+        """
+        Clears all sections f
+        """
         print(f'Rebuilding s{self.season_id} e{self.number}')
         self.clear()
         self.build()
@@ -204,17 +209,20 @@ class Episode(db.Model):
     def clear(self):
         """delete all sections relevant to this episode in order to reprocess"""
         sections = Section.query.filter_by(episode_id=self.id).all()
-        print(
-            f"Clearing {len(sections)} Sections of Ep {self.number} Season {self.season_id}"
-        )
-        for section in sections:
-            section.clear(commit=False, delete=True)
-        self.built = False
-        db.session.commit()
+        if len(sections > 0):
+            print(f"Clearing {len(sections)} Sections of Ep {self.number} Season {self.season_id}")
+            for section in sections:
+                section.clear(commit=False, delete=True)
+            self.built = False
+            db.session.commit()
+        else:
+            print('No sections for this episode (s{self.season_id}/e{self.number}) could be found.')
 
     @staticmethod
     def clear_all():
-        """runs clear() on every episode in the database"""
+        """
+        Runs clear() on every episode in the database
+        """
         print('Clearing all episodes in database.')
         for episode in Episode.query.all():
             episode.clear()
@@ -234,7 +242,9 @@ class Section(db.Model):
     quotes = db.relationship("Quote", backref="section", lazy="dynamic")
 
     def build(self, quotes, commit=False, reset=False):
-        """given an List of unformatted script quotes, automatically creates Quotes assigned to this Section"""
+        """
+        Given an List of unformatted script quotes, automatically creates Quotes assigned to this Section
+        """
         for i, quote in enumerate(quotes):
             if quote.lower().startswith("deleted scene"):
                 raise Exception(
@@ -255,7 +265,9 @@ class Section(db.Model):
             db.session.commit()
 
     def clear(self, doprint=False, commit=True, delete=False):
-        """delete all quotes relevant to this section"""
+        """
+        Delete all quotes relevant to this section.
+        """
         quotes = Quote.query.filter_by(section_id=self.id).all()
         if doprint:
             print(f"Clearing {len(quotes)} quotes from Section ID {self.id}")
