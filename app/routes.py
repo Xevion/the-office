@@ -18,7 +18,7 @@ def viewSeason(season):
 def viewEpisode(season, episode):
     e = Episode.query.filter_by(season_id=season, number=episode).first_or_404()
     if not e.built:
-        print("Rebuilding")
+        print(f"Rebuilding s{season} e{episode}")
         e.build()
     return render_template("episode.html", episode=e, seasons=Season.query.all())
 

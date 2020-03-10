@@ -18,7 +18,7 @@ episodes = [
     23,
 ]  # Episode counts. Index 0 is for Webisodes.
 quotePattern = r"([\w\s\.\',-\[\]\d&\"#]+):(.+)"
-with open(os.path.join('app', 'static', 'titles.json')) as file:
+with open(os.path.join('app', 'static', 'titles.json'), 'r', encoding="utf-8") as file:
     titles = json.load(file)
 
 class Season(db.Model):
@@ -32,7 +32,7 @@ class Season(db.Model):
     def build(self, rebuild=False):
         """runs build operations on every Episode under this season"""
         print(f"Running build() on Season {self.id}")
-        for episode in range(1, episodes[self.id - 1] + 1):
+        for episode in range(1, episodes[self.id] + 1):
             ep = Episode.query.filter_by(season_id=self.id, number=episode).first()
             if ep is None:
                 # Add the episode, then build
@@ -51,7 +51,7 @@ class Season(db.Model):
     def download(self, force=False):
         episodes = Episode.query.filter_by(season_id=self.id).all()
         for ep in episodes:
-            ep.build(force=force)
+            ep.rebuild()
 
     @staticmethod
     def create_all(build=True):
@@ -68,7 +68,7 @@ class Season(db.Model):
     def rebuild_all():
         """runs build() on all Season objects in database"""
         for season in Season.query.all():
-            season.build(rebuild=True)
+            season.rebuild()
 
     @property
     def episodes(self):
@@ -122,6 +122,7 @@ class Episode(db.Model):
 
     def build(self):
         """downloads, processes, and automatically creates Sections and Quotes"""
+        print(f'Rebuilding s{self.season_id} e{self.number}')
         self.download()
         soup = BeautifulSoup(self.data, "html.parser")
 
@@ -153,11 +154,13 @@ class Episode(db.Model):
             s.build(quotes[1:] if isDeletedScene else quotes)
             db.session.add(s)
         self.built = True
-        self.title = titles[self.season_id - 1][self.number - 1]
+        self.title = titles[self.season_id][self.number - 1]
+        print(self.title)
         db.session.commit()
 
     def rebuild(self):
         """functions that clears relevant sections from this Episode"""
+        print(f'Rebuilding s{self.season_id} e{self.number}')
         self.clear()
         self.build()
 
@@ -175,6 +178,7 @@ class Episode(db.Model):
     @staticmethod
     def clear_all():
         """runs clear() on every episode in the database"""
+        print('Clearing all episodes in database.')
         for episode in Episode.query.all():
             episode.clear()
 
@@ -213,7 +217,7 @@ class Section(db.Model):
         if commit:
             db.session.commit()
 
-    def clear(self, doprint=True, commit=True, delete=False):
+    def clear(self, doprint=False, commit=True, delete=False):
         """delete all quotes relevant to this section"""
         quotes = Quote.query.filter_by(section_id=self.id).all()
         if doprint:
