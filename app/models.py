@@ -71,11 +71,6 @@ class Season(db.Model):
             season.rebuild()
 
     @property
-    def episodes(self):
-        """returns a List of Episodes under this Season"""
-        return Episode.query.filter_by(season_id=self.id).all()
-
-    @property
     def characters(self, sort):
         """returns a List of Characters under this Season, sorted by number of spoken lines"""
         pass
@@ -102,8 +97,20 @@ class Episode(db.Model):
         return f"http://officequotes.net/no{self.season_id}-{str(self.number).zfill(2)}.php"
 
     @property
-    def path(self):
-        return os.path.join("app", "data", f"{self.season_id}-{self.number}.html")
+    def HTMLpath(self):
+        return os.path.join("app", "data", "raw", f"{self.season_id}-{self.number}.html")
+
+    @property
+    def HTMLdata(self):
+        return open(self.HTMLpath, "r", encoding="utf-8").read()
+
+    @property
+    def XMLpath(self):
+        return os.path.join("app", "data", "preprocess", f"{self.season_id}-{self.number}.xml")
+
+    @property
+    def XMLdata(self):
+        return open(self.XMLpath, "r", encoding="utf-8").read()
 
     @property
     def downloaded(self):
@@ -116,9 +123,16 @@ class Episode(db.Model):
             data = requests.get(self.link).text
             open(self.path, "w+", encoding="utf-8").write(data)
 
-    @property
-    def data(self):
-        return open(self.path, "r", encoding="utf-8").read()
+    def preprocess(self):
+        """
+        Runs pre-processing on this Episode, which creates and automatically formats a XML file full of the data
+        required to create a Episode properly, right before the Developer edits a episode and then enters it into the
+        database as a full fledged 'processed' episode.
+        """
+        print(f'Pre-processing data for {self}')
+
+
+
 
     def build(self):
         """downloads, processes, and automatically creates Sections and Quotes"""
