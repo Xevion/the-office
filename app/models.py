@@ -55,7 +55,8 @@ class Season(db.Model):
 
     @staticmethod
     def create_all(build=True):
-        """creates new Season objects and runs build() on them"""
+        """
+        creates new Season objects and runs build() on them"""
         for i in range(1, 10):
             if Season.query.get(i) is None:
                 s = Season(id=i)
@@ -66,18 +67,26 @@ class Season(db.Model):
 
     @staticmethod
     def rebuild_all():
-        """runs build() on all Season objects in database"""
+        """
+        Runs .build() on all Season objects in database
+        """
         for season in Season.query.all():
             season.rebuild()
 
     @property
     def characters(self, sort):
-        """returns a List of Characters under this Season, sorted by number of spoken lines"""
+        """
+        returns a List of all characters in this Season, built off the Episode's .characters() method
+        """
         pass
 
 
 class Episode(db.Model):
-    """represents a Episode with underlying Sections (representing a specific cutscene or area"""
+    """
+    represents a Episode with underlying Sections (representing a specific cutscene in the show)
+    also has some other attributes useful for identify the episode and displaying, as well as countless methods
+    aimed at providing easy to access information using the database collection
+    """
 
     id = db.Column(
         db.Integer, primary_key=True
@@ -148,30 +157,34 @@ class Episode(db.Model):
         sections = soup.find_all(attrs={"class": "quote"})
         deleted = 0
 
+        root = []
+
         for section in sections:
             isNewpeat = False
+            isDeleted = "deleted scene" in section.text
+            if isDeleted:
+                deleted += 1
+
             quotes = []
             for quote in section.find_all("b"):
                 if "Newpeat" in quote.string:
                     quote = quote.next_sibling
                     isNewpeat = True
-                if quote is None or quote.next_sibling is None:
-                    print("Quote is None or next sibling is None")
-                    continue
+                # if quote is None or quote.next_sibling is None:
+                #     print("Quote is None or next sibling is None")
+                #     continue
                 quotes.append(quote.string + quote.next_sibling.string)
+
             if len(quotes) == 0:
-                print(f"Section found with Zero quotes. Newpeat: {isNewpeat}")
-                continue
-            isDeletedScene = quotes[0].lower().startswith("deleted scene")
-            if isDeletedScene:
-                deleted += 1
-            s = Section(
-                episode_id=self.id,
-                deleted=deleted if isDeletedScene else -1,
-                newpeat=isNewpeat,
-            )
-            s.build(quotes[1:] if isDeletedScene else quotes)
-            db.session.add(s)
+                print(f"Section found with Zero quotes. Newpeat: {isNewpeat} Deleted: {isDeleted}")
+                if not (isNewpeat or isDeleted):
+                    continue
+
+            sectionData = {'isNewpeat' : isNewpeat, 'isDeleted' : isDeleted, 'quotes' : quotes}
+            root.append(sectionData)
+
+        with open(self.JSONpath, 'w+', encoding='utf-8') as file:
+            json.dump(root, file)
 
 
 
