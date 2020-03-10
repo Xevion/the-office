@@ -7,7 +7,8 @@ keys.json
 process.py
 app.db-journal
 test.html
-app/data/*.html
+app/data/raw/*.html
+app/data/raw/*.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
