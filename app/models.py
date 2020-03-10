@@ -1,4 +1,5 @@
 import requests
+import json
 import os
 
 from bs4 import BeautifulSoup
@@ -17,7 +18,8 @@ episodes = [
     23,
 ]  # Episode counts. Index 0 is for Webisodes.
 quotePattern = r"([\w\s\.\',-\[\]\d&\"#]+):(.+)"
-
+with open(os.path.join('app', 'static', 'titles.json')) as file:
+    titles = json.load(file)
 
 class Season(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -63,6 +65,9 @@ class Season(db.Model):
         for season in Season.query.all():
             season.build(rebuild=True)
 
+    @staticmethod
+
+
     @property
     def episodes(self):
         """returns a List of Episodes under this Season"""
@@ -81,6 +86,7 @@ class Episode(db.Model):
         db.Integer, primary_key=True
     )  # arbitrary ID, should NOT be relied on to determine episode number or correlating season
     number = db.Column(db.Integer)  # episode number
+    title = db.Column(db.String(32))
     season_id = db.Column(
         db.Integer, db.ForeignKey("season.id")
     )  # correlating season number
@@ -95,7 +101,7 @@ class Episode(db.Model):
 
     @property
     def path(self):
-        return os.path.join('app', 'data', f'{self.season_id}-{self.number}.html')
+        return os.path.join("app", "data", f"{self.season_id}-{self.number}.html")
 
     @property
     def downloaded(self):
@@ -104,13 +110,13 @@ class Episode(db.Model):
     def download(self, force=False):
         """downloads data"""
         if not self.downloaded or force:
-            print(f'Downloading e{self.number}/s{self.season_id} from {self.link}')
+            print(f"Downloading e{self.number}/s{self.season_id} from {self.link}")
             data = requests.get(self.link).text
             open(self.path, "w+", encoding="utf-8").write(data)
 
     @property
     def data(self):
-        return open(self.path, 'r', encoding="utf-8").read()
+        return open(self.path, "r", encoding="utf-8").read()
 
     def build(self):
         """downloads, processes, and automatically creates Sections and Quotes"""
@@ -145,6 +151,7 @@ class Episode(db.Model):
             s.build(quotes[1:] if isDeletedScene else quotes)
             db.session.add(s)
         self.built = True
+        self.title = titles[self.season_id - 1][self.number - 1]
         db.session.commit()
 
     def rebuild(self):

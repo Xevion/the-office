@@ -19,9 +19,9 @@
             <div class="box">
                 {# List of Seasons/Episodes #}
                 {% for season in seasons %}
-                    <b><a href="{{ url_for("viewSeason", season=season.id) }}" >Season {{ season.id }}</a></b><br>
+                    <u><b><a href="{{ url_for("viewSeason", season=season.id) }}" >Season {{ season.id }}</a></b><br></u>
                     {% for episode in season.episodes %}
-                        <a class="tab" href="{{ url_for("viewEpisode", season=season.id, episode=episode.number) }}" >  e{{ episode.number }} - "Episode Name"</a><br>
+                        <a class="tab" href="{{ url_for("viewEpisode", season=season.id, episode=episode.number) }}" >  e{{ episode.number }} - <em>{{ episode.title }}</em></a><br>
                     {% endfor %}
                 {% endfor %}
             </div>
