@@ -105,41 +105,46 @@ class Episode(db.Model):
         return open(self.HTMLpath, "r", encoding="utf-8").read()
 
     @property
-    def XMLpath(self):
-        return os.path.join("app", "data", "preprocess", f"{self.season_id}-{self.number}.xml")
+    def JSONpath(self):
+        """
+        returns the path for the JSON file with data for this episode
+        @return: a path
+        """
+        return os.path.join("app", "data", "preprocess", f"{self.season_id}-{self.number}.json")
 
     @property
-    def XMLdata(self):
-        return open(self.XMLpath, "r", encoding="utf-8").read()
+    def JSONdata(self):
+        """
+        Returns the raw JSON data for this episode
+        """
+        return open(self.JSONpath, "r", encoding="utf-8").read()
 
     @property
     def downloaded(self):
-        return os.path.exists(self.path)
+        """
+        Checks whether the raw episode script data has been downloaded.
+        @return: boolean stating the existence (and thus likely properly downloaded) of raw data
+        """
+        return os.path.exists(self.HTMLpath)
 
     def download(self, force=False):
         """downloads data"""
         if not self.downloaded or force:
             print(f"Downloading e{self.number}/s{self.season_id} from {self.link}")
             data = requests.get(self.link).text
-            open(self.path, "w+", encoding="utf-8").write(data)
+            open(self.HTMLpath, "w+", encoding="utf-8").write(data)
 
     def preprocess(self):
         """
-        Runs pre-processing on this Episode, which creates and automatically formats a XML file full of the data
+        Runs pre-processing on this Episode, which creates and automatically builds a JSON file full of the data
         required to create a Episode properly, right before the Developer edits a episode and then enters it into the
         database as a full fledged 'processed' episode.
         """
         print(f'Pre-processing data for {self}')
-
-
-
-
-    def build(self):
-        """downloads, processes, and automatically creates Sections and Quotes"""
         print(f'Rebuilding s{self.season_id} e{self.number}')
         self.download()
-        soup = BeautifulSoup(self.data, "html.parser")
 
+        soup = BeautifulSoup(self.data, "html.parser")
         sections = soup.find_all(attrs={"class": "quote"})
         deleted = 0
 
@@ -167,6 +172,11 @@ class Episode(db.Model):
             )
             s.build(quotes[1:] if isDeletedScene else quotes)
             db.session.add(s)
+
+
+
+    def build(self):
+        """downloads, processes, and automatically creates Sections and Quotes"""
         self.built = True
         self.title = titles[self.season_id][self.number - 1]
         print(self.title)
