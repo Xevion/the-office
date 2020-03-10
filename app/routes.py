@@ -23,16 +23,16 @@ def viewEpisode(season, episode):
     return render_template("episode.html", episode=e, seasons=Season.query.all())
 
 
-@app.route("/redownload/<season>")
+@app.route("/rebuild/<season>")
 def rebuildSeason(season):
     season = Season.query.filter_by(id=season).first_or_404()
-    season.rebuild()
+    season.build(rebuild=True)
     return redirect(url_for("viewSeason", season=season.id))
 
 @app.route("/redownload/<season>")
-def rebuildSeason(season):
+def redownloadSeason(season):
     seasonObj = Season.query.filter_by(id=season).first_or_404()
-    seasonObj.redownload_all()
+    seasonObj.download(force=True)
     return redirect(url_for("viewSeason", season=season))
 
 @app.route("/rebuild/<season>/<episode>/")

@@ -43,10 +43,15 @@ class Season(db.Model):
                 db.session.commit()
                 ep.build()
             else:
-                print(f"Rebuilding Season {self.id}, Episode {episode}")
                 if rebuild:
+                    print(f"Rebuilding Season {self.id}, Episode {episode}")
                     ep.build()
                 pass
+
+    def download(self, force=False):
+        episodes = Episode.query.filter_by(season_id=self.id).all()
+        for ep in episodes:
+            ep.build(force=force)
 
     @staticmethod
     def create_all(build=True):
@@ -64,9 +69,6 @@ class Season(db.Model):
         """runs build() on all Season objects in database"""
         for season in Season.query.all():
             season.build(rebuild=True)
-
-    @staticmethod
-
 
     @property
     def episodes(self):
