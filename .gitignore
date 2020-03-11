@@ -9,6 +9,7 @@ app.db-journal
 test.html
 app/data/raw/*.html
 app/data/preprocess/*.json
+flaskenv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
