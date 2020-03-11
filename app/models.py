@@ -21,16 +21,30 @@ quotePattern = r"([\w\s\.\',-\[\]\d&\"#]+):(.+)"
 with open(os.path.join('app', 'static', 'titles.json'), 'r', encoding="utf-8") as file:
     titles = json.load(file)
 
+
 class Season(db.Model):
+    """
+    Represents a complete season of The Office, complete with a variable number of Episode objects.
+    As a a Database Object, it can be queried to attain all active instantiated Season objects.
+    """
+
     id = db.Column(db.Integer, primary_key=True)
     episodes = db.relationship("Episode", backref="season", lazy="dynamic")
 
     def __init__(self, **kwargs):
+        """
+        Instantiates a Season object.
+
+        :param kwargs: Requires a `id` paramter 0-9 inclusive, plus any relevant SQLAlchemy database arguments.
+        """
         assert 0 <= kwargs.get("id") <= 9, "Season ID must be 0-9 inclusive"
         super(Season, self).__init__(**kwargs)
 
     def build(self, rebuild=False):
-        """runs build operations on every Episode under this season"""
+        """
+
+        :param rebuild:
+        """
         print(f"Running build() on Season {self.id}")
         for episode in range(1, episodes[self.id] + 1):
             ep = Episode.query.filter_by(season_id=self.id, number=episode).first()
@@ -46,7 +60,6 @@ class Season(db.Model):
                 if rebuild:
                     print(f"Rebuilding Season {self.id}, Episode {episode}")
                     ep.build()
-                pass
 
     def download(self, force=False):
         episodes = Episode.query.filter_by(season_id=self.id).all()
@@ -143,6 +156,11 @@ class Episode(db.Model):
             data = requests.get(self.link).text
             open(self.HTMLpath, "w+", encoding="utf-8").write(data)
 
+    @staticmethod
+    def test():
+        e = Episode.query.all()[0]
+        e.preprocess()
+
     def preprocess(self):
         """
         Runs pre-processing on this Episode, which creates and automatically builds a JSON file full of the data
@@ -153,7 +171,7 @@ class Episode(db.Model):
         print(f'Rebuilding s{self.season_id} e{self.number}')
         self.download()
 
-        soup = BeautifulSoup(self.data, "html.parser")
+        soup = BeautifulSoup(self.HTMLdata, "html.parser")
         sections = soup.find_all(attrs={"class": "quote"})
         deleted = 0
 
@@ -161,32 +179,37 @@ class Episode(db.Model):
 
         for section in sections:
             isNewpeat = False
-            isDeleted = "deleted scene" in section.text
+            isDeleted = "deleted scene" in section.text.lower()
+            if isDeleted:
+                print(section)
             if isDeleted:
                 deleted += 1
 
             quotes = []
-            for quote in section.find_all("b"):
-                if "Newpeat" in quote.string:
-                    quote = quote.next_sibling
-                    isNewpeat = True
-                # if quote is None or quote.next_sibling is None:
-                #     print("Quote is None or next sibling is None")
-                #     continue
-                quotes.append(quote.string + quote.next_sibling.string)
+            if not isDeleted:
+                for quote in section.find_all("b"):
+                    if "Newpeat" in quote.string:
+                        quote = quote.next_sibling
+                        isNewpeat = True
+                    # if quote is None or quote.next_sibling is None:
+                    #     print("Quote is None or next sibling is None")
+                    #     continue
+                    quotes.append(quote.string + quote.next_sibling.string)
+            else:
+                paragraph = section.parent.find_all("p")[-1]
+                for quote in paragraph.find_all("b"):
+                    quotes.append(quote.string + quote.next_sibling.string)
 
             if len(quotes) == 0:
                 print(f"Section found with Zero quotes. Newpeat: {isNewpeat} Deleted: {isDeleted}")
                 if not (isNewpeat or isDeleted):
                     continue
 
-            sectionData = {'isNewpeat' : isNewpeat, 'isDeleted' : isDeleted, 'quotes' : quotes}
+            sectionData = {'isNewpeat': isNewpeat, 'isDeleted': isDeleted, 'quotes': quotes}
             root.append(sectionData)
 
         with open(self.JSONpath, 'w+', encoding='utf-8') as file:
-            json.dump(root, file)
-
-
+            json.dump(root, file, indent=4)
 
     def build(self):
         """
@@ -257,7 +280,7 @@ class Section(db.Model):
             q = Quote(
                 section=self,
                 speaker=quote[:mark],
-                text=quote[mark + 1 :],
+                text=quote[mark + 1:],
                 section_index=i,
             )
             db.session.add(q)
