@@ -33,9 +33,9 @@ class Season(db.Model):
 
     def __init__(self, **kwargs):
         """
-        Instantiates a Season object.
+        Instantiates a Season object. Overridden in order to assure Season ID's respect the 0-9 ID requirement.
 
-        :param kwargs: Requires a `id` paramter 0-9 inclusive, plus any relevant SQLAlchemy database arguments.
+        :param kwargs: Requires a `id` parameter 0-9 inclusive, plus any relevant SQLAlchemy database arguments.
         """
         assert 0 <= kwargs.get("id") <= 9, "Season ID must be 0-9 inclusive"
         super(Season, self).__init__(**kwargs)
@@ -280,7 +280,9 @@ class Episode(db.Model):
 
 
 class Section(db.Model):
-    """represents a Section of Quotes, a specific scene with relevant dialog"""
+    """
+    Represents a Section of Quotes, a specific scene with relevant dialog shown.
+    """
 
     id = db.Column(db.Integer, primary_key=True)
     episode_id = db.Column(db.Integer, db.ForeignKey("episode.id"))
@@ -288,9 +290,14 @@ class Section(db.Model):
     newpeat = db.Column(db.Boolean, default=False)
     quotes = db.relationship("Quote", backref="section", lazy="dynamic")
 
-    def build(self, quotes, commit=False, reset=False):
+    def build(self, quotes, commit=False):
         """
-        Given an List of unformatted script quotes, automatically creates Quotes assigned to this Section
+        Given an List of unformatted script quotes, automatically creates Quotes assigned to this Section.
+        Use `commit` and set to False when doing batch database operations, as commit'ing on every Section added
+        is not necessary, and is slower.
+
+        :param quotes: A list of strings containing the full quote data.
+        :param commit: If True, this Section will commit to database when all quotes have been added.
         """
         for i, quote in enumerate(quotes):
             if quote.lower().startswith("deleted scene"):
@@ -332,7 +339,9 @@ class Section(db.Model):
 
 
 class Quote(db.Model):
-    """represents a specific quote by a specific speaker"""
+    """
+    Represents a specific quote by a specific character in the show.
+    """
 
     id = db.Column(db.Integer, primary_key=True)
     section_id = db.Column(
