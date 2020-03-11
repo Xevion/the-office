@@ -120,37 +120,58 @@ class Episode(db.Model):
 
     @property
     def HTMLpath(self):
+        """
+        Returns the path for the HTML file with data for this episode.
+
+        :return: A string c ontaining the path to this Episode's raw HTML file.
+        """
         return os.path.join("app", "data", "raw", f"{self.season_id}-{self.number}.html")
 
     @property
-    def HTMLdata(self):
+    def HTMLdata(self) -> str:
+        """
+        Returns the path for the HTML file with data for this episode.
+
+        :return: A string containing the raw HTML data for this Episode.
+        """
         return open(self.HTMLpath, "r", encoding="utf-8").read()
 
     @property
-    def JSONpath(self):
+    def JSONpath(self) -> str:
         """
-        returns the path for the JSON file with data for this episode
-        @return: a path
+        Returns the path for the JSON file with data for this episode
+
+        :return: A string containing the path to this Episode's raw JSON file.
         """
         return os.path.join("app", "data", "preprocess", f"{self.season_id}-{self.number}.json")
 
     @property
     def JSONdata(self):
         """
-        Returns the raw JSON data for this episode
+        Returns the raw JSON data for this episode.
+
+        :return: A string containing the raw JSON data for this Episode.
         """
         return open(self.JSONpath, "r", encoding="utf-8").read()
 
     @property
     def downloaded(self):
         """
-        Checks whether the raw episode script data has been downloaded.
-        @return: boolean stating the existence (and thus likely properly downloaded) of raw data
+        Checks whether the raw episode script data has been downloaded. Uses `os.path.exists`, and thus the check
+         is limited to the existence of said file, not a correctly formatted, well formed, and relevant file.
+
+        :return: A boolean stating whether the raw HTML data for this Episode has been deleted.
         """
         return os.path.exists(self.HTMLpath)
 
     def download(self, force=False):
-        """downloads data"""
+        """
+        Downloads the raw HTML data for this Episode. Will not download if the file already exists (`Episode.downloaded`)
+        unless specified, and uses `utf-8` encoding to preserve special characters. All subsequent read and write operations
+        using this data will require `utf-8` encoding.
+
+        :param force: Downloads the file anyways, even if it is already downloaded. Defaults to False.
+        """
         if not self.downloaded or force:
             print(f"Downloading e{self.number}/s{self.season_id} from {self.link}")
             data = requests.get(self.link).text
@@ -223,14 +244,17 @@ class Episode(db.Model):
 
     def rebuild(self):
         """
-        Clears all sections f
+        Clears all sections from this Episode, then builds it.
         """
         print(f'Rebuilding s{self.season_id} e{self.number}')
         self.clear()
         self.build()
 
     def clear(self):
-        """delete all sections relevant to this episode in order to reprocess"""
+        """
+        Completely delete all sections relevant to this Episode so that data can be re-entered into the database,
+        removing the possibility of erroring data staying inside the Database.
+        """
         sections = Section.query.filter_by(episode_id=self.id).all()
         if len(sections > 0):
             print(f"Clearing {len(sections)} Sections of Ep {self.number} Season {self.season_id}")
@@ -239,12 +263,12 @@ class Episode(db.Model):
             self.built = False
             db.session.commit()
         else:
-            print('No sections for this episode (s{self.season_id}/e{self.number}) could be found.')
+            print(f'No sections for this episode (s{self.season_id}/e{self.number}) could be found.')
 
     @staticmethod
     def clear_all():
         """
-        Runs clear() on every episode in the database
+        Runs `Episode.clear()` on every episode in the database.
         """
         print('Clearing all episodes in database.')
         for episode in Episode.query.all():
