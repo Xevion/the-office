@@ -8,7 +8,7 @@ process.py
 app.db-journal
 test.html
 app/data/raw/*.html
-app/data/raw/*.json
+app/data/preprocess/*.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
