@@ -3,21 +3,18 @@ create_app.py
 
 The create_app function used to create and initialize the app with all of it's extensions and settings.
 """
+import json
+import os
 
 from flask import Flask, render_template
-from flask_migrate import Migrate
-from flask_sqlalchemy import SQLAlchemy
 from flask_wtf.csrf import CSRFProtect
 from sassutils.wsgi import SassMiddleware
 from werkzeug.exceptions import HTTPException
-from flask_static_digest import FlaskStaticDigest
 
 from the_office.config import configs
 
-# flask_static_digest = FlaskStaticDigest()
-db = SQLAlchemy()
 csrf = CSRFProtect()
-migrate = Migrate()
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 def create_app(env=None):
@@ -28,7 +25,7 @@ def create_app(env=None):
 
     # Add Sass middleware (black magic)
     app.wsgi_app = SassMiddleware(app.wsgi_app, {
-        'unimatch': ('static/sass', 'static/css', '/static/css', False)
+        'the_office': ('static/sass', 'static/css', '/static/css', False)
     })
 
     # Load configuration values
@@ -41,16 +38,14 @@ def create_app(env=None):
     app.jinja_env.lstrip_blocks = True
 
     # Initialize Flask extensions
-    db.init_app(app)
     csrf.init_app(app)
-    migrate.init_app(app, db)
 
     # flask_static_digest.init_app(app)
     # CLI commands setup
     @app.shell_context_processor
     def shell_context():
         """Provides specific Flask components to the shell."""
-        return {'app': app, 'db': db}
+        return {'app': app}
 
     # Custom error handler page (all errors)
     @app.errorhandler(HTTPException)
@@ -65,15 +60,14 @@ def create_app(env=None):
         """
         return dict(debug=app.debug)
 
-    # noinspection PyUnresolvedReferences
-    from unimatch import models
-    with app.app_context():
-        db.create_all()
-        # noinspection PyUnresolvedReferences
-        from unimatch import routes
+    @app.context_processor
+    def inject_data():
+        with open(os.path.join(BASE_DIR, 'data', 'data.json'), 'r', encoding='utf-8') as file:
+            return dict(data=json.load(file))
 
-    # Register custom commands
-    from unimatch import commands
-    app.cli.add_command(commands.load_colleges)
+    # noinspection PyUnresolvedReferences
+    with app.app_context():
+        # noinspection PyUnresolvedReferences
+        from the_office import routes
 
     return app

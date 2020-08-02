@@ -1,0 +1,3 @@
+FLASK_APP=the_office.create_app
+FLASK_ENV=development
+FLASK_DEBUG=1
