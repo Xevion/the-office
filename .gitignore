@@ -12,6 +12,7 @@ app/data/preprocess/*.json
 flaskenv
 algolia.json
 *.scss.css
+*.scss.css.map
 node_modules/**
 
 # Byte-compiled / optimized / DLL files

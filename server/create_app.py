@@ -15,7 +15,6 @@ from werkzeug.exceptions import HTTPException
 from server.config import configs
 
 csrf = CSRFProtect()
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 cors = CORS(resources={r'/*': {'origins': '*'}})
 
 
@@ -65,6 +64,7 @@ def create_app(env=None):
 
     @app.context_processor
     def inject_data():
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
         with open(os.path.join(BASE_DIR, 'data', 'data.json'), 'r', encoding='utf-8') as file:
             return dict(data=json.load(file))
 
@@ -72,5 +72,7 @@ def create_app(env=None):
     with app.app_context():
         # noinspection PyUnresolvedReferences
         from server import routes
+        # noinspection PyUnresolvedReferences
+        from server import api
 
     return app
