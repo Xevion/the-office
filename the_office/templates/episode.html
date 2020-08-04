@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
+{% set episode_data = data[season - 1]['episodes'][episode - 1] %}
 {% block page %}
     <div class="col-lg-6 col-md-12">
         <div class="card">
             <div class="card-header">
                 <h4 class="my-0">
-                    Season {{ season }} Episode {{ episode }}
+                    Season {{ season }}, Episode {{ episode }} - {{ episode_data.title }}
                 </h4>
             </div>
 
             <div class="card-body">
+                {{ episode_data.description }}
             </div>
         </div>
     </div>
