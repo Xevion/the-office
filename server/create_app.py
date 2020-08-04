@@ -7,14 +7,16 @@ import json
 import os
 
 from flask import Flask, render_template
+from flask_cors import CORS
 from flask_wtf.csrf import CSRFProtect
 from sassutils.wsgi import SassMiddleware
 from werkzeug.exceptions import HTTPException
 
-from the_office.config import configs
+from server.config import configs
 
 csrf = CSRFProtect()
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+cors = CORS(resources={r'/*': {'origins': '*'}})
 
 
 def create_app(env=None):
@@ -25,7 +27,7 @@ def create_app(env=None):
 
     # Add Sass middleware (black magic)
     app.wsgi_app = SassMiddleware(app.wsgi_app, {
-        'the_office': ('static/sass', 'static/css', '/static/css', False)
+        'server': ('static/sass', 'static/css', '/static/css', False)
     })
 
     # Load configuration values
@@ -39,6 +41,7 @@ def create_app(env=None):
 
     # Initialize Flask extensions
     csrf.init_app(app)
+    cors.init_app(app)
 
     # flask_static_digest.init_app(app)
     # CLI commands setup
@@ -68,6 +71,6 @@ def create_app(env=None):
     # noinspection PyUnresolvedReferences
     with app.app_context():
         # noinspection PyUnresolvedReferences
-        from the_office import routes
+        from server import routes
 
     return app

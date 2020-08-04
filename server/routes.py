@@ -1,6 +1,6 @@
 from flask import current_app, render_template, abort
 
-from the_office.helpers import check_validity
+from server.helpers import check_validity
 
 
 @current_app.route('/')

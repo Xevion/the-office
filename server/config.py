@@ -7,9 +7,9 @@ Stores all configurations used by the application from database URLs to Secret k
 import os
 
 configs = {
-    'development': 'the_office.config.DevelopmentConfig',
-    'testing': 'the_office.config.TestingConfig',
-    'production': 'the_office.config.ProductionConfig'
+    'development': 'server.config.DevelopmentConfig',
+    'testing': 'server.config.TestingConfig',
+    'production': 'server.config.ProductionConfig'
 }
 
 

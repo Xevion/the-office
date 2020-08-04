@@ -10,6 +10,9 @@ test.html
 app/data/raw/*.html
 app/data/preprocess/*.json
 flaskenv
+algolia.json
+*.scss.css
+node_modules/**
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
