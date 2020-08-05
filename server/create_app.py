@@ -24,19 +24,10 @@ def create_app(env=None):
     """
     app = Flask(__name__)
 
-    # Add Sass middleware (black magic)
-    app.wsgi_app = SassMiddleware(app.wsgi_app, {
-        'server': ('static/sass', 'static/css', '/static/css', False)
-    })
-
     # Load configuration values
     if not env:
         env = app.config['ENV']
     app.config.from_object(configs[env])
-
-    # Fixes poor whitespace rendering in templates
-    app.jinja_env.trim_blocks = True
-    app.jinja_env.lstrip_blocks = True
 
     # Initialize Flask extensions
     csrf.init_app(app)
@@ -49,29 +40,7 @@ def create_app(env=None):
         """Provides specific Flask components to the shell."""
         return {'app': app}
 
-    # Custom error handler page (all errors)
-    @app.errorhandler(HTTPException)
-    def handle_exception(e):
-        """Error handler, sends users to a custom error page template."""
-        return render_template('error.html', exception=e), e.code
-
-    @app.context_processor
-    def inject_debug():
-        """
-        Allows for testing for debug mode in jinja2 templates.
-        """
-        return dict(debug=app.debug)
-
-    @app.context_processor
-    def inject_data():
-        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-        with open(os.path.join(BASE_DIR, 'data', 'data.json'), 'r', encoding='utf-8') as file:
-            return dict(data=json.load(file))
-
-    # noinspection PyUnresolvedReferences
     with app.app_context():
-        # noinspection PyUnresolvedReferences
-        from server import routes
         # noinspection PyUnresolvedReferences
         from server import api
 
