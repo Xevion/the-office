@@ -5,7 +5,6 @@
                 <a class="no-link" v-b-toggle="'accordion-' + season.season_id">
                     <h5 class="mb-0 pu-0 mu-0 season-title">
                         Season {{ season.season_id }}
-                        <i class="fas fa-chevron-down float-right"></i>
                     </h5>
                 </a>
             </b-card-header>
@@ -25,7 +24,7 @@
 </template>
 
 <style lang="scss">
-    .season-title { color: #a2a2a2; }
+    .season-title { color: #a2a2a2; cursor: pointer; }
 
     .accordion.list-group-item {
         border-radius: 0;
@@ -35,9 +34,7 @@
         font-weight: 500;
 
         &:first-child { border-top-width: 1px; }
-
         &:last-child { border-bottom-width: 0; }
-
     }
 
     .accordion {
@@ -53,6 +50,7 @@
     .card-header {
         background-color: #161616;
         border-bottom: 1px solid rgba(0, 0, 0, 0.88);
+        font-family: 'Montserrat', sans-serif;
     }
 
     .card {
@@ -70,6 +68,8 @@
         color: #a0a0a0;
         border-left-width: 0;
         border-right-width: 0;
+
+        &:hover { background-color: #161616; }
     }
 
     .no-link {

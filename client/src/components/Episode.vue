@@ -7,13 +7,17 @@
             </span>
         </b-card>
         <b-card v-for="(scene, scene_index) in episode.scenes" :key="`scene-${scene_index}`"
-                class="mb-1" body-class="pb-0">
+                class="mb-1" body-class="p-0 py-2">
             <b-card-text>
                 <QuoteList :quotes="scene.quotes"></QuoteList>
             </b-card-text>
         </b-card>
     </div>
 </template>
+
+<style>
+    .card-title { font-family: 'Montserrat', sans-serif; font-weight: 600; }
+</style>
 
 <script>
 import axios from 'axios';

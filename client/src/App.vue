@@ -1,32 +1,69 @@
 <template>
     <div id="app">
-        <b-container :fluid=true class="py-5 px-5">
+        <b-container :fluid="true" class="py-3 px-lg-5 px-md-4">
+            <b-row class="my-3 pl-1">
+                <b-col lg="3" xl="2" md="12">
+                    <ais-instant-search index-name="prod_THEOFFICEQUOTES" :search-client="searchClient">
+                        <ais-search-box placeholder="Search here…"/>
+                    </ais-instant-search>
+                </b-col>
+            </b-row>
             <b-row>
                 <b-col lg="3" xl="2" md="12">
                     <SeasonList></SeasonList>
                 </b-col>
-                <b-col>
+                <b-col class="pt-md-2 pt-lg-0">
                     <router-view/>
                 </b-col>
-                <b-col md="0" lg="1" xl="2">
-
-                </b-col>
+                <b-col md="0" lg="0" xl="2"></b-col>
             </b-row>
         </b-container>
     </div>
 </template>
 
-<style>
-    body { background-color: #0a0a0a; }
+<style lang="scss">
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    body { background-color: #0a0a0a; font-family: 'Roboto', sans-serif; }
+
+    .ais-SearchBox-form {
+        border: none;
+    }
+
+    .ais-SearchBox-input {
+        color: #d7d7d7;
+        background-color: #3e3e3e;
+        border-color: transparent;
+        border-radius: 1px;
+    }
+
+    .ais-SearchBox-submitIcon, .ais-SearchBox-resetIcon {
+        > path { fill: #bcbcbc; }
+    }
+
+    .ais-SearchBox-input::placeholder {
+        color: white;
+    }
+
 </style>
 
 <script>
+import algoliasearch from 'algoliasearch/lite';
 import SeasonList from './components/SeasonList.vue';
+import 'instantsearch.css/themes/algolia-min.css';
 
 export default {
   name: 'App',
   components: {
     SeasonList,
+  },
+  data() {
+    return {
+      searchClient: algoliasearch(
+        process.env.VUE_APP_ALGOLIA_APP_ID,
+        process.env.VUE_APP_ALGOLIA_API_KEY,
+      ),
+    };
   },
 };
 </script>
