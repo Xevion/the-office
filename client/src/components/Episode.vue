@@ -1,15 +1,15 @@
 <template>
     <div>
-        <b-card :title="`Season ${this.$route.params.season} Episode ${this.$route.params.episode}`" class="mb-4">
+        <b-card :title="`Season ${this.$route.params.season} Episode ${this.$route.params.episode} \
+        - ${episode != null ? episode.title : ''}`" class="mb-4">
             <span v-if="episode">
                 {{ episode.description }}
             </span>
         </b-card>
-        <b-card v-for="(scene) in episode.scenes" :key="scene.text" class="mb-1" body-class="pb-0">
+        <b-card v-for="(scene, scene_index) in episode.scenes" :key="`scene-${scene_index}`"
+                class="mb-1" body-class="pb-0">
             <b-card-text>
-                <p v-for="quote in scene.quotes" :key="quote.text">
-                    <strong>{{ quote.speaker }}</strong>: {{ quote.text }}
-                </p>
+                <QuoteList :quotes="scene.quotes"></QuoteList>
             </b-card-text>
         </b-card>
     </div>
@@ -17,9 +17,11 @@
 
 <script>
 import axios from 'axios';
+import QuoteList from './QuoteList.vue';
 
 export default {
   name: 'Episode',
+  components: { QuoteList },
   data() {
     return {
       episode: null,

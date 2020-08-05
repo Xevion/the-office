@@ -47,7 +47,6 @@ def api_csrf():
 
 @current_app.route('/api/episode/<int:season>/<int:episode>/')
 def api_episode(season: int, episode: int):
-    print(data[season - 1]['episodes'][episode - 1])
     return jsonify(data[season - 1]['episodes'][episode - 1])
 
 

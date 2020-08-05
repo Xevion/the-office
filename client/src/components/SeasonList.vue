@@ -25,7 +25,7 @@
 </template>
 
 <style lang="scss">
-    .season-title { color: #888888; }
+    .season-title { color: #a2a2a2; }
 
     .accordion.list-group-item {
         border-radius: 0;
@@ -59,7 +59,7 @@
         background-color: inherit;
         /*border: 3px solid #0a0a0a;*/
         /*border-radius: 0;*/
-        padding-bottom: 0px;
+        padding-bottom: 0;
         /*&:not(:first-child) { border-top-width: 0; }*/
         /*&:not(:last-child) { border-bottom-width: 0; }*/
     }
@@ -67,7 +67,7 @@
     .list-group-item {
         border-color: rgba(24, 24, 24, 0.82);
         background-color: #111111;
-        color: grey;
+        color: #a0a0a0;
         border-left-width: 0;
         border-right-width: 0;
     }

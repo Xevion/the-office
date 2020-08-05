@@ -11,7 +11,7 @@
 
 <style>
     .card {
-        color: #888888;
+        color: #b3b3b3;
         background-color: #161616;
         border-bottom: 1px solid rgba(0, 0, 0, 0.88);
         border-radius: 0;
