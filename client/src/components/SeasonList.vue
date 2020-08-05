@@ -13,9 +13,9 @@
                 <b-card-body class="h-100 px-0">
                     <b-list-group>
                         <b-list-group-item v-for="episode in season.episodes" :key="episode.episode_id">
-                            <a class="no-link" href="#">
+                            <router-link class="no-link" :to="`/${season.season_id}/${episode.episode_id}`">
                                 Ep. {{ episode.episode_id }} - "{{ episode.title }}"
-                            </a>
+                            </router-link>
                         </b-list-group-item>
                     </b-list-group>
                 </b-card-body>
@@ -25,8 +25,6 @@
 </template>
 
 <style lang="scss">
-    body { background-color: #0a0a0a; }
-
     .season-title { color: #888888; }
 
     .accordion.list-group-item {
@@ -45,13 +43,12 @@
     .accordion {
         .list-group-item {
             a { display: block; }
+
             .badge { float: right; min-width: 36px; }
         }
 
         .card-body { padding: 0; }
     }
-
-    a > .list-group-item { color: white; }
 
     .card-header {
         background-color: #161616;
@@ -60,14 +57,19 @@
 
     .card {
         background-color: inherit;
-        border: 1px solid rgba(0, 0, 0, .125);
-        border-bottom-color: rgba(0, 0, 0, 0.125);
-        border-radius: 0;
+        /*border: 3px solid #0a0a0a;*/
+        /*border-radius: 0;*/
+        padding-bottom: 0px;
+        /*&:not(:first-child) { border-top-width: 0; }*/
+        /*&:not(:last-child) { border-bottom-width: 0; }*/
     }
 
     .list-group-item {
+        border-color: rgba(24, 24, 24, 0.82);
         background-color: #111111;
         color: grey;
+        border-left-width: 0;
+        border-right-width: 0;
     }
 
     .no-link {
