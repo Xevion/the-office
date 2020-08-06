@@ -14,6 +14,10 @@ algolia.json
 *.scss.css
 *.scss.css.map
 node_modules/**
+server/data/algolia/**
+server/data/html/**
+server/data/raw/**
+server/data/processed/**
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
