@@ -4,7 +4,6 @@
 migrations/**
 app.db
 keys.json
-process.py
 app.db-journal
 test.html
 app/data/raw/*.html
@@ -16,7 +15,6 @@ algolia.json
 node_modules/**
 server/data/algolia/**
 server/data/html/**
-server/data/raw/**
 server/data/processed/**
 
 # Byte-compiled / optimized / DLL files
