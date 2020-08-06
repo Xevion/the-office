@@ -5,9 +5,10 @@
             <span v-if="episode">
                 {{ episode.description }}
             </span>
+            <CharacterList v-if="episode.characters" :characters="episode.characters"></CharacterList>
         </b-card>
         <div v-if="episode != null">
-            <b-card v-for="(scene, scene_index) in episode.scenes" :key="`scene-${scene_index}`"
+            <b-card v-for="(scene, scene_index) in episode.scenes" :key="`scene-${scene_index}`" :id="scene_index"
                     class="mb-1" body-class="p-0 py-2">
                 <b-card-text>
                     <QuoteList :quotes="scene.quotes"></QuoteList>
@@ -24,10 +25,14 @@
 <script>
 import axios from 'axios';
 import QuoteList from './QuoteList.vue';
+import CharacterList from './CharacterList.vue';
 
 export default {
   name: 'Episode',
-  components: { QuoteList },
+  components: {
+    QuoteList,
+    CharacterList,
+  },
   data() {
     return {
       episode: null,
@@ -52,6 +57,8 @@ export default {
   watch: {
     $route() {
       this.getEpisode();
+      console.log(this.$route.params.hash);
+      this.$scrollTo(`${this.$route.hash}`, 500, { easing: 'ease-in-out' });
     },
   },
 };

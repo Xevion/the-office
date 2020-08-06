@@ -4,7 +4,7 @@
             <b-container :fluid="true" class="py-3 px-lg-5 px-md-4">
                 <b-row class="my-3 pl-1">
                     <b-col lg="3" xl="2" md="12">
-                        <ais-search-box @keydown.native="showResults" placeholder="Search here…"/>
+                        <ais-search-box @keydown.native="showResults" ref="searchbox" placeholder="Search here…"/>
                     </b-col>
                 </b-row>
                 <b-row>
@@ -68,7 +68,7 @@ export default {
   },
   methods: {
     showResults() {
-      if (this.$route.path !== '/search_results') {
+      if (this.$refs.searchbox.currentRefinement !== '' && this.$route.path !== '/search_results') {
         this.$router.push({ name: 'SearchResults' });
       }
     },
