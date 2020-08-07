@@ -2,6 +2,11 @@
 
 A Vue.js and Flask Web Application designed to provide a quick way to search for quotes from NBC's "The Office".
 
+## Screenshots
+
+![Episode Script](episode.png)
+![Search Result Highlighting](search_results.png)
+
 ## Features
 
 - Vue.js based, providing fast SPA functionality
