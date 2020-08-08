@@ -3,7 +3,6 @@ cli.py
 
 CLI entrypoint for fetching, processing and compiling quote data.
 """
-
 import logging
 import os
 import sys
@@ -39,7 +38,9 @@ def cli():
 @click.option('-ss', '--silent-skip', is_flag=True, help='Skip existing files silently')
 def fetch(season: int, episode: int, delay: float, all: bool, overwrite: bool, silent_skip: bool):
     """
-    Fetches data from officequotes.net, placing them in unmodified UTF-8 HTML files.
+    Downloads raw quote pages from 'officequotes.net'.
+
+    Fetches quote pages, placing them in 'html' folder in unmodified UTF-8 HTML files.
     """
     episodes: List[Tuple[int, int]]
 
@@ -98,18 +99,80 @@ def fetch(season: int, episode: int, delay: float, all: bool, overwrite: bool, s
         logger.info('Fetching complete.')
 
 
+@cli.command('preprocess')
+@click.option('-s', '--season', type=int,
+              help='Season to be fetched. Without --episode, will download all episodes in a season.')
+@click.option('-e', '--episode', type=int, help='Specific episode to be fetched. Requires --season to be specified.')
+@click.option('--all', is_flag=True, help='Fetch all episodes, regardless of previous specifications.')
+@click.option('-o', '--overwrite', is_flag=True, help='Overwrite if a file already exists.')
+@click.option('-ss', '--silent-skip', is_flag=True, help='Skip existing files silently')
+@click.option('-d', '--dry-run', is_flag=True)
+def preprocess(season: int, episode: int, all: bool, overwrite: bool, silent_skip: bool, dry_run: bool):
+    """
+    Pre-processes raw HTML files into mangled custom quote data.
+
+    Custom quote data requires manual inspection and formatting, making it a dangerous operation that may overwrite
+    precious quote data.
+    """
+    episodes: List[Tuple[int, int]]
+
+    if all:
+        episodes = list(get_episodes())
+    elif season:
+        if episode:
+            if verify_episode(season, episode):
+                episodes = [(season, episode)]
+            else:
+                logger.error(f'Season {season}, Episode {episode} is not a valid combination.')
+                return
+        else:
+            episodes = list(get_episodes(season=season))
+            logger.info(f'Preprocessing Season {season}...')
+    else:
+        if episode:
+            logger.info('You must specify more than just an episode.')
+        else:
+            logger.info('You must specify which episodes to pre-process.')
+        logger.info('Check --help for more information on this command.')
+
+
 @cli.command('process')
-def process():
+@click.option('-s', '--season', type=int,
+              help='Season to be fetched. Without --episode, will download all episodes in a season.')
+@click.option('-e', '--episode', type=int, help='Specific episode to be fetched. Requires --season to be specified.')
+@click.option('--all', is_flag=True, help='Fetch all episodes, regardless of previous specifications.')
+@click.option('-o', '--overwrite', is_flag=True, help='Overwrite if a file already exists.')
+@click.option('-ss', '--silent-skip', is_flag=True, help='Skip existing files silently')
+def process(season: int, episode: int, all: bool, overwrite: bool, silent_skip: bool):
     """
     Processes manually processed raw quote data into JSON.
     """
-    pass
+    episodes: List[Tuple[int, int]]
+
+    if all:
+        episodes = list(get_episodes())
+    elif season:
+        if episode:
+            if verify_episode(season, episode):
+                episodes = [(season, episode)]
+            else:
+                logger.error(f'Season {season}, Episode {episode} is not a valid combination.')
+                return
+        else:
+            episodes = list(get_episodes(season=season))
+            logger.info(f'Processing Season {season}...')
+    else:
+        if episode:
+            logger.info('You must specify more than just an episode.')
+        else:
+            logger.info('You must specify which episodes to process.')
+        logger.info('Check --help for more information on this command.')
+        return
 
 
 @cli.group('build')
 def build():
-    """Data building command group."""
-    pass
+    """Build final data files used by Algolia and the backend API."""
 
 
 @build.command('algolia')
@@ -117,13 +180,13 @@ def algolia():
     """
     Generates algolia.json, a all encompassing file for Algolia's search index.
     """
-    pass
+    files = list(filter(os.path.exists, [get_filepath(season, episode, 'processed') for season, episode in get_episodes()]))
 
 
 @build.command('final')
 def final():
     """Generates the latest application static data.json file, used by the backend API."""
-    pass
+    files = list(filter(os.path.exists, [get_filepath(season, episode, 'processed') for season, episode in get_episodes()]))
 
 
 if __name__ == "__main__":

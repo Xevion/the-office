@@ -2,10 +2,9 @@ import json
 import os
 import re
 import time
-import traceback
 from collections import defaultdict
 from math import ceil
-from typing import Iterable, Tuple
+from typing import Iterable, List, Tuple
 
 import enlighten
 import requests
@@ -32,14 +31,24 @@ def get_filepath(season: int, episode: int, folder: str) -> str:
     return os.path.join(DATA_DIR, get_filename(season, episode, 'json'))
 
 
-def load_file(filepath: str, parse_json: bool):
+def load_file(filepath: str, json_decode: bool):
     """Shortcut function for loading file from filepath, with JSON parsing flag."""
-    if parse_json:
-        with open(filepath, 'r') as file:
+    if json_decode:
+        with open(filepath, 'r', encoding='utf-8') as file:
             return json.load(file)
     else:
-        with open(filepath, 'r') as file:
+        with open(filepath, 'r', encoding='utf-8') as file:
             return file.read()
+
+
+def save_file(filepath: str, data, json_encode: bool):
+    """Shortcut function for saving data to a file, JSON encoding flag."""
+    if json_encode:
+        with open(filepath, 'w', encoding='utf-8') as file:
+            json.dump(data, file, ensure_ascii=False, indent=4)
+    else:
+        with open(filepath, 'w', encoding='utf-8') as file:
+            file.write(data)
 
 
 def get_episodes(season: int = None) -> Iterable[Tuple[int, int]]:
@@ -90,26 +99,7 @@ def sleep_from(wait_time: float, moment: float, manager: enlighten.Manager = Non
         return 0
 
 
-def get_raw(season, episode):
-    html_filename = f'{season}-{str(episode).zfill(2)}.html'
-    html_filepath = os.path.join(DATA_DIR, 'html', html_filename)
-
-    # If .html file exists, read
-    if os.path.exists(html_filepath):
-        # print('Reading from disk...')
-        with open(html_filepath, 'r', encoding='utf-8') as file:
-            page_data = file.read()
-    # If not, write to disk for later usage
-    else:
-        link = f"http://officequotes.net/no{season}-{str(episode).zfill(2)}.php"
-        resp = session.get(link)
-        if resp.ok:
-            page_data = resp.text
-            with open(html_filepath, 'w', encoding='utf-8') as file:
-                file.write(page_data)
-        else:
-            raise Exception(f'HTTPError: {resp.status_code} at "{resp.url}"')
-
+def preprocess(page_data: str) -> List[str]:
     soup = BeautifulSoup(page_data, "html.parser")
 
     data = []
@@ -117,31 +107,14 @@ def get_raw(season, episode):
     for section in sections:
         for br in section.find_all('br'):
             br.replace_with("\n" + br.text)
+
         for line in section.get_text().split('\n'):
             data.append(line.strip())
+
         data.append('-')
     data.pop(-1)
 
-    with open(os.path.join(DATA_DIR, 'raw', f'{season}-{str(episode).zfill(2)}.txt'), 'w',
-              encoding='utf-8') as file:
-        file.write('\n'.join(data))
-
-
-def episodes():
-    ep_nums = [6, 22, 23, 14, 26, 24, 24, 24, 23]
-    for season_num, ep_count in enumerate(ep_nums, start=1):
-        for episode_num in range(1, ep_count + 1):
-            yield season_num, episode_num
-
-
-def download_all_raw():
-    for season_num, episode_num in episodes():
-        print(f'{season_num}-{str(episode_num).zfill(2)}')
-        try:
-            get_raw(season_num, episode_num)
-        except Exception as exception:
-            print(f'Failed to process Season {season_num} Episode {episode_num} - ({type(exception).__name__})')
-            traceback.print_exc()
+    return data
 
 
 def process(season, episode):
