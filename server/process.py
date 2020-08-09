@@ -1,14 +1,18 @@
+"""
+process.py
+
+Functions and shortcuts for loading/saving/extracting data for processing quote data.
+"""
+
 import json
 import os
-import re
 import time
 from collections import defaultdict
 from math import ceil
-from typing import Iterable, List, Tuple
+from typing import Dict, Iterable, List, Tuple, Union
 
 import enlighten
 import requests
-from bs4 import BeautifulSoup
 
 session = requests.Session()
 
@@ -31,7 +35,7 @@ def get_filepath(season: int, episode: int, folder: str) -> str:
     return os.path.join(DATA_DIR, get_filename(season, episode, 'json'))
 
 
-def load_file(filepath: str, json_decode: bool):
+def load_file(filepath: str, json_decode: bool = False):
     """Shortcut function for loading file from filepath, with JSON parsing flag."""
     if json_decode:
         with open(filepath, 'r', encoding='utf-8') as file:
@@ -68,7 +72,7 @@ def get_episodes(season: int = None) -> Iterable[Tuple[int, int]]:
 
 def verify_episode(season: int, episode: int = None) -> bool:
     """
-    Verifies that a Season or Season + Episode is valid.
+    Verifies that specific Season and/or Episode is valid.
     """
     return 1 <= season <= 9 and (episode is None or 1 <= episode <= episode_counts[season])
 
@@ -99,149 +103,20 @@ def sleep_from(wait_time: float, moment: float, manager: enlighten.Manager = Non
         return 0
 
 
-def preprocess(page_data: str) -> List[str]:
-    soup = BeautifulSoup(page_data, "html.parser")
-
-    data = []
-    sections = soup.find_all(attrs={"class": "quote"})
-    for section in sections:
-        for br in section.find_all('br'):
-            br.replace_with("\n" + br.text)
-
-        for line in section.get_text().split('\n'):
-            data.append(line.strip())
-
-        data.append('-')
-    data.pop(-1)
-
-    return data
-
-
-def process(season, episode):
-    with open(os.path.join(DATA_DIR, 'raw', f'{season}-{str(episode).zfill(2)}.txt'), 'r',
-              encoding='utf-8') as file:
-
-        sections = []
-        for s in re.split('^-', file.read(), flags=re.MULTILINE):
-            section = {
-                'quotes': []
-            }
-
-            section_data = list(s.strip().split('\n'))
-            if section_data[0].startswith('!'):
-                section['deleted'] = int(re.search('!(\d+)', section_data.pop(0)).group(1))
-
-            for q in section_data:
-                quote = q.split('|', 1)
-                print(quote)
-                section['quotes'].append(
-                    {
-                        'speaker': quote[0],
-                        'text': quote[1]
-                    }
-                )
-            sections.append(section)
-
-        with open(os.path.join(DATA_DIR, 'processed', f'{season}-{str(episode).zfill(2)}.json'), 'w',
-                  encoding='utf-8') as file:
-            json.dump(sections, file, indent=4, ensure_ascii=False)
-
-        deleted_count = [0, set()]
-        quote_count = 0
-        speakers = set()
-
-        for section in sections:
-            quote_count += len(section['quotes'])
-
-            if 'deleted' in section.keys():
-                deleted_count[0] += 1
-                deleted_count[1].add(section['deleted'])
-
-            for quote in section['quotes']:
-                speakers.add(quote['speaker'])
-
-        print(f'{quote_count} quotes.')
-        print(f'{deleted_count[0]} different deleted sections, {len(deleted_count[1])} unique.')
-        print(f'{len(speakers)} Speakers:')
-        print(', '.join(speakers))
-
-
-def generate_algolia():
-    data = []
-    quote_num = 0
-    for season, episode in episodes():
-        try:
-            with open(os.path.join(DATA_DIR, 'processed', f'{season}-{str(episode).zfill(2)}.json'), 'r',
-                      encoding='utf-8') as file:
-                episode_data = json.load(file)
-        except FileNotFoundError:
-            print(f'No JSON data for Season {season} Episode {episode}')
-        else:
-            for section_num, section in enumerate(episode_data, start=1):
-                for quote in section['quotes']:
-                    quote_num += 1
-                    quote['quote'] = quote_num
-                    quote['section'] = section_num
-                    quote['episode'] = episode
-                    quote['season'] = season
-
-                    quote['is_deleted'] = 'deleted' in section.keys()
-                    quote['deleted_section'] = section.get('deleted')
-
-                    data.append(quote)
-
-    with open(os.path.join(DATA_DIR, 'algolia.json'), 'w', encoding='utf-8') as file:
-        json.dump(data, file, ensure_ascii=False, indent=4)
-
-
-def get_episode_scenes(season, episode):
-    filepath = os.path.join(DATA_DIR, 'processed', f'{season}-{str(episode).zfill(2)}.json')
-    if os.path.exists(filepath):
-        with open(filepath, 'r', encoding='utf-8') as file:
-            return json.load(file)
-    else:
-        return None
-
-
-def get_characters(season, episode):
-    scenes = get_episode_scenes(season, episode)
-    if scenes is None:
-        return None
+def get_characters(season, episode) -> List[Dict[str, Union[int, str]]]:
+    """
+    Extracts all characters and their number of appearances from a specific episode.
+    Prepared in a list of dictionary, preferable storage/for loop method.
+    """
+    filepath = get_filepath(season, episode, 'processed')
+    if not os.path.exists(filepath):
+        return []
+    scenes = load_file(filepath, True)
 
     characters = defaultdict(int)
     for scene in scenes:
-        for quote in scene['quotes']:
-            characters[quote['speaker']] += 1
+        for quote in scene.get('quotes', []):
+            characters[quote.get('speaker')] += 1
     characters = [{'name': character, 'appearances': appearances, 'id': '-'.join(character.split(' ')).lower()}
                   for character, appearances in characters.items()]
     return list(sorted(characters, key=lambda item: item['appearances'], reverse=True))
-
-
-def generate_final():
-    """Merge episode descriptions/titles and quotes into final JSON file."""
-    with open(os.path.join(DATA_DIR, 'descriptions.json'), 'r', encoding='utf-8') as file:
-        data = json.load(file)
-
-    output = []
-    for season_id, season in enumerate(data, start=1):
-        output.append({
-            'season_id': season_id,
-            'episodes': [
-                {
-                    'title': episode['title'].strip(),
-                    'description': episode['description'].strip(),
-                    'episode_id': episode_id,
-                    'characters': get_characters(season_id, episode_id),
-                    'scenes': get_episode_scenes(season_id, episode_id)
-                }
-                for episode_id, episode in enumerate(season, start=1)
-            ]
-        })
-
-    with open(os.path.join(DATA_DIR, 'data.json'), 'w', encoding='utf-8') as file:
-        json.dump(output, file, ensure_ascii=False, indent=4)
-
-
-# generate_algolia()
-# process(3, 10)
-generate_final()

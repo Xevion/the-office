@@ -46,10 +46,10 @@ The data has to be parsed, but due to high irregularity (at least too much for m
 inspected and manually processed.
 
 ```python server/cli.py preprocess
-    --season SEASON     Pre-processes all episodes from a specific season.
-    --episode EPISODE   Pre-processes a specific episode. Requires SEASON to be specified.
-    --all               Pre-processes all episodes from every season.
-    --overwrite         DANGER: Will overwrite files. May result in manually processed files to be lost forever.
+    -s --season SEASON     Pre-processes all episodes from a specific season.
+    -e --episode EPISODE   Pre-processes a specific episode. Requires SEASON to be specified.
+    -a --all               Pre-processes all episodes from every season.
+    -o --overwrite         DANGER: Will overwrite files. May result in manually processed files to be lost forever.
 ```
 
 From then on, once all files have been pre-processed, you will have to begin the long, annoying process of editing them into my custom format.
@@ -91,9 +91,9 @@ they are just the JSON format of the previous stage.
 
 ```
 python server/cli.py process
-    --season SEASON     Processes all episodes from a specific season.
-    --epsiode EPISODE   Processes a specific episode. Requires SEASON to be specified.
-    --all               Processes all episodes from all seasons.
+    -s --season SEASON     Processes all episodes from a specific season.
+    -e --epsiode EPISODE   Processes a specific episode. Requires SEASON to be specified.
+    -a --all               Processes all episodes from all seasons.
 ```
 
 Now that they're all in individual files, the final commands can be ran to compile them into one file, a static
@@ -108,6 +108,34 @@ python server/cli.py build [algolia|final]
 Each command is ran with no special arguments (as of now), generating a `algolia.json` or `data.json` in the `./server/data/` folder.
 
 This `data.json` file is loaded by the Flask server and the `algolia.json` can be uploaded to your primary index.
+
+For every command mentioned, you can read all arguments with `--help`:
+
+```
+$ python cli.py preprocess --help
+Usage: cli.py preprocess [OPTIONS]
+
+  Pre-processes raw HTML files into mangled custom quote data.
+
+  Custom quote data requires manual inspection and formatting, making it a
+  dangerous operation that may overwrite precious quote data.
+
+Options:
+  -s, --season INTEGER          Season to be fetched. Without --episode, will
+                                download all episodes in a season.
+
+  -e, --episode INTEGER         Specific episode to be fetched. Requires
+                                --season to be specified.
+
+  --all                         Fetch all episodes, regardless of previous
+                                specifications.
+
+  -o, --overwrite               Overwrite if a file already exists.
+  -ss, --silent-skip            Skip missing/existing files silently
+  -ssm, --silent-skip-missing   Skip missing files silently
+  -sse, --silent-skip-existing  Skip overwrite skips silently
+  --help                        Show this message and exit.
+```
 
 ## Setup
 
