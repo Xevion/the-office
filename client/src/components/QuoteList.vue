@@ -12,11 +12,6 @@
 </template>
 
 <style lang="scss">
-    /*tr {*/
-    /*    &:not(:first-child) {*/
-    /*        border-top: 1px solid rgba(255, 255, 255, 0.1);*/
-    /*    }*/
-    /*}*/
     .quote-list > tr {
         white-space: nowrap;
         &:hover { background-color: #242424; }

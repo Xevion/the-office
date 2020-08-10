@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     getStats() {
-      const path = 'http://localhost:5000/api/stats/';
+      const path = `http://${process.env.VUE_APP_HOST}:${process.env.VUE_APP_FLASK_PORT}/api/stats/`;
       axios.get(path)
         .then((res) => {
           this.stats = res.data;

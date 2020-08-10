@@ -9,8 +9,12 @@
         </b-card>
         <div v-if="episode != null">
             <b-card v-for="(scene, scene_index) in episode.scenes" :key="`scene-${scene_index}`" :id="scene_index"
-                    class="mb-1" body-class="p-0 py-2">
-                <b-card-text>
+                    class="mb-1" body-class="p-0">
+                <b-card-text class="my-2">
+<!--                    <span v-if="scene.deleted" class="mt-n2 mb-4 text-muted deleted-scene pl-2"-->
+<!--                          :footer="`Deleted Scene ${scene.deleted}`">-->
+<!--                        Deleted Scene {{ scene.deleted }}-->
+<!--                    </span>-->
                     <QuoteList :quotes="scene.quotes"></QuoteList>
                 </b-card-text>
             </b-card>
@@ -20,6 +24,7 @@
 
 <style>
     .card-title { font-family: 'Montserrat', sans-serif; font-weight: 600; }
+    .deleted-scene { font-size: 0.75em; line-height: 12px; }
 </style>
 
 <script>
@@ -40,7 +45,8 @@ export default {
   },
   methods: {
     getEpisode() {
-      const path = `http://localhost:5000/api/episode/${this.$route.params.season}/${this.$route.params.episode}/`;
+      const path = `http://${process.env.VUE_APP_HOST}:${process.env.VUE_APP_FLASK_PORT}/api/episode/\
+${this.$route.params.season}/${this.$route.params.episode}/`;
       axios.get(path)
         .then((res) => {
           this.episode = res.data;

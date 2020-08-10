@@ -39,6 +39,7 @@
 
     .accordion {
         .list-group-item {
+            padding: 10px 20px;
             a { display: block; }
 
             .badge { float: right; min-width: 36px; }
@@ -95,7 +96,7 @@ export default {
   },
   methods: {
     getSeasons() {
-      const path = 'http://localhost:5000/api/episodes/';
+      const path = `http://${process.env.VUE_APP_HOST}:${process.env.VUE_APP_FLASK_PORT}/api/episodes/`;
       axios.get(path)
         .then((res) => {
           this.seasons = res.data;
