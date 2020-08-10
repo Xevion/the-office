@@ -9,7 +9,7 @@ import os
 import time
 from collections import defaultdict
 from math import ceil
-from typing import Dict, Iterable, List, Tuple, Union
+from typing import Dict, Iterable, List, Optional, Tuple, Union
 
 import enlighten
 import requests
@@ -103,14 +103,14 @@ def sleep_from(wait_time: float, moment: float, manager: enlighten.Manager = Non
         return 0
 
 
-def get_characters(season, episode) -> List[Dict[str, Union[int, str]]]:
+def get_characters(season, episode) -> Optional[List[Dict[str, Union[int, str]]]]:
     """
     Extracts all characters and their number of appearances from a specific episode.
     Prepared in a list of dictionary, preferable storage/for loop method.
     """
     filepath = get_filepath(season, episode, 'processed')
     if not os.path.exists(filepath):
-        return []
+        return
     scenes = load_file(filepath, True)
 
     characters = defaultdict(int)

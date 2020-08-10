@@ -6182,6 +6182,11 @@
                         "id": "kevin"
                     },
                     {
+                        "name": "Warehouse Worker",
+                        "appearances": 3,
+                        "id": "warehouse-worker"
+                    },
+                    {
                         "name": "Madge",
                         "appearances": 3,
                         "id": "madge"
@@ -6197,11 +6202,6 @@
                         "id": "oscar"
                     },
                     {
-                        "name": "Warehouse worker",
-                        "appearances": 2,
-                        "id": "warehouse-worker"
-                    },
-                    {
                         "name": "Teammates",
                         "appearances": 1,
                         "id": "teammates"
@@ -6215,11 +6215,6 @@
                         "name": "Packer",
                         "appearances": 1,
                         "id": "packer"
-                    },
-                    {
-                        "name": "Warehouse Worker",
-                        "appearances": 1,
-                        "id": "warehouse-worker"
                     },
                     {
                         "name": "None",
@@ -6879,7 +6874,7 @@
                                 "text": "De-fense! De-fense!"
                             },
                             {
-                                "speaker": "Warehouse worker",
+                                "speaker": "Warehouse Worker",
                                 "text": "[Roy scores] Well done team."
                             },
                             {
@@ -6987,7 +6982,7 @@
                     {
                         "quotes": [
                             {
-                                "speaker": "Warehouse worker",
+                                "speaker": "Warehouse Worker",
                                 "text": "Watch your back Madge."
                             },
                             {
@@ -12044,7 +12039,7 @@
                         "id": "ryan"
                     },
                     {
-                        "name": "Kevin’s computer",
+                        "name": "Kevin’s Computer",
                         "appearances": 1,
                         "id": "kevin’s-computer"
                     },
@@ -12313,7 +12308,7 @@
                     {
                         "quotes": [
                             {
-                                "speaker": "Kevin’s computer",
+                                "speaker": "Kevin’s Computer",
                                 "text": "[monkey noises]"
                             }
                         ]
@@ -24239,7 +24234,7 @@
                             },
                             {
                                 "speaker": "Pam",
-                                "text": "Uhhh, ew, ew, ew… .Maybe?"
+                                "text": "Uhhh, ew, ew, ew… Maybe?"
                             }
                         ]
                     },
@@ -27607,7 +27602,8 @@
                                 "speaker": "Michael",
                                 "text": "See, that’s what Christmas is all about to me, is when you see someone open a gift and you think, “Man, I wish I got that.” I mean, that’s just such a great feeling, to watch other people envying a gift that you gave to somebody else. I don’t know, it’s just… I don’t know, just makes you kind of feel good."
                             }
-                        ]
+                        ],
+                        "deleted": 14
                     }
                 ]
             },
@@ -33986,7 +33982,7 @@
                             },
                             {
                                 "speaker": "Michael",
-                                "text": "Really?  Guys, did you see a big package in my office?"
+                                "text": "Really? Guys, did you see a big package in my office?"
                             },
                             {
                                 "speaker": "Roy",
@@ -41977,9 +41973,9 @@
                         "id": "meredith"
                     },
                     {
-                        "name": "Pam/Jim",
+                        "name": "Pam and Jim",
                         "appearances": 1,
-                        "id": "pam/jim"
+                        "id": "pam-and-jim"
                     },
                     {
                         "name": "Jan",
@@ -42362,7 +42358,7 @@
                                 "text": "Hmmmpt."
                             },
                             {
-                                "speaker": "Pam/Jim",
+                                "speaker": "Pam and Jim",
                                 "text": "[in unison] I do not think that is funny."
                             },
                             {
@@ -63852,91 +63848,91 @@
                 "title": "Back From Vacation",
                 "description": "Michael isn't supposed to let anyone know that he and Jan went on vacation together in Jamaica, but he accidentally circulates a compromising photo of them to the office via e-mail.",
                 "episode_id": 11,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Traveling Salesmen",
                 "description": "Dwight does a favor for Angela to keep her from getting in trouble. Andy finds out and uses it against him to get in tighter with Michael. Now Dwight must fess up, which will reveal his relationship with Angela, or risk getting fired.",
                 "episode_id": 12,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Return",
                 "description": "Andy does the impossible--he makes everyone in the office miss Dwight, who is forced to take a job at Staples. Meanwhile, Oscar comes back to the office and Michael predictably throws a stereotypical Mexican party to celebrate.",
                 "episode_id": 13,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Ben Franklin",
                 "description": "Michael asks Jim to get a male stripper for Phyllis's office bachelorette party, but he gets a Ben Franklin impersonator instead. Meanwhile, the men's bachelor party goes as planned until Michael becomes uncomfortable with the stripper.",
                 "episode_id": 14,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Phyllis’ Wedding",
                 "description": "Michael exaggerates the importance of his small role in Phyllis's wedding and makes an ass out of himself, and Pam notices that Phyllis stole all of her wedding ideas from her original wedding plans.",
                 "episode_id": 15,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Business School",
                 "description": "Michael is a guest speaker for Ryan's business class, but they have a falling-out after Michael finds out that Ryan spoke negatively about Dunder-Mifflin. And back at the office, Dwight tries to kill a bat that he found in the ceiling.",
                 "episode_id": 16,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Cocktails",
                 "description": "While Michael and Jan go to their first Dunder Mifflin outing as an official couple, the office workers left behind go out for happy hour. During happy hour, Roy finds out that Jim and Pam kissed at Casino Night.",
                 "episode_id": 17,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Negotiation",
                 "description": "Dwight saves Jim from an attack by Roy, but Dwight won't allow Jim to thank him for it. Meanwhile, Darryl asks Michael for a pay raise, and Michael discovers that he is woefully underpaid--so Michael goes to headquarters to ask for one himself.",
                 "episode_id": 18,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Safety Training",
                 "description": "Andy returns to the office after weeks of anger management training, determined to make a fresh start with all the Dunder-Mifflin employees. Meanwhile, it's safety training day in the office, and Michael and Dwight are on a mission to illuminate the dangers of the workplace.",
                 "episode_id": 19,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Product Recall",
                 "description": "Michael tries to be proactive during a watermark crisis, but only makes the situation worse. Meanwhile, Angela has trouble being apologetic with customers, and Andy discovers a secret about his new girlfriend.",
                 "episode_id": 20,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Women’s Appreciation",
                 "description": "Phyllis gets flashed in the parking lot, and Dwight goes all out to secure the premises. Michael ostensibly takes the women in the office to the mall to comfort them, but he's really doing it to get advice about breaking up with Jan.",
                 "episode_id": 21,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Beach Games",
                 "description": "Michael uses \"beach day\" at Dunder-Mifflin to find out which employee would be his most capable replacement, just in case he receives the promotion to the New York office that he's applied for.",
                 "episode_id": 22,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Job",
                 "description": "Michael appoints Dwight as regional manager, anticipating that he will receive the job at corporate. Jim and Karen also interview for the same position. And Michael gets back together with Jan after she gets a boob job.",
                 "episode_id": 23,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             }
         ]
@@ -63948,98 +63944,98 @@
                 "title": "Fun Run",
                 "description": "Michael accidentally runs over Meridith in the parking lot, and his guilt causes him to organize a 5-K run for her. Dwight and Angela have a falling-out after he kills her cat, and Jim and Pam's relationship is discovered.",
                 "episode_id": 1,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Dunder Mifflin Infinity",
                 "description": "Michael feels threatened when Ryan returns to the Scranton office to share his ideas about the future of Dunder Mifflin. Jim and Pam's relationship is shared with the entire office, while Angela and Dwight's relationship is on the rocks.",
                 "episode_id": 2,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Launch Party",
                 "description": "The Dunder Mifflin Infinity website is launching and Michael is excited about going to the big launch party in New York while Angela plans a satellite party for the Scranton branch. Meanwhile, Dwight competes against the website to see who can sell the most paper in one day.",
                 "episode_id": 3,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Money",
                 "description": "As Jan renovates the condo, Michael confronts his growing debt every way he can, which includes pressuring his employees for a loan. Pam and Jim spend a night out on Dwight's family beet farm, now a bed and breakfast.",
                 "episode_id": 4,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Local Ad",
                 "description": "Michael tries to make a local Dunder Mifflin commercial that is better than the one the professional ad agency made for them. Meanwhile, Andy tries to confide in Dwight about his new relationship with Angela.",
                 "episode_id": 5,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Branch Wars",
                 "description": "Michael and Dwight try to play a prank on Karen, who is now manager of the Utica branch, after she tries to steal Stanley from the Scranton office. Meanwhile, Pam, Toby, and Oscar start their own exclusive office book club.",
                 "episode_id": 6,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Survivor Man",
                 "description": "After Michael isn't invited to a camping trip with Ryan, he sets out to prove that he can brave it out in the wilderness by himself. Jim, who is in charge of the office while Michael is gone, tries to change the birthday party policy.",
                 "episode_id": 7,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Deposition",
                 "description": "Michael is put in an awkward position when Jan sues Dunder Mifflin for wrongful termination and he is deposed as a witness. Meanwhile, Kelly begins smack-talking Pam after Darryl beats Jim at Ping-Pong.",
                 "episode_id": 8,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Dinner Party",
                 "description": "Michael invites Jim and Pam and Andy and Angela to a couples-only dinner party, which makes Dwight very jealous. However, the only thing he's missing is a ringside seat to witness Michael and Jan's extremely dysfunctional home life.",
                 "episode_id": 9,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Chair Model",
                 "description": "Kevin and Andy team up to reclaim the stolen Dunder Mifflin parking spaces, which forces them into a showdown with the other four bosses of the office park. Meanwhile, Michael becomes fascinated by a woman modeling chairs in a catalog.",
                 "episode_id": 10,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Night Out",
                 "description": "Michael and Dwight go to New York to party with Ryan, who is having lots of personal and professional problems. The rest of the office employees work late, and wind up getting locked in the business park.",
                 "episode_id": 11,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Did I Stutter?",
                 "description": "Michael tries to figure out how to respond to Stanley's insubordination during a meeting, and Dwight buys Andy's vehicle and immediately flips it for more money.",
                 "episode_id": 12,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Job Fair",
                 "description": "Dunder-Mifflin participates in a high school job fair, but few students are interested. Jim, Andy, and Kevin play a round of golf with a prospective client. Back at the office, everyone but Dwight and Angela leave for the day.",
                 "episode_id": 13,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Goodbye Toby",
                 "description": "Michael throws an extravagant going-away party for Toby, and falls in love with the woman who is replacing him. Jim plans to propose to Pam at the party, but gets out-staged. Back at corporate, Ryan is arrested for fraud.",
                 "episode_id": 14,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             }
         ]
@@ -64051,182 +64047,182 @@
                 "title": "Weight Loss",
                 "description": "Michael tries to motivate the Scranton branch to lose weight as part of an interoffice competition. Jim is lost after Pam leaves for art school in New York, and Angela continues to see Dwight even though she is now engaged to Andy.",
                 "episode_id": 1,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Business Ethics",
                 "description": "A confession at an H.R. business ethics seminar leads to a dispute between Michael and Holly over whether Meredith should be fired. Dwight tries to prove to Jim how long he can go without taking a personal break.",
                 "episode_id": 2,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Baby Shower",
                 "description": "After planning an office baby shower for Jan, Michael is upset when he finds out that she had the baby without him--even though he's already been told that he's not the baby's father.",
                 "episode_id": 3,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Crime Aid",
                 "description": "Michael and Holly have sex for the first time, and Michael holds a fund-raiser for the office after it is burglarized. Dwight confides in Phyllis after Andy and Angela set a wedding date, and Jim runs into Pam's ex-fiancé, Roy.",
                 "episode_id": 4,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Employee Transfer",
                 "description": "Holly is transferred back to New Hampshire after corporate discovers that she and Michael are dating. Dwight tries to apply to Cornell to get under Andy's skin. Jim's brothers and Pam decide to play a trick on Jim when they meet for lunch.",
                 "episode_id": 5,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Customer Survey",
                 "description": "Dwight and Jim believe that something is suspicious about their low customer performance ratings. After consulting with Angela, Andy finds the perfect site for their wedding--Dwight's beet farm.",
                 "episode_id": 6,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Business Trip",
                 "description": "David Wallace sends Michael on a business trip to Winnipeg to help him forget about Holly's transfer to Nashua, and Pam tells Jim that she failed a class and has to stay in New York City.",
                 "episode_id": 7,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Frame Toby",
                 "description": "When Michael discovers that corporate has brought back Toby to replace Holly, he tries to frame him with drugs and to get him fired. Meanwhile, Pam has issues with the disgusting microwave. Finally, Jim surprises Pam by buying his parents' house.",
                 "episode_id": 8,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Surplus",
                 "description": "Michael has to spend the office surplus by they end of the day, but he can't decide between a copier or new chairs. Dwight plays a dirty trick on Angela as they prepare for Andy and Angela's wedding on the beet farm.",
                 "episode_id": 9,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Moroccan Christmas",
                 "description": "Phyllis blackmails Angela into doing the work for the Christmas party, which Michael turns into an intervention after Meredith gets drunk and sets her hair on fire. Meanwhile, Dwight corners the market on a popular Christmas gift.",
                 "episode_id": 10,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Duel",
                 "description": "Moments before he leaves for New York for a meeting with David Wallace, Michael tells Andy that Angela and Dwight are seeing each other. Andy and Dwight then decide to have it out in the parking lot.",
                 "episode_id": 11,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Prince Family Paper",
                 "description": "Michael's conscience gets the best of him after he and Dwight go undercover to scout a family-run competitor. Back at the office, everyone else spends the day debating whether Hilary Swank is hot.",
                 "episode_id": 12,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Stress Relief",
                 "description": "Dwight's too-realistic fire alarm gives Stanley a heart attack. When he returns, Michael learns that he is the cause of Stanley's stress. To remedy the situation, he forces the office to throw a roast for him.",
                 "episode_id": 13,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Lecture Circuit 1",
                 "description": "While on lecture tour to other Dunder Mifflin branches, Michael and Pam discover that Jim's ex-girlfriend Karen is pregnant. At the office, Andy falls for a prospective client, and Jim and Dwight try to set up Kelly's birthday party.",
                 "episode_id": 14,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Lecture Circuit 2",
                 "description": "Michael and Pam go to Nashua and discover that Holly has a new boyfriend. At the office, Jim and Dwight try to come up with a theme for Kelly's birthday party, and Angela gets a new cat.",
                 "episode_id": 15,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Blood Drive",
                 "description": "Michael holds a lonely hearts party on Valentine's Day at the office, hoping that he will run into a woman he met earlier that day at a blood drive. Meanwhile, Jim and Pam have an awkward lunch with Phillis and Bob Vance.",
                 "episode_id": 16,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Golden Ticket",
                 "description": "Michael asks Dwight to be the scapegoat for one of his business ideas that backfired badly on him. But when that idea has an unexpected positive upside, Dwight still takes credit and Michael becomes furious.",
                 "episode_id": 17,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "New Boss",
                 "description": "Michael gets upset when he gets a new boss to act as a buffer between him and David Wallace, and he gets even more upset when he disbands the Party Planning Committee and cancels Michael's fifteenth anniversary party.",
                 "episode_id": 18,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Two Weeks",
                 "description": "As Michael prepares to leave Dunder Mifflin, he announces that he will form his own paper company. Will anybody join him?",
                 "episode_id": 19,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Dream Team",
                 "description": "Michael and Pam begin their first day as the Michael Scott Paper Company putting together the rest of the staff and trying to raise money.",
                 "episode_id": 20,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Michael Scott Paper Company",
                 "description": "Tension and disillusionment begin to emerge as Michael, Pam, and Ryan move the Michael Scott Paper Company into a cramped \"workspace\" at the business park.",
                 "episode_id": 21,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Heavy Competition",
                 "description": "Dwight chooses loyalty to Dunder Mifflin over loyalty to Michael, which leads to a bitter battle between Michael and Dwight over Dwight's accounts. Back at Dunder Mifflin, Jim pretends to confide in Andy.",
                 "episode_id": 22,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Broke",
                 "description": "The Michael Scott Paper Company is gaining clients by offering lower prices than Dunder Mifflin, but is going broke in the process. However, Dunder Mifflin is losing clients to Michael, and is desperate to buy him out.",
                 "episode_id": 23,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Casual Friday",
                 "description": "Michael returns to Dunder Mifflin and brings Ryan and Pam in as salespeople, but the existing salespeople demand that Michael return the clients they stole back to them. Meanwhile, some employees take the idea of Casual Friday too far.",
                 "episode_id": 24,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Cafe Disco",
                 "description": "Michael tries to create a place to escape from work in the storage room that used to house the Michael Scott Paper Company, while Jim and Pam consider taking off and getting married that day.",
                 "episode_id": 25,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Company Picnic",
                 "description": "Michael runs into Holly at the company picnic, and the two of them accidentally reveal that the Buffalo branch is closing during a comedy skit before corporate has made the announcement.",
                 "episode_id": 26,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             }
         ]
@@ -64238,168 +64234,168 @@
                 "title": "Gossip",
                 "description": "Michael regrets revealing that Stanley is having an affair, so he spreads a bunch of lies about everyone else to cover his tracks--except that one of the lies that he spread actually turns out to be true.",
                 "episode_id": 1,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Meeting",
                 "description": "Michael sabotages--then promotes--Jim's efforts at getting a promotion, while Dwight and Toby try to prove that Darryl has submitted a fraudulent medical claim.",
                 "episode_id": 2,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Promotion",
                 "description": "Jim discovers just how hard being the boss can be when David Wallace forces Michael and him to determine which employees will be getting a raise.",
                 "episode_id": 3,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Niagara",
                 "description": "The Office travels to Niagara Falls to celebrate Jim and Pam's wedding under strict orders not to mention Pam's pregnancy. Michael, Dwight, and Andy all want to hook up with guests at the wedding and Michael and Dwight meet twins.<br>Pam is forced to deal with an embarrassing injury for Andy the night before her wedding, while Kevin deals with the loss of his dress shoes on the morning of the ceremony.",
                 "episode_id": 4,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Mafia",
                 "description": "Michael meets with an insurance salesman that visits the office and is later convinced by Dwight and Andy that he is part of the mafia.",
                 "episode_id": 5,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Lover",
                 "description": "Jim and Pam return from their honeymoon and learn, to their horror, that Michael is dating Pam's mom. Meanwhile, Dwight gives Jim a \"gift\"--which actually has a listening device attached to it.",
                 "episode_id": 6,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Koi Pond",
                 "description": "Michael is upset when he becomes the butt of all the office jokes after he falls in a koi pond. Andy and Pam go out together on some cold calls, and everybody mistakes them as a married couple.",
                 "episode_id": 7,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Double Date",
                 "description": "Michael sparks more anger from Pam when he breaks up with her mom on her birthday after he finds out she's 58, and Dwight unsuccessfully tries to get everyone in the office to owe him a favor.",
                 "episode_id": 8,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Murder",
                 "description": "The entire office is preoccupied about rumors of Dunder Mifflin's bankruptcy. Michael tries to create a distraction by engaging everyone in murder-mystery game, but Jim wonders if that is a good idea.",
                 "episode_id": 9,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Shareholder Meeting",
                 "description": "Michael speaks out of line at the Dunder Mifflin shareholders meeting and creates a big problem for management, while Jim discovers that nobody in the office thinks he's the \"real\" boss.",
                 "episode_id": 10,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Scott’s Tots",
                 "description": "Ten years ago, Michael promised a group of third graders he would pay for their college tuition if they graduated. Now comes time to pay, and he can't do it. At the office, Dwight's employee of the month idea gets Jim in big trouble.",
                 "episode_id": 11,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Secret Santa",
                 "description": "Michael gets upset when Jim promises Phyllis that she can be the office Santa, but the office Christmas party may be overshadowed by some bad news from David Wallace.",
                 "episode_id": 12,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Banker",
                 "description": "A banker representing a potential buyer comes to the Scranton branch to interview the H.R. department before the sale goes through.",
                 "episode_id": 13,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Sabre",
                 "description": "Michael hates the changes that Dunder Mifflin's new owner is implementing, so he turns to David Wallace for advice. Jim and Pam find the perfect day care center, but Jim's mistake threatens to ruin the interview.",
                 "episode_id": 14,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Manager and Salesman",
                 "description": "Sabre's CEO wants the Scranton branch to have one manager, and Michael voluntarily steps down and lets Jim become the boss when he finds out that salespeople make more money. However, he soon comes to regret the decision.",
                 "episode_id": 15,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Delivery",
                 "description": "Pam goes into labor and Jim is ready to take her to the hospital, but she refuses to go. Meanwhile, inspired by Pam and Jim's baby, Dwight and Angela try to reach a \"business agreement\" to have a baby of their own.<br>After the baby is born, Pam has trouble getting the baby to breastfeed. At the office, Michael takes credit for hooking Jim and Pam up, and tries to do the same thing for Kevin and Erin, making Andy jealous.",
                 "episode_id": 16,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "St. Patrick’s Day",
                 "description": "It's St. Patrick's Day, and the CEO forces the office to work late because she won't leave. In addition, Michael unsuccessfully tries to suck up to his new boss, and Andy and Erin's first date is delayed because Erin is sick.",
                 "episode_id": 17,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "New Leads",
                 "description": "When the sales staff begins trying to boss around everyone in the office, Michael tries to teach them a lesson by withholding a valuable set of sales leads.",
                 "episode_id": 18,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Happy Hour",
                 "description": "Oscar gets everybody in the office to go to Happy Hour so that he can hit on a coworker in shipping. Pam tries to set up Michael with a friend at the bar, but Michael's alter ego, \"Date Mike,\" threatens to spoil the entire evening.",
                 "episode_id": 19,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Secretary’s Day",
                 "description": "Michael creates problems for Andy on Secretary's Day when he tells Erin that Andy was engaged to Angela, and Kevin is upset after Oscar makes a video comparing Kevin to Cookie Monster.",
                 "episode_id": 20,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Body Language",
                 "description": "Michael is hopeful that a potential client is interested in him, but everyone in the office except Pam thinks he's wasting his time. Meanwhile, Dwight recruits Kelly to apply for the Sabre minority management training program.",
                 "episode_id": 21,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Cover-Up",
                 "description": "Michael becomes convinced that Donna is having an affair and puts Dwight on the case, but Pam soon discovers that the suspicions may be true. Meanwhile, Darryl gets revenge on Andy for an earlier incident.",
                 "episode_id": 22,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Chump",
                 "description": "Michael continues to see Donna even after learning she's married and meeting her husband, Dwight and Angela take their baby contract to an arbitrator, and Jim and Pam struggle to stay awake at the office.",
                 "episode_id": 23,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Whistleblower",
                 "description": "Jo comes to the Scranton branch to find the whistle-blower. However, three different people have confessed to Michael, Michael is protecting them, and the person most people think is the culprit is keeping his mouth shut.",
                 "episode_id": 24,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             }
         ]
@@ -64411,168 +64407,168 @@
                 "title": "Nepotism",
                 "description": "Everybody demands that Michael fire the new office assistant, but he won't because he's his nephew. Meanwhile, Pam tries to play a prank on Dwight, who has bought the office building, to make up for ruining Jim's prank.",
                 "episode_id": 1,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Counseling",
                 "description": "Michael is forced to go through counseling with Toby, Dwight seeks revenge on a local mall that refused his business, and Pam tries to fake her way to a promotion.",
                 "episode_id": 2,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Andy’s Play",
                 "description": "Andy invites the entire office to watch him in the community theater production of \"Sweeney Todd,\" but Erin decides to babysit for Jim and Pam instead, and Michael is upset because he auditioned for the lead and didn't get it.",
                 "episode_id": 3,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Sex Ed",
                 "description": "A herpes scare causes Michael to get back in touch with his ex-girlfriends, where he decides to reevaluate those relationships. Meanwhile, Andy tries to teach safe sex to his officemates, but he has a clear ulterior motive.",
                 "episode_id": 4,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Sting",
                 "description": "Michael organizes a sting operation to find out the secrets of a rival paper company's salesman who is stealing Dunder Mifflin's clients, and Andy gets Darryl's help to form a band.",
                 "episode_id": 5,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Costume Contest",
                 "description": "It's Halloween at Dunder Mifflin, and Michael is upset that Darryl went over his head with an idea, and Jim and Pam are obsessed with finding out why Danny didn't call Pam back when they were dating four years ago.",
                 "episode_id": 6,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Christening",
                 "description": "During Jim and Pam's daughter's christening, Michael becomes upset over the lack of family-like unity between himself and his employees. So he responds by impulsively joining a teenage church mission to Mexico.",
                 "episode_id": 7,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Viewing Party",
                 "description": "Michael sabotages Erin's \"Glee\" viewing party because of his contempt for Gabe, Jim and Pam discover that Dwight can keep their daughter from crying, and Andy has a bad reaction to a mixture of wine and a Japanese stimulant.",
                 "episode_id": 8,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "WUPHF.com",
                 "description": "Some co-workers who invested in Ryan's Internet venture want him to sell, but Michael refuses to go along. Meanwhile, Jim loses his motivation to work when he reaches his commission cap, and Dwight creates a hay festival in the parking lot.",
                 "episode_id": 9,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "China",
                 "description": "Pam stands up to Dwight when he makes cutbacks to save money in the building, but will Dwight have the last laugh? Meanwhile, the office is surprised and energized when Michael outsmarts Oscar in a debate about China.",
                 "episode_id": 10,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Classy Christmas",
                 "description": "Michael throws an elaborate Christmas party to celebrate Holly's temporary return to the Scranton branch, but is disappointed when he learns that she still has a boyfriend.",
                 "episode_id": 11,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Ultimatum",
                 "description": "Michael gets upset when Holly returns from the holidays without an engagement ring, but still together with her boyfriend. Meanwhile, Pam tries to help her co-workers keep with their New Year's resolutions.",
                 "episode_id": 12,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Seminar",
                 "description": "Andy tries to host a small business seminar at the office. Michael agrees to help by posing as a Greek entrepreneur, and tries to get Holly to play along.",
                 "episode_id": 13,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Search",
                 "description": "When Jim gets an emergency phone call from Helene, he is forced to leave Michael in the bathroom of a gas station. Meanwhile, Holly, Erin, and Dwight set out on a journey to find Michael. Back at the office, Pam's artwork starts a captioning contest that seems to offend Gabe.",
                 "episode_id": 14,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "PDA",
                 "description": "It's Valentine's Day, and the office is fed up with Michael and Holly's PDA, Andy helps Erin solve Gabe's riddles to find her gift, and Jim and Pam get drunk and try to find a place in the office to have sex.",
                 "episode_id": 15,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Threat Level Midnight",
                 "description": "Michael finally finishes his movie \"Threat Level Midnight\" and screens it for his employees at Dunder Mifflin, but Holly is less than enthusiastic for his finished product.",
                 "episode_id": 16,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Todd Packer",
                 "description": "Everyone is up in arms after Michael convinces Holly to give Todd Packer an office job, and Andy gets upset after Pam gets a new computer for reception but not for him.",
                 "episode_id": 17,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Garage Sale",
                 "description": "Michael plans to propose to Holly the day of the Dunder Mifflin garage sale, but Holly may have to take an extended leave of absence to Colorado because her father is sick.",
                 "episode_id": 18,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Training Day",
                 "description": "Michael makes fast friends with the man coming in to replace him at Dunder Mifflin, but later begins to have second thoughts after seeing him in action.",
                 "episode_id": 19,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Michael’s Last Dundies",
                 "description": "Michael hosts his final \"Dundies\" as the boss at the Scranton branch, but tension is in the air, and Deangelo Vickers, the new boss, is having trouble with his co-hosting duties.",
                 "episode_id": 20,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Goodbye Michael",
                 "description": "As the office gets ready for Michael's final day at Dunder Mifflin, Michael doesn't tell anyone that he's leaving a day early. Meanwhile, Deangelo accompanies a nervous Andy on a visit to one of Michael's old clients.",
                 "episode_id": 21,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Inner Circle",
                 "description": "Tensions rise and feelings are hurt when Deangelo creates an \"inner circle\" at the office--which is only composed of men.",
                 "episode_id": 22,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Dwight K. Schrute, (Acting) Manager",
                 "description": "When Jim rejects Jo's offer, Dwight becomes acting manager at the Scranton branch, but an accident could cause his tenure to be short-lived.",
                 "episode_id": 23,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Search Committee",
                 "description": "The Scranton branch puts together a search committee to find the next boss, but the pool of interviewees proves to be less than impressive, and Dwight demands an interview in spite of his gun accident.",
                 "episode_id": 24,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             }
         ]
@@ -64584,168 +64580,168 @@
                 "title": "The List",
                 "description": "New Dunder Mifflin CEO Robert California leaves a piece of paper with a line down the middle that has names of the Scranton staff on either side of it, leading everyone to try and figure out what it means.",
                 "episode_id": 1,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Incentive",
                 "description": "Under pressure from Robert to increase branch sales, Andy offers an incentive program to the sales staff, which backfires on him when he offers a very personal grand prize.",
                 "episode_id": 2,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Lotto",
                 "description": "After the entire warehouse staff wins the lottery and quits their job, Darryl becomes depressed and demands to be fired. Meanwhile, the office staff is forced to load the truck for their orders themselves.",
                 "episode_id": 3,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Garden Party",
                 "description": "Andy claims to be throwing a garden party at Dwight's farm to impress Robert California, but he's really doing it to win the approval of his parents, who appear to favor his younger brother.",
                 "episode_id": 4,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Spooked",
                 "description": "Erin is worried that she is about to get fired after she organizes a disastrous office Halloween party for Robert and his son. Meanwhile, Robert probes the minds of the employees to come up with the perfect spooky story.",
                 "episode_id": 5,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Doomsday",
                 "description": "Dwight installs a \"Doomsday Device\" on the office computers that could get everyone fired if they make too many mistakes, while Gabe tries to hit on one of Darryl's warehouse employees.",
                 "episode_id": 6,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Pam’s Replacement",
                 "description": "A pregnant and insecure Pam tries to prove that Jim is attracted to her temp replacement, and Robert and his musician friends take over a jam session with Andy, Kevin, and Darryl.",
                 "episode_id": 7,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Gettysburg",
                 "description": "Andy decides to motivate and inspire everyone by taking them on a field trip to Gettysburg. Some people in the office stay behind and Robert California asks them to come up with Dunder Mifflin/Sabre's next big idea.",
                 "episode_id": 8,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Mrs. California",
                 "description": "Robert brings his wife to the office so that she can find a job, but he gives Andy conflicting messages about whether to hire her. Meanwhile, Dwight opens a gym in the building and tries to persuade Darryl to join.",
                 "episode_id": 9,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Christmas Wishes",
                 "description": "Andy tries to make this year's Christmas the best ever by granting each person's holiday wishes. Meanwhile, Robert California tries to drown his sorrows at the office party.",
                 "episode_id": 10,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Trivia",
                 "description": "Andy hopes to make up for a sales deficiency by entering and winning a bar trivia competition, while Dwight flies to corporate headquarters in Florida to demand a management interview with Robert.",
                 "episode_id": 11,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Pool Party",
                 "description": "Robert throws a party for the Dunder Mifflin staff at his house before he sells it because of his divorce. At the party, Erin and Dwight agree to flirt with each other to make Andy jealous, and Jim tries in vain to duck out early.",
                 "episode_id": 12,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Jury Duty",
                 "description": "Jim gets caught in a lie about his week of \"jury duty,\" and new questions emerge when Angela gives birth to a \"premature\" baby.",
                 "episode_id": 13,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Special Project",
                 "description": "Andy puts Dwight in charge of a special project in Tallahassee, but Dwight doesn't like the team Andy's assembled for him. Meanwhile, Darryl tries to figure out the meaning of Val's Valentine's gift.",
                 "episode_id": 14,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Tallahasse",
                 "description": "Dwight refuses to let appendicitis get in the way of leading his new team in Tallahassee, while Andy decides to step in for Erin as secretary in the office.",
                 "episode_id": 15,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "After Hours",
                 "description": "In Tallahassee, Dwight and Todd Packer try to romance Nellie to get the VP position, while Jim wonders if a colleague is trying to hit on him. Back in Scranton, Val's boyfriend shows up with a message for Darryl.",
                 "episode_id": 16,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Test the Store",
                 "description": "Dwight and his team get ready for the grand opening of the Sabre Store, while Andy makes Toby teach self-defense to the Scranton branch employees after he is beat up in the parking lot by a girl.",
                 "episode_id": 17,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Last Day In Florida",
                 "description": "Jim tries to warn Dwight that he's going to be fired after Robert rejects the Sabre Store idea, but he refuses to listen. Meanwhile, Darryl and Toby try to sell cookies to Kevin, and Erin tells Andy she's not coming back from Florida.",
                 "episode_id": 18,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Get The Girl",
                 "description": "Andy goes to Tallahassee to tell Erin that he loves her and needs her to return to Scranton. Meanwhile, Nellie shows up in Scranton and tries to claim Andy's manager position by offering everyone raises.",
                 "episode_id": 19,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Welcome Party",
                 "description": "Andy tries to break up with his girlfriend after going to Florida to declare his love for Erin, and the office employees are forced against their will to throw a party for the hated Nellie.",
                 "episode_id": 20,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Angry Andy",
                 "description": "Andy and Erin return to Dunder Mifflin, only to discover that Nellie has taken his job and office and refuses to give them up. Meanwhile, Ryan becomes jealous after Pam tries to play matchmaker for Kelly.",
                 "episode_id": 21,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Fundraiser",
                 "description": "Andy confronts Robert for the first time after losing the manager position and quitting his job at a fund raiser sponsored by Angela's husband.",
                 "episode_id": 22,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Turf War",
                 "description": "Dwight and Jim fight with the Syracuse over a client after Robert shuts down the Binghamton branch, and Andy sees an opportunity for revenge. Meanwhile Robert tries to figure out the contents of a drunken voicemail to Nellie.",
                 "episode_id": 23,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Free Family Portrait Studio",
                 "description": "With former CEO David Wallace's help, Andy launches a plan to get revenge on the Scranton branch. Meanwhile, Dwight launches his own plan to find out if he's the father of Angela's baby.",
                 "episode_id": 24,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             }
         ]
@@ -64757,161 +64753,161 @@
                 "title": "New Guys",
                 "description": "Dwight and Jim are intimidated by the office's newest additions, who are considered younger versions of themselves. Meanwhile, Andy tries to make Nellie's life miserable, and Angela tries to get rid of one of her cats.",
                 "episode_id": 1,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Roy’s Wedding",
                 "description": "After Roy's wedding, Jim and Pam wonder if they still have any secrets they're hiding from each other. Meanwhile, Clark tricks Erin into a \"news audition,\" and Dwight challenges Nellie's new charity initiative.",
                 "episode_id": 2,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Andy’s Ancestry",
                 "description": "Nellie plays a trick on Andy after researching his ancestry, Dwight teaches Erin a new language, and Pam tries to teach Nellie how to drive.",
                 "episode_id": 3,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Work Bus",
                 "description": "When Jim convinces Dwight that the building is unsafe, Dwight rents a bus and sets up the office inside. Nellie asks for Andy's help in adopting a baby. Meanwhile, Jim tries to make Pam happy with some pie.",
                 "episode_id": 4,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Here Comes Treble",
                 "description": "On Halloween, the Cornell a Capella group pays a visit to Andy, Dwight discovers that Nellie takes anxiety pills, and Pam disapproves of Jim's business decision.",
                 "episode_id": 5,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Boat",
                 "description": "Andy has one last chance to captain the family boat before he sells it, Jim, Pam, and Nellie prank Dwight with a radio interview, and Kevin finds out about Oscar's affair with Angela's husband.",
                 "episode_id": 6,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Whale",
                 "description": "The office trains Dwight to sell to a female client without being offensive, only to discover that the client is Jan Levinson. Angela and Oscar both think the senator is cheating on them, and Jim has trouble on an important conference call.",
                 "episode_id": 7,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Target",
                 "description": "Angela orders a hit on Oscar for cheating with her husband, the office makes a tower with their customer complaint cards, Jim wines and dines Stanley and Phyllis in exchange for a favor, and Pam begins her mural.",
                 "episode_id": 8,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Dwight Christmas",
                 "description": "Dwight puts together a Pennsylvania Dutch-themed office Christmas party, but he ends it abruptly because Jim has to leave for his other job. Meanwhile, Erin seeks comfort from a co-worker after a disappointing text from Andy.",
                 "episode_id": 9,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Lice",
                 "description": "Pam causes a lice outbreak but lets Meredith take the blame, Jim has a business meeting with Dr. J, and some coworkers try to get Darryl and Val back together.",
                 "episode_id": 10,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Suit Warehouse",
                 "description": "Dwight and Clark pose as father and son to get an account, Darryl goes for an interview with Jim's new business, and everybody in the office goes crazy over a new espresso machine.",
                 "episode_id": 11,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Customer Loyalty",
                 "description": "Dwight tries to keep Daryl from leaving Dunder Mifflin, Jim misses his daughter's recital because of an important business meeting, and Nellie is worried that Erin will dump Andy for Pete.",
                 "episode_id": 12,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Junior Salesman",
                 "description": "Dwight gets to hire a new salesman to replace Jim when he is at his other job. But will he promote Clark or go with one of his unqualified friends instead?",
                 "episode_id": 13,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Vandalism",
                 "description": "Pam tries to find out who vandalized her mural, Darryl finds out that Jim is a slob, and Oscar and Kevin go to Angela and The Senator's child's first birthday party.",
                 "episode_id": 14,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Couples Discount",
                 "description": "Andy returns after three months to an angry office and an even angrier girlfriend, and Jim's Valentines Day with Pam does not go as planned.",
                 "episode_id": 15,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Moving On",
                 "description": "Andy finds out that Erin dumped him for Pete, Dwight gets Angela's help taking care of his aunt, and Pam interviews with a real estate firm whose boss is a carbon-copy of Michael Scott.",
                 "episode_id": 16,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "The Farm",
                 "description": "Show follows Dwight Schrute a beet farmer running a bed and breakfast inn.",
                 "episode_id": 17,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Promos",
                 "description": "The release of the documentary promos creates tension for the Dunder Mifflin employees, Dwight considers a business venture with his girlfriend's family, and Jim and Darryl have an awkward business meeting with baseball player Ryan Howard.",
                 "episode_id": 18,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Stairmageddon",
                 "description": "Dwight shoots Stanley with a bull tranquilizer after he refuses to go on a sales call, Jim and Pam head to marriage counseling, The Senator comes out of the closet, and Andy tries to find a talent agent.",
                 "episode_id": 19,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Paper Airplane",
                 "description": "The employees hold a paper airplane competition, Andy gets an acting role in a workplace safety video, and Jim and Pam's marriage tensions continue to build.",
                 "episode_id": 20,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Livin’ The Dream",
                 "description": "Dwight becomes regional manager after Andy quits his job, Jim dedicates more time to his Dunder Mifflin job to save his marriage, and Angela has problems with her new living arrangements after her breakup with The Senator.",
                 "episode_id": 21,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "A.A.R.M",
                 "description": "Dwight prepares for a marriage proposal and hires an assistant for his assistant, Andy auditions for a singing program, Darryl tries to leave his job without a fuss, and Pam has second thoughts about Jim staying in Scranton.",
                 "episode_id": 22,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             },
             {
                 "title": "Finale",
                 "description": "One year later, Dunder Mifflin employees past and present reunite for a panel discussion about the documentary and to attend Dwight and Angela's wedding.",
                 "episode_id": 23,
-                "characters": null,
+                "characters": [],
                 "scenes": null
             }
         ]

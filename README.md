@@ -23,7 +23,7 @@ A Vue.js and Flask Web Application designed to provide a quick way to search for
 
 ### Credit
 
-Credit to [officequotes.net/](https://www.officequotes.net/) for providing all quote data.
+Credit to [officequotes.net](https://www.officequotes.net/) for providing all quote data.
 
 Credit to [imdb.com](https://www.imdb.com/title/tt0386676/) for episode descriptions.
 

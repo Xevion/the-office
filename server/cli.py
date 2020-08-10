@@ -8,7 +8,7 @@ import os
 import re
 import sys
 import time
-from typing import List, Tuple, Union
+from typing import List, Optional, Tuple, Union
 
 import click
 import enlighten
@@ -177,15 +177,15 @@ def preprocess(season: int, episode: int, all: bool, overwrite: bool, silent_ski
 @click.option('-s', '--season', type=int,
               help='Season to be fetched. Without --episode, will download all episodes in a season.')
 @click.option('-e', '--episode', type=int, help='Specific episode to be fetched. Requires --season to be specified.')
-@click.option('--all', is_flag=True, help='Fetch all episodes, regardless of previous specifications.')
-@click.option('-r', '--report', is_flag=True, help='Report quote statistics once processing completed')
-def process(season: int, episode: int, all: bool, report: bool):
+@click.option('--all', 'all_', is_flag=True, help='Fetch all episodes, regardless of previous specifications.')
+@click.option('-r', '--report', is_flag=True, help='Report quote statistics once processing completed.')
+def process(season: Optional[int], episode: Optional[int], all_: bool, report: bool):
     """
     Processes manually processed raw quote data into JSON.
     """
     episodes: List[Tuple[int, int]]
 
-    if all:
+    if all_:
         episodes = list(get_episodes())
     elif season:
         if episode:
@@ -231,10 +231,12 @@ def process(season: int, episode: int, all: bool, report: bool):
                 sections.append(section)
         except FileNotFoundError:
             logger.info(f'Skipped Season {_season}, Episode {_episode}, no file found.')
+            continue
         except:
             logger.exception(f'Skipped Season {_season}, Episode {_episode}: Malformed data.')
-            logger.info(
-                f'Last quote seen "{quote if type(quote) is str else "|".join(quote)}" in section {section_num}')
+            if quote:
+                logger.info(
+                    f'Last quote seen "{quote if type(quote) is str else "|".join(quote)}" in section {section_num}')
         else:
             # Save processed data
             save_file(get_filepath(_season, _episode, 'processed'), sections, True)
@@ -268,11 +270,18 @@ def build():
 
 @build.command('algolia')
 @click.option('-ss', '--silent-skip', is_flag=True, help='Skip existing files silently')
-@click.option('--process', is_flag=True, help='Run processing before building final data.')
-def algolia(silent_skip: bool):
+@click.option('--process', 'process_', is_flag=True, help='Run processing before building final data.')
+def algolia(silent_skip: bool, process_: bool):
     """
     Generates algolia.json, a all encompassing file for Algolia's search index.
     """
+    if process_:
+        logger.info('Processing before building algolia.json')
+        try:
+            process(["--all", '--silent'])
+        except:
+            pass
+
     data = []
     episode_num_abs, section_num_abs, quote_num_abs = 0, 0, 0
     for season, episode in get_episodes():
@@ -310,11 +319,19 @@ def algolia(silent_skip: bool):
 
 @build.command('final')
 @click.option('-ss', '--silent-skip', is_flag=True, help='Skip existing files silently')
-@click.option('--process', is_flag=True, help='Run processing before building final data.')
-def final(silent_skip: bool):
+@click.option('--process', 'process_', is_flag=True, help='Run processing before building final data.')
+def final(silent_skip: bool, process_: bool):
     """Generates the latest application static data.json file, used by the backend API."""
     descriptions = load_file(os.path.join(DATA_DIR, 'descriptions.json'), True)
     seasons = [{'season_id': season, 'episodes': []} for season in range(1, 10)]
+
+    if process_:
+        logger.info('Processing before building final.json')
+        try:
+            process(["--all"])
+        except:
+            pass
+
     for season_id, episode_id in get_episodes():
         # Load data file
         try:
