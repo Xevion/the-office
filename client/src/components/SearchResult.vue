@@ -87,7 +87,7 @@ export default {
       }
     },
     fetchQuotes() {
-      const path = `http://${process.env.VUE_APP_HOST}:${process.env.VUE_APP_FLASK_PORT}/api/quote_surround?season=\
+      const path = `${process.env.VUE_APP_BASE_APP_URL}/api/quote_surround?season=\
 ${this.item.season}&episode=${this.item.episode_rel}&scene=${this.item.section_rel}&quote=${this.item.quote_rel}`;
       axios.get(path)
         .then((res) => {

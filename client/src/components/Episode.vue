@@ -45,7 +45,7 @@ export default {
   },
   methods: {
     getEpisode() {
-      const path = `http://${process.env.VUE_APP_HOST}:${process.env.VUE_APP_FLASK_PORT}/api/episode/\
+      const path = `${process.env.VUE_APP_BASE_APP_URL}/api/episode/\
 ${this.$route.params.season}/${this.$route.params.episode}/`;
       axios.get(path)
         .then((res) => {

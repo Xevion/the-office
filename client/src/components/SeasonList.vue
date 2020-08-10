@@ -151,7 +151,7 @@ export default {
   },
   methods: {
     getSeasons() {
-      const path = `http://${process.env.VUE_APP_HOST}:${process.env.VUE_APP_FLASK_PORT}/api/episodes/`;
+      const path = `${process.env.VUE_APP_BASE_APP_URL}/api/episodes/`;
       axios.get(path)
         .then((res) => {
           this.seasons = res.data;
