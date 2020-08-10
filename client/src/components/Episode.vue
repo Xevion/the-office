@@ -5,7 +5,7 @@
             <span v-if="episode">
                 {{ episode.description }}
             </span>
-            <CharacterList v-if="episode.characters" :characters="episode.characters"></CharacterList>
+            <CharacterList v-if="episode && episode.characters" :characters="episode.characters"></CharacterList>
         </b-card>
         <div v-if="episode != null">
             <b-card v-for="(scene, scene_index) in episode.scenes" :key="`scene-${scene_index}`" :id="scene_index"

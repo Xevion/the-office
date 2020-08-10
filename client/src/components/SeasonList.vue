@@ -1,21 +1,33 @@
 <template>
     <div class="accordion" role="tablist">
-        <b-card v-for="season in seasons" :key="season.season_id">
+        <b-card class="season-card" v-for="season in seasons" :key="season.season_id">
             <b-card-header header-tag="header" role="tab">
-                <a class="no-link" v-b-toggle="'accordion-' + season.season_id">
+                <a class="no-link align-items-center justify-content-between d-flex"
+                   v-b-toggle="'accordion-' + season.season_id">
                     <h5 class="mb-0 pu-0 mu-0 season-title">
                         Season {{ season.season_id }}
                     </h5>
+                    <b-icon class="" icon="chevron-down"></b-icon>
                 </a>
             </b-card-header>
             <b-collapse :id="'accordion-' + season.season_id" accordion="accordion-season-list">
                 <b-card-body class="h-100 px-0">
                     <b-list-group>
-                        <b-list-group-item v-for="episode in season.episodes" :key="episode.episode_id">
-                            <router-link class="no-link" :to="`/${season.season_id}/${episode.episode_id}`">
-                                Ep. {{ episode.episode_id }} - "{{ episode.title }}"
-                            </router-link>
-                        </b-list-group-item>
+                        <template v-for="episode in season.episodes">
+                            <b-list-group-item :id="`s-${season.season_id}-ep-${episode.episode_id}`"
+                                               :key="`rl-${episode.episode_id}`">
+                                <router-link class="no-link"
+                                             :to="`/${season.season_id}/${episode.episode_id}`">
+                                    Episode {{ episode.episode_id }} - "{{ episode.title }}"
+                                </router-link>
+                            </b-list-group-item>
+                            <b-popover show :key="`bpop-${episode.episode_id}`" variant="secondary" delay="25"
+                                       :target="`s-${season.season_id}-ep-${episode.episode_id}`"
+                                        triggers="hover" placement="right">
+                                <template v-slot:title>{{ episode.title }}</template>
+                                {{ episode.description }}
+                            </b-popover>
+                        </template>
                     </b-list-group>
                 </b-card-body>
             </b-collapse>
@@ -24,6 +36,47 @@
 </template>
 
 <style lang="scss">
+    .season-card > .card-body > .card-header {
+        cursor: pointer;
+    }
+
+    .bi-chevron-down {
+        -moz-transition: all 0.25s ease-in-out;
+        -webkit-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .collapsed > .bi-chevron-down {
+        text-align: right;
+    }
+
+    .not-collapsed > .bi-chevron-down {
+        transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+    }
+
+    .b-popover  {
+        background: transparent;
+    }
+    .popover-header {
+        background-color: #1d1d1d;
+        border-color: #181818;
+        color: white;
+    }
+
+    .bs-popover-right > .arrow::after, .bs-popover-auto[x-placement^="right"] > .arrow::after {
+        /*left: 1px;*/
+        /*border-width: 0.5rem 0.5rem 0.5rem 0;*/
+        border-right-color: #181818;
+    }
+
+    .popover-body {
+        color: white;
+        background-color: #161616;
+    }
+
     .season-title { color: #a2a2a2; cursor: pointer; }
 
     .accordion.list-group-item {
@@ -34,12 +87,14 @@
         font-weight: 500;
 
         &:first-child { border-top-width: 1px; }
+
         &:last-child { border-bottom-width: 0; }
     }
 
     .accordion {
         .list-group-item {
             padding: 10px 20px;
+
             a { display: block; }
 
             .badge { float: right; min-width: 36px; }
