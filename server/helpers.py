@@ -29,4 +29,4 @@ def get_neighbors(array: List, index: int, distance: int = 2) -> Tuple[List, Lis
             top.append(array[top_index])
         if below_index < len(array):
             below.append(array[below_index])
-    return top[::-1], below[::-1]
+    return top[::-1], below
