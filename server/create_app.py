@@ -11,7 +11,7 @@ from flask_wtf.csrf import CSRFProtect
 from server.config import configs
 
 csrf = CSRFProtect()
-cors = CORS(resources={r'/*': {'origins': '*'}})
+cors = CORS(resources={r'/api/*': {'origins': '*'}})
 
 
 def create_app(env=None):

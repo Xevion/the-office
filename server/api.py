@@ -8,9 +8,9 @@ import os
 from copy import deepcopy
 
 import flask_wtf
-from flask import current_app, jsonify
+from flask import current_app, jsonify, request
 
-from server.helpers import default
+from server.helpers import default, get_neighbors
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 with open(os.path.join(BASE_DIR, 'data', 'data.json'), 'r', encoding='utf-8') as file:
@@ -24,7 +24,6 @@ stats = {
         'season': 0
     }
 }
-
 
 stats['totals']['season'] += len(default(data, []))
 for season in data:
@@ -77,3 +76,13 @@ def api_data():
     Season data route
     """
     return jsonify(data)
+
+
+@current_app.route('/api/quote_surround')
+def api_quote_neighbors():
+    season, episode = int(request.args.get('season')), int(request.args.get('episode'))
+    scene, quote = int(request.args.get('scene')), int(request.args.get('quote'))
+
+    quotes = data[season - 1]['episodes'][episode - 1]['scenes'][scene - 1]['quotes']
+    top, below = get_neighbors(quotes, quote - 1, int(request.args.get('distance', 2)))
+    return jsonify({'above': top, 'below': below})

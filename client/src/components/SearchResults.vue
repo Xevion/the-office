@@ -2,19 +2,21 @@
     <div>
         <ais-hits>
             <div slot-scope="{ items }">
-                <b-card v-for="item in items" :key="item.objectID" class="mb-1" body-class="p-0 py-2">
-                    <b-card-text class="p-1 pl-2">
-                        <strong v-html="item._highlightResult.speaker.value"></strong>:
-                        <span v-html="item._highlightResult.text.value" class="pl-1"></span>
-                        <!--                        <strong>{{ item.speaker }}</strong>:-->
-                        <!--                        <ais-highlight attribute="text" :hit="item"/>-->
-                    </b-card-text>
-                    <template v-slot:footer>
-                        <router-link class="no-link" :to="`/${item.season}/${item.episode}#${item.section}`">
-                            Season {{ item.season }} Episode {{ item.episode }} Scene {{ item.section }}
-                        </router-link>
-                    </template>
-                </b-card>
+                <SearchResult v-for="item in items" :item="item" :key="item.objectID"></SearchResult>
+<!--                <b-card v-for="item in items" :key="item.objectID" class="mb-1" body-class="p-0 py-2">-->
+<!--                    <b-card-text class="p-1 pl-2">-->
+<!--                        <strong v-html="item._highlightResult.speaker.value"></strong>:-->
+<!--                        <span v-html="item._highlightResult.text.value" class="pl-1"></span>-->
+<!--                                                <strong>{{ item.speaker }}</strong>:-->
+<!--                                                <ais-highlight attribute="text" :hit="item"/>-->
+<!--                        <QuoteList :quotes="scene.quotes"></QuoteList>-->
+<!--                    </b-card-text>-->
+<!--                    <template v-slot:footer>-->
+<!--                   <router-link class="no-link pl-1" :to="`/${item.season}/${item.episode}#${item.section}`">-->
+<!--                            Season {{ item.season }} Episode {{ item.episode }} Scene {{ item.section }}-->
+<!--                        </router-link>-->
+<!--                    </template>-->
+<!--                </b-card>-->
             </div>
         </ais-hits>
     </div>
@@ -28,7 +30,7 @@
 
     mark, .mark {
         padding: 0.02em;
-        background-color: #fff500;
+        background-color: #d2ca00;
         /*color: #black;*/
         /*-webkit-filter: invert(100%);*/
         /*filter: invert(100%);*/
@@ -44,7 +46,12 @@
     }
 </style>
 <script>
+import SearchResult from './SearchResult.vue';
+
 export default {
   name: 'SearchResults',
+  components: {
+    SearchResult,
+  },
 };
 </script>
