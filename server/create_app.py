@@ -4,7 +4,7 @@ create_app.py
 The create_app function used to create and initialize the app with all of it's extensions and settings.
 """
 
-from flask import Flask
+from flask import Flask, render_template
 from flask_cors import CORS
 from flask_wtf.csrf import CSRFProtect
 
@@ -18,7 +18,10 @@ def create_app(env=None):
     """
     The create_app function used to create and initialize the app with all of it's extensions and settings.
     """
-    app = Flask(__name__)
+    app = Flask(__name__,
+                static_folder="./../dist/static",
+                template_folder="./../dist"
+                )
 
     # Load configuration values
     if not env:
@@ -38,5 +41,10 @@ def create_app(env=None):
     with app.app_context():
         # noinspection PyUnresolvedReferences
         from server import api
+
+    @app.route('/', defaults={'path': ''})
+    @app.route('/<path:path>')
+    def catch_all(path):
+        return render_template("index.html")
 
     return app
