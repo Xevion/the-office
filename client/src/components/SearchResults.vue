@@ -21,7 +21,9 @@
         </ais-hits>
     </div>
 </template>
-<style>
+<style lang="scss">
+    @import "../assets/scss/_variables";
+
     .card-footer {
         padding: 0.1em;
         font-size: 0.8em;
@@ -30,7 +32,7 @@
 
     mark, .mark {
         padding: 0.02em;
-        background-color: #d2ca00;
+        background-color: $highlight;
         /*color: #black;*/
         /*-webkit-filter: invert(100%);*/
         /*filter: invert(100%);*/

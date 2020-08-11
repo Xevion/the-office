@@ -36,6 +36,8 @@
 </template>
 
 <style lang="scss">
+    @import "../assets/scss/_variables";
+
     .season-card > .card-body > .card-header {
         cursor: pointer;
     }
@@ -61,23 +63,23 @@
         background: transparent;
     }
     .popover-header {
-        background-color: #1d1d1d;
-        border-color: #181818;
+        background-color: $grey-3;
+        border-color: $grey-2;
         color: white;
     }
 
     .bs-popover-right > .arrow::after, .bs-popover-auto[x-placement^="right"] > .arrow::after {
         /*left: 1px;*/
         /*border-width: 0.5rem 0.5rem 0.5rem 0;*/
-        border-right-color: #181818;
+        border-right-color: $grey-2;
     }
 
     .popover-body {
         color: white;
-        background-color: #161616;
+        background-color: $grey-2;
     }
 
-    .season-title { color: #a2a2a2; cursor: pointer; }
+    .season-title { color: $grey-8; cursor: pointer; }
 
     .accordion.list-group-item {
         border-radius: 0;
@@ -104,7 +106,7 @@
     }
 
     .card-header {
-        background-color: #161616;
+        background-color: $grey-2;
         border-bottom: 1px solid rgba(0, 0, 0, 0.88);
         font-family: 'Montserrat', sans-serif;
     }
@@ -120,12 +122,12 @@
 
     .list-group-item {
         border-color: rgba(24, 24, 24, 0.82);
-        background-color: #111111;
-        color: #a0a0a0;
+        background-color: $grey-3;
+        color: $grey-8;
         border-left-width: 0;
         border-right-width: 0;
 
-        &:hover { background-color: #161616; }
+        &:hover { background-color: $grey-2; }
     }
 
     .no-link {

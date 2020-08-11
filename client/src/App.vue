@@ -22,6 +22,7 @@
 </template>
 
 <style lang="scss">
+    @import "assets/scss/_variables";
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
@@ -32,14 +33,14 @@
     }
 
     .ais-SearchBox-input {
-        color: #d7d7d7;
-        background-color: #3e3e3e;
+        color: $grey-8;
+        background-color: $grey-6;
         border-color: transparent;
         border-radius: 1px;
     }
 
     .ais-SearchBox-submitIcon, .ais-SearchBox-resetIcon {
-        > path { fill: #bcbcbc; }
+        > path { fill: $grey-9; }
     }
 
     .ais-SearchBox-input::placeholder {

@@ -31,6 +31,8 @@
 </template>
 
 <style lang="scss">
+    @import "../assets/scss/_variables";
+
     .expandable-result {
         cursor: pointer;
     }
@@ -47,7 +49,7 @@
     .quote-list > tr {
         white-space: nowrap;
 
-        &:hover { background-color: #242424; }
+        &:hover { background-color: $grey-4; }
     }
 
     .quote-text {

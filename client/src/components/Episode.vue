@@ -22,7 +22,7 @@
     </div>
 </template>
 
-<style>
+<style lang="scss">
     .card-title { font-family: 'Montserrat', sans-serif; font-weight: 600; }
     .deleted-scene { font-size: 0.75em; line-height: 12px; }
 </style>

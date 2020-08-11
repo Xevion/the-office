@@ -11,6 +11,8 @@
 </template>
 
 <style lang="scss">
+    @import "../assets/scss/_variables";
+
     .btn {
         box-shadow: none;
 
@@ -18,30 +20,31 @@
     }
 
     .character-button {
-        background-color: #292929;
-        border-color: #1d1d1d;
+        background-color: $grey-6;
+        border-color: $grey-4;
     }
 
     .character-button {
         &:focus {
-            background-color: #292929 !important;
-            border-color: #1d1d1d !important;
+            background-color: $grey-6 !important;
+            border-color: $grey-4 !important;
+
             &:active { box-shadow: none !important;}
         }
 
         &:hover {
-            background-color: #1d1d1d  !important;
-            border-color: #161616 !important;
+            background-color: $grey-4 !important;
+            border-color: $grey-3 !important;
         }
 
         &:active {
-            background-color: #1d1d1d !important;
-            border-color: #161616 !important;
+            background-color: $grey-3 !important;
+            border-color: $grey-3 !important;
         }
     }
 
     .character-button > .badge {
-        background-color: #565656;
+        background-color: $grey-7;
     }
 
     /*.btn-dark {*/
