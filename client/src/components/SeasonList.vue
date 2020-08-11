@@ -65,20 +65,24 @@
 
     // Dark theme popover
     .popover-header {
-        background-color: $grey-3;
-        border-color: $grey-2;
+        background-color: darken($grey-2, 2.1%);
+        border-color: $grey-1;
         color: $grey-11;
     }
 
     // Dark theme popover, arrow-right fix
     .bs-popover-right > .arrow::after, .bs-popover-auto[x-placement^="right"] > .arrow::after {
-        border-right-color: $grey-2;
+        border-right-color: darken($grey-3, 2%);
+    }
+
+    .season-item .list-group-item:first-child {
+        border-radius: 0;
     }
 
     // Dark theme popover body
     .popover-body {
         color: $grey-10;
-        background-color: $grey-2;
+        background-color: darken($grey-3, 2%);
     }
 
     .season-title { color: $grey-8; cursor: pointer; }
@@ -89,7 +93,7 @@
             padding: 0;
         }
         .card-header {
-            background-color: $grey-2;
+            background-color: darken($grey-2, 1.5%);
             color: $grey-9;
             border-bottom: 1px solid $grey-0;
             font-family: 'Montserrat', sans-serif;
@@ -98,12 +102,12 @@
 
     .episode-item {
         border-color: $grey-2;
-        background-color: $grey-2;
+        background-color: darken($grey-3, 2%);
         color: $grey-8;
         border-left-width: 0;
         border-right-width: 0;
 
-        &:hover { background-color: $grey-2; }
+        &:hover { background-color: darken($grey-3, 1%); }
     }
 
     .no-link {

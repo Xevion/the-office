@@ -26,7 +26,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-    body { background-color: #0a0a0a; font-family: 'Roboto', sans-serif; }
+    body { background-color: $grey-0; font-family: 'Roboto', sans-serif; }
 
     .ais-SearchBox-form {
         border: none;

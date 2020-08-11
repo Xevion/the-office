@@ -15,7 +15,6 @@
 
     .btn {
         box-shadow: none;
-
         &:focus { box-shadow: none; }
     }
 
@@ -23,6 +22,9 @@
         color: $grey-10;
         background-color: $grey-4;
         border-color: $grey-3;
+        .badge {
+            color: lighten($grey-11, 8%);
+        }
     }
 
     .character-button {

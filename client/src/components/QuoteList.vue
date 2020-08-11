@@ -24,6 +24,7 @@
     }
 
     .quote-speaker {
+        color: darken($grey-10, 1.75%);
         min-width: 100px;
         padding-right: 1em;
         font-weight: 600;
