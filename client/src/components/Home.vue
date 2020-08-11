@@ -14,8 +14,8 @@
 
     .card {
         color: $grey-9;
-        background-color: $grey-1;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.88);
+        background-color: $grey-2;
+        border-bottom: 1px solid $grey-1;
         border-radius: 0;
     }
 </style>

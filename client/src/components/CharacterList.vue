@@ -20,8 +20,9 @@
     }
 
     .character-button {
-        background-color: $grey-6;
-        border-color: $grey-4;
+        color: $grey-10;
+        background-color: $grey-4;
+        border-color: $grey-3;
     }
 
     .character-button {
