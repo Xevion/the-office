@@ -1,9 +1,8 @@
 <template>
     <div class="accordion" role="tablist">
         <b-card class="season-item" v-for="season in seasons" :key="season.season_id">
-            <b-card-header header-tag="header" role="tab">
-                <a class="no-link align-items-center justify-content-between d-flex"
-                   v-b-toggle="'accordion-' + season.season_id">
+            <b-card-header header-tag="header" role="tab" v-b-toggle="'accordion-' + season.season_id">
+                <a class="no-link align-items-center justify-content-between d-flex">
                     <h5 class="mb-0 pu-0 mu-0 season-title">
                         Season {{ season.season_id }}
                     </h5>
@@ -14,13 +13,11 @@
                 <b-card-body class="h-100 px-0">
                     <b-list-group>
                         <template v-for="episode in season.episodes">
-                            <b-list-group-item class="episode-item"
+                            <b-list-group-item class="no-link episode-item"
                                                :id="`s-${season.season_id}-ep-${episode.episode_id}`"
-                                               :key="`rl-${episode.episode_id}`">
-                                <router-link class="no-link"
-                                             :to="`/${season.season_id}/${episode.episode_id}`">
+                                               :key="`rl-${episode.episode_id}`"
+                                               :to="`/${season.season_id}/${episode.episode_id}`">
                                     Episode {{ episode.episode_id }} - "{{ episode.title }}"
-                                </router-link>
                             </b-list-group-item>
                             <b-popover show :key="`bpop-${episode.episode_id}`" variant="secondary" delay="25"
                                        :target="`s-${season.season_id}-ep-${episode.episode_id}`"
@@ -71,6 +68,15 @@
     }
 
     // Dark theme popover, arrow-right fix
+    .bs-popover-top > .arrow::after, .bs-popover-auto[x-placement^="top"] > .arrow::after {
+        border-top-color: darken($grey-3, 2%);
+    }
+    .bs-popover-bottom > .arrow::after, .bs-popover-auto[x-placement^="bottom"] > .arrow::after {
+        border-bottom-color: darken($grey-3, 2%);
+    }
+    .bs-popover-left > .arrow::after, .bs-popover-auto[x-placement^="left"] > .arrow::after {
+        border-left-color: darken($grey-3, 2%);
+    }
     .bs-popover-right > .arrow::after, .bs-popover-auto[x-placement^="right"] > .arrow::after {
         border-right-color: darken($grey-3, 2%);
     }
