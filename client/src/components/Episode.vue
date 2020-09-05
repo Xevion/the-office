@@ -1,30 +1,31 @@
 <template>
-    <div>
-        <b-card :title="`Season ${this.$route.params.season} Episode ${this.$route.params.episode} \
+  <div>
+    <b-card :title="`Season ${this.$route.params.season} Episode ${this.$route.params.episode} \
         - ${episode != null ? episode.title : ''}`" class="mb-4">
             <span v-if="episode">
                 {{ episode.description }}
             </span>
-            <CharacterList v-if="episode && episode.characters" :characters="episode.characters"></CharacterList>
-        </b-card>
-        <div v-if="episode != null">
-            <b-card v-for="(scene, scene_index) in episode.scenes" :key="`scene-${scene_index}`" :id="scene_index"
-                    class="mb-1" body-class="p-0">
-                <b-card-text class="my-2">
-<!--                    <span v-if="scene.deleted" class="mt-n2 mb-4 text-muted deleted-scene pl-2"-->
-<!--                          :footer="`Deleted Scene ${scene.deleted}`">-->
-<!--                        Deleted Scene {{ scene.deleted }}-->
-<!--                    </span>-->
-                    <QuoteList :quotes="scene.quotes"></QuoteList>
-                </b-card-text>
-            </b-card>
-        </div>
+      <CharacterList v-if="episode && episode.characters" :characters="episode.characters"></CharacterList>
+    </b-card>
+    <div v-if="episode != null">
+      <b-card v-for="(scene, scene_index) in episode.scenes" :key="`scene-${scene_index}`" :id="scene_index"
+              class="mb-1" body-class="p-0">
+        <b-card-text class="my-2">
+          <!--                    <span v-if="scene.deleted" class="mt-n2 mb-4 text-muted deleted-scene pl-2"-->
+          <!--                          :footer="`Deleted Scene ${scene.deleted}`">-->
+          <!--                        Deleted Scene {{ scene.deleted }}-->
+          <!--                    </span>-->
+          <QuoteList :quotes="scene.quotes"></QuoteList>
+        </b-card-text>
+      </b-card>
     </div>
+  </div>
 </template>
 
 <style lang="scss">
-    .card-title { font-family: 'Montserrat', sans-serif; font-weight: 600; }
-    .deleted-scene { font-size: 0.75em; line-height: 12px; }
+.card-title { font-family: 'Montserrat', sans-serif; font-weight: 600; }
+
+.deleted-scene { font-size: 0.75em; line-height: 12px; }
 </style>
 
 <script>
@@ -50,6 +51,13 @@ ${this.$route.params.season}/${this.$route.params.episode}/`;
       axios.get(path)
         .then((res) => {
           this.episode = res.data;
+          // Scroll
+          if (this.$route.hash) {
+            this.$nextTick(() => {
+              const section = document.getElementById(this.$route.hash.substring(1));
+              this.$scrollTo(section, 750, { easing: 'ease-in' });
+            });
+          }
         })
         .catch((error) => {
           // eslint-disable-next-line no-console
@@ -63,8 +71,6 @@ ${this.$route.params.season}/${this.$route.params.episode}/`;
   watch: {
     $route() {
       this.getEpisode();
-      console.log(this.$route.params.hash);
-      this.$scrollTo(`${this.$route.hash}`, 500, { easing: 'ease-in-out' });
     },
   },
 };
