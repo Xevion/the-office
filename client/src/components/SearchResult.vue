@@ -31,7 +31,7 @@
                 </tr>
             </table>
             <router-link v-if="expanded" class="no-link search-result-link w-100 text-muted mb-2 ml-2"
-                         :to="`/${item.season}/${item.episode_rel}#${item.section_rel}`">
+                         :to="`/${item.season}/${item.episode_rel}#${item.section_rel - 1}-${item.quote_rel - 1}`">
                 Season {{ item.season }} Episode {{ item.episode_rel }} Scene {{ item.section_rel }}
             </router-link>
         </b-card-text>
