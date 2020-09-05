@@ -3,6 +3,7 @@
         <b-button squared class="mx-2 my-1 character-button" size="sm"
                   v-for="character in characters" :key="character.name" :id="`character-${character.id}`"
                   :title="`${character.appearances} Quote${character.appearances > 1 ? 's' : ''}`"
+                  :to="`/character/${character.id}`"
         >
             {{ character.name }}
             <b-badge class="ml-1">{{ character.appearances}}</b-badge>
