@@ -109,11 +109,11 @@
     .episode-item {
         border-color: $grey-2;
         background-color: darken($grey-3, 2%);
-        color: $grey-8;
+        color: $grey-8 !important;
         border-left-width: 0;
         border-right-width: 0;
 
-        &:hover { background-color: darken($grey-3, 1%); }
+        &:hover, &:active, &:focus { background-color: darken($grey-1, 0.75%); }
     }
 
     .no-link {
