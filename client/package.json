@@ -10,7 +10,7 @@
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.30",
         "@fortawesome/free-solid-svg-icons": "^5.14.0",
-        "@fortawesome/vue-fontawesome": "^0.1.10",
+        "@fortawesome/vue-fontawesome": "^2.0.0",
         "algoliasearch": "^4.3.1",
         "axios": ">=0.18.1",
         "bootstrap": "^4.3.1",
@@ -20,19 +20,24 @@
         "vue": "^2.6.11",
         "vue-autosuggest": "^2.2.0",
         "vue-instantsearch": "^3.1.0",
+        "vue-loading-skeleton": "^1.1.9",
         "vue-router": "^3.2.0",
         "vue-scrollto": "^2.18.2",
-        "vue-server-renderer": "^2.6.11"
+        "vue-server-renderer": "^2.6.11",
+        "vuex": "^3.5.1"
     },
     "devDependencies": {
         "@vue/cli-plugin-babel": "^4.4.0",
         "@vue/cli-plugin-eslint": "^4.4.0",
         "@vue/cli-service": "^4.4.0",
         "@vue/eslint-config-airbnb": "^5.0.2",
+        "@vue/eslint-config-prettier": "^6.0.0",
         "babel-eslint": "^10.1.0",
         "eslint": "^6.7.2",
         "eslint-plugin-import": "^2.20.2",
+        "eslint-plugin-prettier": "^3.1.4",
         "eslint-plugin-vue": "^6.2.2",
+        "prettier": "^2.1.1",
         "sass": "^1.26.5",
         "sass-loader": "^8.0.2",
         "vue-template-compiler": "^2.6.11"
@@ -44,23 +49,12 @@
         },
         "extends": [
             "plugin:vue/essential",
-            "@vue/airbnb"
+            "eslint:recommended"
         ],
         "parserOptions": {
             "parser": "babel-eslint"
         },
-        "rules": {
-            "max-len": [
-                2,
-                {
-                    "code": 120
-                }
-            ],
-            "linebreak-style": [
-                "error",
-                "windows"
-            ]
-        }
+        "rules": {}
     },
     "browserslist": [
         "> 1%",
