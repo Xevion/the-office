@@ -16,8 +16,9 @@
                             <b-list-group-item class="no-link episode-item"
                                                :id="`s-${season.season_id}-ep-${episode.episode_id}`"
                                                :key="`rl-${episode.episode_id}`"
-                                               :to="`/${season.season_id}/${episode.episode_id}`">
-                                    Episode {{ episode.episode_id }} - "{{ episode.title }}"
+                                               :to="{ name: 'Episode', params: { season: season.season_id,
+                                               episode: episode.episode_id} }">
+                                Episode {{ episode.episode_id }} - "{{ episode.title }}"
                             </b-list-group-item>
                             <b-popover show :key="`bpop-${episode.episode_id}`" variant="secondary" delay="25"
                                        :target="`s-${season.season_id}-ep-${episode.episode_id}`"
@@ -34,97 +35,106 @@
 </template>
 
 <style lang="scss">
-    @import "../assets/scss/_variables";
+@import "../assets/scss/_variables";
 
-    // Make all season cards 'clickable'
-    .season-item > .card-body > .card-header {
-        cursor: pointer;
+// Make all season cards 'clickable'
+.season-item > .card-body > .card-header {
+    cursor: pointer;
+}
+
+// Make all chevron icons rotate 180 when clicked
+.bi-chevron-down {
+    -moz-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.not-collapsed > .bi-chevron-down {
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+}
+
+// White popovers use white background on top left/right corners, this disables it.
+.b-popover {
+    background: transparent;
+}
+
+// Dark theme popover
+.popover-header {
+    background-color: darken($grey-2, 2.1%);
+    border-color: $grey-1;
+    color: $grey-11;
+}
+
+// Dark theme popover, arrow-right fix
+.bs-popover-top > .arrow::after, .bs-popover-auto[x-placement^="top"] > .arrow::after {
+    border-top-color: darken($grey-3, 2%);
+}
+
+.bs-popover-bottom > .arrow::after, .bs-popover-auto[x-placement^="bottom"] > .arrow::after {
+    border-bottom-color: darken($grey-3, 2%);
+}
+
+.bs-popover-left > .arrow::after, .bs-popover-auto[x-placement^="left"] > .arrow::after {
+    border-left-color: darken($grey-3, 2%);
+}
+
+.bs-popover-right > .arrow::after, .bs-popover-auto[x-placement^="right"] > .arrow::after {
+    border-right-color: darken($grey-3, 2%);
+}
+
+.season-item .list-group-item:first-child {
+    border-radius: 0;
+}
+
+// Dark theme popover body
+.popover-body {
+    color: $grey-10;
+    background-color: darken($grey-3, 2%);
+}
+
+.season-title {
+    color: $grey-8;
+    cursor: pointer;
+}
+
+// Season Card Background Color
+.season-item {
+    .card-body {
+        padding: 0;
     }
 
-    // Make all chevron icons rotate 180 when clicked
-    .bi-chevron-down {
-        -moz-transition: all 0.25s ease-in-out;
-        -webkit-transition: all 0.25s ease-in-out;
-        transition: all 0.25s ease-in-out;
+    .card-header {
+        background-color: darken($grey-2, 1.5%);
+        color: $grey-9;
+        border-bottom: 1px solid $grey-0;
+        font-family: 'Montserrat', sans-serif;
     }
+}
 
-    .not-collapsed > .bi-chevron-down {
-        transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-        -moz-transform: rotate(180deg);
-        -webkit-transform: rotate(180deg);
-    }
+.episode-item {
+    border-color: $grey-2;
+    background-color: darken($grey-3, 2%);
+    color: $grey-8 !important;
+    border-left-width: 0;
+    border-right-width: 0;
 
-    // White popovers use white background on top left/right corners, this disables it.
-    .b-popover {
-        background: transparent;
+    &:hover, &:active, &:focus {
+        background-color: darken($grey-1, 0.75%);
     }
+}
 
-    // Dark theme popover
-    .popover-header {
-        background-color: darken($grey-2, 2.1%);
-        border-color: $grey-1;
-        color: $grey-11;
-    }
+.no-link {
+    color: inherit;
+    text-decoration: none;
 
-    // Dark theme popover, arrow-right fix
-    .bs-popover-top > .arrow::after, .bs-popover-auto[x-placement^="top"] > .arrow::after {
-        border-top-color: darken($grey-3, 2%);
-    }
-    .bs-popover-bottom > .arrow::after, .bs-popover-auto[x-placement^="bottom"] > .arrow::after {
-        border-bottom-color: darken($grey-3, 2%);
-    }
-    .bs-popover-left > .arrow::after, .bs-popover-auto[x-placement^="left"] > .arrow::after {
-        border-left-color: darken($grey-3, 2%);
-    }
-    .bs-popover-right > .arrow::after, .bs-popover-auto[x-placement^="right"] > .arrow::after {
-        border-right-color: darken($grey-3, 2%);
-    }
-
-    .season-item .list-group-item:first-child {
-        border-radius: 0;
-    }
-
-    // Dark theme popover body
-    .popover-body {
-        color: $grey-10;
-        background-color: darken($grey-3, 2%);
-    }
-
-    .season-title { color: $grey-8; cursor: pointer; }
-
-    // Season Card Background Color
-    .season-item {
-        .card-body {
-            padding: 0;
-        }
-        .card-header {
-            background-color: darken($grey-2, 1.5%);
-            color: $grey-9;
-            border-bottom: 1px solid $grey-0;
-            font-family: 'Montserrat', sans-serif;
-        }
-    }
-
-    .episode-item {
-        border-color: $grey-2;
-        background-color: darken($grey-3, 2%);
-        color: $grey-8 !important;
-        border-left-width: 0;
-        border-right-width: 0;
-
-        &:hover, &:active, &:focus { background-color: darken($grey-1, 0.75%); }
-    }
-
-    .no-link {
+    &:hover {
         color: inherit;
         text-decoration: none;
-
-        &:hover {
-            color: inherit;
-            text-decoration: none;
-        }
     }
+}
 </style>
 
 <script>

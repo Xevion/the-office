@@ -22,8 +22,11 @@
 .quote-list > tr {
     white-space: nowrap;
 
-    &:hover, &.highlight {
+    &:hover {
         background-color: $grey-4;
+    }
+    &.highlight {
+        background-color: $grey-5 !important;
     }
 }
 
@@ -64,7 +67,7 @@ export default {
     },
     quotes: {
       required: true,
-      type: Object,
+      type: Array,
     },
   },
   methods: {

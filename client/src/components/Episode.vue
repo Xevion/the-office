@@ -8,7 +8,7 @@
             <CharacterList v-if="episode && episode.characters" :characters="episode.characters"></CharacterList>
         </b-card>
         <div v-if="episode != null">
-            <b-card v-for="(scene, sceneIndex) in episode.scenes" :key="`scene-${sceneIndex}`" :id="scene_index"
+            <b-card v-for="(scene, sceneIndex) in episode.scenes" :key="`scene-${sceneIndex}`"
                     class="mb-1" body-class="p-0">
                 <b-card-text class="my-2">
                     <QuoteList :quotes="scene.quotes" :sceneIndex="sceneIndex"></QuoteList>
@@ -61,7 +61,7 @@ ${this.$route.params.season}/${this.$route.params.episode}/`;
           if (this.$route.hash) {
             this.$nextTick(() => {
               const section = document.getElementById(this.$route.hash.substring(1));
-              this.$scrollTo(section, 500, { easing: 'ease-in', offset: 0 });
+              this.$scrollTo(section, 500, { easing: 'ease-in' });
             });
           }
         })
