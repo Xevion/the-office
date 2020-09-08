@@ -19,6 +19,7 @@
         "instantsearch.css": "7.1.0",
         "vue": "^2.6.11",
         "vue-autosuggest": "^2.2.0",
+        "vue-clipboard2": "^0.3.1",
         "vue-instantsearch": "^3.1.0",
         "vue-loading-skeleton": "^1.1.9",
         "vue-router": "^3.2.0",
