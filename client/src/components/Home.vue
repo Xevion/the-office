@@ -11,8 +11,6 @@
 </template>
 
 <style lang="scss">
-@import "../assets/scss/_variables";
-
 .card {
     color: $grey-9;
     background-color: $grey-2;

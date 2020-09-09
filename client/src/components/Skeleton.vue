@@ -2,8 +2,6 @@
     <div class="skeleton"></div>
 </template>
 <style lang="scss" scoped>
-@import "../assets/scss/_variables";
-
 .skeleton {
     background-color: $grey-4;
     background-image: linear-gradient(90deg, $grey-4, $grey-6, $grey-4);

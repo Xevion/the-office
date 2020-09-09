@@ -27,8 +27,6 @@
 </template>
 
 <style lang="scss">
-@import "../assets/scss/_variables";
-
 .quote-list > tr {
     white-space: nowrap;
 

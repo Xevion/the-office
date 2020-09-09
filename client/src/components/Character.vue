@@ -9,8 +9,6 @@
 </template>
 
 <style lang="scss" scoped>
-@import "../assets/scss/_variables";
-
 .card-body h4,
 .breadcrumb-item.active {
     text-transform: capitalize;

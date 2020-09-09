@@ -12,8 +12,6 @@
     </div>
 </template>
 <style lang="scss">
-@import "../assets/scss/_variables";
-
 .card-footer {
     padding: 0.1em;
     font-size: 0.8em;

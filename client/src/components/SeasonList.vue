@@ -59,8 +59,6 @@
 </template>
 
 <style lang="scss">
-@import "../assets/scss/_variables";
-
 // Make all season cards 'clickable'
 .season-item > .card-body > .card-header {
     cursor: pointer;

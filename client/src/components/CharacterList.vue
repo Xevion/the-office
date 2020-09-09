@@ -19,8 +19,6 @@
 </template>
 
 <style lang="scss">
-@import "../assets/scss/_variables";
-
 .btn {
     box-shadow: none;
 

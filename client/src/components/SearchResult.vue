@@ -73,8 +73,6 @@
 </template>
 
 <style lang="scss">
-@import "../assets/scss/_variables";
-
 .expandable-result {
     cursor: pointer;
 }
