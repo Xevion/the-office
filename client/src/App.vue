@@ -27,8 +27,8 @@
             :insights-client="insightsClient"
         >
             <b-container :fluid="true" class="py-2 px-lg-5 px-md-4">
-                <b-row class="my-3 pl-1">
-                    <b-col lg="3" xl="2" md="12">
+                <b-row class="my-3 pl-1" cols="12">
+                    <b-col lg="3" xl="3" md="12">
                         <ais-search-box
                             @keydown.native="showResults"
                             ref="searchbox"
@@ -36,11 +36,11 @@
                         />
                     </b-col>
                 </b-row>
-                <b-row>
-                    <b-col lg="3" xl="2" md="12">
+                <b-row align-h="start" cols="12">
+                    <b-col lg="3" xl="3" md="12">
                         <SeasonList></SeasonList>
                     </b-col>
-                    <b-col class="pt-md-2 pt-lg-0">
+                    <b-col lg="8" xl="7" md="12" class="pt-md-2 pt-lg-0">
                         <router-view/>
                     </b-col>
                     <b-col md="0" lg="0" xl="2"></b-col>
@@ -52,7 +52,6 @@
 </template>
 
 <style lang="scss">
-@import "assets/scss/_variables";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
@@ -103,6 +102,7 @@ body {
 import algoliasearch from "algoliasearch/lite";
 import SeasonList from "./components/SeasonList.vue";
 import "instantsearch.css/themes/algolia-min.css";
+import './scss/main.scss';
 
 export default {
     name: "App",
