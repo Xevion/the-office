@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 456px,
+    md: 689px,
+    lg: 900px,
+    xl: 1450px
+);
+
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/_mixins';
+@import '~bootstrap-vue/src/index.scss';
