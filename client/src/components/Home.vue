@@ -10,15 +10,6 @@
     </b-card>
 </template>
 
-<style lang="scss">
-.card {
-    color: $grey-9;
-    background-color: $grey-2;
-    border-bottom: 1px solid $grey-1;
-    border-radius: 0;
-}
-</style>
-
 <script>
 import axios from "axios";
 

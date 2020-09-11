@@ -8,36 +8,6 @@
     </div>
 </template>
 
-<style lang="scss" scoped>
-.card-body h4,
-.breadcrumb-item.active {
-    text-transform: capitalize;
-}
-
-.skeleton {
-    min-height: 24px;
-}
-a {
-    color: #1296ff;
-    &:hover {
-        color: #007fe0;
-    }
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-    color: $grey-10;
-}
-
-.breadcrumb {
-    background-color: $grey-3;
-    border-radius: 0;
-
-    .breadcrumb-item {
-        color: $grey-10;
-    }
-}
-</style>
-
 <script>
 import Skeleton from './Skeleton.vue';
 

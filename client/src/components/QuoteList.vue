@@ -26,52 +26,6 @@
     </table>
 </template>
 
-<style lang="scss">
-.quote-list > tr {
-    white-space: nowrap;
-
-    &:hover {
-        background-color: $grey-4;
-    }
-
-    &.highlight {
-        background-color: $grey-5 !important;
-    }
-}
-
-.quote-text {
-    white-space: normal;
-}
-
-.quote-speaker {
-    color: darken($grey-10, 1.75%);
-    min-width: 100px;
-    padding-right: 1em;
-    font-weight: 600;
-    vertical-align: text-top;
-    text-align: right;
-    font-family: "Montserrat", sans-serif;
-}
-
-table.quote-list tr td:last-child {
-    height: 100%;
-
-    a {
-        height: 100%;
-    }
-
-    svg {
-        font-size: 1.35em;
-        opacity: 0;
-        transition: opacity 0.1s ease-in;
-    }
-}
-
-table.quote-list tr:hover td:last-child svg {
-    opacity: 1;
-}
-</style>
-
 <script>
 export default {
     props: {
