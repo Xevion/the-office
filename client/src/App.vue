@@ -18,6 +18,13 @@
                             About
                         </router-link>
                     </b-nav-item>
+                    <b-badge variant="dark">
+                        <span id="marker-xs" class="d-sm-none">XS</span>
+                        <span id="marker-sm" class="d-none d-sm-block d-md-none">SM</span>
+                        <span id="marker-md" class="d-none d-md-block d-lg-none">MD</span>
+                        <span id="marker-lg" class="d-none d-lg-block d-xl-none">LG</span>
+                        <span id="marker-xl" class="d-none d-xl-block">XL</span>
+                    </b-badge>
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>
@@ -102,7 +109,6 @@ body {
 import algoliasearch from "algoliasearch/lite";
 import SeasonList from "./components/SeasonList.vue";
 import "instantsearch.css/themes/algolia-min.css";
-import './scss/main.scss';
 
 export default {
     name: "App",

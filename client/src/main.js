@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css";
+import '@/scss/main.scss';
 import Vue from "vue";
 import {BootstrapVue, BootstrapVueIcons} from "bootstrap-vue";
 import InstantSearch from "vue-instantsearch";
