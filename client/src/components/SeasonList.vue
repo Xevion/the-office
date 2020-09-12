@@ -23,33 +23,33 @@
             >
                 <b-card-body class="h-100 px-0">
                     <b-list-group>
-                        <template v-for="episode in season.episodes">
-                            <b-list-group-item
-                                class="no-link episode-item"
-                                :id="`s-${season.season_id}-ep-${episode.episode_id}`"
-                                :key="`rl-${episode.episode_id}`"
-                                :to="{
-                  name: 'Episode',
-                  params: {
-                    season: season.season_id,
-                    episode: episode.episode_id,
-                  },
-                }"
-                            >
-                                Episode {{ episode.episode_id }} - "{{ episode.title }}"
+                        <template v-for="(episode, index) in seasons[season.season_id - 1].episodes">
+                            <template v-if="episode !== null">
+                                <b-list-group-item
+                                    class="no-link episode-item"
+                                    :id="`s-${season.season_id}-ep-${episode.episode_id}`"
+                                    :key="`rl-${episode.episode_id}`"
+                                    :to="{name: 'Episode', params: { season: season.season_id, episode: episode.episode_id }, }"
+                                >
+                                    Episode {{ episode.episode_id }} - "{{ episode.title }}"
+                                </b-list-group-item>
+                                <b-popover
+                                    show="true"
+                                    :key="`bpop-${episode.episode_id}`"
+                                    delay="25"
+                                    :target="`s-${season.season_id}-ep-${episode.episode_id}`"
+                                    triggers="hover"
+                                    placement="right"
+                                >
+                                    <template v-slot:title>
+                                        episode.title
+                                    </template>
+                                    episode.description
+                                </b-popover>
+                            </template>
+                            <b-list-group-item v-else class="no-link episode-item" :key="index">
+                                <Skeleton></Skeleton>
                             </b-list-group-item>
-                            <b-popover
-                                show
-                                :key="`bpop-${episode.episode_id}`"
-                                variant="secondary"
-                                delay="25"
-                                :target="`s-${season.season_id}-ep-${episode.episode_id}`"
-                                triggers="hover"
-                                placement="right"
-                            >
-                                <template v-slot:title>{{ episode.title }}</template>
-                                {{ episode.description }}
-                            </b-popover>
                         </template>
                     </b-list-group>
                 </b-card-body>
@@ -59,31 +59,20 @@
 </template>
 
 <script>
-import axios from "axios";
+import Skeleton from './Skeleton.vue';
 
 export default {
     name: "SeasonList",
-    data() {
-        return {
-            seasons: [],
-        };
+    components: {
+        Skeleton
     },
-    methods: {
-        getSeasons() {
-            const path = `${process.env.VUE_APP_API_URL}/api/episodes/`;
-            axios
-                .get(path)
-                .then((res) => {
-                    this.seasons = res.data;
-                })
-                .catch((error) => {
-                    // eslint-disable-next-line no-console
-                    console.error(error);
-                });
-        },
+    computed: {
+        seasons() {
+            return this.$store.state.quoteData;
+        }
     },
+    methods: {},
     created() {
-        this.getSeasons();
     },
 };
 </script>

@@ -18,7 +18,7 @@ export default new Vuex.Store({
     state: {
         seasonCount: 9,
         episodeCount: episodeCount,
-        quoteData: baseData
+        quoteData: baseData,
     },
     mutations: {
         [types.SET_EPISODE](state, payload) {
@@ -44,18 +44,22 @@ export default new Vuex.Store({
     getters: {
         // Check whether a episode has been fetched yet
         isFetched(season, episode) {
-            return this.state.quoteData[season - 1].episodes[episode] !== null;
+            return this.$store.state.quoteData[season - 1].episodes[episode] !== null;
         },
         // Get the number of episodes present for a given season
         getEpisodeCount(season) {
-            return this.state.episodeCount[season - 1];
+            return this.$store.state.episodeCount[season - 1];
         },
         // return Episode data if present
         getEpisode(season, episode) {
             if (this.getters.isFetched(season, episode))
-                return this.state.quoteData[season]
+                return this.$store.state.quoteData[season]
             else
                 return null
+        },
+        // return true if a specific episode is valid
+        isValidEpisode(season, episode = 1) {
+            return season >= 1 && season <= 9 && episode >= 1 && episode <= this.$store.getters.getEpisodeCount(season)
         }
     }
 });
