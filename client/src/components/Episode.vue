@@ -1,10 +1,13 @@
 <template>
     <div>
-        <b-breadcrumb :items="breadcrumbs"></b-breadcrumb>
+        <b-breadcrumb v-if="ready" :items="breadcrumbs"></b-breadcrumb>
+        <b-card v-else class="breadcrumb-skeleton mb-3">
+            <Skeleton style="width: 40%;"></Skeleton>
+        </b-card>
         <b-card class="mb-4">
-            <template v-if="episode !== null">
+            <template v-if="ready">
                 <h3>"{{ episode.title }}"</h3>
-                <span v-if="episode">
+                <span>
                 {{ episode.description }}
             </span>
                 <CharacterList
@@ -43,6 +46,18 @@
         </div>
     </div>
 </template>
+
+<style lang="scss" scoped>
+.breadcrumb-skeleton {
+    background-color: $grey-3;
+    height: 48px;
+    & > .card-body {
+        padding: 0 0 0 1em;
+        display: flex;
+        align-items: center;
+    }
+}
+</style>
 
 <style lang="scss">
 .card-title {
@@ -108,6 +123,9 @@ ${this.$route.params.season}/${this.$route.params.episode}/`;
         },
     },
     computed: {
+        ready() {
+            return this.episode !== null
+        },
         breadcrumbs() {
             return [
                 {
