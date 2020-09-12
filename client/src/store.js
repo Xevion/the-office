@@ -12,7 +12,6 @@ const baseData = Array.from({length: 9}, (x, season) => {
     let episodeData = Array.from({length: episodeCount[season]}, () => null)
     return {season_id: season + 1, episodes: episodeData};
 })
-console.log(baseData)
 
 export default new Vuex.Store({
     state: {
