@@ -35,7 +35,7 @@
         >
             <b-container :fluid="true" class="py-2 px-lg-5 px-md-4">
                 <b-row class="my-3 pl-1" cols="12">
-                    <b-col lg="3" xl="3" md="12">
+                    <b-col lg="3" xl="2" md="12">
                         <ais-search-box
                             @keydown.native="showResults"
                             ref="searchbox"
@@ -44,7 +44,7 @@
                     </b-col>
                 </b-row>
                 <b-row align-h="start" cols="12">
-                    <b-col lg="3" xl="3" md="12">
+                    <b-col lg="3" xl="2" md="12">
                         <SeasonList></SeasonList>
                     </b-col>
                     <b-col lg="8" xl="7" md="12" class="pt-md-2 pt-lg-0">

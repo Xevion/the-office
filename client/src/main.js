@@ -16,6 +16,7 @@ Vue.use(VueClipboard)
 
 Vue.config.productionTip = false;
 
+// Prevent invalid episodes, seasons and characters from being accessed
 router.beforeEach((to, from, next) => {
     // eslint-disable-next-line no-constant-condition
     if (from.name !== null && to.name === "Character" && false) next(false);
