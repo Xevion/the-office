@@ -9,8 +9,10 @@ Vue.use(Vuex);
 const episodeCount = [6, 22, 23, 14, 26, 24, 24, 24, 23];
 const baseData = Array.from({length: 9}, (x, season) => {
     // Array of null values representing each episode
-    let episodeData = Array.from({length: episodeCount[season]}, () => null)
-    return {season_id: season + 1, episodes: episodeData};
+    const episodeData = Array.from({length: episodeCount[season]}, (x, episode) => {
+        return { episode_id: episode + 1, loaded: false }
+    })
+    return {season_id: season + 1, episodes: episodeData };
 })
 
 export default new Vuex.Store({
@@ -18,11 +20,20 @@ export default new Vuex.Store({
         seasonCount: 9,
         episodeCount: episodeCount,
         quoteData: baseData,
+        preloaded: false,
     },
     mutations: {
         [types.SET_EPISODE](state, payload) {
             state.quoteData[payload.season - 1].episodes[payload.episode - 1] = payload.data
-        }
+        },
+        [types.MERGE_EPISODE](state, payload) {
+            const s = payload.season - 1;
+            const e = payload.episode - 1;
+            state.quoteData[s].episodes[e] = Object.assign(state.quoteData[s].episodes[e], payload.episodeData);
+        },
+        [types.SET_PRELOADED](state, status) {
+            state.preloaded = status;
+        },
     },
     actions: {
         // Perform async API call to fetch specific Episode data
@@ -32,33 +43,59 @@ export default new Vuex.Store({
             axios.get(path)
                 .then((res) => {
                     // Push episode data
-                    commit(types.SET_EPISODE, { season: season, episode: episode, data: res.data})
+                    commit(types.SET_EPISODE, {season: season, episode: episode, data: res.data})
                 })
                 .catch((error) => {
                     // eslint-disable-next-line no-console
                     console.error(error);
                 });
+        },
+        [types.PRELOAD]({commit}) {
+            const path = `${process.env.VUE_APP_API_URL}/api/episodes/`;
+            console.log('preload axios')
+            axios.get(path)
+                .then((res) => {
+                    for (const season of res.data) {
+                        for (const episode of season.episodes) {
+                            // Create payload and commit for each episode
+                            commit(
+                                types.MERGE_EPISODE,
+                                {
+                                    season: season.season_id,
+                                    episode: episode.episode_id,
+                                    episodeData: episode
+                                }
+                            )
+                        }
+                    }
+
+                    commit(types.SET_PRELOADED, true);
+                })
+                .catch((error) => {
+                    // eslint-disable-next-line no-console
+                    console.error(error);
+                })
         }
     },
     getters: {
         // Check whether a episode has been fetched yet
-        isFetched(season, episode) {
-            return this.$store.state.quoteData[season - 1].episodes[episode] !== null;
+        isFetched: (state) => (season, episode) => {
+            return state.quoteData[season - 1].episodes[episode] !== null;
         },
         // Get the number of episodes present for a given season
-        getEpisodeCount(season) {
-            return this.$store.state.episodeCount[season - 1];
+        getEpisodeCount: (state) => (season) => {
+            return state.episodeCount[season - 1];
         },
         // return Episode data if present
-        getEpisode(season, episode) {
-            if (this.getters.isFetched(season, episode))
-                return this.$store.state.quoteData[season]
+        getEpisode: (state, getters) => (season, episode) => {
+            if (getters.isFetched(season, episode))
+                return state.quoteData[season]
             else
                 return null
         },
         // return true if a specific episode is valid
-        isValidEpisode(season, episode = 1) {
-            return season >= 1 && season <= 9 && episode >= 1 && episode <= this.$store.getters.getEpisodeCount(season)
-        }
+        isValidEpisode: (state, getters) => (season, episode = 1) => {
+            return season >= 1 && season <= 9 && episode >= 1 && episode <= getters.getEpisodeCount(season)
+        },
     }
 });
