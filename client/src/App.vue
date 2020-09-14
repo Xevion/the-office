@@ -2,9 +2,7 @@
     <div id="app">
         <b-navbar>
             <b-navbar-brand>
-                <router-link :to="{ name: 'Home' }" class="no-link">
-                    The Office Quotes
-                </router-link>
+                <router-link :to="{ name: 'Home' }" class="no-link">The Office Quotes</router-link>
             </b-navbar-brand>
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav>
@@ -28,19 +26,14 @@
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>
-        <ais-instant-search
-            index-name="prod_THEOFFICEQUOTES"
-            :search-client="searchClient"
-            :insights-client="insightsClient"
-        >
+        <ais-instant-search index-name="prod_THEOFFICEQUOTES" :search-client="searchClient"
+                            :insights-client="insightsClient">
             <b-container :fluid="true" class="py-2 px-lg-5 px-md-4">
                 <b-row class="my-3 pl-1" cols="12">
                     <b-col lg="3" xl="2" md="12">
-                        <ais-search-box
-                            @keydown.native="showResults"
-                            ref="searchbox"
-                            placeholder="Search here…"
-                        />
+                        <ais-search-box @keydown.native="showResults" ref="searchbox" placeholder="Search here…"/>
+                        <Skeleton secondary_color="#3e3e3e" border_radius="1px" primary_color="#4A4A4A"
+                                  :inner_style="{ 'min-height': '35.6px' }"></Skeleton>
                     </b-col>
                 </b-row>
                 <b-row align-h="start" cols="12">
@@ -52,12 +45,16 @@
                     </b-col>
                 </b-row>
             </b-container>
-            <ais-configure :clickAnalytics="true" />
+            <ais-configure :clickAnalytics="true"/>
         </ais-instant-search>
     </div>
 </template>
 
 <style lang="scss">
+.outer-skeleton:not(:first-child) {
+    display: none;
+}
+
 .ais-SearchBox-form {
     border: none;
 }
@@ -85,11 +82,13 @@
 import algoliasearch from "algoliasearch/lite";
 import SeasonList from "./components/SeasonList.vue";
 import "instantsearch.css/themes/algolia-min.css";
+import Skeleton from "./components/Skeleton.vue";
 
 export default {
     name: "App",
     components: {
         SeasonList,
+        Skeleton
     },
     data() {
         return {
@@ -102,12 +101,8 @@ export default {
     },
     methods: {
         showResults() {
-            if (
-                this.$refs.searchbox.currentRefinement !== "" &&
-                this.$route.path !== "/search_results"
-            ) {
+            if (this.$refs.searchbox.currentRefinement !== "" && this.$route.path !== "/search_results")
                 this.$router.push({name: "SearchResults"});
-            }
         },
     },
 };
