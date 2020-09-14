@@ -103,7 +103,7 @@ def sleep_from(wait_time: float, moment: float, manager: enlighten.Manager = Non
         return 0
 
 
-def get_characters(season, episode) -> Optional[List[Dict[str, Union[int, str]]]]:
+def get_appearances(season, episode) -> Optional[List[Dict[str, Union[int, str]]]]:
     """
     Extracts all characters and their number of appearances from a specific episode.
     Prepared in a list of dictionary, preferable storage/for loop method.
@@ -120,3 +120,10 @@ def get_characters(season, episode) -> Optional[List[Dict[str, Union[int, str]]]
     characters = [{'name': character, 'appearances': appearances, 'id': '-'.join(character.split(' ')).lower()}
                   for character, appearances in characters.items()]
     return list(sorted(characters, key=lambda item: item['appearances'], reverse=True))
+
+def get_character(character):
+    """
+    Retrieves a character's appearances from every season and episode available.
+    :param character: The character's name
+    :return: A list of dictionary quotes including reference IDs
+    """

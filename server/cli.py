@@ -8,6 +8,7 @@ import os
 import re
 import sys
 import time
+from collections import defaultdict
 from typing import List, Optional, Tuple, Union
 
 import click
@@ -15,8 +16,10 @@ import enlighten
 import requests
 from bs4 import BeautifulSoup
 
+from server.helpers import algolia_transform
+
 sys.path[0] += '\\..'
-from server.process import DATA_DIR, get_characters, get_episodes, get_filepath, load_file, \
+from server.process import DATA_DIR, get_appearances, get_episodes, get_filepath, load_file, \
     save_file, sleep_from, \
     verify_episode
 
@@ -29,6 +32,65 @@ manager = enlighten.get_manager()
 @click.group()
 def cli():
     pass
+
+
+@cli.group()
+def misc():
+    pass
+
+
+@misc.command('characters')
+@click.option('-s', '--season', type=int, help='Season to be processed for character names')
+@click.option('-e', '--episode', type=int, help='Episode to be processed. Requires --season to be specified.')
+@click.option('--all', is_flag=True, help='Process all episodes, regardless of previous specifications.')
+@click.option('-i', '--individual', is_flag=True,
+              help='List characters from individual episodes instead of just compiling a masterlist')
+def characters(season: int, episode: int, all: bool, individual: bool):
+    """
+    Retrieves all characters from all quotes available.
+    Used in order to compile a list of characters for the character page, for scanning speakers for anomalies
+    and mistakes, as well as for compiling a list of verified 'main' characters.
+    """
+
+    if all:
+        episodes = list(get_episodes())
+    elif season:
+        if episode:
+            if verify_episode(season, episode):
+                episodes = [(season, episode)]
+            else:
+                logger.error(f'Season {season}, Episode {episode} is not a valid combination.')
+                return
+        else:
+            episodes = list(get_episodes(season=season))
+            logger.info(f'Fetching Season {season}...')
+    else:
+        if episode:
+            logger.info('You must specify more than just an episode.')
+        else:
+            logger.info('You must specify which episodes to process.')
+        logger.info('Check --help for more information on this command.')
+        return
+
+    master = dict()
+    for _season, _episode in episodes:
+        appearances = get_appearances(_season, _episode)
+
+        if not appearances:
+            continue
+
+        if individual:
+            logger.info(' '.join(item['name'] for item in appearances))
+
+        for item in appearances:
+            if item['id'] in master.keys():
+                master[item['id']]['appearances'] += item['appearances']
+            else:
+                master[item['id']] = item
+
+    # print(master)
+    logger.info(
+        ', '.join(item['name'] for item in sorted(master.values(), reverse=True, key=lambda item: item['appearances'])))
 
 
 @cli.command('fetch')
@@ -317,6 +379,19 @@ def algolia(silent_skip: bool, process_: bool):
     save_file(os.path.join(DATA_DIR, 'algolia.json'), data, True)
 
 
+@build.command('character')
+def character():
+    """
+    Uses algolia.json to build a characters.json file, a masterlist of quotes separated by the speaker.
+    Speakers not considered 'main characters' are excluded from the list.
+    This file also pulls information to build character descriptions and other relevant information.
+    """
+    data = load_file(os.path.join(DATA_DIR, 'algolia.json'), True)
+    key_list = [('speaker',), ('text',), ('season',), ('episode_rel', 'episode'), ('section_rel', 'scene'),
+                ('quote_rel', 'quote')]
+    master = map(lambda item: algolia_transform(item, key_list), filter(lambda: True, data))
+
+
 @build.command('final')
 @click.option('-ss', '--silent-skip', is_flag=True, help='Skip existing files silently')
 @click.option('--process', 'process_', is_flag=True, help='Run processing before building final data.')
@@ -338,7 +413,8 @@ def final(silent_skip: bool, process_: bool):
             episode_data = load_file(get_filepath(season_id, episode_id, 'processed'), True)
         except FileNotFoundError:
             if not silent_skip:
-                logger.warning(f'No data for Season {season_id}, Episode {episode_id} available. Null data inserted.')
+                logger.warning(
+                    f'No data for Season {season_id}, Episode {episode_id} available. Null data inserted.')
             episode_data = None
 
         description = descriptions[season_id - 1][episode_id - 1]
@@ -347,7 +423,7 @@ def final(silent_skip: bool, process_: bool):
                 'title': description['title'].strip(),
                 'description': description['description'].strip(),
                 'episode_id': episode_id,
-                'characters': get_characters(season_id, episode_id),
+                'characters': get_appearances(season_id, episode_id),
                 'scenes': episode_data
             }
         )

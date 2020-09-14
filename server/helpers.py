@@ -4,7 +4,7 @@ helpers.py
 
 """
 
-from typing import List, Tuple
+from typing import List, Tuple, Optional
 
 episode_counts = [6, 22, 23, 14, 26, 24, 24, 24, 23]
 
@@ -30,3 +30,23 @@ def get_neighbors(array: List, index: int, distance: int = 2) -> Tuple[List, Lis
         if below_index < len(array):
             below.append(array[below_index])
     return top[::-1], below
+
+
+def algolia_transform(old_dictionary: dict, key_list: List[Tuple[str, Optional[str]]]) -> dict:
+    """
+    Transforms a dictionary object of a quote (from algolia.json) into a API-ready quote.
+    Used for cli.character (i.e. characters.json)
+    :param old_dictionary: The original Algolia dictionary
+    :param key_list: A list of keys to keep in the dictionary in a tuple. One item tuple to keep the tuple's name, a
+    second item requests a 'rename' for the quote.
+    :return: The reformatted dictionary.
+    """
+
+    new_dictionary = {}
+    for keyItem in key_list:
+        if len(keyItem) > 1:
+            new_dictionary[keyItem[1]] = old_dictionary[keyItem[0]]
+        else:
+            new_dictionary[keyItem[0]] = old_dictionary[keyItem[0]]
+
+    return new_dictionary
