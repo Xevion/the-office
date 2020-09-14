@@ -20,7 +20,7 @@
                                                    :id="`s-${season.season_id}-ep-${episode.episode_id}`">
                                     Episode {{ episode.episode_id }} - "{{ episode.title }}"
                                 </b-list-group-item>
-                                <b-popover  show="true" :key="`bpop-${episode.episode_id}`" triggers="hover"
+                                <b-popover :key="`bpop-${episode.episode_id}`" triggers="hover"
                                             placement="right" delay="25" :target="`s-${season.season_id}-ep-${episode.episode_id}`">
                                     <template v-slot:title>
                                         {{ episode.title }}

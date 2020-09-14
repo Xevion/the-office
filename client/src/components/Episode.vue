@@ -71,13 +71,14 @@ export default {
         Skeleton,
     },
     created() {
+        // When page loads directly on this Episode initially, fetch data
         this.fetch();
     },
     watch: {
+        // When route changes, fetch data for current Episode route
         $route() {
             this.$nextTick(() => {
                 this.fetch();
-            //     this.$store.dispatch(types.FETCH_EPISODE, {season: this.params.season, episode: this.params.episode})
             })
         },
     },
@@ -102,8 +103,8 @@ export default {
     computed: {
         episode() {
             return this.$store.getters.getEpisode(this.params.season, this.params.episode)
-            // return this.$store.state.quoteData[this.params.season - 1].episodes[this.params.episode - 1];
         },
+        // Shorthand - literally useless, why does everything to have such long prefixes in dot notation
         params() {
             return this.$route.params
         },

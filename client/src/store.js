@@ -30,7 +30,9 @@ export default new Vuex.Store({
             const s = payload.season - 1;
             const e = payload.episode - 1;
             state.quoteData[s].episodes[e] = Object.assign(state.quoteData[s].episodes[e], payload.episodeData);
-            if (payload.episodeData.scenes !== null)
+
+            // If the episodeData has scenes, it means that this is a full episode data merge - mark it as 'loaded'
+            if (payload.episodeData.scenes !== undefined)
                 state.quoteData[s].episodes[e].loaded = true;
         },
         [types.SET_PRELOADED](state, status) {
@@ -39,13 +41,19 @@ export default new Vuex.Store({
     },
     actions: {
         // Perform async API call to fetch specific Episode data
-        [types.FETCH_EPISODE]({commit}, payload) {
+        [types.FETCH_EPISODE](context, payload) {
             return new Promise((resolve, reject) => {
+                // Don't re-fetch API data if it's already loaded
+                if(context.getters.isFetched(payload.season, payload.episode)) {
+                    resolve()
+                    return
+                }
+
                 const path = `${process.env.VUE_APP_API_URL}/api/episode/${payload.season}/${payload.episode}/`;
                 axios.get(path)
                     .then((res) => {
                         // Push episode data
-                        commit(types.MERGE_EPISODE, {
+                        context.commit(types.MERGE_EPISODE, {
                             season: payload.season,
                             episode: payload.episode,
                             episodeData: res.data
@@ -86,7 +94,7 @@ export default new Vuex.Store({
         // Check whether a episode has been fetched yet
         isFetched: (state) => (season, episode) => {
             const ep = state.quoteData[season - 1].episodes[episode - 1];
-            return ep !== null && ep.loaded;
+            return ep.loaded;
         },
         // Get the number of episodes present for a given season
         getEpisodeCount: (state) => (season) => {
