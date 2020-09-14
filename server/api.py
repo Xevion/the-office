@@ -16,6 +16,9 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 with open(os.path.join(BASE_DIR, 'data', 'data.json'), 'r', encoding='utf-8') as file:
     data = json.load(file)
 
+with open(os.path.join(BASE_DIR, 'data', 'characters.json'), 'r', encoding='utf-8') as file:
+    character_data = json.load(file)
+
 stats = {
     'totals': {
         'quote': 0,
@@ -86,3 +89,19 @@ def api_quote_neighbors():
     quotes = data[season - 1]['episodes'][episode - 1]['scenes'][scene - 1]['quotes']
     top, below = get_neighbors(quotes, quote - 1, int(request.args.get('distance', 2)))
     return jsonify({'above': top, 'below': below})
+
+
+@current_app.route('/api/characters/')
+def api_character_list():
+    return jsonify(list(character_data.keys()))
+
+
+@current_app.route('/api/character/<character>/')
+def api_character_all(character: str):
+    return jsonify(character_data[character])
+
+
+@current_app.route('/api/character/<character>/<int:page>/')
+def api_character_paged(character: str, page: int):
+    index: int = (page - 1) * 10
+    return jsonify(character_data[character][index: index + 10])

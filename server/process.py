@@ -14,6 +14,8 @@ from typing import Dict, Iterable, List, Optional, Tuple, Union
 import enlighten
 import requests
 
+from server.helpers import character_id
+
 session = requests.Session()
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
