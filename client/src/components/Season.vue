@@ -8,10 +8,16 @@
                         <b-col cols="3">
                             <b-img src="https://via.placeholder.com/150"></b-img>
                         </b-col>
-                    <b-col>
-                        <h4>{{ episode.title }}</h4>
-                        <p class="pl-3">{{ episode.description }}</p>
-                    </b-col>
+                        <b-col>
+                            <h4>
+                                {{ episode.title }}
+                                <router-link class="no-link"
+                                             :to="getEpisodeRoute(season.season_id, episode.episode_id)">
+                                    <b-icon class="h6" icon="caret-right-fill"></b-icon>
+                                </router-link>
+                            </h4>
+                            <p class="pl-3">{{ episode.description }}</p>
+                        </b-col>
                     </b-row>
                 </b-list-group-item>
             </b-list-group>
@@ -19,8 +25,22 @@
     </div>
 </template>
 
+<style lang="css">
+h4 .b-icon {
+    font-size: 0.85rem;
+    vertical-align: middle !important;
+    position: relative;
+    top: 3px;
+}
+</style>
+
 <script>
 export default {
+    methods: {
+        getEpisodeRoute(s, e) {
+            return {name: 'Episode', params: {season: s, episode: e}}
+        }
+    },
     computed: {
         breadcrumbs() {
             return [
