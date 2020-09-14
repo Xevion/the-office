@@ -6,7 +6,7 @@
         </b-card>
         <b-card class="mb-4">
             <template v-if="ready">
-                <h3>"{{ episode.title }}"</h3>
+                <h3 class="card-title">"{{ episode.title }}"</h3>
                 <span>{{ episode.description }}</span>
                 <CharacterList v-if="episode && episode.characters" :characters="episode.characters"></CharacterList>
             </template>
@@ -48,7 +48,7 @@
 <style lang="scss">
 .card-title {
     font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .deleted-scene {
