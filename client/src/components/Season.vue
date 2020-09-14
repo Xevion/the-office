@@ -5,8 +5,8 @@
             <b-list-group>
                 <b-list-group-item v-for="episode in season.episodes" :key="episode.episode_id">
                     <b-row align-v="start">
-                        <b-col cols="3">
-                            <b-img src="https://via.placeholder.com/150"></b-img>
+                        <b-col cols="5" md="4" lg="4" xl="3">
+                            <b-img-lazy fluid-grow class="px-2" src="https://via.placeholder.com/250"></b-img-lazy>
                         </b-col>
                         <b-col>
                             <h4>
@@ -25,12 +25,18 @@
     </div>
 </template>
 
-<style lang="css">
-h4 .b-icon {
-    font-size: 0.85rem;
-    vertical-align: middle !important;
-    position: relative;
-    top: 3px;
+<style lang="scss" scoped>
+h4 {
+    .b-icon {
+        font-size: 0.9rem;
+        vertical-align: middle !important;
+        position: relative;
+        top: 3px;
+        color: #007fe0;
+        &:hover {
+            color: darken(#007fe0, 10%);
+        }
+    }
 }
 </style>
 
