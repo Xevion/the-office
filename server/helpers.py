@@ -50,3 +50,10 @@ def algolia_transform(old_dictionary: dict, key_list: List[Tuple[str, Optional[s
             new_dictionary[keyItem[0]] = old_dictionary[keyItem[0]]
 
     return new_dictionary
+
+
+def is_main_character(name: str) -> bool:
+    return None
+
+def character_id(name: str) -> str:
+    return '-'.join(name.split(' ')).lower()

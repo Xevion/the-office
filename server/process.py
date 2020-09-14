@@ -117,13 +117,6 @@ def get_appearances(season, episode) -> Optional[List[Dict[str, Union[int, str]]
     for scene in scenes:
         for quote in scene.get('quotes', []):
             characters[quote.get('speaker')] += 1
-    characters = [{'name': character, 'appearances': appearances, 'id': '-'.join(character.split(' ')).lower()}
+    characters = [{'name': character, 'appearances': appearances, 'id': character_id(character)}
                   for character, appearances in characters.items()]
     return list(sorted(characters, key=lambda item: item['appearances'], reverse=True))
-
-def get_character(character):
-    """
-    Retrieves a character's appearances from every season and episode available.
-    :param character: The character's name
-    :return: A list of dictionary quotes including reference IDs
-    """

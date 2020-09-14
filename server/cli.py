@@ -9,6 +9,7 @@ import re
 import sys
 import time
 from collections import defaultdict
+from pprint import pprint
 from typing import List, Optional, Tuple, Union
 
 import click
@@ -16,9 +17,8 @@ import enlighten
 import requests
 from bs4 import BeautifulSoup
 
-from server.helpers import algolia_transform
-
 sys.path[0] += '\\..'
+from server.helpers import algolia_transform, character_id
 from server.process import DATA_DIR, get_appearances, get_episodes, get_filepath, load_file, \
     save_file, sleep_from, \
     verify_episode
@@ -389,7 +389,15 @@ def character():
     data = load_file(os.path.join(DATA_DIR, 'algolia.json'), True)
     key_list = [('speaker',), ('text',), ('season',), ('episode_rel', 'episode'), ('section_rel', 'scene'),
                 ('quote_rel', 'quote')]
-    master = map(lambda item: algolia_transform(item, key_list), filter(lambda: True, data))
+    master = map(lambda item: algolia_transform(item, key_list), filter(lambda item: True, data))
+
+    # Separate the quotes based on speaker
+    char_data = defaultdict(list)
+    for quote in master:
+        char_data[character_id(quote['speaker'])].append(quote)
+
+    # Save to characters.json
+    save_file(os.path.join(DATA_DIR, 'characters.json'), char_data, True)
 
 
 @build.command('final')
