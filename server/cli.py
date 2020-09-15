@@ -387,6 +387,8 @@ def character():
     This file also pulls information to build character descriptions and other relevant information.
     """
     data = load_file(os.path.join(DATA_DIR, 'algolia.json'), True)
+    descriptions = load_file(os.path.join(DATA_DIR, 'character_descriptions.json'), True)
+
     key_list = [('speaker',), ('text',), ('season',), ('episode_rel', 'episode'), ('section_rel', 'scene'),
                 ('quote_rel', 'quote')]
     master = map(lambda item: algolia_transform(item, key_list), filter(lambda item: True, data))
@@ -396,8 +398,15 @@ def character():
     for quote in master:
         char_data[character_id(quote['speaker'])].append(quote)
 
+    final_data = {}
+    for character, quotes in char_data.items():
+        final_data[character] = {'quotes': quotes, 'summary': None, 'name': None}
+        if character in descriptions.keys():
+            final_data[character]['name'] = descriptions[character].get('name')
+            final_data[character]['summary'] = descriptions[character].get('summary')
+
     # Save to characters.json
-    save_file(os.path.join(DATA_DIR, 'characters.json'), char_data, True)
+    save_file(os.path.join(DATA_DIR, 'characters.json'), final_data, True)
 
 
 @build.command('final')

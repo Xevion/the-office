@@ -3,6 +3,7 @@ api.py
 
 Provides a accessible protected backend API. JSON I/O only, CSRF protected.
 """
+import copy
 import json
 import os
 from copy import deepcopy
@@ -18,6 +19,9 @@ with open(os.path.join(BASE_DIR, 'data', 'data.json'), 'r', encoding='utf-8') as
 
 with open(os.path.join(BASE_DIR, 'data', 'characters.json'), 'r', encoding='utf-8') as file:
     character_data = json.load(file)
+
+# Cached preload character data
+character_list = dict()
 
 stats = {
     'totals': {
@@ -98,8 +102,16 @@ def api_character_list():
 
 @current_app.route('/api/character/<character>/')
 def api_character_all(character: str):
-    if request.args['page']:
+    _data = copy.deepcopy(character_data[character])
+    _data['quotes'] = _data['quotes'][:10]
+    return jsonify(_data)
+
+
+@current_app.route('/api/character/<character>/quotes/')
+def api_character_quotes(character: str):
+    quotes = character_data[character]['quotes']
+    if 'page' in request.args.keys():
         index: int = (int(request.args['page']) - 1) * 10
-        return jsonify(character_data[character][index: index + 10])
+        return jsonify(quotes[index: index + 10])
     else:
-        return jsonify(character_data[character])
+        return jsonify(quotes)
