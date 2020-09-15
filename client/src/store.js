@@ -21,11 +21,14 @@ export default new Vuex.Store({
         episodeCount: episodeCount,
         quoteData: baseData,
         preloaded: false,
+        characters: {}
     },
     mutations: {
+        // Fully set episode data
         [types.SET_EPISODE](state, payload) {
-            state.quoteData[payload.season - 1].episodes[payload.episode - 1] = payload.data
+            state.quoteData[payload.season - 1].episodes[payload.episode - 1] = payload.episodeData
         },
+        // 'Merge' episode data, overwriting existing attributes as needed
         [types.MERGE_EPISODE](state, payload) {
             const s = payload.season - 1;
             const e = payload.episode - 1;
@@ -37,7 +40,19 @@ export default new Vuex.Store({
         },
         [types.SET_PRELOADED](state, status) {
             state.preloaded = status;
+        },
+        [types.SET_CHARACTER](state, payload) {
+            state.characters[payload.id] = payload.characterData
         }
+        },
+        [types.MERGE_CHARACTER](state, payload) {
+            const id = payload.id;
+            // If character has not been defined in character list yet, simply set the characterData
+            if(state.characters[id] === undefined)
+                state.character[id] = payload.characterData
+            // Otherwise use intended merge & overwrite effect.
+            else
+                state.characters[id] = Object.assign(state.characters[id], payload.characterData)
     },
     actions: {
         // Perform async API call to fetch specific Episode data
