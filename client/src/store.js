@@ -84,7 +84,7 @@ export default new Vuex.Store({
         },
         [types.PRELOAD]({commit}) {
             const path = `${process.env.VUE_APP_API_URL}/api/episodes/`;
-            console.log('preload axios')
+
             axios.get(path)
                 .then((res) => {
                     for (const season of res.data)

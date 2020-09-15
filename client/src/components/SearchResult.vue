@@ -1,12 +1,7 @@
 <template>
-    <b-card
-        class="mb-1"
-        body-class="p-0 expandable-result"
-        footer-class="my-1"
-        v-on:mouseover="hover"
-        v-on:click="toggleExpansion"
-        :class="[expanded ? 'expanded' : '']"
-    >
+    <b-card class="mb-1" body-class="p-0 expandable-result" footer-class="my-1"
+            @mouseover="hoverOn" @mouseleave="hoverOff" v-on:click="toggleExpansion"
+            :class="[expanded ? 'expanded' : '']">
         <b-card-text class="mu-2 py-1 mb-1">
             <table v-if="expanded" class="quote-list px-3 py-1 w-100">
                 <tr
@@ -56,15 +51,9 @@
                     ></td>
                 </tr>
             </table>
-            <router-link
-                v-if="expanded"
-                class="no-link search-result-link w-100 text-muted mb-2 ml-2"
-                :to="{
-          name: 'Episode',
-          params: { season: item.season, episode: item.episode_rel },
-          hash: `#${item.section_rel - 1}-${item.quote_rel - 1}`,
-        }"
-            >
+            <router-link v-if="expanded" class="no-link search-result-link w-100 text-muted mb-2 ml-2"
+                         :to="{name: 'Episode', params: { season: item.season, episode: item.episode_rel },
+                            hash: `#${item.section_rel - 1}-${item.quote_rel - 1}`, }">
                 Season {{ item.season }} Episode {{ item.episode_rel }} Scene
                 {{ item.section_rel }}
             </router-link>
@@ -119,6 +108,7 @@ export default {
             fetching: false,
             above: null,
             below: null,
+            timeoutID: null
         };
     },
     computed: {
@@ -135,12 +125,20 @@ export default {
                 this.fetchQuotes();
             }
         },
-        hover() {
+        hoverFetch() {
             if (!this.fetched && !this.fetching) {
                 this.fetching = true;
                 this.fetchQuotes();
                 this.fetching = false;
             }
+        },
+        hoverOn() {
+            // Schedule a fetching event
+            this.timeoutID = setTimeout(this.hoverFetch, 300);
+        },
+        hoverOff() {
+            // Hover is off. Unschedule event if it has not already fetched.
+            clearTimeout(this.timeoutID);
         },
         fetchQuotes() {
             const path = `${process.env.VUE_APP_API_URL}/api/quote_surround?season=\
