@@ -98,10 +98,8 @@ def api_character_list():
 
 @current_app.route('/api/character/<character>/')
 def api_character_all(character: str):
-    return jsonify(character_data[character])
-
-
-@current_app.route('/api/character/<character>/<int:page>/')
-def api_character_paged(character: str, page: int):
-    index: int = (page - 1) * 10
-    return jsonify(character_data[character][index: index + 10])
+    if request.args['page']:
+        index: int = (int(request.args['page']) - 1) * 10
+        return jsonify(character_data[character][index: index + 10])
+    else:
+        return jsonify(character_data[character])
