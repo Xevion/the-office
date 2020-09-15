@@ -4,7 +4,7 @@
         <b-card>
             <b-list-group>
                 <b-list-group-item v-for="episode in season.episodes" :key="episode.episode_id">
-                    <b-row align-v="start">
+                    <b-row align-v="start" align-content="start">
                         <b-col cols="5" md="4" lg="4" xl="3">
                             <b-img-lazy fluid-grow class="px-2" src="https://via.placeholder.com/250"></b-img-lazy>
                         </b-col>

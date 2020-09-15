@@ -3,6 +3,13 @@
         <b-navbar>
             <b-navbar-brand>
                 <router-link :to="{ name: 'Home' }" class="no-link">The Office Quotes</router-link>
+                <b-badge style="font-size: 0.80rem;" class="mx-2" v-if="showBreakpointMarker" variant="dark">
+                        <span id="marker-xs" class="d-sm-none">XS</span>
+                        <span id="marker-sm" class="d-none d-sm-block d-md-none">SM</span>
+                        <span id="marker-md" class="d-none d-md-block d-lg-none">MD</span>
+                        <span id="marker-lg" class="d-none d-lg-block d-xl-none">LG</span>
+                        <span id="marker-xl" class="d-none d-xl-block">XL</span>
+                    </b-badge>
             </b-navbar-brand>
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav>
@@ -16,13 +23,6 @@
                             About
                         </router-link>
                     </b-nav-item>
-                    <b-badge variant="dark">
-                        <span id="marker-xs" class="d-sm-none">XS</span>
-                        <span id="marker-sm" class="d-none d-sm-block d-md-none">SM</span>
-                        <span id="marker-md" class="d-none d-md-block d-lg-none">MD</span>
-                        <span id="marker-lg" class="d-none d-lg-block d-xl-none">LG</span>
-                        <span id="marker-xl" class="d-none d-xl-block">XL</span>
-                    </b-badge>
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>
@@ -76,6 +76,26 @@
 .ais-SearchBox-input::placeholder {
     color: white;
 }
+
+#marker-xs {
+    color: #ff0000;
+}
+
+#marker-sm {
+    color: #f37506;
+}
+
+#marker-md {
+    color: #0090ff;
+}
+
+#marker-lg {
+    color: #05ff80;
+}
+
+#marker-xl {
+    color: #82f500;
+}
 </style>
 
 <script>
@@ -105,5 +125,10 @@ export default {
                 this.$router.push({name: "SearchResults"});
         },
     },
+    computed: {
+        showBreakpointMarker() {
+            return process.env.NODE_ENV === 'development';
+        }
+    }
 };
 </script>

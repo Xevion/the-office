@@ -45,7 +45,7 @@ export default {
                 },
                 {
                     text: 'Characters',
-                    to: {name: 'Home'},
+                    to: {name: 'CharacterList'},
                 },
                 {
                     text:
