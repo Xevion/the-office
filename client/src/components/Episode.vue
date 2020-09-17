@@ -8,7 +8,7 @@
             <template v-if="ready">
                 <h3 class="card-title">"{{ episode.title }}"</h3>
                 <span>{{ episode.description }}</span>
-                <CharacterList v-if="episode && episode.characters" :characters="episode.characters"></CharacterList>
+                <CharacterBadges v-if="episode && episode.characters" :characters="episode.characters"></CharacterBadges>
             </template>
             <template v-else>
                 <Skeleton style="width: 30%;"></Skeleton>
@@ -59,7 +59,7 @@
 
 <script>
 import QuoteList from "./QuoteList.vue";
-import CharacterList from "./CharacterList.vue";
+import CharacterBadges from "./CharacterBadges.vue";
 import Skeleton from './Skeleton.vue';
 import {types} from "@/mutation_types";
 
@@ -67,7 +67,7 @@ export default {
     name: "Episode",
     components: {
         QuoteList,
-        CharacterList,
+        CharacterBadges,
         Skeleton,
     },
     created() {

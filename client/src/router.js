@@ -1,10 +1,11 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./components/Home.vue";
-import Episode from "./components/Episode.vue";
-import SearchResults from "./components/SearchResults.vue";
-import Character from "./components/Character.vue";
-import Season from "./components/Season.vue";
+import Home from "@/components/Home.vue";
+import Episode from "@/components/Episode.vue";
+import SearchResults from "@/components/SearchResults.vue";
+import Character from "@/components/Character.vue";
+import Season from "@/components/Season.vue";
+import Characters from "@/components/Characters";
 
 Vue.use(Router);
 
@@ -15,6 +16,16 @@ export default new Router({
             path: "/",
             name: "Home",
             component: Home,
+        },
+        {
+            path: "/characters/",
+            name: "Characters",
+            component: Characters,
+        },
+        {
+            path: "/search_results",
+            name: "SearchResults",
+            component: SearchResults,
         },
         {
             path: "/character/:character",
@@ -30,11 +41,6 @@ export default new Router({
             path: "/:season/:episode",
             name: "Episode",
             component: Episode,
-        },
-        {
-            path: "/search_results",
-            name: "SearchResults",
-            component: SearchResults,
         },
         {
             path: "*",

@@ -1,7 +1,7 @@
 <template>
     <div>
         <b-breadcrumb :items="breadcrumbs"></b-breadcrumb>
-        <b-card>
+        <b-card v-if="ready">
             <b-list-group>
                 <b-list-group-item v-for="episode in season.episodes" :key="episode.episode_id">
                     <b-row align-v="start" align-content="start">
@@ -48,6 +48,9 @@ export default {
         }
     },
     computed: {
+        ready() {
+            return this.$store.state.preloaded;
+        },
         breadcrumbs() {
             return [
                 {
@@ -61,7 +64,7 @@ export default {
             ]
         },
         season() {
-            return this.$store.state.preloaded ? this.$store.state.quoteData[this.$route.params.season - 1] : null;
+            return this.$store.state.quoteData[this.$route.params.season - 1];
         }
     }
 }
