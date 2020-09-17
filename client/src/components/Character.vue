@@ -58,7 +58,7 @@ export default {
                 {
                     text:
                         this.character !== null && this.character !== undefined
-                            ? this.character.name
+                            ? this.character.name || this.$route.params.character
                             : this.$route.params.character,
                     active: true,
                 },
