@@ -1,11 +1,6 @@
 Flask~=1.1.2
-python-dotenv~=0.14.0
-libsass~=0.20.0
-gunicorn~=20.0.4
-Flask-WTF~=0.14.3
 click~=7.1.2
-Werkzeug~=1.0.1
-Flask-CORS~=3.0.8
-enlighten
-requests
-bs4
+enlighten~=1.6.2
+requests~=2.24.0
+bs4~=0.0.1
+beautifulsoup4~=4.9.1

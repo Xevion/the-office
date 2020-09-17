@@ -110,6 +110,8 @@ def api_character_all(character: str):
 @current_app.route('/api/character/<character>/quotes/')
 def api_character_quotes(character: str):
     quotes = character_data[character]['quotes']
+
+    # Compute pagination if argument is available. Static 10 results per page, one-indexed.
     if 'page' in request.args.keys():
         index: int = (int(request.args['page']) - 1) * 10
         return jsonify(quotes[index: index + 10])

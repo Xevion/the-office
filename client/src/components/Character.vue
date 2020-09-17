@@ -5,8 +5,11 @@
             <Skeleton style="width: 40%;"></Skeleton>
         </b-card>
         <b-card>
-            <h4 v-if="character">{{ this.$route.params.character }}</h4>
+            <h4 v-if="ready">{{ character.name }}</h4>
             <Skeleton v-else style="max-width: 30%"></Skeleton>
+            <b-card-body v-if="ready">
+                {{ character.summary }}
+            </b-card-body>
         </b-card>
     </div>
 </template>
@@ -26,17 +29,22 @@
 
 <script>
 import Skeleton from './Skeleton.vue';
+import {types} from "@/mutation_types";
 
 export default {
-    data() {
-        return {
-            character: null,
-        };
-    },
+    name: 'Character',
     components: {
         Skeleton,
     },
+    data() {
+        return {
+            character: null
+        }
+    },
     computed: {
+        ready() {
+            return this.character !== undefined && this.character !== null;
+        },
         breadcrumbs() {
             return [
                 {
@@ -45,11 +53,11 @@ export default {
                 },
                 {
                     text: 'Characters',
-                    to: {name: 'CharacterList'},
+                    to: {name: 'Characters'},
                 },
                 {
                     text:
-                        this.character !== null
+                        this.character !== null && this.character !== undefined
                             ? this.character.name
                             : this.$route.params.character,
                     active: true,
@@ -57,6 +65,23 @@ export default {
             ];
         },
     },
-    methods: {},
+    created() {
+        this.fetchCharacter();
+    },
+    watch: {
+        $route() {
+            this.$nextTick(() => {
+                this.fetchCharacter();
+            })
+        }
+    },
+    methods: {
+        fetchCharacter() {
+            this.$store.dispatch(types.FETCH_CHARACTER, this.$route.params.character)
+                .then(() => {
+                    this.character = this.$store.getters.getCharacter(this.$route.params.character);
+                })
+        },
+    },
 };
 </script>

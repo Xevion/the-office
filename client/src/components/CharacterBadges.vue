@@ -13,7 +13,11 @@
 
 <script>
 export default {
-    name: "CharacterList",
-    props: ["characters"],
+    props: {
+        characters: {
+            type: Array,
+            required: true
+        }
+    }
 };
 </script>
