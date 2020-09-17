@@ -26,14 +26,14 @@
 
 @-webkit-keyframes SkeletonLoading {
     0% {
-        background-position: 0 0;
+        background-position: -200px 0;
     }
     100% {
         background-position: calc(200px + 100%) 0;
     }
 }
 
-@keyframes SkeletonLoading {
+@keyframes SkeletonLoa,ding {
     0% {
         background-position: -200px 0;
     }
@@ -51,8 +51,7 @@ span {
 export default {
     props: {
         inner_style: {
-            type: String,
-            default: ''
+            type: Object
         },
         inner_class: {
             type: String,

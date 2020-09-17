@@ -118,11 +118,18 @@ export default new Vuex.Store({
                 })
         },
         [types.FETCH_CHARACTER]({commit}, character_id) {
-            const path = `${process.env.VUE_APP_API_URL}/api/character/${character_id}/`;
-            axios.get(path)
-                .then((res) => {
-                    commit(types.MERGE_CHARACTER, {id: character_id, characterData: res.data})
-                })
+            return new Promise((resolve, reject) => {
+                const path = `${process.env.VUE_APP_API_URL}/api/character/${character_id}/`;
+                axios.get(path)
+                    .then((res) => {
+                        commit(types.MERGE_CHARACTER, {id: character_id, characterData: res.data})
+                        resolve();
+                    })
+                    .catch((error) => {
+                        reject();
+                        console.error(error);
+                    })
+            })
         }
     },
     getters: {
@@ -146,5 +153,8 @@ export default new Vuex.Store({
         isValidEpisode: (state, getters) => (season, episode = 1) => {
             return season >= 1 && season <= 9 && episode >= 1 && episode <= getters.getEpisodeCount(season)
         },
+        getCharacter: (state) => (character_id) => {
+            return state.characters[character_id];
+        }
     }
 });
