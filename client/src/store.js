@@ -28,6 +28,20 @@ export default new Vuex.Store({
         [types.SET_EPISODE](state, payload) {
             state.quoteData[payload.season - 1].episodes[payload.episode - 1] = payload.episodeData
         },
+        // Merge many episodes data simultaneously
+        [types.MERGE_EPISODES](state, payload) {
+            for (const season of payload) {
+                for (const episode of season.episodes) {
+                    const s = season.season_id - 1;
+                    const e = episode.episode_id - 1;
+                    state.quoteData[s].episodes[e] = Object.assign(state.quoteData[s].episodes[e], episode);
+
+                    // If scenes are included for some reason, mark as a fully loaded episode
+                    if (episode.scenes !== undefined)
+                        state.quoteData[s].episodes[e].loaded = true;
+                }
+            }
+        },
         // 'Merge' episode data, overwriting existing attributes as needed
         [types.MERGE_EPISODE](state, payload) {
             const s = payload.season - 1;
@@ -43,23 +57,23 @@ export default new Vuex.Store({
         },
         [types.SET_CHARACTER](state, payload) {
             state.characters[payload.id] = payload.characterData
-        }
         },
         [types.MERGE_CHARACTER](state, payload) {
             const id = payload.id;
             // If character has not been defined in character list yet, simply set the characterData
-            if(state.characters[id] === undefined)
-                state.character[id] = payload.characterData
+            if (state.characters[id] === undefined)
+                state.characters[id] = payload.characterData
             // Otherwise use intended merge & overwrite effect.
             else
                 state.characters[id] = Object.assign(state.characters[id], payload.characterData)
+        },
     },
     actions: {
         // Perform async API call to fetch specific Episode data
         [types.FETCH_EPISODE](context, payload) {
             return new Promise((resolve, reject) => {
                 // Don't re-fetch API data if it's already loaded
-                if(context.getters.isFetched(payload.season, payload.episode)) {
+                if (context.getters.isFetched(payload.season, payload.episode)) {
                     resolve()
                     return
                 }
@@ -87,21 +101,27 @@ export default new Vuex.Store({
 
             axios.get(path)
                 .then((res) => {
-                    for (const season of res.data)
-                        for (const episode of season.episodes) {
-                            // Create payload and commit for each episode
-                            commit(types.MERGE_EPISODE, {
-                                season: season.season_id,
-                                episode: episode.episode_id,
-                                episodeData: episode
-                            })
-                    }
-
+                    commit(types.MERGE_EPISODES, res.data)
                     commit(types.SET_PRELOADED, true);
                 })
                 .catch((error) => {
                     // eslint-disable-next-line no-console
                     console.error(error);
+                })
+        },
+        [types.PRELOAD_CHARACTER]({commit}) {
+            const path = `${process.env.VUE_APP_API_URL}/api/characters/`;
+            axios.get(path)
+                .then((res) => {
+                    for (const [character_id, character_data] of Object.entries(res.data))
+                        commit(types.MERGE_CHARACTER, {id: character_id, data: character_data})
+                })
+        },
+        [types.FETCH_CHARACTER]({commit}, character_id) {
+            const path = `${process.env.VUE_APP_API_URL}/api/character/${character_id}/`;
+            axios.get(path)
+                .then((res) => {
+                    commit(types.MERGE_CHARACTER, {id: character_id, characterData: res.data})
                 })
         }
     },
