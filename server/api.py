@@ -97,7 +97,10 @@ def api_quote_neighbors():
 
 @current_app.route('/api/characters/')
 def api_character_list():
-    return jsonify(list(character_data.keys()))
+    _data = copy.deepcopy(character_data)
+    for key in _data.keys():
+        del _data[key]['quotes']
+    return jsonify(_data)
 
 
 @current_app.route('/api/character/<character>/')

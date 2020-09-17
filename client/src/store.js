@@ -110,12 +110,19 @@ export default new Vuex.Store({
                 })
         },
         [types.PRELOAD_CHARACTER]({commit}) {
-            const path = `${process.env.VUE_APP_API_URL}/api/characters/`;
-            axios.get(path)
-                .then((res) => {
-                    for (const [character_id, character_data] of Object.entries(res.data))
-                        commit(types.MERGE_CHARACTER, {id: character_id, data: character_data})
-                })
+            return new Promise((resolve, reject) => {
+                const path = `${process.env.VUE_APP_API_URL}/api/characters/`;
+                axios.get(path)
+                    .then((res) => {
+                        for (const [character_id, character_data] of Object.entries(res.data))
+                            commit(types.MERGE_CHARACTER, {id: character_id, characterData: character_data})
+                        resolve();
+                    })
+                    .catch((error) => {
+                        console.error(error);
+                        reject()
+                    })
+            })
         },
         [types.FETCH_CHARACTER]({commit}, character_id) {
             return new Promise((resolve, reject) => {
