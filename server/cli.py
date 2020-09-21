@@ -402,8 +402,14 @@ def character():
     for character, quotes in char_data.items():
         final_data[character] = {'quotes': quotes, 'summary': None, 'name': None}
         if character in descriptions.keys():
-            final_data[character]['name'] = descriptions[character].get('name')
-            final_data[character]['summary'] = descriptions[character].get('summary')
+            for key in ['name', 'summary', 'actor']:
+                final_data[character][key] = descriptions[character].get(key)
+
+    # Filter for main characters.
+    main_characters = list(map(character_id, load_file(os.path.join(DATA_DIR, 'main_characters.json'), True)))
+    for character in list(final_data.keys()):
+        if character not in main_characters:
+            del final_data[character]
 
     # Save to characters.json
     save_file(os.path.join(DATA_DIR, 'characters.json'), final_data, True)
