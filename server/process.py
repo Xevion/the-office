@@ -76,7 +76,7 @@ def verify_episode(season: int, episode: int = None) -> bool:
     """
     Verifies that specific Season and/or Episode is valid.
     """
-    return 1 <= season <= 9 and (episode is None or 1 <= episode <= episode_counts[season])
+    return 1 <= season <= 9 and (episode is None or 1 <= episode <= episode_counts[season - 1])
 
 
 def sleep_from(wait_time: float, moment: float, manager: enlighten.Manager = None) -> float:
