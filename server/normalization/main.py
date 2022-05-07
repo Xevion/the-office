@@ -4,6 +4,7 @@ import os
 import re
 import sys
 import enlighten
+import coloredlogs
 from collections import Counter, OrderedDict
 from pprint import pprint
 from typing import List, Optional, Union
@@ -17,6 +18,7 @@ from server.helpers import clean_string, get_close_matches_indexes, marked_item_
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger('normalization.main')
 logger.setLevel(logging.DEBUG)
+coloredlogs.install(level=logger.level, logger=logger)
 
 CUR_DIR = os.path.dirname(os.path.abspath(__file__))
 TRUTH_DIR = os.path.join(CUR_DIR, 'truth')
@@ -38,11 +40,13 @@ class Constants:
     CHARACTERS_XML = 'characters.xml'
     META_JSON = 'meta.json'
 
+
 class ConstantPaths:
     SPEAKER_MAPPING = os.path.join(TRUTH_DIR, Constants.SPEAKER_MAPPING_XML)
-    IDENTIFIERS = os.path.join(CHARACTERS_DIR, Constants.CHARACTERS_XML)
+    IDENTIFIERS = os.path.join(CHARACTERS_DIR, Constants.IDENTIFIERS_XML)
     CHARACTERS = os.path.join(TRUTH_DIR, Constants.CHARACTERS_XML)
     META = os.path.join(TRUTH_DIR, Constants.META_JSON)
+
 
 @cli.command('truth')
 def truth():
@@ -274,6 +278,7 @@ def ids():
 
 @cli.command('meta')
 def meta() -> None:
+    """Creates a meta file for storing each character identifier's meta meaning (main/recurring/background/meta)"""
     logger.debug('Creating meta.json')
 
     with open(ConstantPaths.IDENTIFIERS, 'r') as identifiers_file:
@@ -284,6 +289,11 @@ def meta() -> None:
     if os.path.exists(ConstantPaths.META):
         with open(ConstantPaths.META, 'r') as meta_file:
             meta_data = OrderedDict(json.load(meta_file))
+
+        possible_values = [None, 'main', 'recurring', 'background', 'meta']
+        for character_id, character_type in meta_data.items():
+            if character_type not in possible_values:
+                logger.warning(f'Unexpected value for `{character_id}` = `{character_type}`')
     else:
         meta_data = OrderedDict()
 

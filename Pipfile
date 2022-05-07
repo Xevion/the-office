@@ -10,6 +10,7 @@ requests = "~=2.24.0"
 bs4 = "~=0.0.1"
 beautifulsoup4 = "~=4.9.1"
 Flask = "~=1.1.2"
+coloredlogs = "*"
 
 [dev-packages]
 
