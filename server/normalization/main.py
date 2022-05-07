@@ -278,7 +278,7 @@ def ids():
 
 @cli.command('meta')
 def meta() -> None:
-    """Creates a meta file for storing each character identifier's meta meaning (main/recurring/background/meta)"""
+    """Step 4: Creates a meta file for storing each character identifier's meta meaning (main/recurring/background/meta)"""
     logger.debug('Creating meta.json')
 
     with open(ConstantPaths.IDENTIFIERS, 'r') as identifiers_file:
@@ -308,19 +308,26 @@ def meta() -> None:
             if meta_type is not None or name not in meta_data.keys():
                 meta_data[name] = meta_type
 
-    logger.debug(f'Writing {len(meta_data.keys())} meta values to disk.')
+    logger.debug(f'Writing {len(meta_data.keys())} character values to disk.')
     with open(ConstantPaths.META, 'w') as meta_file:
         json.dump(meta_data, meta_file, indent=4)
     logger.debug('Meta file written.')
 
 
 @cli.command('all')
-def all():
+@click.option('--confirm', is_flag=True, help='Force confirm through the confirmation prompt')
+def all(confirm: bool):
     """Runs all commands in order one after another."""
-    truth()
-    merge()
-    ids()
-    meta()
+    logger.warning('`all` command running...')
+    if confirm or click.confirm("This command can be very destructive to unstaged/uncommitted data, are you sure?"):
+        logger.debug('Running `truth`')
+        truth()
+        logger.debug('Running `merge`')
+        merge()
+        logger.debug('Running `ids`')
+        ids()
+        logger.debug('Running `meta`')
+        meta()
 
 
 @cli.command('similar')
