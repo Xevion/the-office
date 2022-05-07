@@ -21,7 +21,9 @@ logger.setLevel(logging.DEBUG)
 CUR_DIR = os.path.dirname(os.path.abspath(__file__))
 TRUTH_DIR = os.path.join(CUR_DIR, 'truth')
 CHARACTERS_DIR = os.path.join(CUR_DIR, 'characters')
+EPISODES_DIR = os.path.join(TRUTH_DIR, 'episodes')
 RAW_DIR = os.path.abspath(os.path.join(CUR_DIR, '..', 'data', 'raw'))
+
 RAW_FILES = os.listdir(RAW_DIR)
 
 
@@ -32,7 +34,15 @@ def cli():
 
 class Constants:
     SPEAKER_MAPPING_XML = 'speaker_mapping.xml'
+    IDENTIFIERS_XML = 'identifiers.xml'
+    CHARACTERS_XML = 'characters.xml'
+    META_JSON = 'meta.json'
 
+class ConstantPaths:
+    SPEAKER_MAPPING = os.path.join(TRUTH_DIR, Constants.SPEAKER_MAPPING_XML)
+    IDENTIFIERS = os.path.join(CHARACTERS_DIR, Constants.CHARACTERS_XML)
+    CHARACTERS = os.path.join(TRUTH_DIR, Constants.CHARACTERS_XML)
+    META = os.path.join(TRUTH_DIR, Constants.META_JSON)
 
 @cli.command('truth')
 def truth():
@@ -79,13 +89,13 @@ def truth():
                 if quote:
                     logger.info(f'Last quote seen "{quote if type(quote) is str else "|".join(quote)}" in section {section_num}')
             else:
-                truth_path = os.path.join(TRUTH_DIR, 'episodes', truth_filename)
+                truth_path = os.path.join(EPISODES_DIR, truth_filename)
                 with open(truth_path, 'w') as truth_file:
                     etree.indent(root, space=" " * 4)
                     truth_file.write(etree.tostring(root, encoding=str, pretty_print=True))
 
     logger.debug(f"{len(speakers)} unique speakers identified.")
-    speaker_mapping_path = os.path.join(TRUTH_DIR, Constants.SPEAKER_MAPPING_XML)
+
     if not os.path.exists(speaker_mapping_path):
         root = etree.Element("SpeakerMappings")
 
@@ -96,7 +106,7 @@ def truth():
             destinationElement = etree.SubElement(rootSpeakerElement, "Destination")
             destinationElement.text = speaker
 
-        with open(speaker_mapping_path, 'w', encoding='utf-8') as speaker_file:
+        with open(ConstantPaths.SPEAKER_MAPPING, 'w', encoding='utf-8') as speaker_file:
             etree.indent(root, space=" " * 4)
             speaker_file.write(etree.tostring(root, encoding=str, pretty_print=True))
     else:
@@ -108,12 +118,12 @@ def merge():
     """Step 2: Merge all Speaker Mappings from source into one file."""
     speakerList = Counter()
 
-    truth_files: List[str] = os.listdir(os.path.join(TRUTH_DIR, 'episodes'))
+    truth_files: List[str] = os.listdir(EPISODES_DIR)
     logger.debug(f"{len(truth_files)} truth files available.")
     pbar = enlighten.Counter(total=len(truth_files), unit='Files')
 
     for truth_filename in truth_files:
-        truth_path = os.path.join(TRUTH_DIR, 'episodes', truth_filename)
+        truth_path = os.path.join(EPISODES_DIR, truth_filename)
         with open(truth_path, 'r') as truth_file:
             root = etree.parse(truth_file)
             for speaker in root.xpath('//SceneList/Scene/Quote/Speaker/text()'):
@@ -123,7 +133,7 @@ def merge():
     logger.debug('Speakers acquired from Truth files.')
 
     speakerMapping = OrderedDict()
-    with open(os.path.join(TRUTH_DIR, Constants.SPEAKER_MAPPING_XML), 'r') as speaker_mapping_file:
+    with open(ConstantPaths.SPEAKER_MAPPING, 'r') as speaker_mapping_file:
         rootMappingElement: etree.ElementBase = etree.parse(speaker_mapping_file)
         for mappingElement in rootMappingElement.xpath('//SpeakerMappings/Mapping'):
             source, destination = mappingElement.xpath('.//Source/text()')[0], mappingElement.xpath('.//Destination/text()')[0]
@@ -151,7 +161,7 @@ def merge():
 
     logger.debug("Speaker mappings merged. Exporting to `characters.xml`")
 
-    with open(os.path.join(TRUTH_DIR, 'characters.xml'), 'w') as character_file:
+    with open(ConstantPaths.CHARACTERS, 'w') as character_file:
         etree.indent(root, space=" " * 4)
         character_file.write(etree.tostring(root, encoding=str, pretty_print=True))
 
@@ -177,9 +187,8 @@ def ids():
     """Step 3: Builds an XML file for identifying character id mappings"""
 
     logger.info("Building ID Character mapping file...")
-    IDENTIFIER_FILE: str = os.path.join(CHARACTERS_DIR, 'identifiers.xml')
 
-    with open(os.path.join(TRUTH_DIR, 'characters.xml'), 'r') as characters_file:
+    with open(ConstantPaths.CHARACTERS, 'r') as characters_file:
         characters: List[str] = etree.parse(characters_file).xpath('//CharacterList/Character/text()')
         logger.debug('Characters parsed.')
 
@@ -190,10 +199,10 @@ def ids():
         logger.info('`characters` directory created.')
 
     pre_existing: Dict[str, etree.Element] = None
-    if os.path.exists(IDENTIFIER_FILE):
+    if os.path.exists(ConstantPaths.IDENTIFIERS):
         logger.debug('Identifier file exists already. Pre-existing Speakers will be kept.')
 
-        with open(IDENTIFIER_FILE, 'r') as identifier_file:
+        with open(ConstantPaths.IDENTIFIERS, 'r') as identifier_file:
             preidentifiers: etree.ElementBase = etree.parse(identifier_file)
 
         pre_existing = OrderedDict()
@@ -258,7 +267,7 @@ def ids():
                 logger.debug(f'Character preserved but not seen: {unseen}')
 
     logger.debug('Exporting identifiers file.')
-    with open(IDENTIFIER_FILE, 'w') as identifier_file:
+    with open(ConstantPaths.IDENTIFIERS, 'w') as identifier_file:
         etree.indent(root, space=" " * 4)
         identifier_file.write(etree.tostring(root, encoding=str, pretty_print=True))
 
@@ -267,16 +276,13 @@ def ids():
 def meta() -> None:
     logger.debug('Creating meta.json')
 
-    IDENTIFIERS_FILE = os.path.join(CHARACTERS_DIR, 'identifiers.xml')
-    META_FILE = os.path.join(TRUTH_DIR, 'meta.json')
-
-    with open(IDENTIFIERS_FILE, 'r') as identifiers_file:
+    with open(ConstantPaths.IDENTIFIERS, 'r') as identifiers_file:
         speakers: List[str] = etree.parse(identifiers_file).xpath('//SpeakerList/Speaker')
         logger.debug(f'{len(speakers)} speakers parsed.')
 
     meta_data: OrderedDict[str, Optional[str]]
-    if os.path.exists(META_FILE):
-        with open(META_FILE, 'r') as meta_file:
+    if os.path.exists(ConstantPaths.META):
+        with open(ConstantPaths.META, 'r') as meta_file:
             meta_data = OrderedDict(json.load(meta_file))
     else:
         meta_data = OrderedDict()
@@ -293,7 +299,7 @@ def meta() -> None:
                 meta_data[name] = meta_type
 
     logger.debug(f'Writing {len(meta_data.keys())} meta values to disk.')
-    with open(META_FILE, 'w') as meta_file:
+    with open(ConstantPaths.META, 'w') as meta_file:
         json.dump(meta_data, meta_file, indent=4)
     logger.debug('Meta file written.')
 
@@ -315,7 +321,7 @@ def all():
 @click.option('-r', '--reversed', is_flag=True, help='Reverse the results direction to help readability in the console.')
 def similar(text: str, destination: Optional[bool], results: int, reversed: bool, no_merge: bool) -> None:
     """Locates the most similar character name in speaker mappings. Searches <Source> by default."""
-    with open(os.path.join(TRUTH_DIR, Constants.SPEAKER_MAPPING_XML), 'r') as mapping_file:
+    with open(ConstantPaths.SPEAKER_MAPPING, 'r') as mapping_file:
         root: etree.ElementBase = etree.parse(mapping_file)
 
     mappingType: str = "Source"
