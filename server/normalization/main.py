@@ -268,25 +268,32 @@ def meta() -> None:
     logger.debug('Creating meta.json')
 
     IDENTIFIERS_FILE = os.path.join(CHARACTERS_DIR, 'identifiers.xml')
+    META_FILE = os.path.join(TRUTH_DIR, 'meta.json')
+
     with open(IDENTIFIERS_FILE, 'r') as identifiers_file:
         speakers: List[str] = etree.parse(identifiers_file).xpath('//SpeakerList/Speaker')
         logger.debug(f'{len(speakers)} speakers parsed.')
 
-    meta_data = OrderedDict()
+    meta_data: OrderedDict[str, Optional[str]]
+    if os.path.exists(META_FILE):
+        with open(META_FILE, 'r') as meta_file:
+            meta_data = OrderedDict(json.load(meta_file))
+    else:
+        meta_data = OrderedDict()
 
     for speaker in speakers:
         characters = speaker.xpath('./Characters/Character') or speaker.xpath('./Character')
         for character in characters:
             name = character.text
-            type = character.attrib['type']
-            if type == 'null':
-                type = None
+            meta_type = character.attrib['type']
+            if meta_type == 'null':
+                meta_type = None
 
-            if type is not None or name not in meta_data.keys():
-                meta_data[name] = type
+            if meta_type is not None or name not in meta_data.keys():
+                meta_data[name] = meta_type
 
     logger.debug(f'Writing {len(meta_data.keys())} meta values to disk.')
-    with open(os.path.join(TRUTH_DIR, 'meta.json'), 'w') as meta_file:
+    with open(META_FILE, 'w') as meta_file:
         json.dump(meta_data, meta_file, indent=4)
     logger.debug('Meta file written.')
 
