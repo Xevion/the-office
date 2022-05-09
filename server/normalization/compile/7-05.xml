@@ -1,0 +1,3583 @@
+<SceneList>
+    <Scene>
+        <Quote>
+            <QuoteText>Look at that.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Huh?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Nice!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I love cycling. Andy, I feel like a tourist in my own city. I literally can't wait to wake up every morning.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>She is a beaut!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Can't beat a horse. A horse is a bike that peddles itself.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yes, it is.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, look at that. [pushing bike]  Smooth roll.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You got it! Lance Armstrong's Bike!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yes.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>His ass was on that seat? All right!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Nice.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, Meredith, that's not his actual bicycle, but it is the same exact model he uses.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I'm on Sheryl Crow's side in that whole thing, so I feel really weird right now.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kelly</SpeakerText>
+                <Characters>
+                    <Character type="main">kelly</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[crashing sound] Michael!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, god!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Yes, I can ride a bike. I take spinning classes three times a month. I think I know how to ride a bike.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Are you sure you once knew how to do this?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I did, yes! I had those extra wheels on the back...that support you. [Pam and Jim begin wheeling him] Mi-chael! Mi-chael!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[chanting] Mi-chael! Mi-chael! Mi-chael! Mi-chael!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">All</SpeakerText>
+                <Characters>
+                    <Character type="null">all</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Come on, Michael! Yeah!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Just steer more now.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[crashes into Jim and Pam's parked car] Oh, my god!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Not the car!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No! No!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Ow! [grunts, stumbles to his feet] You never forget. Whoo!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>How do I look?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Amazing. How do I look?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Normal. Ugly.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Well, I do the best with what I've got. Let's go.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Alright. Wait, wait, wait, wait for me! It's weird if I come in slightly after.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>We have a big meeting with the chief buyer for Frames Select, Steve Nash.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>He's not the Steve Nash. He's big though. He's kind of like...Scranton's Steve Nash.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Will you stop trying to put it in terms you think they'll understand? It's condescending.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I'm not doing that. I'm just explaining.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>And who is this "the" Steve Nash?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Phoenix Sun's point guard?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No? Nothin'?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, Mr. Jock Hipster.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Well, I'm neither of those things, so...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[reading Cornell magazine] Whoa. Libby Dirketts got married. Big Red mazel tov to the Libster. Ooh, says here Dan Becker fell off the side of Kilimanjaro in a climbing accident. It appears Dan's Sherpa survived to tell the tale-Oh, my God!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>What? Is Dan okay?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Phyllis</SpeakerText>
+                <Characters>
+                    <Character type="main">phyllis</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, he died. It's Broccoli Rob. You know this guy; I showed you his picture on Facebook.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yes.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Phyllis</SpeakerText>
+                <Characters>
+                    <Character type="main">phyllis</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>"Some Vermont-based alums can hear 'Broccoli' Rob Blatt, '96, in the state milk lobby's new milk awareness song, 'Calci-YUM!', featuring Phish's Trey Anastasio. Says Broccoli, 'Trey and I had a ton of fun in the studio, and I think you can hear it in the song.'"</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, that's great news for your friend.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Phyllis</SpeakerText>
+                <Characters>
+                    <Character type="main">phyllis</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah, yeah, it's great...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You know, I forget about milk. This is a terrific reminder.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Phyllis</SpeakerText>
+                <Characters>
+                    <Character type="main">phyllis</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>I was the artsy, musical one. In Here Comes Treble I had four solos, Broccoli rob had three. Right? Uhh.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Go tell her we're here. You're good with receptionists.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, ha ha ha. Dwight...[motions to lobby]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Crap.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Danny Cordray is the worst.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Well, by worst, you mean the best.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>The best salesman ever. He works for Osprey Paper over in Throop, steals more clients from Dunder-Mifflin than anyone.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>So, the situation is the worst.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Also, he slept with Pam.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, he didn't. [Dwight mouthing "yes, he did"]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Tell 'em.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Nothing happened. We went on a couple of dates. He never called me again.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>What? He never called you? I thought you said it just fizzled.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>That's fizzling. I mean, someone has to start the fizzle.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah, I thought you started it.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, I liked him. For a couple of days. Four years ago. [Jim nodding repeatedly] You know I have a kid with you, right?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Ahhh.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>I'm gonna intimidate him. Okay?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay, great-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Watch this.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>-I'm just gonna watch.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[speaking loudly] So anyway, she says, "that is the biggest penis I have ever seen." And I said, "I know. That's why I brought you to the Penis Museum, where tickets are a thousand dollars." Well, hello Danny!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Hey, Dwight. Good to see you. Jim, hey.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[shaking hands] How are ya?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Good to see you too.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>What are you doing?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, I'm just here for the coffee.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Like hell you are.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Dwight!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>He's not just here for the coffee, Jim. Wake up!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Brainstorming session is now open. Anyone has an idea-[cell phone rings] Hold on. Sorry, sorry, sorry. Hello?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Hey, it's Jim. Listen, this is important. Are you busy?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, hey. No, I'm not busy. What's up?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>What?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Angela</SpeakerText>
+                <Characters>
+                    <Character type="main">angela</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You are busy! We're in a meeting!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>It's Jim, Okay? Yes.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Listen, you gotta get over here, 'cause we're pitching Steve Nash and Danny Cordray is here.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You need the big guns, yes?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yes.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>What'd he say? What did he say?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>The big gun thing. [Dwight grabs at phone] Stop!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I will see you in ten. Bye! Hold tight. [hangs up] Well, I know a lot of you thought that my sales days were behind me, and to be honest, so did I...and the only reason I got out of the sales game was to be reluctantly called back in.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You don't look reluctant, Michael. You look really eager.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[laughing] No, I don't have time for this. Are you kidding me?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You don't?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No! Okay. [runs out the door] All right.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[knocking] Knockity-knock, don't knock back. Just kidding you can knock; it's your office. Do you have a minute?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I'm very busy with time-sensitive work.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Not to go all Sherlock Holmes on you, but I can tell by the reflection in your glasses that you're entering points into Weight Watchers dot com.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>If you don't enter them immediately, you forget. What?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I'm starting a band and I need you on keyboards.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Nah. I play for pleasure.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>This is for pleasure.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I wouldn't enjoy that.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I'm willing to pay you.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, yeah?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>How much?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Sixty bucks a session.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>That's crazy money. I'll take forty.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yes!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>There he is.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, no, that's a male model.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, that's him.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>That...hello. Michael Scott, Dunder-Mifflin Paper Company.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Danny Cordray, Osprey Paper.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Nice to meet you.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Three of you guys for one sale.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah, well...we call it overkill. Why am I telling you my strategy?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Well, whatever works for ya. Anyway. All right.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>All right.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>It's good to see you guys. Nice to meet you.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Buh-bye. I could swear that guy was a male model.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>He's ready for you.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Receptionist</SpeakerText>
+                <Characters>
+                    <Character type="null">receptionist</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, thank you. All right. On the count of three, it's showtime. Ready, one, two-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Nope, not doing that.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I've been in showtime mode since breakfast.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay, you know-all right, just forget it then.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Showtime!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>It's showtime! Oh...never mind. Let's go.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>When I knock on your door, you know who it is; it's Michael Scott. We've been together forever and we-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Michael, I appreciate everything that Dunder-Mifflin has done for this company.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Steve</SpeakerText>
+                <Characters>
+                    <Character type="null">steve</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You know what? You are having some problems with your loading dock, are you not? All right. We're going to deliver to you on weekends.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>That's very generous, but-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Steve</SpeakerText>
+                <Characters>
+                    <Character type="null">steve</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>And you know what else we're gonna do? I can't believe I'm gonna say this...we are going to offer you our paper at cost. I know. I could get in a lotta trouble for this, so you'd better shake my hand right now.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>He's not kidding.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Shake it, shake it!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Michael, I'm going with Danny.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Steve</SpeakerText>
+                <Characters>
+                    <Character type="null">steve</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Thanks for coming in.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Steve</SpeakerText>
+                <Characters>
+                    <Character type="null">steve</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay. Thank you.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Thank you.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Steve</SpeakerText>
+                <Characters>
+                    <Character type="null">steve</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Thanks, Steve.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Jim talked too much.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, I didn't.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yes, you did.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Stop it. Just stop it. We did what we should have done, we just got bested. [pounds the elevator button] Why is there a door close button if it doesn't even close the door?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>How do I feel about losing the sale? It's like if Michael Phelps came out of retirement, jumped in the pool, belly-flopped, and drowned.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>You know who we always lose out to? Staples, the big guys. Osprey? They're a small company. They're smaller than we are. What's our excuse? How do we combat this guy? Stanley, how do we combat him?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>We sell better?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Stanley</SpeakerText>
+                <Characters>
+                    <Character type="main">stanley</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay. You know what? You clearly don't care, so why don't you just leave?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I would like to stay. This pertains to me.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Stanley</SpeakerText>
+                <Characters>
+                    <Character type="main">stanley</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Why don't you go outside and...take a shot of insulin and have a nap, okay?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Why do you always assume I have diabetes?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Stanley</SpeakerText>
+                <Characters>
+                    <Character type="main">stanley</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I don't know, your frame, your build-why don't you have a glass of apple juice and tell me you're not a diabetic. [Stanley stands to leave] See? I could tell by the sound you made when you stood up that you have-okay. Yes, Phyllis?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I could try to seduce him.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Phyllis</SpeakerText>
+                <Characters>
+                    <Character type="main">phyllis</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, my god!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I know how we can learn his tricks.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>What I am about to show you is of the utmost secrecy.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Is that your office?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yes, Jim. And with a little tweaking, it becomes a different office. We lure Danny to it and watch him sell.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Uh...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Phyllis</SpeakerText>
+                <Characters>
+                    <Character type="main">phyllis</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I'm outta here.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Stanley</SpeakerText>
+                <Characters>
+                    <Character type="main">stanley</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>This is weird.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Phyllis</SpeakerText>
+                <Characters>
+                    <Character type="main">phyllis</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You know what this is? This is a stinger.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>A what?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Like the movie.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I think you mean The Sting.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Paul Newman, Robert Redford. They're bank robbers.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Nope. Different movie.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>The Sting. The Sting.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Your two o'clock. [Danny enters]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Erin</SpeakerText>
+                <Characters>
+                    <Character type="null">erin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Thanks, hun.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Meredith was the perfect choice to play the head of the company. Her lunch break lined up with our appointment with Danny and...that's it. That's really all we were looking for.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Danny Cordray. It's great to meet you.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Meredith Van Helsing. Pleased to meet you.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Meredith Van Helsing?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Van Helsing was a respected professor before he was a vampire killer.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay. But what is he more famous for?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Shhh! Hey! That's my mug.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You know this isn't real TV, right?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yes.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[singing] Please Mr. President, if you wanna give hope a whirl, bring our troops home safe and sound, says this little girl.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="true">{Darryl} and {Andy}</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[in falsetto] Please Mr. President-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>One second, one second, one second. [stops playing] So, this song is from the point of view of a little girl?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>But you're singing it.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah, but I'm using my falsetto.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, that's not a good idea. I don't see that as a very good song.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah, well, it'd sound a lot better if you actually sang with some soul.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, I never sing with soul.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>That's a lie.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I could sing it.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I just was hoping to maybe save your voice in case we did a novelty song about frogs.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>But my voice is unique. Like Bob Dylan.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay, three-way argument between a drummer, a keyboardist, and the front man lead singer. Wonder who's gonna win this one. Two, three, four-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>I'm gonna take off my coat, if you don't mind. It's a bit warm in here.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Hel-lo!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, no, no. No. Don't-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>People can't keep their true natures hidden for long, and this guy is smoldering like a tire fire.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Testify.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay, he's not that good-looking. I don't understand why everybody's obsessed with this-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah, he is that good-looking.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>He's very, very handsome.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>That's a great set of shoulder's you got there. What is that...Genetics? Creatine? [phone rings] Sorry. Yeah?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Pull it together, all right? Stop lookin' at him.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I'm sorry. [hangs up] You're here to sell me some paper.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Well, actually, uh... no, Miss Van Helsing, that's not why I'm here. I'm here to meet you, see if we'd be a, you know, good fit.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>What do you mean?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh...my god! He's making her sell to him.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[everyone finishes listening to song] Okay. Honest feedback time. Oscar?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>It's pandering. And it makes me think you think I'm stupid.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>But do you think it could be famous? Like in a car commercial or something?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Not really. It's kinda weird that a grown man is singing from the point of view of a little girl.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I feel like I can see someone ice skating to it. You know, like in the Olympics.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I-I don't think they usually...skate to such...bad songs.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Ryan</SpeakerText>
+                <Characters>
+                    <Character type="main">ryan</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Rude. And not helpful.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Well, I really, really, really liked it.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Creed</SpeakerText>
+                <Characters>
+                    <Character type="null">creed</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Well, that...really bums me out.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You're welcome.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Creed</SpeakerText>
+                <Characters>
+                    <Character type="null">creed</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>We should think of this as a first date. And I think it's going very well, how 'bout you?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Real well. Uh...feels more like a third date to me.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Ha ha, okay, there you go! [phone rings, Meredith answers]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Stay-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Shut up and let me do this! [hangs up] You know, what is with this desk keeping us so far apart?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I've never been a desk man. Always traveling on the road. Come on...why not, huh?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Well, we'll get this...[Meredith unbuttons]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, man!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>So, what's your drink? You a vodka man? Me too.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>We gotta get someone else in there right now.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>You're an exec at Pennsylvania Solartech and-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>That sounds fake.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>What do you mean?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I told you! You're an exec at Stark Industries, a corporation you inherited from your father-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Will you stop? Stop it, stop it. Here's the story-they need Meredith somewhere else asap, okay?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>So you're taking over. You just gotta get her out of there as soon as you can.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>All right. I can do that. Then what?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Then make him pitch to you.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yes.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>We gotta see what he's got.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Exactly. You can do this.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay, and remember-you're not gay.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Stop it! It's gonna be great.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>And listen if anything else happens, just...roll with it.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Meredith, I-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, Manuel! This is Manuel, my cleaning man. He doesn't speak any English.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Hola. Que tal?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Como estas, senor?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Uh, Manuel, cleano el window.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Who else we got?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Okay. You're a young hotshot from Stark Industries. You've just bought this company. Meredith is fired. It's a whole new regime. He's gotta pitch to you now.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay. Stark Industries isn't real. I run Google. Larry and Sergey brought me in-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Ryan</SpeakerText>
+                <Characters>
+                    <Character type="main">ryan</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Great. Sounds awesome. Just have him pitch to you.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Don't let us down.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[points to Jim] Will do. [points to Michael] Won't do.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Ryan</SpeakerText>
+                <Characters>
+                    <Character type="main">ryan</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Yeah, sure.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You smell like a Scorpio. [Ryan enters] This is...Esteban...another cleaning man. He doesn't speak English either. Esteban, el flooro.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You know what? I may have parked my car in a compact space, and I hate when I see others do that, so-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Danny, I feel a real connection to you, and I gotta get real, I'm-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, no, no....</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, no, no, no...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I'm goin 'in!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Michael! No, Michael, stop it! No!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Stop, stop! Oh, my god! [enters office] Okay. Stop it, stop it, stop it. Gross! Stop it, please. Everybody, stop.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Michael Scott.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I said stop. Okay, Danny...this is not Pennsylvania Solartech. This is Dunder-Mifflin Paper Company. This is Meredith Palmer-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Please to meet you-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Don't! Get away from him. Please, just leave. Get out of here. Go. Forever.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Hmm.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I owe you...a most sincere and humble apology. We were trying to watch you to see your sales technique, so we could stop losing so many clients to you.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>But from where?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>A surveillance room next to this one.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay, so you...set up this fake company, then you hired this homeless woman to impersonate an executive to spy on me so that you could copy my sales technique?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yes. And it's the sincerest form of flattery.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Or...crazy.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Well-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I'm gonna go.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay. You know what, it wasn't just me. Jim and Dwight are behind that wall in the surveillance room and it was their plan as well.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, no, no, no.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, well then, yeah. All right. Hey! [knocking on wall] Good luck, guys. Seems like you got a great operation here.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, we don't. Here's-here's my point. Danny, listen, you have to understand that we are not normally like this. We just-we wanted to know your tricks.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>What do you mean, my tricks? There's no tricks, man. I'm just a good salesman. You wanna copy that? You can't copy that! [opens door to leave]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You are, you are. You are! Stop it, stop it. Stop. [closes door] You are a good salesman. And because of that...I want you to work for me.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Sure. You seem like a fun, professional guy.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>So, you will?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[opening door again to leave] No!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Hold it, hold it. [forcing door closed] Hold on, hold on. Wait, wait, wait, wait. Wait. Wait. Danny, I want you to look at me. Do you want your life to be better...or to be worse or to stay the same?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Get out of my way.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Answer the question. Do you want a better life, Danny?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I swear to God, I'm gonna hit you. I didn't mean that. I'm sorry. I'm not-it's just I'm very upset right now.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I know, I know.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I'm very upset!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Do you want more freedom, less freedom, or to stay the same?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>More freedom.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I can give you more money-there's your better life. I can let you come and go as you please-there's your freedom. And you already know Dunder-Mifflin has the best service and the best prices, but you beat us anyway. Can you imagine how well you would do selling our stuff?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Everyone, may I have your attention? I would like to introduce you to Mr. Danny Cordray. He is going to be joining us as our new traveling salesman. Say hello to Danny!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[bleep] me!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kelly</SpeakerText>
+                <Characters>
+                    <Character type="main">kelly</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>O-kay. You know what? No. No. This is not some sort of construction site...or all of Italy, where you can just go around treating people like meat. We are to respect him. I respect him because he reminds me of somebody. Can anybody guess who that is?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Josh Duhamel.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kelly</SpeakerText>
+                <Characters>
+                    <Character type="main">kelly</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah, I can see that.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Angela</SpeakerText>
+                <Characters>
+                    <Character type="main">angela</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No. No. No. Somebody in this office.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>He's like a better-looking Andy.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Thanks, Kevin.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, me. Right? Sorta like...a little younger version of me.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>It's hard to judge ourselves accurately, isn't it.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Michael?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yes.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Can I talk to you about something?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, you may not.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>It's about this very announcement you just made.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I said no.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Michael-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>We're not-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Michael, I think you really want to talk to him.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay. Let's-all right, all right. Let's talk. Please don't let him leave. [pointing to Danny] Don't leave. Don't let him.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Gotcha. [they go into Michael's office]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Erin</SpeakerText>
+                <Characters>
+                    <Character type="null">erin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You hired him?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Guys, let me ask you something. Do you want your life to be better or worse or stay the same?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Stay the same.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">All</SpeakerText>
+                <Characters>
+                    <Character type="null">all</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay. Well...get ready, 'cause it's gonna get better.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>It's not gonna get better; he's gonna steal all of our clients.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Phyllis</SpeakerText>
+                <Characters>
+                    <Character type="main">phyllis</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, no. Wrong. He would have stolen your clients, but you know what? He can't now. This guy used to steal sales from us; now, he's going to steal sales for us.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Where's he gonna sit? There's no more seats.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>He doesn't need to sit, he's a traveling salesman. Look, I am not going to exclude good people from our staff simply because they are threatening to you. And unless you have a better argument than that, I suggest you leave.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Hmpf!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Stanley</SpeakerText>
+                <Characters>
+                    <Character type="main">stanley</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Where's he gonna park? There's no more reserved parking spots.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Good-bye!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Song's about truth.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>What's something you really care about?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Reverse snobbery.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>More universal.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Sometimes I feel like life has passed me by.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[plays soft chords and sings]  Couldn't get outta bed today. Wish the alarm clock would go away.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, nice!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Holy crap. Are you kidding me? You just made that-that's amazing!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Go ahead.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[singing] Which me am I gonna be today?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Which me am I gonna be today?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I gotta closet full of mes. Am I gonna be the happy me?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Or the me that stinks.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, my gosh! We're almost out of time. How much for another half hour?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, don't worry about it.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Wait. Seriously?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>So we're just, like, jamming as friends?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>One, two, three, hit it.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Closet full of mes-</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Oh, you know...funny. Your wife and I went on a few dates.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Did ya?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah. Way ,way, way back.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I'm just kidding. She told me about it.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh. She was not into me.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Obviously. I don't even think she called me back.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You snubbed her.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Dwight, please.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Let me handle this, Jim. Drop the act, Cordray, okay? We all know that you probably thought that Pam was too "meh" or thin without being toned. But I wanna tell you something-she is one of the plain hearty women of Scranton that make this city great. And so what if she doesn't wear makeup? [Pam mouthing "I wear makeup"] We like her better that way! And you steal clients, don't you? Don't you!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay...that's different.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, that's different, is it? Okay...thief. You better check your things, people. In fact, where are my keys? Oh, there in my pocket. False alarm. Okay. [awkward pause] So...you're gonna be workin' here?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Uh...I mean-yeah.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Welcome aboard.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Thank you.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Hey, crazy, um...so...that's it? You're just-you're fine?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>It's after 5:00, Jim. I'm not gonna take this home. [shakes Danny's hand]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Pleasure.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Thanks.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Danny</SpeakerText>
+                <Characters>
+                    <Character type="null">danny</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>This morning, Danny Cordray stole a sale from me. So what do I do? I go out and I steal Danny Cordray. The sale that mattered, I made. Boom. Funny thing about it, we don't even need him. We already have Packer on the road. Chhguuh! Crap. I forgot about Packer.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[singing and playing drums] Sun's in her eyes, tongue full of flies. Would you like to share my paaaaaaad?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Croak, croak, croak. Bullfrog in love. Croak, croak, croak. Bullfrog in love and I gave her the croak that meant I love you.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">All</SpeakerText>
+                <Characters>
+                    <Character type="null">all</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I'll be your croak monsieur.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[falsetto] I'll be your croak madame.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Your mama mighta said that bullfrogs are dogs, but I'm here to tell you that I am a frog! Come and sit on my log, you little pollywog.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I find you absolutely ribbiting!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Croak, croak, croak. Bullfrog in love.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">All</SpeakerText>
+                <Characters>
+                    <Character type="null">all</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Croak, croak, croak. Bullfrog in love.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Croak!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Ribbit!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Scoopity-splash!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Darryl</SpeakerText>
+                <Characters>
+                    <Character type="null">darryl</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Nice.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+</SceneList>

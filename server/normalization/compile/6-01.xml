@@ -1,0 +1,3060 @@
+<SceneList>
+    <Scene>
+        <Quote>
+            <QuoteText>[enters office, somersaults onto couch, kicks over painting and lamp] Parkour!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[rush into office, Andy climbs on reception desk, Dwight holds video camera]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="true">Dwight &amp; Andy</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Parkour!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[walking on Pam's desk, then Jim's desk] Extreme! Parkour!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>This... is Parkour. [turns laptop to camera, shows Parkour instructional video] Internet sensation of 2004. And it was in one of the Bond films. It's pretty impressive. [Michael is shown climbing/walking on various objects in office] The goal is to get from point A to point B as creatively as possible, so technically they are doing Parkour, as long as point A is delusion and point B is the hospital.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[stands on his hands kicking open bathroom doors as Andy films, Meredith is seen applying deodorant in women's bathroom]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[approaching elevator, as Michael films] Parkour! Parkour!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="true">Dwight &amp; Andy</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Andy! Leapfrog! [Andy leapfrogs Dwight]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Do me! Do me!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah! [Dwight jumps on Andy's back, riding him like a horse] Parkour! Parkour!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Ow! Get off! Get off!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[walking across cars in parking lot, Dwight filming] Parkour! Parkour!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="true">Andy &amp; Michael</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[crouching beside car] Jump over the camera! Jump over the camera! [Michael feebly attempts to jump off car, gives double thumbs up to camera]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[standing on tractor trailer with Dwight and Andy, looking down] Okay, we all go together or we go one at a time.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Here it is, here it is... truck, to refrigerators, to dumpster, [camera pans to refrigerator boxes, then dumpster] 360 onto the pallets, backflip gainer to the trash can.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[in unison] Yeah! Gainer! Woohoo!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="true">Michael &amp; Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[to Michael's camera] Hardcore Parkour!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Parkoooooour!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Let's do it!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[leaps from trailer, disappears into empty refrigerator box]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[look down, appearing shocked and concerned]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="true">Michael &amp; Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[inside refrigerator box, sounding injured] Parkour!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[on telephone] Good. Excellent. Thank you.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[hands Dwight a cup of water] There you go. Is there anything else I can do?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Female Intern</SpeakerText>
+                <Characters>
+                    <Character type="null">female-intern</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[chugs water, throws away cup] Yes. Umm... see those files behind Kevin's desk?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[nods] Mm hmm.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Female Intern</SpeakerText>
+                <Characters>
+                    <Character type="null">female-intern</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Go put them all in random order.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[confused] Mm-kay.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Female Intern</SpeakerText>
+                <Characters>
+                    <Character type="null">female-intern</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Then come back here for your next assignment concerning their order.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>This is the last day of our summer interns. It's been nice. We haven't had interns for a while, ever since Michael's Monica Lewinsky incident. [interns are shown gathered around Kelly's desk, one holding a box of tissues, as Kelly cries and wipes tears] He didn't do anything sexual. [female intern opens a jar of salsa for Michael] He just made far, far too many Monica Lewinsky jokes. [Meredith rubs her breasts into Maurie's back] It was just easier for corporate to shut down the program.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[to Oscar, motioning to male intern and female intern] Think she did him?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I bet there's something there. I was with them in the kitchen yesterday, and they were all too happy to be cleaning the freezer.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>If they get married before I do, I'm going to kill myself.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kelly</SpeakerText>
+                <Characters>
+                    <Character type="main">kelly</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[entering break room] Who's getting married?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Nobody.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>If somebody doesn't tell me, I'm gonna start screaming.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>It's Eric and Megan.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kelly</SpeakerText>
+                <Characters>
+                    <Character type="main">kelly</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh! Hey, I hired them! Matchmaker! This place is like Spaniard Fly.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>They're not getting married. It's just talk.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Phyllis</SpeakerText>
+                <Characters>
+                    <Character type="main">phyllis</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Did everybody know about this but me?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>There's nothing to know, it's just gossip.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Phyllis</SpeakerText>
+                <Characters>
+                    <Character type="main">phyllis</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[shaking head disgustedly] Okay... okay. [leaves room]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[talking head with Jim] We haven't told anyone I'm pregnant.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Well, with her being unmarried... knocked up by some guy, I mean the yakity-yaks in this office would have a field day.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah, we don't want them at the wedding thinking Jim's being marched down the aisle by my dad with a shotgum.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Wait, there's not gonna be a shotgun?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Nope.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No shotgun... 'cause that changes everything.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Can't back out now, Halpert.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>What are you gonna do about it? There's no shotgun, so... free at last, free at last!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, keep it up.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[approaches Dwight's desk] You'll never guess what I know.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[typing] Okay, let me finish this thought.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Eric likes Megan.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[still typing] He most definitely does. He's been asking her out repeatedly for weeks. She finally said yes. They went out on a group date the other night; apparently it went very well.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[annoyed] How do you know this?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[still typing] People tell me things. I guess I have a face you can trust. I think it's because of my low cheekbones. And... boom. [finishes typing, turns to face Michael] Okay, what is it, what can't I guess?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>I hate, hate, hate being left out. Whether it's not being picked for a team, or being picked for a team and showing up and realizing the team doesn't exist. Or that the sport doesn't exist? I should've known. Poopball?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[to Maurie, the Asian intern] Man, I know how you feel. Third wheel. I have been the third wheel so many times in my life. My mom told me something once that made me feel a lot better. She said "The third wheel is what makes it a tricycle."</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>What are you talking about?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Maurie</SpeakerText>
+                <Characters>
+                    <Character type="null">maurie</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I'm talking about your group date with Megan and Eric.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>At Tink's?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Maurie</SpeakerText>
+                <Characters>
+                    <Character type="null">maurie</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yes</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>How'd you know about that?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Maurie</SpeakerText>
+                <Characters>
+                    <Character type="null">maurie</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Well...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Did Stanley tell you?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Maurie</SpeakerText>
+                <Characters>
+                    <Character type="null">maurie</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[confused] Stanley was on your group date?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, Stanley was with his wife. I waved at him, but he didn't wave back.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Maurie</SpeakerText>
+                <Characters>
+                    <Character type="null">maurie</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[laughs] Does anybody else know about this?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Maurie</SpeakerText>
+                <Characters>
+                    <Character type="null">maurie</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[laughs, looks to camera excitedly]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>There he goes. There he goes. [Stanley gets up from his desk, walks into kitchen area]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>So, what is the scuttlebutt? Anybody hear anything?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[stare blankly at Michael]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="true">Dwight, Jim &amp; Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                    <Character type="main">jim</Character>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Nothing? Well I got a little somethin' somethin'. I don't know if I should say...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Just keep it to yourself then.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Stanly is having a midlife crisis.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Stanley's way past the middle of his life. Especially considering his height to weight ratio.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Well apparently, he and his wife were out dancing at a club for young people.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Teri's out of town, Michael.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Phyllis</SpeakerText>
+                <Characters>
+                    <Character type="main">phyllis</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Who?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Teri, Stanley's wife. She's at an interior decorating expo in Philly. Stanley hates crowds, kids, and music. I think you should check your facts.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Phyllis</SpeakerText>
+                <Characters>
+                    <Character type="main">phyllis</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[starts to speak, says nothing, walks away]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[entering break room, to Maurie] You stupid son of a bitch. You set me up.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>What are you talking about?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Maurie</SpeakerText>
+                <Characters>
+                    <Character type="null">maurie</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Stanley's wife is out of town.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>He was with somebody.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Maurie</SpeakerText>
+                <Characters>
+                    <Character type="null">maurie</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>He was definitely with somebody.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Eric</SpeakerText>
+                <Characters>
+                    <Character type="null">eric</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, was he? Well who, his sister?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[chuckles]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Eric</SpeakerText>
+                <Characters>
+                    <Character type="null">eric</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[upset] I don't get it!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>If that was his sister, then what they were doing was totally illegal.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Eric</SpeakerText>
+                <Characters>
+                    <Character type="null">eric</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Drugs?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Making out.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Eric</SpeakerText>
+                <Characters>
+                    <Character type="null">eric</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[fumbling for words] Mmm... okay. Uhh... hmm... okay. Never mind. Carry on.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[approaching Kelly's desk, whispering] Stanley is having an affir.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>WHAT??</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kelly</SpeakerText>
+                <Characters>
+                    <Character type="main">kelly</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>I am very happy right now. Thrilled perhaps, to be part of the office, to be part of the conversation. When you have somebody's attenton, and their eyes are lighting up because they are very interested in what you have to say, [Michael is seen whispering to Jim, then Pam] that is a great feeling, and I experienced that firsthand today. It is wonderful to be the center of attention.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[motioning to pad of paper with hangman game, spelling out  "S_an_ey is chea_in_ _n _eri] That and that are the same letter.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Q.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No... no. He's holding a pencil. He could be doing a crossword puzzle with that pencil. What's that letter, right there? Same letter here and here. What haven't you guessed?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>T.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>T! Yes! Yes! That is a "T", and there's another one right there. Just sound that out. You're almost there.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[opening blinds as Stanley walks past] Hey, Stanley! Where you goin', big guy? Up to no good?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I'm meeting a client. Do you have a problem with that?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Stanley</SpeakerText>
+                <Characters>
+                    <Character type="main">stanley</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, no, no, no. I just had a quick question for you. I'm casting a movie and I'm looking for a woman who can dance, beautiful woman. Do you know anybody?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Goodbye. [walks away]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Stanley</SpeakerText>
+                <Characters>
+                    <Character type="main">stanley</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Pays five million dollars. Nudity required.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[approaching Michael] You have to stop this.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[giddy, whispering] Did you hear Stanley's having an affair?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I did. From you. You gotta stop telling people.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, okay, I get it. You feel out of the loop, and you feel sorry for yourself, and it's really sad because everybody thinks you're a loser...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Do you know if it's true? Do you have any idea? Because you might be ruining his life.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[stares at Jim silently, then walks away]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[in parking lot, blocking path of Stanley's car] Stop. Hold up, hold up, hold up! No, no, no. Time to stop being polite and get real. [Stanley honks horn repeatedly] Stanley, are you having an affair?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[as Michael gets in car] That is ridiculous. Of course not, why would you think that?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Stanley</SpeakerText>
+                <Characters>
+                    <Character type="main">stanley</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>So It's not true. Okay, well... ahhh, those interns, they told me they saw you at a club, and they all said it was you, it was clearly just... racial profiling gossip.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[hits steering wheel angrily] Damn! I told her it was a stupid idea to go up in that club.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Stanley</SpeakerText>
+                <Characters>
+                    <Character type="main">stanley</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[nodding] So stupid!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>It's just that... Teri's been traveling a lot...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Stanley</SpeakerText>
+                <Characters>
+                    <Character type="main">stanley</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I know, I know.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>And it's been lonely.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Stanley</SpeakerText>
+                <Characters>
+                    <Character type="main">stanley</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, I bet.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Cynthia's been keeping me company. She was my nurse, when I was in rehabilitation. We used to go on these long walks on the treadmill... I didn't...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Stanley</SpeakerText>
+                <Characters>
+                    <Character type="main">stanley</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Wait, hold, hold, hold... so it IS true?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah, but Michael, I'm going to go break it off. That's where I'm headed right now. I swear.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Stanley</SpeakerText>
+                <Characters>
+                    <Character type="main">stanley</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh my God! Wait a second, do people often say they're going on sales calls and then go someplace else? 'Cause that's not cool.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I just need you to promise not to say a word about this to anyone. Michael, please.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Stanley</SpeakerText>
+                <Characters>
+                    <Character type="main">stanley</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[muttering] I'm not saying... a damn thing.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I'm counting on you, Michael.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Stanley</SpeakerText>
+                <Characters>
+                    <Character type="main">stanley</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[looking afraid] You can count on me.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[sighs]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Stanley</SpeakerText>
+                <Characters>
+                    <Character type="main">stanley</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[entering kitchen area] Oh, that smells good.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I might have extra, it just depends on how many I eat.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Did you hear about Angela? That's pretty weird.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah... what do you mean exactly?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Well, the fact that she is apparently dating an 81-year-old billionaire. Owns a Quizno's on the turnpike.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Reeeeally.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Uh huh. [gestures to Kevin to keep it quiet] Alright?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>How do you un-tell something? You can't. You can't put words back in your mouth. What you can do is spread false gossip so that people think that everything that's been said is untrue, including "Stanley is having an affair." It's like the end of Spartacus. I've seen that movie half a dozen times, and I still don't know who the real Spartacus is, and that is what makes that movie a classic whodunit.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Kelly has an eating disorder?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Erin</SpeakerText>
+                <Characters>
+                    <Character type="null">erin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>She always eats my lunch.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Erin</SpeakerText>
+                <Characters>
+                    <Character type="null">erin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Anorexia. She's an anorexatic.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>We should do something.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Erin</SpeakerText>
+                <Characters>
+                    <Character type="null">erin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Nothing can be done, we just have to tell everybody and hope for the best I guess.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[to Kelly] I'm worried about Erin, because she's not a very good worker. I don't know how long she's gonna last here.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Really?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kelly</SpeakerText>
+                <Characters>
+                    <Character type="main">kelly</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah. So... and Andy is gay.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Andy Bernard??</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kelly</SpeakerText>
+                <Characters>
+                    <Character type="main">kelly</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Mm hmm.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[whispering to Meredith] Did you hear Pam is pregnant?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Really?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>She's gonna hate being a mom.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[making a cup of tea in kitchen area]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[looks at Andy and giggles]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>What?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[still giggling] Tea.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>So?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You would.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[laughing] I like tea!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[sarcastically] Oh, I bet you like it.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Hahaha! I like it a lot! I love tea!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Do you like it as much as you like mens' butts?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>WHAT??</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Because you're gay.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[serious] Who told you that? Was it Broccoli Rob? Someone from Chi Psi? Or did you run into someone from my high school?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>This is not the first time rumors about me being gay have come up. Twice before, actually. Just a weird coincidence... a little too weird. [chuckles nervously] Almost makes you wonder if it's not a coincidence at all. Whoa! Which it is, of course. [long pause] But it makes you wonder.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[to Oscar in break room] Did you hear the rumor about me? That I'm gay?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[nodding] I did. Yes.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>And?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>What?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Do you think it's true? Do you think that I'm... gay?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Are you attracted to other men?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[scoffs and chuckles] No! But, let me kick you a scenario. I'm at a beach cabana, and Brad Pitt approaches. He tries to lean in and kiss me. I would definitely resist, like at first. But if he was persistent, [long pause] I think I might give in a little bit, just to see what it... felt like.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[stares at Andy incredulously]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Would I push him away? How hard? Like, what if he's like really aggressive?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>If you resisted Brad Pitt a little bit, he would still... need to get to you?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>It's not real Brad Pitt, this is like, this is my fantasy. Or it's like, not a fantasy, it's just... it's just a scenario.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Wow. I wish... I wish I could help you. I don't... you might be gay. You might be gay.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>What exactly is my responsibility here? To comfort insecure heterosexual men? That can't possibly fall to me.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>How far along is Pam?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Phyllis</SpeakerText>
+                <Characters>
+                    <Character type="main">phyllis</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>A few months, that's why they're rushing the wedding.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Meredith</SpeakerText>
+                <Characters>
+                    <Character type="main">meredith</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[whispering] Guys, guys... you can't believe everything you hear. Like Stanley, having an affair? That is crazy! It's just... there's no stalking it. It's a weird day for false facts. Let it go.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[with everyone assembled in conference room] Okay everybody, big day. Last day for our interns, a lot of other stuff... who knows what to believe? Dwight, the honors.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[giving envelopes to interns] Present these to the dean for credit. And, as a gift, I've attached my card. Call me any time of the day or night.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Why would we call you at night?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Eric</SpeakerText>
+                <Characters>
+                    <Character type="null">eric</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[grabs card from Eric, crumples it, throws it to the ground] Well now you can't call me at all. Problem solved.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[to Eric] You're gonna regret that when you find yourself between a moose and her cubs.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Look at the intern to your left. Now to your right. [interns do nothing] One of you will do exceedingly well in business, just unlimited potential. One of you will make a living, and nothing more. And one of you [looks directly at Megan] will make a great mother. It's up to you to choose which you want to be.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[eating cake with Kelly] I am so happy you're eating again.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Erin</SpeakerText>
+                <Characters>
+                    <Character type="null">erin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[mouth full of cake] Me too!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kelly</SpeakerText>
+                <Characters>
+                    <Character type="main">kelly</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[to Jim] Tuna, how come you never try to set me up?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, I don't really do that. But Pam might have some friends, though.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Women friends?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yep.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Not guy friends?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Are you... interested in her guy friends?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No. I mean, for the record, I prefer women.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>But off the record, I'm kinda confused.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Really.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah, the evidence is sort of stacked against me, I feel like...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Well you gotta figure this out.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah, right?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>How?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You gotta have sex with a woman.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Right-o.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>And a man.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Ohh...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>And then compare.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Alright. [looks around uneasily] Well hey...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yep.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Congratulations to you.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>On what?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[chuckles] Come on... little baby Tuna. Little junior toro.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[looks around room nervously]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[to Pam] Did you know a baby conceived out of wedlock is still a bastard?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Angela</SpeakerText>
+                <Characters>
+                    <Character type="main">angela</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>What?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Want me to say it again?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Angela</SpeakerText>
+                <Characters>
+                    <Character type="main">angela</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Why did that come into your brain?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[grabs Pam by the arm] Can I talk to you for a second?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[whispering to Pam in corner of room] So, they know.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Who did you tell?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I didn't tell anyone! Who did you tell?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Nobody!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[approaching Jim and Pam] Hey, did one of you tell Stanley I have asthma? Because I don't, and if it gets out, they won't let me scuba.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Creed</SpeakerText>
+                <Characters>
+                    <Character type="null">creed</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>If I can't scuba, then what's this all been about? What am I working toward?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Creed</SpeakerText>
+                <Characters>
+                    <Character type="null">creed</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[to Andy] What? You think I'm the voice of the Taco Bell dog?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[to Phyllis and Stanley] What are you guys talking about? I have a daughter. How can I be a virgin?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Toby</SpeakerText>
+                <Characters>
+                    <Character type="main">toby</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Hey, has everyone heard a crazy rumor about themselves today?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[in unison] Yes.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Everyone</SpeakerText>
+                <Characters>
+                    <Character type="null">everyone</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[entering conference room] Yeah, yeah... you know what? Let's discredit these rumors.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yeah, sure, but... who's been saying all that stuff?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>That's not important, Jim, I just think we shouldn't listen to any of that crap.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Sure, but we should get to the bottom of this. Let's pick a rumor and trace it back to the beginning.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I need to do mine first. Who's been saying that there's another person inside of me, working me with controls?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I heard that from... Andy.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Creed</SpeakerText>
+                <Characters>
+                    <Character type="null">creed</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I heard it from Erin.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I heard it from Michael.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Erin</SpeakerText>
+                <Characters>
+                    <Character type="null">erin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[quietly leaves room]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[approaching Michael at elevators] Michael? [to others] He's over here!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[to Michael] Where are you going?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Nowhere.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Michael... [leads Michael to corner of vestibule, then whispers] You told people I use store-bought manure, when I showed you where my manure comes from. Hmm? Hmm? [Michael looks nervously to camera as elevator doors open]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Don't get on it. [Michael inches toward elevator]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Michael, don't.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Don't... get... on. Do not.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Michael...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Stay.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Step away.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Come on, boss.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Creed</SpeakerText>
+                <Characters>
+                    <Character type="null">creed</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[reluctantly exits elevator]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[to everyone, in conference room] Okay, I made it all up.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[sighs in unison]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Everyone</SpeakerText>
+                <Characters>
+                    <Character type="null">everyone</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Even the fact that I'm gay?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yes.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[relieved] Yes!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>But guys, I'm a victim here too, okay? People here have been saying that I'm a J. Crew model.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No. We heard that about Jim.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Angela</SpeakerText>
+                <Characters>
+                    <Character type="main">angela</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Jim? No, no. I spread the rumor that somebody here was a J. Crew model, and I was referring to myself.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>How is that a bad rumor?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Angela</SpeakerText>
+                <Characters>
+                    <Character type="main">angela</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Because a lot of people think that models, even though they're very attractive, are somewhat vapid. It's set our industry back quite a bit.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Michael, why? Why say all these things? Why make up an eating disorder, Stanley's affair, me being a spokesdog...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Oscar</SpeakerText>
+                <Characters>
+                    <Character type="main">oscar</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[pissed off] You told everyone I was having an affair?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Stanley</SpeakerText>
+                <Characters>
+                    <Character type="main">stanley</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay, okay... here's the thing. There was one true rumor out there today. I didn't want everybody to know what it was. So all of you are off the hook, except for this one person.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Well then, what's the one true rumor?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kelly</SpeakerText>
+                <Characters>
+                    <Character type="main">kelly</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>We have a right to know.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Phyllis</SpeakerText>
+                <Characters>
+                    <Character type="main">phyllis</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Michael... am I gay?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Andy</SpeakerText>
+                <Characters>
+                    <Character type="null">andy</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[sighs] The one true rumor, and this is going to ruin this person's life, is that...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[interrupting] That Pam's pregnant.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I knew it!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Angela</SpeakerText>
+                <Characters>
+                    <Character type="main">angela</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I knew it! Her breasts were a tiny bit bigger. At first I thought "Oh, she has a new bra with padding." But then I thought "Pam doesn't need padding." It just didn't add up, Jim.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kevin</SpeakerText>
+                <Characters>
+                    <Character type="main">kevin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay. Thank you.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Congratulations!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Phyllis</SpeakerText>
+                <Characters>
+                    <Character type="main">phyllis</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>That's really great, you guys.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Erin</SpeakerText>
+                <Characters>
+                    <Character type="null">erin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Don't vaccinate it.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Ryan</SpeakerText>
+                <Characters>
+                    <Character type="main">ryan</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Who's the father?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Dwight</SpeakerText>
+                <Characters>
+                    <Character type="main">dwight</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Jim.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>How far along?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Creed</SpeakerText>
+                <Characters>
+                    <Character type="null">creed</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Four months.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Who's the OB/GYN?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Creed</SpeakerText>
+                <Characters>
+                    <Character type="null">creed</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Stop. Don't. Just...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Alright, alright... you know, this is not the truth, and you can't fall on the sword this way. The real thing is that Stanley Hudson had an affair.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Nope.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yes. Jim...</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[arm around Pam] Thank you for trying to defend her. But actually, Pam is pregnant, and we can prove it.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yes.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>If everyone would like to see proof.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Okay. [leaves room]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Are we just gonna wait here? [Pam returns, displays sonogram]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kelly</SpeakerText>
+                <Characters>
+                    <Character type="main">kelly</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[gasps, then cheers]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Everyone</SpeakerText>
+                <Characters>
+                    <Character type="null">everyone</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>It's true!</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Kelly</SpeakerText>
+                <Characters>
+                    <Character type="main">kelly</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Look at that! [grabs sonogram from Pam] That is the inside of your vagina! [Jim takes sonogram from Michael]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[talking head with Jim] It's clear why we were trying not to tell people. That's clear now. [Jim nods, looking at floor]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[to Jim and Pam] How long have you known about the pregnancy?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[look at each other uncertainly]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="true">Jim &amp; Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>A week? A month? A year?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Michael, we only told our parents last week.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Did you pee on a stick?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I did. It was inconclusive.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You should've told me.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[exchanges looks with Jim] You're right. We should've realized that you are an equal part of this.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[phone rings, hits speaker button]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Michael, Teri Hudson returning your call.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Erin</SpeakerText>
+                <Characters>
+                    <Character type="null">erin</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[gasps]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[in disbelief] You called Stanley's wife?</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh, oh... yeah, a long time ago, just to make sure she was out of town. Oh... oh God.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Don't take it.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, I have to take it, or it'll seem suspicious.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>If you talk to her, you're gonna tell her about Stanley, and that's gonna seem more suspicious.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>No, no, I can do this.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>You can't do this.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Yes, I can. I am going to tell her that I need to redecorate my condo, and I need her help. We will haggle about money, and then I will back down, and then I won't talk to her until this whole Cynthia thing has blown over.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>That sounds terrible.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Michael, please don't.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Pam</SpeakerText>
+                <Characters>
+                    <Character type="main">pam</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[picking up phone] Hey, what up, Cynthia? [lowers phone, looking terrified]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[gets up to leave room, Michael gestures for him to stay]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Hold on a second, Cynthia.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[hangs up Michael's phone, leaves room]</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Jim</SpeakerText>
+                <Characters>
+                    <Character type="main">jim</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>Well, it turns out that Teri was already suspicious, because she had caught Stanley and Cynthia a few months ago. So Stanley promised that he would stop, and he did, end of story. Well, not exactly. [camera pans down from Michael's office window to parking lot below, Stanley is seen destroying Michael's Sebring with a crowbar] Uhh, Cynthia kept calling him, she would not stop calling him, and she was in love with him. Oh, and get this. Cynthia, also married. So... you can't stop love, I guess [Jim is seen displaying fetus picture on his desk as Pam smiles] and quite frankly, I don't think you should ever try.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Michael</SpeakerText>
+                <Characters>
+                    <Character type="main">michael</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+    <Scene>
+        <Quote>
+            <QuoteText>[talking head with Eric and Megan] I learned that a company can describe their internship as "full of exciting experiences," even if that's a lie. There's no regulation.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Maurie</SpeakerText>
+                <Characters>
+                    <Character type="null">maurie</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I learned that half these people's email password is "password."</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Megan</SpeakerText>
+                <Characters>
+                    <Character type="null">megan</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I learned that a ream of paper is 300 sheets.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Eric</SpeakerText>
+                <Characters>
+                    <Character type="null">eric</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I thought it was 500.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Megan</SpeakerText>
+                <Characters>
+                    <Character type="null">megan</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>Oh... I guess I didn't learn anything.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Eric</SpeakerText>
+                <Characters>
+                    <Character type="null">eric</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>I learned that if you look even the tiniest bit like Jet Li, Michael will call you "Jet Li" all summer.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Maurie</SpeakerText>
+                <Characters>
+                    <Character type="null">maurie</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[raises hand] Julia Stiles.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Megan</SpeakerText>
+                <Characters>
+                    <Character type="null">megan</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+        <Quote>
+            <QuoteText>[raises hand] Alan Thicke.</QuoteText>
+            <Speaker>
+                <SpeakerText annotated="false">Eric</SpeakerText>
+                <Characters>
+                    <Character type="null">eric</Character>
+                </Characters>
+            </Speaker>
+        </Quote>
+    </Scene>
+</SceneList>
