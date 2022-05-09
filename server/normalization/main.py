@@ -402,7 +402,6 @@ def compile() -> None:
                     for quote in scene.xpath('./Quote'):
                         pass
 
-
         except Exception as e:
             logger.error(f"Failed while processing `{file}`", exc_info=e)
 

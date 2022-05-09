@@ -1,0 +1,3140 @@
+<SpeakerList>
+    <Speaker annotated="false">
+        <RawText>Michael</RawText>
+        <Character type="null">michael</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Jim</RawText>
+        <Character type="null">jim</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Pam</RawText>
+        <Character type="null">pam</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Dwight</RawText>
+        <Character type="null">dwight</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Jan</RawText>
+        <Character type="null">jan</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Todd Packer</RawText>
+        <Character type="null">todd-packer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Phyllis</RawText>
+        <Character type="null">phyllis</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Stanley</RawText>
+        <Character type="null">stanley</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Oscar</RawText>
+        <Character type="null">oscar</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Angela</RawText>
+        <Character type="null">angela</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Kevin</RawText>
+        <Character type="null">kevin</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ryan</RawText>
+        <Character type="null">ryan</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Man</RawText>
+        <Character type="null">man</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Roy</RawText>
+        <Character type="null">roy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Documentary Crew Member</RawText>
+        <Character type="null">documentary-crew-member</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mr. Brown</RawText>
+        <Character type="null">mr-brown</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Toby</RawText>
+        <Character type="null">toby</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Kelly</RawText>
+        <Character type="null">kelly</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Meredith</RawText>
+        <Character type="null">meredith</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Travel Agent</RawText>
+        <Character type="null">travel-agent</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Man on Phone</RawText>
+        <Character type="null">man-on-phone</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Everybody</RawText>
+        <Character type="null">everybody</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Lonny</RawText>
+        <Character type="null">lonny</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Darryl</RawText>
+        <Character type="null">darryl</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Teammates</RawText>
+        <Character type="null">teammates</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Michael and Dwight</RawText>
+        <AnnotatedText>Michael and Dwight</AnnotatedText>
+        <Characters>
+            <Character type="null">michael</Character>
+            <Character type="null">dwight</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Warehouse Worker</RawText>
+        <Character type="null">warehouse-worker</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Madge</RawText>
+        <Character type="null">madge</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Worker</RawText>
+        <Character type="null">worker</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Packer</RawText>
+        <Character type="null">packer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>None</RawText>
+        <Character type="null">none</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Katy</RawText>
+        <Character type="null">katy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Guy at Bar</RawText>
+        <Character type="null">guy-at-bar</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Other Guy at Bar</RawText>
+        <Character type="null">other-guy-at-bar</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Guy At Bar</RawText>
+        <Character type="null">guy-at-bar</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Pam and Jim</RawText>
+        <AnnotatedText>Pam and Jim</AnnotatedText>
+        <Characters>
+            <Character type="null">pam</Character>
+            <Character type="null">jim</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Employee</RawText>
+        <Character type="null">employee</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Waitress</RawText>
+        <Character type="null">waitress</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Manager</RawText>
+        <Character type="null">manager</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Kevin's Computer</RawText>
+        <Character type="null">kevins-computer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Warehouse Guy</RawText>
+        <Character type="null">warehouse-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Warehouse Guys</RawText>
+        <Character type="null">warehouse-guys</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Video</RawText>
+        <Character type="null">video</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Man in Video</RawText>
+        <Character type="null">man-in-video</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mr. O'Malley</RawText>
+        <Character type="null">mr-omalley</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Albiny</RawText>
+        <Character type="null">albiny</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Pam's Mom</RawText>
+        <Character type="null">pams-mom</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Carrol</RawText>
+        <Character type="null">carrol</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Bill</RawText>
+        <Character type="null">bill</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Everyone</RawText>
+        <Character type="null">everyone</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Crowd</RawText>
+        <Character type="null">crowd</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Song</RawText>
+        <Character type="null">song</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Dwight and Michael</RawText>
+        <AnnotatedText>Dwight and Michael</AnnotatedText>
+        <Characters>
+            <Character type="null">dwight</Character>
+            <Character type="null">michael</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Sherri</RawText>
+        <Character type="null">sherri</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Creed</RawText>
+        <Character type="null">creed</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Devon</RawText>
+        <Character type="null">devon</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Children</RawText>
+        <Character type="null">children</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Kid</RawText>
+        <Character type="null">kid</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Vance Refrigeration Worker #1</RawText>
+        <Character type="background">vance-refrigeration-worker</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Vance Refrigeration Worker #2</RawText>
+        <Character type="background">vance-refrigeration-worker</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Hank</RawText>
+        <Character type="null">hank</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ira</RawText>
+        <Character type="null">ira</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ryan's Voicemail</RawText>
+        <Character type="null">ryans-voicemail</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Master</RawText>
+        <Character type="null">master</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Alyssa</RawText>
+        <Character type="null">alyssa</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Christian</RawText>
+        <Character type="null">christian</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Hostess</RawText>
+        <Character type="null">hostess</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Michael and Christian</RawText>
+        <AnnotatedText>Michael and Christian</AnnotatedText>
+        <Characters>
+            <Character type="null">michael</Character>
+            <Character type="null">christian</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Sadiq</RawText>
+        <Character type="null">sadiq</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mark</RawText>
+        <Character type="null">mark</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Improv Teacher</RawText>
+        <Character type="null">improv-teacher</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mary-Beth</RawText>
+        <Character type="null">mary-beth</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Girl acting Pregnant</RawText>
+        <Character type="null">girl-acting-pregnant</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Actor</RawText>
+        <Character type="null">actor</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Actress</RawText>
+        <Character type="null">actress</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Michael and Jim</RawText>
+        <AnnotatedText>Michael and Jim</AnnotatedText>
+        <Characters>
+            <Character type="null">michael</Character>
+            <Character type="null">jim</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Kevin &amp; Oscar</RawText>
+        <AnnotatedText>Kevin &amp; Oscar</AnnotatedText>
+        <Characters>
+            <Character type="null">kevin</Character>
+            <Character type="null">oscar</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>All</RawText>
+        <Character type="null">all</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Liquor Store Clerk</RawText>
+        <Character type="null">liquor-store-clerk</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Bob Vance</RawText>
+        <Character type="null">bob-vance</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Phyllis, Meredith, Michael, Kevin</RawText>
+        <AnnotatedText>Phyllis, Meredith, Michael, Kevin</AnnotatedText>
+        <Characters>
+            <Character type="null">phyllis</Character>
+            <Character type="null">meredith</Character>
+            <Character type="null">michael</Character>
+            <Character type="null">kevin</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Captain Jack</RawText>
+        <Character type="null">captain-jack</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Brenda</RawText>
+        <Character type="null">brenda</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Darryl and Katy</RawText>
+        <AnnotatedText>Darryl and Katy</AnnotatedText>
+        <Characters>
+            <Character type="null">darryl</Character>
+            <Character type="null">katy</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Jim and Pam</RawText>
+        <AnnotatedText>Jim and Pam</AnnotatedText>
+        <Characters>
+            <Character type="null">jim</Character>
+            <Character type="null">pam</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Billy Merchant</RawText>
+        <Character type="null">billy-merchant</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Doctor</RawText>
+        <Character type="null">doctor</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Lab Tech</RawText>
+        <Character type="null">lab-tech</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Dana</RawText>
+        <Character type="null">dana</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Hooter's Girls</RawText>
+        <Character type="null">hooters-girls</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Gil</RawText>
+        <Character type="null">gil</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Pam and others</RawText>
+        <AnnotatedText>Pam and others</AnnotatedText>
+        <Characters>
+            <Character type="null">pam</Character>
+            <Character type="null">others</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ed Begley</RawText>
+        <Character type="null">ed-begley</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Todd</RawText>
+        <Character type="null">todd</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Jim's Voicemail</RawText>
+        <Character type="null">jims-voicemail</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Women</RawText>
+        <Character type="null">women</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Guy</RawText>
+        <Character type="null">guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>All the Men</RawText>
+        <Character type="null">all-the-men</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Dwight and Roy</RawText>
+        <AnnotatedText>Dwight and Roy</AnnotatedText>
+        <Characters>
+            <Character type="null">dwight</Character>
+            <Character type="null">roy</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Delivery Man</RawText>
+        <Character type="null">delivery-man</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Craig</RawText>
+        <Character type="null">craig</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Josh</RawText>
+        <Character type="null">josh</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>David Wallace</RawText>
+        <Character type="null">david-wallace</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Dan Gore</RawText>
+        <Character type="null">dan-gore</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Receptionist</RawText>
+        <Character type="null">receptionist</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Overhead</RawText>
+        <Character type="null">overhead</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Speaker</RawText>
+        <Character type="null">speaker</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Jim and Dwight</RawText>
+        <AnnotatedText>Jim and Dwight</AnnotatedText>
+        <Characters>
+            <Character type="null">jim</Character>
+            <Character type="null">dwight</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Melissa</RawText>
+        <Character type="null">melissa</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Sasha</RawText>
+        <Character type="null">sasha</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Abby</RawText>
+        <Character type="null">abby</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Jake</RawText>
+        <Character type="null">jake</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Kids</RawText>
+        <Character type="null">kids</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Miss Trudy</RawText>
+        <Character type="null">miss-trudy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Edward R. Meow</RawText>
+        <Character type="null">edward-r-meow</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Chet</RawText>
+        <Character type="null">chet</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Young Michael</RawText>
+        <Character type="null">young-michael</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Delivery Woman</RawText>
+        <Character type="null">delivery-woman</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Delivery Boy</RawText>
+        <Character type="null">delivery-boy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Office Staff</RawText>
+        <Character type="null">office-staff</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Store Employee</RawText>
+        <Character type="null">store-employee</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Linda</RawText>
+        <Character type="null">linda</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Sheriff</RawText>
+        <Character type="null">sheriff</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>I.D. Photographer</RawText>
+        <Character type="null">id-photographer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Photographer</RawText>
+        <Character type="null">photographer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Female Worker</RawText>
+        <Character type="null">female-worker</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Hank the Security Guard</RawText>
+        <Character type="null">hank-the-security-guard</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Billy's Girlfriend</RawText>
+        <Character type="null">billys-girlfriend</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Billy</RawText>
+        <Character type="null">billy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Dealer</RawText>
+        <Character type="null">dealer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Bob</RawText>
+        <Character type="null">bob</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Meredith's Vet</RawText>
+        <Character type="null">merediths-vet</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Andy</RawText>
+        <Character type="null">andy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Karen</RawText>
+        <Character type="null">karen</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Jerome Bettis</RawText>
+        <Character type="null">jerome-bettis</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ted</RawText>
+        <Character type="null">ted</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Waiter</RawText>
+        <Character type="null">waiter</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Jim, Josh, and Dwight</RawText>
+        <AnnotatedText>Jim, Josh, and Dwight</AnnotatedText>
+        <Characters>
+            <Character type="null">jim</Character>
+            <Character type="null">josh</Character>
+            <Character type="null">and-dwight</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Evan</RawText>
+        <Character type="null">evan</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Alan</RawText>
+        <Character type="null">alan</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Ryan and others</RawText>
+        <AnnotatedText>Ryan and others</AnnotatedText>
+        <Characters>
+            <Character type="null">ryan</Character>
+            <Character type="null">others</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Hannah</RawText>
+        <Character type="null">hannah</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Announcer</RawText>
+        <Character type="null">announcer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Pretzel Guy</RawText>
+        <Character type="null">pretzel-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mose</RawText>
+        <Character type="null">mose</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Tony</RawText>
+        <Character type="null">tony</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Server</RawText>
+        <Character type="null">server</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Girls</RawText>
+        <Character type="null">girls</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Kelly's Mom</RawText>
+        <Character type="null">kellys-mom</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Kelly's Father</RawText>
+        <Character type="null">kellys-father</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Young Man</RawText>
+        <Character type="null">young-man</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Andy and Jim</RawText>
+        <AnnotatedText>Andy and Jim</AnnotatedText>
+        <Characters>
+            <Character type="null">andy</Character>
+            <Character type="null">jim</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mrs. Kapoor</RawText>
+        <Character type="null">mrs-kapoor</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mr. Kapoor</RawText>
+        <Character type="null">mr-kapoor</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Dwight </RawText>
+        <Character type="null">dwight</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Martin</RawText>
+        <Character type="null">martin</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Male Voice</RawText>
+        <Character type="null">male-voice</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Michael &amp; Dwight</RawText>
+        <AnnotatedText>Michael &amp; Dwight</AnnotatedText>
+        <Characters>
+            <Character type="null">michael</Character>
+            <Character type="null">dwight</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Andy &amp; Michael</RawText>
+        <AnnotatedText>Andy &amp; Michael</AnnotatedText>
+        <Characters>
+            <Character type="null">andy</Character>
+            <Character type="null">michael</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Chef</RawText>
+        <Character type="null">chef</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Woman at Bar</RawText>
+        <Character type="null">woman-at-bar</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Cindy</RawText>
+        <Character type="null">cindy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Second Cindy</RawText>
+        <Character type="null">second-cindy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Other Waitress</RawText>
+        <Character type="null">other-waitress</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Andy and Michael</RawText>
+        <AnnotatedText>Andy and Michael</AnnotatedText>
+        <Characters>
+            <Character type="null">andy</Character>
+            <Character type="null">michael</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Both</RawText>
+        <Character type="null">both</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Someone</RawText>
+        <Character type="null">someone</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Harvey</RawText>
+        <Character type="null">harvey</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Buyer</RawText>
+        <Character type="null">buyer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Kenny</RawText>
+        <Character type="null">kenny</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Julius</RawText>
+        <Character type="null">julius</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Phone</RawText>
+        <Character type="null">phone</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Staples Employee</RawText>
+        <Character type="null">staples-employee</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Lady</RawText>
+        <Character type="null">lady</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Paris</RawText>
+        <Character type="null">paris</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Marcy</RawText>
+        <Character type="null">marcy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ben Franklin</RawText>
+        <Character type="null">ben-franklin</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Elizabeth</RawText>
+        <Character type="null">elizabeth</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Priest</RawText>
+        <Character type="null">priest</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Uncle Al</RawText>
+        <Character type="null">uncle-al</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Randy</RawText>
+        <Character type="null">randy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Unknown</RawText>
+        <Character type="null">unknown</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>College Student</RawText>
+        <Character type="null">college-student</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Business Student #1</RawText>
+        <Character type="background">business-student</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Business Student #2</RawText>
+        <Character type="background">business-student</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Business Student #3</RawText>
+        <Character type="background">business-student</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Woman</RawText>
+        <Character type="null">woman</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Artist</RawText>
+        <Character type="null">artist</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Student #1</RawText>
+        <Character type="background">student</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Rachel</RawText>
+        <Character type="null">rachel</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Bartender</RawText>
+        <Character type="null">bartender</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Student #2</RawText>
+        <Character type="background">student</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Child</RawText>
+        <Character type="null">child</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Hunter</RawText>
+        <Character type="null">hunter</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Larry</RawText>
+        <Character type="null">larry</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Chad Lite</RawText>
+        <Character type="null">chad-lite</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Jamie</RawText>
+        <Character type="null">jamie</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Barbara</RawText>
+        <Character type="null">barbara</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>School Official</RawText>
+        <Character type="null">school-official</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Barbara Allen</RawText>
+        <Character type="null">barbara-allen</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Spanish Teacher</RawText>
+        <Character type="null">spanish-teacher</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Denise</RawText>
+        <Character type="null">denise</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Group</RawText>
+        <Character type="null">group</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>IT Tech Guy</RawText>
+        <Character type="null">it-tech-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Nurse</RawText>
+        <Character type="null">nurse</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Intern</RawText>
+        <Character type="null">intern</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Pediatrician</RawText>
+        <Character type="null">pediatrician</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Robert Dunder</RawText>
+        <Character type="null">robert-dunder</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Amy</RawText>
+        <Character type="null">amy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Voice of Thomas Dean</RawText>
+        <Character type="null">voice-of-thomas-dean</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>DunMiff/sys</RawText>
+        <AnnotatedText>DunMiff/sys</AnnotatedText>
+        <Characters>
+            <Character type="null">dunmiff</Character>
+            <Character type="null">sys</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>DwightKSchrute</RawText>
+        <Character type="null">dwightkschrute</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Tech Guy</RawText>
+        <Character type="null">tech-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Pizza guy</RawText>
+        <Character type="null">pizza-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Voice #1</RawText>
+        <Character type="background">voice</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Voice #2 on phone</RawText>
+        <Character type="background">voice--on-phone</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Nick</RawText>
+        <Character type="null">nick</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Coworker #1</RawText>
+        <Character type="background">coworker</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Vikram</RawText>
+        <Character type="null">vikram</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Coworker #2</RawText>
+        <Character type="background">coworker</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Coworker #3</RawText>
+        <Character type="background">coworker</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mr. Figaro</RawText>
+        <Character type="null">mr-figaro</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Oscar and Stanley</RawText>
+        <AnnotatedText>Oscar and Stanley</AnnotatedText>
+        <Characters>
+            <Character type="null">oscar</Character>
+            <Character type="null">stanley</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ad Guy #1</RawText>
+        <Character type="background">ad-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ad Guy #2</RawText>
+        <Character type="background">ad-guy</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Andy, Creed, Kevin, Kelly, Darryl</RawText>
+        <AnnotatedText>Andy, Creed, Kevin, Kelly, Darryl</AnnotatedText>
+        <Characters>
+            <Character type="null">andy</Character>
+            <Character type="null">creed</Character>
+            <Character type="null">kevin</Character>
+            <Character type="null">kelly</Character>
+            <Character type="null">darryl</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Andy, Creed, Kevin, Kelly</RawText>
+        <AnnotatedText>Andy, Creed, Kevin, Kelly</AnnotatedText>
+        <Characters>
+            <Character type="null">andy</Character>
+            <Character type="null">creed</Character>
+            <Character type="null">kevin</Character>
+            <Character type="null">kelly</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Michael's Ad</RawText>
+        <Character type="null">michaels-ad</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Rolando</RawText>
+        <Character type="null">rolando</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ben Nugent</RawText>
+        <Character type="null">ben-nugent</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Security Guard</RawText>
+        <Character type="null">security-guard</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Hunter's CD</RawText>
+        <Character type="null">hunters-cd</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Officer #1</RawText>
+        <Character type="background">officer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Officer #2</RawText>
+        <Character type="background">officer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Officer</RawText>
+        <Character type="null">officer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Neighbor</RawText>
+        <Character type="null">neighbor</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Wendy's Phone Operator</RawText>
+        <Character type="null">wendys-phone-operator</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Margaret</RawText>
+        <Character type="null">margaret</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Coffee Shop Worker</RawText>
+        <Character type="null">coffee-shop-worker</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>W.B. Jones</RawText>
+        <Character type="null">wb-jones</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Paul</RawText>
+        <Character type="null">paul</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Bill Cress</RawText>
+        <Character type="null">bill-cress</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Michael/Dwight</RawText>
+        <AnnotatedText>Michael/Dwight</AnnotatedText>
+        <Characters>
+            <Character type="null">michael</Character>
+            <Character type="null">dwight</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Troy</RawText>
+        <Character type="null">troy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Girl in Club</RawText>
+        <Character type="null">girl-in-club</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Tall Girl #1</RawText>
+        <Character type="background">tall-girl</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>All Girls</RawText>
+        <Character type="null">all-girls</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Tall Girl #2</RawText>
+        <Character type="background">tall-girl</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Girl in 2nd Club</RawText>
+        <Character type="null">girl-in--club</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Cleaning Lady</RawText>
+        <Character type="null">cleaning-lady</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Michael and Darryl</RawText>
+        <AnnotatedText>Michael and Darryl</AnnotatedText>
+        <Characters>
+            <Character type="null">michael</Character>
+            <Character type="null">darryl</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Phil Maguire</RawText>
+        <Character type="null">phil-maguire</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Phil</RawText>
+        <Character type="null">phil</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Justin</RawText>
+        <Character type="null">justin</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Angela and Dwight</RawText>
+        <AnnotatedText>Angela and Dwight</AnnotatedText>
+        <Characters>
+            <Character type="null">angela</Character>
+            <Character type="null">dwight</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Woman on mic</RawText>
+        <Character type="null">woman-on-mic</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Graphics Guy</RawText>
+        <Character type="null">graphics-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Brad</RawText>
+        <Character type="null">brad</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Air Force Recruiter</RawText>
+        <Character type="null">air-force-recruiter</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Holly</RawText>
+        <Character type="null">holly</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Woman over Speakerphone</RawText>
+        <Character type="null">woman-over-speakerphone</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Vance Refrigeration Guy</RawText>
+        <Character type="null">vance-refrigeration-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Coworkers</RawText>
+        <Character type="null">coworkers</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ronnie</RawText>
+        <Character type="null">ronnie</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Professor</RawText>
+        <Character type="null">professor</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Friend</RawText>
+        <Character type="null">friend</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>JIM9334</RawText>
+        <Character type="null">jim9334</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Receptionitis15</RawText>
+        <Character type="null">receptionitis15</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Michael &amp; Holly</RawText>
+        <AnnotatedText>Michael &amp; Holly</AnnotatedText>
+        <Characters>
+            <Character type="null">michael</Character>
+            <Character type="null">holly</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Kendall</RawText>
+        <Character type="null">kendall</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Guy in Audience</RawText>
+        <Character type="null">guy-in-audience</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Michael and Holly</RawText>
+        <AnnotatedText>Michael and Holly</AnnotatedText>
+        <Characters>
+            <Character type="null">michael</Character>
+            <Character type="null">holly</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Michael, Holly, and Darryl</RawText>
+        <AnnotatedText>Michael, Holly, and Darryl</AnnotatedText>
+        <Characters>
+            <Character type="null">michael</Character>
+            <Character type="null">holly</Character>
+            <Character type="null">and-darryl</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Tom</RawText>
+        <Character type="null">tom</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Pete</RawText>
+        <Character type="null">pete</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Holly &amp; Darryl</RawText>
+        <AnnotatedText>Holly &amp; Darryl</AnnotatedText>
+        <Characters>
+            <Character type="null">holly</Character>
+            <Character type="null">darryl</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Holly &amp; Michael</RawText>
+        <AnnotatedText>Holly &amp; Michael</AnnotatedText>
+        <Characters>
+            <Character type="null">holly</Character>
+            <Character type="null">michael</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mother</RawText>
+        <Character type="null">mother</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Alex</RawText>
+        <Character type="null">alex</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Customer</RawText>
+        <Character type="null">customer</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Kevin &amp; Andy</RawText>
+        <AnnotatedText>Kevin &amp; Andy</AnnotatedText>
+        <Characters>
+            <Character type="null">kevin</Character>
+            <Character type="null">andy</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Stanley &amp; Phyllis</RawText>
+        <AnnotatedText>Stanley &amp; Phyllis</AnnotatedText>
+        <Characters>
+            <Character type="null">stanley</Character>
+            <Character type="null">phyllis</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Stewardess</RawText>
+        <Character type="null">stewardess</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Beth</RawText>
+        <Character type="null">beth</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Concierge Marie</RawText>
+        <Character type="null">concierge-marie</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Marie</RawText>
+        <Character type="null">marie</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Guy at Table</RawText>
+        <Character type="null">guy-at-table</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Client</RawText>
+        <Character type="null">client</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Leo</RawText>
+        <Character type="null">leo</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Police Officer #1</RawText>
+        <Character type="background">police-officer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Police Officer #2</RawText>
+        <Character type="background">police-officer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Guy buying doll</RawText>
+        <Character type="null">guy-buying-doll</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Rehab Nurse</RawText>
+        <Character type="null">rehab-nurse</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Prince family</RawText>
+        <Character type="null">prince-family</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Prince Grandfather</RawText>
+        <Character type="null">prince-grandfather</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Prince</RawText>
+        <Character type="null">prince</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Prince Grandmother</RawText>
+        <Character type="null">prince-grandmother</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Prince Son</RawText>
+        <Character type="null">prince-son</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Prince Granddaughter</RawText>
+        <Character type="null">prince-granddaughter</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Phyllis and Creed</RawText>
+        <AnnotatedText>Phyllis and Creed</AnnotatedText>
+        <Characters>
+            <Character type="null">phyllis</Character>
+            <Character type="null">creed</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Lawyer</RawText>
+        <Character type="null">lawyer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>CPR trainer</RawText>
+        <Character type="null">cpr-trainer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>CPR Trainer</RawText>
+        <Character type="null">cpr-trainer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Rose</RawText>
+        <Character type="null">rose</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Jessica Alba</RawText>
+        <Character type="null">jessica-alba</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Lily</RawText>
+        <Character type="null">lily</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Sam</RawText>
+        <Character type="null">sam</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Warehouse Michael</RawText>
+        <Character type="null">warehouse-michael</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Julia</RawText>
+        <Character type="null">julia</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>A.J.</RawText>
+        <Character type="null">aj</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Phone Salesman</RawText>
+        <Character type="null">phone-salesman</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Jim, Pam, Michael and Dwight</RawText>
+        <AnnotatedText>Jim, Pam, Michael and Dwight</AnnotatedText>
+        <Characters>
+            <Character type="null">jim</Character>
+            <Character type="null">pam</Character>
+            <Character type="null">michael</Character>
+            <Character type="null">dwight</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Blood Drive Worker</RawText>
+        <Character type="null">blood-drive-worker</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Blood Girl</RawText>
+        <Character type="null">blood-girl</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Lynn</RawText>
+        <Character type="null">lynn</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Blonde Girl</RawText>
+        <Character type="null">blonde-girl</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Eric</RawText>
+        <Character type="null">eric</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Girl</RawText>
+        <Character type="null">girl</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Charles</RawText>
+        <Character type="null">charles</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Isaac</RawText>
+        <Character type="null">isaac</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Supervisor</RawText>
+        <Character type="null">supervisor</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Nana</RawText>
+        <Character type="null">nana</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Old Woman</RawText>
+        <Character type="null">old-woman</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Erin</RawText>
+        <Character type="null">erin</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Dwight and Erin</RawText>
+        <AnnotatedText>Dwight and Erin</AnnotatedText>
+        <Characters>
+            <Character type="null">dwight</Character>
+            <Character type="null">erin</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Dwight and Andy</RawText>
+        <AnnotatedText>Dwight and Andy</AnnotatedText>
+        <Characters>
+            <Character type="null">dwight</Character>
+            <Character type="null">andy</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Michael, Pam &amp; Ryan</RawText>
+        <AnnotatedText>Michael, Pam &amp; Ryan</AnnotatedText>
+        <Characters>
+            <Character type="null">michael</Character>
+            <Character type="null">pam</Character>
+            <Character type="null">ryan</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Secretary</RawText>
+        <Character type="null">secretary</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Automated Phone Voice</RawText>
+        <Character type="null">automated-phone-voice</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mr. Schofield</RawText>
+        <Character type="null">mr-schofield</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Financial Guy</RawText>
+        <Character type="null">financial-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ty</RawText>
+        <Character type="null">ty</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Jessica</RawText>
+        <Character type="null">jessica</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Vance Refrigeration Guy #1</RawText>
+        <Character type="background">vance-refrigeration-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Vance Refrigeration Guy #2</RawText>
+        <Character type="background">vance-refrigeration-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Van Refrigeration Guy #1</RawText>
+        <Character type="background">van-refrigeration-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Rolf</RawText>
+        <Character type="null">rolf</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>AJ</RawText>
+        <Character type="null">aj</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Man from Buffalo</RawText>
+        <Character type="null">man-from-buffalo</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Woman from Buffalo</RawText>
+        <Character type="null">woman-from-buffalo</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Dwight &amp; Andy</RawText>
+        <AnnotatedText>Dwight &amp; Andy</AnnotatedText>
+        <Characters>
+            <Character type="null">dwight</Character>
+            <Character type="null">andy</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Female Intern</RawText>
+        <Character type="null">female-intern</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Maurie</RawText>
+        <Character type="null">maurie</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Dwight, Jim &amp; Pam</RawText>
+        <AnnotatedText>Dwight, Jim &amp; Pam</AnnotatedText>
+        <Characters>
+            <Character type="null">dwight</Character>
+            <Character type="null">jim</Character>
+            <Character type="null">pam</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Jim &amp; Pam</RawText>
+        <AnnotatedText>Jim &amp; Pam</AnnotatedText>
+        <Characters>
+            <Character type="null">jim</Character>
+            <Character type="null">pam</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Megan</RawText>
+        <Character type="null">megan</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Gwenneth</RawText>
+        <Character type="null">gwenneth</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Front Desk Clerk</RawText>
+        <Character type="null">front-desk-clerk</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mr. Halpert</RawText>
+        <Character type="null">mr-halpert</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Sylvia</RawText>
+        <Character type="null">sylvia</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mr. Beesly</RawText>
+        <Character type="null">mr-beesly</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Little Girl</RawText>
+        <Character type="null">little-girl</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Penny</RawText>
+        <Character type="null">penny</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Isabel</RawText>
+        <Character type="null">isabel</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Hotel Employee</RawText>
+        <Character type="null">hotel-employee</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Hotel Manager</RawText>
+        <Character type="null">hotel-manager</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Helene</RawText>
+        <Character type="null">helene</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Tom Halpert</RawText>
+        <Character type="null">tom-halpert</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Pete Halpert</RawText>
+        <Character type="null">pete-halpert</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Tom and Pete</RawText>
+        <AnnotatedText>Tom and Pete</AnnotatedText>
+        <Characters>
+            <Character type="null">tom</Character>
+            <Character type="null">pete</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Pam's Dad</RawText>
+        <Character type="null">pams-dad</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Grotti</RawText>
+        <Character type="null">grotti</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Andy and Dwight</RawText>
+        <AnnotatedText>Andy and Dwight</AnnotatedText>
+        <Characters>
+            <Character type="null">andy</Character>
+            <Character type="null">dwight</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Credit Card Rep.</RawText>
+        <Character type="null">credit-card-rep</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Credit Card Rep</RawText>
+        <Character type="null">credit-card-rep</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Lauren's Friends</RawText>
+        <Character type="null">laurens-friends</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Keena Gifford</RawText>
+        <Character type="null">keena-gifford</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>David Wallace's Secretary</RawText>
+        <Character type="null">david-wallaces-secretary</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Voice on CD player</RawText>
+        <Character type="null">voice-on-cd-player</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Limo Driver</RawText>
+        <Character type="null">limo-driver</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Laurie</RawText>
+        <Character type="null">laurie</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Registrar</RawText>
+        <Character type="null">registrar</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Bodyguard</RawText>
+        <Character type="null">bodyguard</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Woman In Line</RawText>
+        <Character type="null">woman-in-line</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Man in line</RawText>
+        <Character type="null">man-in-line</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Shareholder</RawText>
+        <Character type="null">shareholder</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Female Shareholder</RawText>
+        <Character type="null">female-shareholder</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Second Shareholder</RawText>
+        <Character type="null">second-shareholder</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Third Shareholder</RawText>
+        <Character type="null">third-shareholder</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Fourth Shareholder</RawText>
+        <Character type="null">fourth-shareholder</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>O'Keefe</RawText>
+        <Character type="null">okeefe</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mikela</RawText>
+        <Character type="null">mikela</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Students</RawText>
+        <Character type="null">students</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Teacher</RawText>
+        <Character type="null">teacher</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Lefevre</RawText>
+        <Character type="null">lefevre</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Zion</RawText>
+        <Character type="null">zion</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Stephanie</RawText>
+        <Character type="null">stephanie</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Michael and Erin</RawText>
+        <AnnotatedText>Michael and Erin</AnnotatedText>
+        <Characters>
+            <Character type="null">michael</Character>
+            <Character type="null">erin</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Kelly and Erin</RawText>
+        <AnnotatedText>Kelly and Erin</AnnotatedText>
+        <Characters>
+            <Character type="null">kelly</Character>
+            <Character type="null">erin</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Matt</RawText>
+        <Character type="null">matt</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Computron</RawText>
+        <Character type="null">computron</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Fake Stanley</RawText>
+        <Character type="null">fake-stanley</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Gabe</RawText>
+        <Character type="null">gabe</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Andy &amp; Erin</RawText>
+        <AnnotatedText>Andy &amp; Erin</AnnotatedText>
+        <Characters>
+            <Character type="null">andy</Character>
+            <Character type="null">erin</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Jo Bennett</RawText>
+        <Character type="null">jo-bennett</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Jo</RawText>
+        <Character type="null">jo</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Jerry</RawText>
+        <Character type="null">jerry</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Teddy</RawText>
+        <Character type="null">teddy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mrs. Wallace</RawText>
+        <Character type="null">mrs-wallace</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Dwight, Jim and Michael</RawText>
+        <AnnotatedText>Dwight, Jim and Michael</AnnotatedText>
+        <Characters>
+            <Character type="null">dwight</Character>
+            <Character type="null">jim</Character>
+            <Character type="null">michael</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Policeman</RawText>
+        <Character type="null">policeman</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Hospital Employee</RawText>
+        <Character type="null">hospital-employee</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Kathy</RawText>
+        <Character type="null">kathy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Dale</RawText>
+        <Character type="null">dale</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Clark</RawText>
+        <Character type="null">clark</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Isabelle</RawText>
+        <Character type="null">isabelle</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Warehouse Guy #1</RawText>
+        <Character type="background">warehouse-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Warehouse Guy #2</RawText>
+        <Character type="background">warehouse-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Reid</RawText>
+        <Character type="null">reid</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Night Cleaning Crew</RawText>
+        <Character type="null">night-cleaning-crew</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Meredith, Creed, Oscar and Matt</RawText>
+        <AnnotatedText>Meredith, Creed, Oscar and Matt</AnnotatedText>
+        <Characters>
+            <Character type="null">meredith</Character>
+            <Character type="null">creed</Character>
+            <Character type="null">oscar</Character>
+            <Character type="null">matt</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Julie</RawText>
+        <Character type="null">julie</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Hide</RawText>
+        <Character type="null">hide</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Bar Manager</RawText>
+        <Character type="null">bar-manager</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Bouncer</RawText>
+        <Character type="null">bouncer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Girl at Table</RawText>
+        <Character type="null">girl-at-table</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Cookie Monster</RawText>
+        <Character type="null">cookie-monster</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Hayworth's Waiter</RawText>
+        <Character type="null">hayworths-waiter</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Oscar's voice from the computer</RawText>
+        <Character type="null">oscars-voice-from-the-computer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Donna</RawText>
+        <Character type="null">donna</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Michael and Donna</RawText>
+        <AnnotatedText>Michael and Donna</AnnotatedText>
+        <Characters>
+            <Character type="null">michael</Character>
+            <Character type="null">donna</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Old lady</RawText>
+        <Character type="null">old-lady</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Glen</RawText>
+        <Character type="null">glen</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Gym Instructor</RawText>
+        <Character type="null">gym-instructor</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Dwight and Angela</RawText>
+        <AnnotatedText>Dwight and Angela</AnnotatedText>
+        <Characters>
+            <Character type="null">dwight</Character>
+            <Character type="null">angela</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Shane</RawText>
+        <Character type="null">shane</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Reporter</RawText>
+        <Character type="null">reporter</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Realtor</RawText>
+        <Character type="null">realtor</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Luke</RawText>
+        <Character type="null">luke</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Window Treatment Guy</RawText>
+        <Character type="null">window-treatment-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Salesman</RawText>
+        <Character type="null">salesman</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Usher</RawText>
+        <Character type="null">usher</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Shelby</RawText>
+        <Character type="null">shelby</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Sweeney Todd</RawText>
+        <Character type="null">sweeney-todd</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mexican Man</RawText>
+        <Character type="null">mexican-man</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mexican Man's Son</RawText>
+        <Character type="null">mexican-mans-son</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Nate</RawText>
+        <Character type="null">nate</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Employees except Dwight</RawText>
+        <Character type="null">employees-except-dwight</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Astrid</RawText>
+        <Character type="null">astrid</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Danny</RawText>
+        <Character type="null">danny</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Steve</RawText>
+        <Character type="null">steve</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Darryl and Andy</RawText>
+        <AnnotatedText>Darryl and Andy</AnnotatedText>
+        <Characters>
+            <Character type="null">darryl</Character>
+            <Character type="null">andy</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Church Congregation</RawText>
+        <Character type="null">church-congregation</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Pastor</RawText>
+        <Character type="null">pastor</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Female Church Member</RawText>
+        <Character type="null">female-church-member</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Male church member</RawText>
+        <Character type="null">male-church-member</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Doug</RawText>
+        <Character type="null">doug</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Carla Fern</RawText>
+        <Character type="null">carla-fern</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Jim's Dad</RawText>
+        <Character type="null">jims-dad</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Bus driver</RawText>
+        <Character type="null">bus-driver</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Michael and Andy</RawText>
+        <AnnotatedText>Michael and Andy</AnnotatedText>
+        <Characters>
+            <Character type="null">michael</Character>
+            <Character type="null">andy</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Another guy</RawText>
+        <Character type="null">another-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Radio</RawText>
+        <Character type="null">radio</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Cece</RawText>
+        <Character type="null">cece</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>TV</RawText>
+        <Character type="null">tv</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Robotic Voice</RawText>
+        <Character type="null">robotic-voice</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Ryan and Michael</RawText>
+        <AnnotatedText>Ryan and Michael</AnnotatedText>
+        <Characters>
+            <Character type="null">ryan</Character>
+            <Character type="null">michael</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Dwight &amp; Nate</RawText>
+        <AnnotatedText>Dwight &amp; Nate</AnnotatedText>
+        <Characters>
+            <Character type="null">dwight</Character>
+            <Character type="null">nate</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Passer-by</RawText>
+        <Character type="null">passer-by</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Bass Player</RawText>
+        <Character type="null">bass-player</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Justine</RawText>
+        <Character type="null">justine</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Jada</RawText>
+        <Character type="null">jada</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Robert</RawText>
+        <Character type="null">robert</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Member</RawText>
+        <Character type="null">member</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Michael in Video</RawText>
+        <Character type="null">michael-in-video</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Bookstore Employee</RawText>
+        <Character type="null">bookstore-employee</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>DJ</RawText>
+        <Character type="null">dj</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>David Brent</RawText>
+        <Character type="null">david-brent</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Older guy</RawText>
+        <Character type="null">older-guy</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Phyllis, Stanley, Dwight</RawText>
+        <AnnotatedText>Phyllis, Stanley, Dwight</AnnotatedText>
+        <Characters>
+            <Character type="null">phyllis</Character>
+            <Character type="null">stanley</Character>
+            <Character type="null">dwight</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Younger Guy</RawText>
+        <Character type="null">younger-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Older Woman</RawText>
+        <Character type="null">older-woman</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Professor Powell</RawText>
+        <Character type="null">professor-powell</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Ryan and Kelly</RawText>
+        <AnnotatedText>Ryan and Kelly</AnnotatedText>
+        <Characters>
+            <Character type="null">ryan</Character>
+            <Character type="null">kelly</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Attendant</RawText>
+        <Character type="null">attendant</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Hot Dog Guy</RawText>
+        <Character type="null">hot-dog-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Cell Phone Sales Person</RawText>
+        <Character type="null">cell-phone-sales-person</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Boom Box</RawText>
+        <Character type="null">boom-box</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Andy and Erin</RawText>
+        <AnnotatedText>Andy and Erin</AnnotatedText>
+        <Characters>
+            <Character type="null">andy</Character>
+            <Character type="null">erin</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Delivery Guy</RawText>
+        <Character type="null">delivery-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Narrator</RawText>
+        <Character type="null">narrator</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Samuel</RawText>
+        <Character type="null">samuel</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>President</RawText>
+        <Character type="null">president</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Goldenface</RawText>
+        <Character type="null">goldenface</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Cherokee Jack</RawText>
+        <Character type="null">cherokee-jack</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Michael and Samuel together</RawText>
+        <AnnotatedText>Michael and Samuel together</AnnotatedText>
+        <Characters>
+            <Character type="null">michael</Character>
+            <Character type="null">samuel-together</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Hostage</RawText>
+        <Character type="null">hostage</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Rapper</RawText>
+        <Character type="null">rapper</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Holly's Mom</RawText>
+        <Character type="null">hollys-mom</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Holly's Dad</RawText>
+        <Character type="null">hollys-dad</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>DeAngelo</RawText>
+        <Character type="null">deangelo</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Deangelo/Michael</RawText>
+        <AnnotatedText>Deangelo/Michael</AnnotatedText>
+        <Characters>
+            <Character type="null">deangelo</Character>
+            <Character type="null">michael</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Darryl's sister</RawText>
+        <Character type="null">darryls-sister</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Audience</RawText>
+        <Character type="null">audience</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Together</RawText>
+        <Character type="null">together</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Erin and Kelly</RawText>
+        <AnnotatedText>Erin and Kelly</AnnotatedText>
+        <Characters>
+            <Character type="null">erin</Character>
+            <Character type="null">kelly</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Rory</RawText>
+        <Character type="null">rory</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Jordan</RawText>
+        <Character type="null">jordan</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>All but Oscar</RawText>
+        <Character type="null">all-but-oscar</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Darryl and Angela</RawText>
+        <AnnotatedText>Darryl and Angela</AnnotatedText>
+        <Characters>
+            <Character type="null">darryl</Character>
+            <Character type="null">angela</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Fred Henry</RawText>
+        <Character type="null">fred-henry</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Fred</RawText>
+        <Character type="null">fred</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Warren</RawText>
+        <Character type="null">warren</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Merv Bronte</RawText>
+        <Character type="null">merv-bronte</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Merv</RawText>
+        <Character type="null">merv</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Nellie</RawText>
+        <Character type="null">nellie</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Finger Lakes Guy</RawText>
+        <Character type="null">finger-lakes-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Pam as "fourth-biggest client"</RawText>
+        <Character type="null">pam-as-fourth-biggest-client</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Pam as "ninth-biggest client"</RawText>
+        <Character type="null">pam-as-ninth-biggest-client</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Darryl &amp; Oscar</RawText>
+        <AnnotatedText>Darryl &amp; Oscar</AnnotatedText>
+        <Characters>
+            <Character type="null">darryl</Character>
+            <Character type="null">oscar</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Tattoo Artist</RawText>
+        <Character type="null">tattoo-artist</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Female Applicant</RawText>
+        <Character type="null">female-applicant</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Male Applicant #1</RawText>
+        <Character type="background">male-applicant</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Male Applicant #2</RawText>
+        <Character type="background">male-applicant</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Gideon</RawText>
+        <Character type="null">gideon</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Bruce</RawText>
+        <Character type="null">bruce</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Dwight, Erin, Jim &amp; Kevin</RawText>
+        <AnnotatedText>Dwight, Erin, Jim &amp; Kevin</AnnotatedText>
+        <Characters>
+            <Character type="null">dwight</Character>
+            <Character type="null">erin</Character>
+            <Character type="null">jim</Character>
+            <Character type="null">kevin</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Walter</RawText>
+        <Character type="null">walter</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ellen</RawText>
+        <Character type="null">ellen</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Walter Jr.</RawText>
+        <Character type="null">walter-jr</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Andy &amp; Walter</RawText>
+        <AnnotatedText>Andy &amp; Walter</AnnotatedText>
+        <Characters>
+            <Character type="null">andy</Character>
+            <Character type="null">walter</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Walter &amp; Walter Jr</RawText>
+        <AnnotatedText>Walter &amp; Walter Jr</AnnotatedText>
+        <Characters>
+            <Character type="null">walter</Character>
+            <Character type="null">walter-jr</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Erin's Cell Phone</RawText>
+        <Character type="null">erins-cell-phone</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Bert</RawText>
+        <Character type="null">bert</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Gabe/Kelly/Toby</RawText>
+        <AnnotatedText>Gabe/Kelly/Toby</AnnotatedText>
+        <Characters>
+            <Character type="null">gabe</Character>
+            <Character type="null">kelly</Character>
+            <Character type="null">toby</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Andy/Pam</RawText>
+        <AnnotatedText>Andy/Pam</AnnotatedText>
+        <Characters>
+            <Character type="null">andy</Character>
+            <Character type="null">pam</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Andy/Stanley</RawText>
+        <AnnotatedText>Andy/Stanley</AnnotatedText>
+        <Characters>
+            <Character type="null">andy</Character>
+            <Character type="null">stanley</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Val</RawText>
+        <Character type="null">val</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Warehouse Crew</RawText>
+        <Character type="null">warehouse-crew</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Cathy</RawText>
+        <Character type="null">cathy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Offscreen</RawText>
+        <Character type="null">offscreen</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Curtis</RawText>
+        <Character type="null">curtis</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Drummer</RawText>
+        <Character type="null">drummer</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Pam and Kelly</RawText>
+        <AnnotatedText>Pam and Kelly</AnnotatedText>
+        <Characters>
+            <Character type="null">pam</Character>
+            <Character type="null">kelly</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Old Man</RawText>
+        <Character type="null">old-man</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Andy and Darryl</RawText>
+        <AnnotatedText>Andy and Darryl</AnnotatedText>
+        <Characters>
+            <Character type="null">andy</Character>
+            <Character type="null">darryl</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Darryl and Kevin</RawText>
+        <AnnotatedText>Darryl and Kevin</AnnotatedText>
+        <Characters>
+            <Character type="null">darryl</Character>
+            <Character type="null">kevin</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Park Ranger</RawText>
+        <Character type="null">park-ranger</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Chelsea</RawText>
+        <Character type="null">chelsea</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Archivist</RawText>
+        <Character type="null">archivist</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Soldier</RawText>
+        <Character type="null">soldier</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Amanda</RawText>
+        <Character type="null">amanda</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Susan</RawText>
+        <Character type="null">susan</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Andy/Oscar</RawText>
+        <AnnotatedText>Andy/Oscar</AnnotatedText>
+        <Characters>
+            <Character type="null">andy</Character>
+            <Character type="null">oscar</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Bob's Secretary</RawText>
+        <Character type="null">bobs-secretary</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Host</RawText>
+        <Character type="null">host</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Queerenstein Bears</RawText>
+        <Character type="null">queerenstein-bears</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Oscar's Friend</RawText>
+        <Character type="null">oscars-friend</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Stu</RawText>
+        <Character type="null">stu</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Stonewall Host</RawText>
+        <Character type="null">stonewall-host</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Meredith &amp; Kelly</RawText>
+        <AnnotatedText>Meredith &amp; Kelly</AnnotatedText>
+        <Characters>
+            <Character type="null">meredith</Character>
+            <Character type="null">kelly</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Einsteins</RawText>
+        <Character type="null">einsteins</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Senator Lipton</RawText>
+        <Character type="null">senator-lipton</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ernesto</RawText>
+        <Character type="null">ernesto</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Officer Foley</RawText>
+        <Character type="null">officer-foley</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Andy, Darryl &amp; Officer Foley</RawText>
+        <AnnotatedText>Andy, Darryl &amp; Officer Foley</AnnotatedText>
+        <Characters>
+            <Character type="null">andy</Character>
+            <Character type="null">darryl</Character>
+            <Character type="null">officer-foley</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Saleswoman</RawText>
+        <Character type="null">saleswoman</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Emergency Operator</RawText>
+        <Character type="null">emergency-operator</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Paramedic</RawText>
+        <Character type="null">paramedic</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Donna Muraski</RawText>
+        <Character type="null">donna-muraski</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Wally Amos</RawText>
+        <Character type="null">wally-amos</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Angela/Pam</RawText>
+        <AnnotatedText>Angela/Pam</AnnotatedText>
+        <Characters>
+            <Character type="null">angela</Character>
+            <Character type="null">pam</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Brandon</RawText>
+        <Character type="null">brandon</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Blogger</RawText>
+        <Character type="null">blogger</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Blogger #2</RawText>
+        <Character type="background">blogger</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Lady Blogger</RawText>
+        <Character type="null">lady-blogger</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Patty</RawText>
+        <Character type="null">patty</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Old Lady</RawText>
+        <Character type="null">old-lady</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Others</RawText>
+        <Character type="null">others</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Elderly Woman</RawText>
+        <Character type="null">elderly-woman</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Irene</RawText>
+        <Character type="null">irene</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Alonzo</RawText>
+        <Character type="null">alonzo</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Glenn</RawText>
+        <Character type="null">glenn</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Erin and Irene</RawText>
+        <AnnotatedText>Erin and Irene</AnnotatedText>
+        <Characters>
+            <Character type="null">erin</Character>
+            <Character type="null">irene</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Kevin &amp; Meredith</RawText>
+        <AnnotatedText>Kevin &amp; Meredith</AnnotatedText>
+        <Characters>
+            <Character type="null">kevin</Character>
+            <Character type="null">meredith</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Lauren</RawText>
+        <Character type="null">lauren</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Party guests</RawText>
+        <Character type="null">party-guests</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Magician</RawText>
+        <Character type="null">magician</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ravi</RawText>
+        <Character type="null">ravi</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Robert &amp; Creed</RawText>
+        <AnnotatedText>Robert &amp; Creed</AnnotatedText>
+        <Characters>
+            <Character type="null">robert</Character>
+            <Character type="null">creed</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Wrangler</RawText>
+        <Character type="null">wrangler</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Senator</RawText>
+        <Character type="null">senator</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Vet</RawText>
+        <Character type="null">vet</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Harry</RawText>
+        <Character type="null">harry</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mr. Ramish</RawText>
+        <Character type="null">mr-ramish</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Calvin</RawText>
+        <Character type="null">calvin</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Off-camera</RawText>
+        <Character type="null">off-camera</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Rafe</RawText>
+        <Character type="null">rafe</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Fake Jim</RawText>
+        <Character type="null">fake-jim</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Voicemail</RawText>
+        <Character type="null">voicemail</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Nellie and Pam</RawText>
+        <AnnotatedText>Nellie and Pam</AnnotatedText>
+        <Characters>
+            <Character type="null">nellie</Character>
+            <Character type="null">pam</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Video Andy</RawText>
+        <Character type="null">video-andy</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Phyllis, Kevin &amp; Stanley</RawText>
+        <AnnotatedText>Phyllis, Kevin &amp; Stanley</AnnotatedText>
+        <Characters>
+            <Character type="null">phyllis</Character>
+            <Character type="null">kevin</Character>
+            <Character type="null">stanley</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Here Comes Treble</RawText>
+        <Character type="null">here-comes-treble</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>HCT Member #1</RawText>
+        <Character type="background">hct-member</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>HCT Member #2</RawText>
+        <Character type="background">hct-member</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Broccoli Rob</RawText>
+        <Character type="null">broccoli-rob</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Businessman #1</RawText>
+        <Character type="background">businessman</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Businessman #2</RawText>
+        <Character type="background">businessman</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Businessman #3</RawText>
+        <Character type="background">businessman</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>HCT Member #3</RawText>
+        <Character type="background">hct-member</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>White</RawText>
+        <Character type="null">white</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Boat Guy</RawText>
+        <Character type="null">boat-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Guys in breakroom</RawText>
+        <Character type="null">guys-in-breakroom</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Business partner</RawText>
+        <Character type="null">business-partner</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Molly</RawText>
+        <Character type="null">molly</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Colin</RawText>
+        <Character type="null">colin</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Trevor</RawText>
+        <Character type="null">trevor</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Julius Irving</RawText>
+        <Character type="null">julius-irving</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>New Instant Message</RawText>
+        <Character type="null">new-instant-message</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Suit Store Father</RawText>
+        <Character type="null">suit-store-father</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Athlead Employee</RawText>
+        <Character type="null">athlead-employee</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Dennis</RawText>
+        <Character type="null">dennis</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Wade</RawText>
+        <Character type="null">wade</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Suit Store Son</RawText>
+        <Character type="null">suit-store-son</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Female Athlead Employee</RawText>
+        <Character type="null">female-athlead-employee</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>3rd Athlead Employee</RawText>
+        <Character type="null">athlead-employee</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>4th Athlead Employee</RawText>
+        <Character type="null">athlead-employee</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Coworker</RawText>
+        <Character type="null">coworker</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Co-worker #2</RawText>
+        <Character type="background">co-worker</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mr. Romanko</RawText>
+        <Character type="null">mr-romanko</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Dance Teacher</RawText>
+        <Character type="null">dance-teacher</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ballerinas</RawText>
+        <Character type="null">ballerinas</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Parent in Audience</RawText>
+        <Character type="null">parent-in-audience</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Parent in audience #2</RawText>
+        <Character type="background">parent-in-audience</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Parent in audience #1</RawText>
+        <Character type="background">parent-in-audience</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Investor</RawText>
+        <Character type="null">investor</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Lonnie</RawText>
+        <Character type="null">lonnie</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Fast Food Worker</RawText>
+        <Character type="null">fast-food-worker</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Drive Thru Customer</RawText>
+        <Character type="null">drive-thru-customer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Brian</RawText>
+        <Character type="null">brian</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Camera Man</RawText>
+        <Character type="null">camera-man</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Gabor</RawText>
+        <Character type="null">gabor</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Zeke</RawText>
+        <Character type="null">zeke</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Melvina</RawText>
+        <Character type="null">melvina</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Wolf</RawText>
+        <Character type="null">wolf</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Pam &amp; Dwight</RawText>
+        <AnnotatedText>Pam &amp; Dwight</AnnotatedText>
+        <Characters>
+            <Character type="null">pam</Character>
+            <Character type="null">dwight</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Frank</RawText>
+        <Character type="null">frank</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Party Announcer</RawText>
+        <Character type="null">party-announcer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Party Guest</RawText>
+        <Character type="null">party-guest</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Party Photographer</RawText>
+        <Character type="null">party-photographer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Party Waiter</RawText>
+        <Character type="null">party-waiter</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Nail Stylist #1</RawText>
+        <Character type="background">nail-stylist</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Nail Stylist #2</RawText>
+        <Character type="background">nail-stylist</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Nail Salon Manager</RawText>
+        <Character type="null">nail-salon-manager</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Shirley</RawText>
+        <Character type="null">shirley</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Athlead Coworker</RawText>
+        <Character type="null">athlead-coworker</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Roger</RawText>
+        <Character type="null">roger</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Alice</RawText>
+        <Character type="null">alice</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Oscar's Computer</RawText>
+        <Character type="null">oscars-computer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Jeb</RawText>
+        <Character type="null">jeb</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>German Minister</RawText>
+        <Character type="null">german-minister</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Fannie</RawText>
+        <Character type="null">fannie</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Henry Bruegger</RawText>
+        <Character type="null">henry-bruegger</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Esther</RawText>
+        <Character type="null">esther</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Cameron</RawText>
+        <Character type="null">cameron</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Promo Voice</RawText>
+        <Character type="null">promo-voice</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ryan Howard</RawText>
+        <Character type="null">ryan-howard</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mr. Ruger</RawText>
+        <Character type="null">mr-ruger</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Promo Announcer</RawText>
+        <Character type="null">promo-announcer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ruger Sister #1</RawText>
+        <Character type="background">ruger-sister</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Salesmen</RawText>
+        <Character type="null">salesmen</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Ruger Sister #2</RawText>
+        <Character type="background">ruger-sister</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Angela &amp; Oscar</RawText>
+        <AnnotatedText>Angela &amp; Oscar</AnnotatedText>
+        <Characters>
+            <Character type="null">angela</Character>
+            <Character type="null">oscar</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Reporter #1</RawText>
+        <Character type="background">reporter</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Reporter #2</RawText>
+        <Character type="background">reporter</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mrs. Davis</RawText>
+        <Character type="null">mrs-davis</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Phillip</RawText>
+        <Character type="null">phillip</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Director</RawText>
+        <Character type="null">director</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Producer</RawText>
+        <Character type="null">producer</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Production Assistant</RawText>
+        <Character type="null">production-assistant</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Sensei Billy</RawText>
+        <Character type="null">sensei-billy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Check-in guy</RawText>
+        <Character type="null">check-in-guy</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Casey</RawText>
+        <Character type="null">casey</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Mark McGrath</RawText>
+        <Character type="null">mark-mcgrath</Character>
+    </Speaker>
+    <Speaker annotated="true">
+        <RawText>Jim &amp; Dwight</RawText>
+        <AnnotatedText>Jim &amp; Dwight</AnnotatedText>
+        <Characters>
+            <Character type="null">jim</Character>
+            <Character type="null">dwight</Character>
+        </Characters>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Camera Crew</RawText>
+        <Character type="null">camera-crew</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>People in line</RawText>
+        <Character type="null">people-in-line</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Santigold</RawText>
+        <Character type="null">santigold</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Aaron Rodgers</RawText>
+        <Character type="null">aaron-rodgers</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Clay Aiken</RawText>
+        <Character type="null">clay-aiken</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Malcolm</RawText>
+        <Character type="null">malcolm</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Bill Hader</RawText>
+        <Character type="null">bill-hader</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Seth Mayers</RawText>
+        <Character type="null">seth-mayers</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Dakota</RawText>
+        <Character type="null">dakota</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Stripper</RawText>
+        <Character type="null">stripper</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Jakey</RawText>
+        <Character type="null">jakey</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Man #1</RawText>
+        <Character type="background">man</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Woman #1</RawText>
+        <Character type="background">woman</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Woman #2</RawText>
+        <Character type="background">woman</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Man #2</RawText>
+        <Character type="background">man</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Moderator</RawText>
+        <Character type="null">moderator</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Man #3</RawText>
+        <Character type="background">man</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Woman #3</RawText>
+        <Character type="background">woman</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Woman #4</RawText>
+        <Character type="background">woman</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Joan</RawText>
+        <Character type="null">joan</Character>
+    </Speaker>
+    <Speaker annotated="false">
+        <RawText>Minister</RawText>
+        <Character type="null">minister</Character>
+    </Speaker>
+</SpeakerList>
