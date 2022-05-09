@@ -472,5 +472,33 @@ def compile() -> None:
     logger.info('Completed episode data compiling.')
 
 
+@cli.command('meta-update')
+def meta_update() -> None:
+    """Update identifiers.xml with type meta data from meta.json"""
+
+    with open(ConstantPaths.META, 'r') as meta_file:
+        meta_data = json.load(meta_file)
+
+    null_count: int = len(list(filter(lambda v: v is None, meta_data.values())))
+    if null_count > 0:
+        logger.warning(f"{null_count} characters still have null values.")
+
+    with open(ConstantPaths.IDENTIFIERS, 'r') as identifier_file:
+        identifiers = etree.parse(identifier_file)
+
+    for character in identifiers.xpath('//SpeakerList/Speaker/Character'):
+        character.attrib["type"] = meta_data.get(character.text) or "null"
+
+    for character in identifiers.xpath('//SpeakerList/Speaker/Characters/Character'):
+        character.attrib["type"] = meta_data.get(character.text) or "null"
+
+    with open(ConstantPaths.IDENTIFIERS, 'w') as identifier_file:
+        etree.indent(identifiers, space=" " * 4)
+        identifier_file.write(etree.tostring(identifiers, encoding=str, pretty_print=True))
+
+
+
+
+
 if __name__ == '__main__':
     cli()
