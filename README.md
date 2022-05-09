@@ -80,7 +80,7 @@ with a incredibly inconsistent, human curated data format.
 To ease text processing, I did come up with RegEx expressions for search and replacement:
 
 ```
-^([\w\s]+\-*[\w\s]*):\s+
+^(?!-)([\w\s’'0-9\-\.\/#]*):\s+
 $1|
 ```
 
@@ -169,7 +169,35 @@ them.
     
 Note: Readying this application for Production and wider-development is still in progress.
 
-**Don't try to run this application just yet.**
+## Descriptions, Images, Summaries
+
+While The Office is a large show, it unfortunately does not have any readily accessible short descriptions of characters.
+
+Wikis provide long and comprehensive descriptions and some high quality images, but overall, it was rather difficult to
+find stuff for characters introduced late in the show or with overall more minor impact (ex David Wallace, Robert California, Clark Green).
+
+Episode and Character images will be clickable, opening a Lightbox of the full body image.
+
+### Character Images
+
+Character Images are made to have 2 different shots: 1 large full body image, and a cropped square of their face.
+
+Additionally, all images will be paired with thumbnails of their faces, used for progress image rendering.
+
+All images should be as high quality as possible, minimum 500px in each dimension for the full body shot. Cropped squares
+should also look to be as large as possible.
+
+Thumbnails are manually generated with ImageMagick v7: `magick input.webp -resize 128 -quality 75 input_thumb.webp`
+
+### Episode Images
+
+Episode Images should mirror Netflix's episode images if possible. Otherwise, each episode will have to be
+painstakingly reviewed for what scene and moment(s) best represent the episode, then screenshotted.
+
+Then, like the character images, a square crop will be made, and thumbnails will be generated just the same.
+
+One single image will represent each Episode on the Season page, but multiple images will be available in a carousel to
+be viewed.
 
 ## To-do
 
