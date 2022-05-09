@@ -8,17 +8,18 @@ import os
 import re
 import sys
 import time
-from collections import defaultdict
+from collections import OrderedDict, defaultdict
 from pprint import pprint
-from typing import List, Optional, Tuple, Union
+from typing import Dict, List, Optional, Tuple, Union
 
 import click
 import enlighten
 import requests
 from bs4 import BeautifulSoup
+from lxml import etree
 
 sys.path[0] += '\\..'
-from server.helpers import algolia_transform, character_id
+from server.helpers import algolia_transform, character_id, clean_string
 from server.process import DATA_DIR, get_appearances, get_episodes, get_filepath, load_file, \
     save_file, sleep_from, \
     verify_episode
@@ -42,7 +43,7 @@ def misc():
 @misc.command('characters')
 @click.option('-s', '--season', type=int, help='Season to be processed for character names')
 @click.option('-e', '--episode', type=int, help='Episode to be processed. Requires --season to be specified.')
-@click.option('--all', is_flag=True, help='Process all episodes, regardless of previous specifications.')
+@click.option('-a', '--all', is_flag=True, help='Process all episodes, regardless of previous specifications.')
 @click.option('-i', '--individual', is_flag=True,
               help='List characters from individual episodes instead of just compiling a masterlist')
 def characters(season: int, episode: int, all: bool, individual: bool):
@@ -90,7 +91,7 @@ def characters(season: int, episode: int, all: bool, individual: bool):
 
     # print(master)
     logger.info(
-        ', '.join(item['name'] for item in sorted(master.values(), reverse=True, key=lambda item: item['appearances'])))
+            ', '.join(item['name'] for item in sorted(master.values(), reverse=True, key=lambda item: item['appearances'])))
 
 
 @cli.command('fetch')
@@ -98,7 +99,7 @@ def characters(season: int, episode: int, all: bool, individual: bool):
               help='Season to be fetched. Without --episode, will download all episodes in a season.')
 @click.option('-e', '--episode', type=int, help='Specific episode to be fetched. Requires --season to be specified.')
 @click.option('-d', '--delay', type=float, default=0.5, help='Delay between each request')
-@click.option('--all', is_flag=True, help='Fetch all episodes, regardless of previous specifications.')
+@click.option('-a', '--all', is_flag=True, help='Fetch all episodes, regardless of previous specifications.')
 @click.option('-o', '--overwrite', is_flag=True, help='Overwrite if a file already exists.')
 @click.option('-ss', '--silent-skip', is_flag=True, help='Skip existing files silently')
 def fetch(season: int, episode: int, delay: float, all: bool, overwrite: bool, silent_skip: bool):
@@ -136,7 +137,6 @@ def fetch(season: int, episode: int, delay: float, all: bool, overwrite: bool, s
     with enlighten.Manager() as manager:
         with manager.counter(total=len(episodes), desc='Fetching...', unit='episodes') as pbar:
             for _season, _episode in episodes:
-
                 filepath = get_filepath(_season, _episode, 'html')
 
                 # Check if HTML file exists
@@ -167,7 +167,7 @@ def fetch(season: int, episode: int, delay: float, all: bool, overwrite: bool, s
 @click.option('-s', '--season', type=int,
               help='Season to be fetched. Without --episode, will download all episodes in a season.')
 @click.option('-e', '--episode', type=int, help='Specific episode to be fetched. Requires --season to be specified.')
-@click.option('--all', is_flag=True, help='Fetch all episodes, regardless of previous specifications.')
+@click.option('-a', '--all', is_flag=True, help='Fetch all episodes, regardless of previous specifications.')
 @click.option('-o', '--overwrite', is_flag=True, help='Overwrite if a file already exists.')
 @click.option('-ss', '--silent-skip', is_flag=True, help='Skip missing/existing files silently')
 @click.option('-ssm', '--silent-skip-missing', is_flag=True, help='Skip missing files silently')
@@ -239,7 +239,7 @@ def preprocess(season: int, episode: int, all: bool, overwrite: bool, silent_ski
 @click.option('-s', '--season', type=int,
               help='Season to be fetched. Without --episode, will download all episodes in a season.')
 @click.option('-e', '--episode', type=int, help='Specific episode to be fetched. Requires --season to be specified.')
-@click.option('--all', 'all_', is_flag=True, help='Fetch all episodes, regardless of previous specifications.')
+@click.option('-a', '--all', 'all_', is_flag=True, help='Fetch all episodes, regardless of previous specifications.')
 @click.option('-r', '--report', is_flag=True, help='Report quote statistics once processing completed.')
 def process(season: Optional[int], episode: Optional[int], all_: bool, report: bool):
     """
@@ -267,6 +267,9 @@ def process(season: Optional[int], episode: Optional[int], all_: bool, report: b
         logger.info('Check --help for more information on this command.')
         return
 
+    speakers: Dict = load_file(os.path.join(DATA_DIR, 'speakers.json'), True)
+    speakers = {original: new for original, new in speakers.items() if original != new and type(new) == str}
+
     quote: Union[str, List[str]]
     section_num: int
     for _season, _episode in episodes:
@@ -284,11 +287,12 @@ def process(season: Optional[int], episode: Optional[int], all_: bool, report: b
 
                 for quote in section_data:
                     quote = quote.split('|', 1)
+
                     section['quotes'].append(
-                        {
-                            'speaker': quote[0],
-                            'text': quote[1]
-                        }
+                            {
+                                'speaker': clean_string(speakers.get(quote[0], quote[0])),
+                                'text': clean_string(quote[1])
+                            }
                     )
                 sections.append(section)
         except FileNotFoundError:
@@ -298,7 +302,7 @@ def process(season: Optional[int], episode: Optional[int], all_: bool, report: b
             logger.exception(f'Skipped Season {_season}, Episode {_episode}: Malformed data.')
             if quote:
                 logger.info(
-                    f'Last quote seen "{quote if type(quote) is str else "|".join(quote)}" in section {section_num}')
+                        f'Last quote seen "{quote if type(quote) is str else "|".join(quote)}" in section {section_num}')
         else:
             # Save processed data
             save_file(get_filepath(_season, _episode, 'processed'), sections, True)
@@ -322,6 +326,81 @@ def process(season: Optional[int], episode: Optional[int], all_: bool, report: b
             logger.debug(f'{deleted_count[0]} different deleted sections, {len(deleted_count[1])} unique.')
             logger.info(f'{len(speakers)} Speakers:')
             logger.info(', '.join(speakers))
+
+
+@cli.command('xml')
+@click.option('-s', '--season', type=int, help='Season to be fetched. Without --episode, will download all episodes in a season.')
+@click.option('-e', '--episode', type=int, help='Specific episode to be fetched. Requires --season to be specified.')
+@click.option('-a', '--all', 'all_', is_flag=True, help='Fetch all episodes, regardless of previous specifications.')
+@click.option('-r', '--report', is_flag=True, help='Report quote statistics once processing completed.')
+def xml(season: Optional[int], episode: Optional[int], all_: bool, report: bool):
+    """
+    Processes manually processed raw quote data into JSON.
+    """
+    episodes: List[Tuple[int, int]]
+
+    if all_:
+        episodes = list(get_episodes())
+    elif season:
+        if episode:
+            if verify_episode(season, episode):
+                episodes = [(season, episode)]
+            else:
+                logger.error(f'Season {season}, Episode {episode} is not a valid combination.')
+                return
+        else:
+            episodes = list(get_episodes(season=season))
+            logger.info(f'Processing Season {season}...')
+    else:
+        if episode:
+            logger.info('You must specify more than just an episode.')
+        else:
+            logger.info('You must specify which episodes to process.')
+        logger.info('Check --help for more information on this command.')
+        return
+
+    for _season, _episode in episodes:
+        try:
+            processed_data = load_file(get_filepath(_season, _episode, 'processed'), True)
+            rootElement = etree.Element('SceneList')
+            for scene in processed_data:
+                sceneElement = etree.Element('Scene')
+                for quote in scene['quotes']:
+                    charactersElement = etree.Element('Characters')
+                    sceneElement.append(charactersElement)
+
+                rootElement.append(sceneElement)
+
+            save_file(get_filepath(_season, _episode, 'xml'))
+        except FileNotFoundError:
+            logger.info(f'Skipped Season {_season}, Episode {_episode}, no file found.')
+            continue
+
+@cli.command('truth')
+def truth():
+    """Modify"""
+
+
+@cli.command('characters')
+def characters():
+    """Collects all characters from every single processed JSON file."""
+    episodes = list(get_episodes())
+    speakersList = OrderedDict()
+
+    for _season, _episode in episodes:
+        try:
+            processed_data = load_file(get_filepath(_season, _episode, 'processed'), True)
+            for scene in processed_data:
+                for quote in scene['quotes']:
+                    speakersList[quote['speaker']] = None
+        except FileNotFoundError:
+            logger.warning(f"Skipped  {_season}-{_episode}, no file found.")
+
+    speaker_data = OrderedDict([(item, item) for item in sorted(speakersList.keys())])
+    print(f'{len(speaker_data)} speakers identified.')
+
+    pprint(list(speaker_data.keys()))
+    save_file(os.path.join(DATA_DIR, 'speakers.json'), speaker_data, True)
 
 
 @cli.group('build')
@@ -437,18 +516,18 @@ def final(silent_skip: bool, process_: bool):
         except FileNotFoundError:
             if not silent_skip:
                 logger.warning(
-                    f'No data for Season {season_id}, Episode {episode_id} available. Null data inserted.')
+                        f'No data for Season {season_id}, Episode {episode_id} available. Null data inserted.')
             episode_data = None
 
         description = descriptions[season_id - 1][episode_id - 1]
         seasons[season_id - 1]['episodes'].append(
-            {
-                'title': description['title'].strip(),
-                'description': description['description'].strip(),
-                'episode_id': episode_id,
-                'characters': get_appearances(season_id, episode_id),
-                'scenes': episode_data
-            }
+                {
+                    'title': description['title'].strip(),
+                    'description': description['description'].strip(),
+                    'episode_id': episode_id,
+                    'characters': get_appearances(season_id, episode_id),
+                    'scenes': episode_data
+                }
         )
 
     logger.info('Saving to data.json')

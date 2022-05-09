@@ -8,8 +8,9 @@ import json
 import os
 from copy import deepcopy
 
+# from flask_caching import cache
 import flask_wtf
-from flask import current_app, jsonify, request
+from flask import current_app, jsonify, request, send_from_directory
 
 from server.helpers import default, get_neighbors
 
@@ -120,3 +121,8 @@ def api_character_quotes(character: str):
         return jsonify(quotes[index: index + 10])
     else:
         return jsonify(quotes)
+
+
+@current_app.route('/static/img/<path:filename>')
+def custom_static(filename):
+    return send_from_directory('./data/img/', filename)
