@@ -104,8 +104,11 @@ def truth():
 def merge():
     """Merge all Speaker Mappings from source into one file."""
     speakerList = Counter()
+
     truth_files: List[str] = os.listdir(os.path.join(TRUTH_DIR, 'episodes'))
+    logger.debug(f"{len(truth_files)} truth files available.")
     pbar = enlighten.Counter(total=len(truth_files), unit='Files')
+
     for truth_filename in truth_files:
         truth_path = os.path.join(TRUTH_DIR, 'episodes', truth_filename)
         with open(truth_path, 'r') as truth_file:
@@ -114,6 +117,8 @@ def merge():
                 speakerList[speaker] += 1
         pbar.update()
 
+    logger.debug('Speakers acquired from Truth files.')
+
     speakerMapping = OrderedDict()
     with open(os.path.join(TRUTH_DIR, Constants.SPEAKER_MAPPING_XML), 'r') as speaker_mapping_file:
         rootMappingElement: etree.ElementBase = etree.parse(speaker_mapping_file)
@@ -121,12 +126,13 @@ def merge():
             source, destination = mappingElement.xpath('.//Source/text()')[0], mappingElement.xpath('.//Destination/text()')[0]
             speakerMapping[source] = destination
 
-    print('Mappings acquired')
+    logger.debug('Mappings loaded.')
 
     root = etree.Element('CharacterList')
     pbar = enlighten.Counter(total=len(speakerList.keys()), unit='Speakers')
     seen = set()
 
+    logger.debug('Merging Speaker Mappings...')
     for speaker in speakerList.keys():
         while speakerMapping.get(speaker) is not None:
             if speakerMapping.get(speaker) == speaker:
@@ -140,9 +146,12 @@ def merge():
             characterElement.text = speaker
             pbar.update()
 
+    logger.debug("Speaker mappings merged. Exporting to `characters.xml`")
+
     with open(os.path.join(TRUTH_DIR, 'characters.xml'), 'w') as character_file:
         etree.indent(root, space=" " * 4)
         character_file.write(etree.tostring(root, encoding=str, pretty_print=True))
+
 
 @cli.command('ids')
 def ids():
