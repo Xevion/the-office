@@ -530,6 +530,7 @@ def check(verbose: bool) -> None:
 
     # TODO: Check for values in meta.json that are null
     # TODO: Check for values in meta.json that are not referenced anywhere in identifiers.xml
+    # TODO: Check for character IDs in identifiers.xml that don't look correct (voice--on-phone)
 
 
 if __name__ == '__main__':

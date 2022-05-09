@@ -900,9 +900,10 @@
         <RawText>Amy</RawText>
         <Character type="background">amy</Character>
     </Speaker>
-    <Speaker annotated="false">
+    <Speaker annotated="true">
         <RawText>Voice of Thomas Dean</RawText>
-        <Character type="background">voice-of-thomas-dean</Character>
+        <AnnotatedText>Voice of {Thomas Dean}</AnnotatedText>
+        <Character type="background">thomas-dean</Character>
     </Speaker>
     <Speaker annotated="true">
         <RawText>DunMiff/sys</RawText>
@@ -929,7 +930,7 @@
     </Speaker>
     <Speaker annotated="false">
         <RawText>Voice #2 on phone</RawText>
-        <Character type="background">voice--on-phone</Character>
+        <Character type="background">voice-on-phone</Character>
     </Speaker>
     <Speaker annotated="false">
         <RawText>Nick</RawText>

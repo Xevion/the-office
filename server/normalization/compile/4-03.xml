@@ -547,9 +547,9 @@
         <Quote>
             <QuoteText>I told you I don't want you doing these things in here.  You can use your own office or do it in the hall.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Voice of Thomas Dean</SpeakerText>
+                <SpeakerText annotated="true">Voice of {Thomas Dean}</SpeakerText>
                 <Characters>
-                    <Character type="background">voice-of-thomas-dean</Character>
+                    <Character type="background">thomas-dean</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -4617,7 +4617,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Voice #2 on phone</SpeakerText>
                 <Characters>
-                    <Character type="background">voice--on-phone</Character>
+                    <Character type="background">voice-on-phone</Character>
                 </Characters>
             </Speaker>
         </Quote>
