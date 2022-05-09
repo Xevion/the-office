@@ -518,15 +518,18 @@ def check(verbose: bool) -> None:
         speaker_name: str = character.find('RawText').text
 
         if annotate_state is None:
-            logger.warning(f'Null annotation on `{speaker_name}`')
+            logger.warning(f'Missing annotation on `{speaker_name}`')
         elif annotate_state == "true":
             if character.find('AnnotatedText') is None:
                 logger.warning(f'Missing AnnotatedText on `{speaker_name}`')
         elif annotate_state == "false":
             if character.find('AnnotatedText') is not None:
-                logger.warning(f'False annotatation on `{speaker_name}`')
+                logger.warning(f'False annotation on `{speaker_name}`')
         else:
             logger.warning(f"Unexpected annotation state `{annotate_state}` on `{speaker_name}`")
+
+    # TODO: Check for values in meta.json that are null
+    # TODO: Check for values in meta.json that are not referenced anywhere in identifiers.xml
 
 
 if __name__ == '__main__':
