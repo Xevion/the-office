@@ -1373,7 +1373,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1916,7 +1916,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Guy at Bar</SpeakerText>
                 <Characters>
-                    <Character type="null">guy-at-bar</Character>
+                    <Character type="background">guy-at-bar</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1934,7 +1934,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Other Guy at Bar</SpeakerText>
                 <Characters>
-                    <Character type="null">other-guy-at-bar</Character>
+                    <Character type="background">other-guy-at-bar</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1954,7 +1954,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Guy At Bar</SpeakerText>
                 <Characters>
-                    <Character type="null">guy-at-bar</Character>
+                    <Character type="background">guy-at-bar</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1990,7 +1990,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Guy At Bar</SpeakerText>
                 <Characters>
-                    <Character type="null">guy-at-bar</Character>
+                    <Character type="background">guy-at-bar</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2473,7 +2473,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Employee</SpeakerText>
                 <Characters>
-                    <Character type="null">employee</Character>
+                    <Character type="background">employee</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3697,7 +3697,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Waitress</SpeakerText>
                 <Characters>
-                    <Character type="null">waitress</Character>
+                    <Character type="background">waitress</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3715,7 +3715,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Waitress</SpeakerText>
                 <Characters>
-                    <Character type="null">waitress</Character>
+                    <Character type="background">waitress</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3733,7 +3733,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Waitress</SpeakerText>
                 <Characters>
-                    <Character type="null">waitress</Character>
+                    <Character type="background">waitress</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3834,7 +3834,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Manager</SpeakerText>
                 <Characters>
-                    <Character type="null">manager</Character>
+                    <Character type="background">manager</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3861,7 +3861,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Manager</SpeakerText>
                 <Characters>
-                    <Character type="null">manager</Character>
+                    <Character type="background">manager</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3879,7 +3879,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Manager</SpeakerText>
                 <Characters>
-                    <Character type="null">manager</Character>
+                    <Character type="background">manager</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3897,7 +3897,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Manager</SpeakerText>
                 <Characters>
-                    <Character type="null">manager</Character>
+                    <Character type="background">manager</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3942,7 +3942,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Manager</SpeakerText>
                 <Characters>
-                    <Character type="null">manager</Character>
+                    <Character type="background">manager</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3978,7 +3978,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Manager</SpeakerText>
                 <Characters>
-                    <Character type="null">manager</Character>
+                    <Character type="background">manager</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3996,7 +3996,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Manager</SpeakerText>
                 <Characters>
-                    <Character type="null">manager</Character>
+                    <Character type="background">manager</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -4016,7 +4016,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Manager</SpeakerText>
                 <Characters>
-                    <Character type="null">manager</Character>
+                    <Character type="background">manager</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -4034,7 +4034,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Manager</SpeakerText>
                 <Characters>
-                    <Character type="null">manager</Character>
+                    <Character type="background">manager</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -4052,7 +4052,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Manager</SpeakerText>
                 <Characters>
-                    <Character type="null">manager</Character>
+                    <Character type="background">manager</Character>
                 </Characters>
             </Speaker>
         </Quote>

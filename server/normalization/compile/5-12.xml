@@ -117,7 +117,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -135,7 +135,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -153,7 +153,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -171,7 +171,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -189,7 +189,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -207,7 +207,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -245,7 +245,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -263,7 +263,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -281,7 +281,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -858,7 +858,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince family</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-family</Character>
+                    <Character type="background">prince-family</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -876,7 +876,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -894,7 +894,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -912,7 +912,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -930,7 +930,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -948,7 +948,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -966,7 +966,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -984,7 +984,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -995,7 +995,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1015,7 +1015,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1033,7 +1033,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1060,7 +1060,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1078,7 +1078,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1114,7 +1114,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1217,7 +1217,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince</SpeakerText>
                 <Characters>
-                    <Character type="null">prince</Character>
+                    <Character type="background">prince</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1275,7 +1275,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1338,14 +1338,14 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
         <Quote>
             <QuoteText>Oh my God, oh my God, oh my God. [running out door]</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">Dwight and Michael</SpeakerText>
+                <SpeakerText annotated="true">{Dwight} and {Michael}</SpeakerText>
                 <Characters>
                     <Character type="main">dwight</Character>
                     <Character type="main">michael</Character>
@@ -1505,7 +1505,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1514,7 +1514,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandmother</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandmother</Character>
+                    <Character type="background">prince-grandmother</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1559,7 +1559,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1586,7 +1586,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1646,7 +1646,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Son</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-son</Character>
+                    <Character type="background">prince-son</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1673,7 +1673,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1682,7 +1682,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Granddaughter</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-granddaughter</Character>
+                    <Character type="background">prince-granddaughter</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1700,7 +1700,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Prince Grandfather</SpeakerText>
                 <Characters>
-                    <Character type="null">prince-grandfather</Character>
+                    <Character type="background">prince-grandfather</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2115,7 +2115,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2144,7 +2144,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2162,7 +2162,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2180,7 +2180,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>

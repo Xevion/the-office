@@ -279,7 +279,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -297,7 +297,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -315,7 +315,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -333,7 +333,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -355,7 +355,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -391,7 +391,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -409,7 +409,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -427,7 +427,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -445,7 +445,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -463,7 +463,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -481,7 +481,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -512,7 +512,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -530,7 +530,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -548,7 +548,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -597,7 +597,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -651,7 +651,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1405,7 +1405,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Leo</SpeakerText>
                 <Characters>
-                    <Character type="null">leo</Character>
+                    <Character type="background">leo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1441,7 +1441,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Leo</SpeakerText>
                 <Characters>
-                    <Character type="null">leo</Character>
+                    <Character type="background">leo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1477,7 +1477,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Leo</SpeakerText>
                 <Characters>
-                    <Character type="null">leo</Character>
+                    <Character type="background">leo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1629,7 +1629,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Police Officer #1</SpeakerText>
                 <Characters>
-                    <Character type="background">police-officer</Character>
+                    <Character type="background">officer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1647,7 +1647,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Police Officer #1</SpeakerText>
                 <Characters>
-                    <Character type="background">police-officer</Character>
+                    <Character type="background">officer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1676,7 +1676,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1723,7 +1723,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Police Officer #2</SpeakerText>
                 <Characters>
-                    <Character type="background">police-officer</Character>
+                    <Character type="background">officer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1741,7 +1741,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Police Officer #2</SpeakerText>
                 <Characters>
-                    <Character type="background">police-officer</Character>
+                    <Character type="background">officer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1795,7 +1795,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Police Officer #1</SpeakerText>
                 <Characters>
-                    <Character type="background">police-officer</Character>
+                    <Character type="background">officer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1840,7 +1840,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Police Officer #1</SpeakerText>
                 <Characters>
-                    <Character type="background">police-officer</Character>
+                    <Character type="background">officer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1885,7 +1885,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Police Officer #1</SpeakerText>
                 <Characters>
-                    <Character type="background">police-officer</Character>
+                    <Character type="background">officer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1894,7 +1894,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Police Officer #2</SpeakerText>
                 <Characters>
-                    <Character type="background">police-officer</Character>
+                    <Character type="background">officer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1930,7 +1930,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Police Officer #1</SpeakerText>
                 <Characters>
-                    <Character type="background">police-officer</Character>
+                    <Character type="background">officer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1957,7 +1957,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Police Officer #1</SpeakerText>
                 <Characters>
-                    <Character type="background">police-officer</Character>
+                    <Character type="background">officer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2002,7 +2002,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Police Officer #2</SpeakerText>
                 <Characters>
-                    <Character type="background">police-officer</Character>
+                    <Character type="background">officer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2011,7 +2011,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Police Officer #1</SpeakerText>
                 <Characters>
-                    <Character type="background">police-officer</Character>
+                    <Character type="background">officer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2020,7 +2020,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Police Officer #2</SpeakerText>
                 <Characters>
-                    <Character type="background">police-officer</Character>
+                    <Character type="background">officer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2047,7 +2047,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Police Officer #2</SpeakerText>
                 <Characters>
-                    <Character type="background">police-officer</Character>
+                    <Character type="background">officer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2065,7 +2065,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Police Officer #1</SpeakerText>
                 <Characters>
-                    <Character type="background">police-officer</Character>
+                    <Character type="background">officer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2083,7 +2083,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Police Officer #1</SpeakerText>
                 <Characters>
-                    <Character type="background">police-officer</Character>
+                    <Character type="background">officer</Character>
                 </Characters>
             </Speaker>
         </Quote>

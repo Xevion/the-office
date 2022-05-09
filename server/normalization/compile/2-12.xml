@@ -504,7 +504,7 @@
         <Quote>
             <QuoteText>Oh my God!</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">Jim and Pam</SpeakerText>
+                <SpeakerText annotated="true">{Jim} and {Pam}</SpeakerText>
                 <Characters>
                     <Character type="main">jim</Character>
                     <Character type="main">pam</Character>
@@ -1442,7 +1442,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1574,7 +1574,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Billy Merchant</SpeakerText>
                 <Characters>
-                    <Character type="null">billy-merchant</Character>
+                    <Character type="recurring">billy-merchant</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1592,7 +1592,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Billy Merchant</SpeakerText>
                 <Characters>
-                    <Character type="null">billy-merchant</Character>
+                    <Character type="recurring">billy-merchant</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1619,7 +1619,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Billy Merchant</SpeakerText>
                 <Characters>
-                    <Character type="null">billy-merchant</Character>
+                    <Character type="recurring">billy-merchant</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1637,7 +1637,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Billy Merchant</SpeakerText>
                 <Characters>
-                    <Character type="null">billy-merchant</Character>
+                    <Character type="recurring">billy-merchant</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1655,7 +1655,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Billy Merchant</SpeakerText>
                 <Characters>
-                    <Character type="null">billy-merchant</Character>
+                    <Character type="recurring">billy-merchant</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1677,7 +1677,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Billy Merchant</SpeakerText>
                 <Characters>
-                    <Character type="null">billy-merchant</Character>
+                    <Character type="recurring">billy-merchant</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1695,7 +1695,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Billy Merchant</SpeakerText>
                 <Characters>
-                    <Character type="null">billy-merchant</Character>
+                    <Character type="recurring">billy-merchant</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2725,7 +2725,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Doctor</SpeakerText>
                 <Characters>
-                    <Character type="null">doctor</Character>
+                    <Character type="background">doctor</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2743,7 +2743,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Doctor</SpeakerText>
                 <Characters>
-                    <Character type="null">doctor</Character>
+                    <Character type="background">doctor</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2770,7 +2770,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Doctor</SpeakerText>
                 <Characters>
-                    <Character type="null">doctor</Character>
+                    <Character type="background">doctor</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2788,7 +2788,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Doctor</SpeakerText>
                 <Characters>
-                    <Character type="null">doctor</Character>
+                    <Character type="background">doctor</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2817,7 +2817,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Lab Tech</SpeakerText>
                 <Characters>
-                    <Character type="null">lab-tech</Character>
+                    <Character type="background">lab-tech</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2835,7 +2835,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Lab Tech</SpeakerText>
                 <Characters>
-                    <Character type="null">lab-tech</Character>
+                    <Character type="background">lab-tech</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3066,7 +3066,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Lab Tech</SpeakerText>
                 <Characters>
-                    <Character type="null">lab-tech</Character>
+                    <Character type="background">lab-tech</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3383,7 +3383,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Doctor</SpeakerText>
                 <Characters>
-                    <Character type="null">doctor</Character>
+                    <Character type="background">doctor</Character>
                 </Characters>
             </Speaker>
         </Quote>

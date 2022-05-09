@@ -5,7 +5,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Phone Salesman</SpeakerText>
                 <Characters>
-                    <Character type="null">phone-salesman</Character>
+                    <Character type="background">phone-salesman</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -23,7 +23,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Phone Salesman</SpeakerText>
                 <Characters>
-                    <Character type="null">phone-salesman</Character>
+                    <Character type="background">phone-salesman</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -41,7 +41,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Phone Salesman</SpeakerText>
                 <Characters>
-                    <Character type="null">phone-salesman</Character>
+                    <Character type="background">phone-salesman</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -72,7 +72,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Phone Salesman</SpeakerText>
                 <Characters>
-                    <Character type="null">phone-salesman</Character>
+                    <Character type="background">phone-salesman</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -90,7 +90,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Phone Salesman</SpeakerText>
                 <Characters>
-                    <Character type="null">phone-salesman</Character>
+                    <Character type="background">phone-salesman</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -126,7 +126,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Phone Salesman</SpeakerText>
                 <Characters>
-                    <Character type="null">phone-salesman</Character>
+                    <Character type="background">phone-salesman</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -223,7 +223,7 @@
         <Quote>
             <QuoteText>Ayyyy!</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">Jim, Pam, Michael and Dwight</SpeakerText>
+                <SpeakerText annotated="true">{Jim}, {Pam}, {Michael} and {Dwight}</SpeakerText>
                 <Characters>
                     <Character type="main">jim</Character>
                     <Character type="main">pam</Character>
@@ -237,14 +237,14 @@
             <Speaker>
                 <SpeakerText annotated="false">Phone Salesman</SpeakerText>
                 <Characters>
-                    <Character type="null">phone-salesman</Character>
+                    <Character type="background">phone-salesman</Character>
                 </Characters>
             </Speaker>
         </Quote>
         <Quote>
             <QuoteText>Ayyyy!</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">Jim, Pam, Michael and Dwight</SpeakerText>
+                <SpeakerText annotated="true">{Jim}, {Pam}, {Michael} and {Dwight}</SpeakerText>
                 <Characters>
                     <Character type="main">jim</Character>
                     <Character type="main">pam</Character>
@@ -596,7 +596,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Drive Worker</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-drive-worker</Character>
+                    <Character type="background">blood-drive-worker</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -636,7 +636,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Drive Worker</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-drive-worker</Character>
+                    <Character type="background">blood-drive-worker</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -654,7 +654,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -672,7 +672,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -690,7 +690,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -708,7 +708,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -726,7 +726,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -744,7 +744,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -762,7 +762,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Drive Worker</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-drive-worker</Character>
+                    <Character type="background">blood-drive-worker</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -780,7 +780,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Drive Worker</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-drive-worker</Character>
+                    <Character type="background">blood-drive-worker</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -798,7 +798,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -816,7 +816,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -874,7 +874,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -892,7 +892,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -910,7 +910,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -928,7 +928,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -946,7 +946,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -964,7 +964,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -982,7 +982,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1000,7 +1000,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Drive Worker</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-drive-worker</Character>
+                    <Character type="background">blood-drive-worker</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1018,7 +1018,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1036,7 +1036,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1056,7 +1056,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Hank</SpeakerText>
                 <Characters>
-                    <Character type="null">hank</Character>
+                    <Character type="recurring">hank</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1074,7 +1074,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Drive Worker</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-drive-worker</Character>
+                    <Character type="background">blood-drive-worker</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1092,7 +1092,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Drive Worker</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-drive-worker</Character>
+                    <Character type="background">blood-drive-worker</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1168,7 +1168,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bob</SpeakerText>
                 <Characters>
-                    <Character type="null">bob</Character>
+                    <Character type="background">bob</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1262,7 +1262,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bob</SpeakerText>
                 <Characters>
-                    <Character type="null">bob</Character>
+                    <Character type="background">bob</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1334,7 +1334,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bob</SpeakerText>
                 <Characters>
-                    <Character type="null">bob</Character>
+                    <Character type="background">bob</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1397,7 +1397,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bob</SpeakerText>
                 <Characters>
-                    <Character type="null">bob</Character>
+                    <Character type="background">bob</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1862,7 +1862,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Lynn</SpeakerText>
                 <Characters>
-                    <Character type="null">lynn</Character>
+                    <Character type="background">lynn</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1889,7 +1889,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Lynn</SpeakerText>
                 <Characters>
-                    <Character type="null">lynn</Character>
+                    <Character type="background">lynn</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1945,7 +1945,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blonde Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blonde-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1963,7 +1963,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blonde Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blonde-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1981,7 +1981,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blonde Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blonde-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2057,7 +2057,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Lynn</SpeakerText>
                 <Characters>
-                    <Character type="null">lynn</Character>
+                    <Character type="background">lynn</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2097,7 +2097,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Eric</SpeakerText>
                 <Characters>
-                    <Character type="null">eric</Character>
+                    <Character type="background">eric</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2404,7 +2404,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2424,7 +2424,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bob</SpeakerText>
                 <Characters>
-                    <Character type="null">bob</Character>
+                    <Character type="background">bob</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2442,7 +2442,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bob</SpeakerText>
                 <Characters>
-                    <Character type="null">bob</Character>
+                    <Character type="background">bob</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2469,7 +2469,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bob</SpeakerText>
                 <Characters>
-                    <Character type="null">bob</Character>
+                    <Character type="background">bob</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2487,7 +2487,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bob</SpeakerText>
                 <Characters>
-                    <Character type="null">bob</Character>
+                    <Character type="background">bob</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2505,7 +2505,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bob</SpeakerText>
                 <Characters>
-                    <Character type="null">bob</Character>
+                    <Character type="background">bob</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2534,7 +2534,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Lynn</SpeakerText>
                 <Characters>
-                    <Character type="null">lynn</Character>
+                    <Character type="background">lynn</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2552,7 +2552,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Lynn</SpeakerText>
                 <Characters>
-                    <Character type="null">lynn</Character>
+                    <Character type="background">lynn</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2570,7 +2570,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Lynn</SpeakerText>
                 <Characters>
-                    <Character type="null">lynn</Character>
+                    <Character type="background">lynn</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2601,7 +2601,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blonde Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blonde-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2619,7 +2619,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blonde Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blonde-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2637,7 +2637,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blonde Girl</SpeakerText>
                 <Characters>
-                    <Character type="null">blonde-girl</Character>
+                    <Character type="background">girl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2760,7 +2760,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Blood Drive Worker</SpeakerText>
                 <Characters>
-                    <Character type="null">blood-drive-worker</Character>
+                    <Character type="background">blood-drive-worker</Character>
                 </Characters>
             </Speaker>
         </Quote>

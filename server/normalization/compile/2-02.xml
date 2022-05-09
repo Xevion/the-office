@@ -777,7 +777,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -795,7 +795,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -831,7 +831,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -885,7 +885,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -966,7 +966,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -975,7 +975,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Warehouse Guys</SpeakerText>
                 <Characters>
-                    <Character type="null">warehouse-guy</Character>
+                    <Character type="background">warehouse-guy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1356,7 +1356,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Video</SpeakerText>
                 <Characters>
-                    <Character type="null">video</Character>
+                    <Character type="background">video</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1508,7 +1508,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Man in Video</SpeakerText>
                 <Characters>
-                    <Character type="null">man-in-video</Character>
+                    <Character type="background">man-in-video</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1517,7 +1517,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Video</SpeakerText>
                 <Characters>
-                    <Character type="null">video</Character>
+                    <Character type="background">video</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1586,7 +1586,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Mr. O'Malley</SpeakerText>
                 <Characters>
-                    <Character type="null">mr-omalley</Character>
+                    <Character type="background">mr-omalley</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1855,7 +1855,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Albiny</SpeakerText>
                 <Characters>
-                    <Character type="null">albiny</Character>
+                    <Character type="background">albiny</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1931,7 +1931,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Albiny</SpeakerText>
                 <Characters>
-                    <Character type="null">albiny</Character>
+                    <Character type="background">albiny</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1949,9 +1949,9 @@
         <Quote>
             <QuoteText>Um... hello.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1967,9 +1967,9 @@
         <Quote>
             <QuoteText>Finally made it!</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1998,9 +1998,9 @@
         <Quote>
             <QuoteText>This is all yours?</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2016,9 +2016,9 @@
         <Quote>
             <QuoteText>Oh, my goodness. That's great.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2047,9 +2047,9 @@
         <Quote>
             <QuoteText>Oh, right! I remember...</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2065,9 +2065,9 @@
         <Quote>
             <QuoteText>with the picture.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2083,9 +2083,9 @@
         <Quote>
             <QuoteText>Sure.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2101,9 +2101,9 @@
         <Quote>
             <QuoteText>[to Roy] Oooooh!</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2119,9 +2119,9 @@
         <Quote>
             <QuoteText>Well, there he is!</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2137,9 +2137,9 @@
         <Quote>
             <QuoteText>Hi, handsome!</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2155,9 +2155,9 @@
         <Quote>
             <QuoteText>Oh, thank you! So! We ready for dinner?</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2173,9 +2173,9 @@
         <Quote>
             <QuoteText>Oh, I don't believe that.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2191,9 +2191,9 @@
         <Quote>
             <QuoteText>Oh, anything is fine.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2209,9 +2209,9 @@
         <Quote>
             <QuoteText>So which one is Jim?</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2227,9 +2227,9 @@
         <Quote>
             <QuoteText>I just wanted to know.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2245,9 +2245,9 @@
         <Quote>
             <QuoteText>All right. Okay.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2263,9 +2263,9 @@
         <Quote>
             <QuoteText>Okay.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2281,9 +2281,9 @@
         <Quote>
             <QuoteText>I'll make myself busy.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Pam's Mom</SpeakerText>
+                <SpeakerText annotated="false">Helene</SpeakerText>
                 <Characters>
-                    <Character type="null">helene</Character>
+                    <Character type="main">helene</Character>
                 </Characters>
             </Speaker>
         </Quote>

@@ -5,7 +5,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -14,7 +14,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Everyone</SpeakerText>
                 <Characters>
-                    <Character type="null">everyone</Character>
+                    <Character type="meta">everyone</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -32,7 +32,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -50,7 +50,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -61,7 +61,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -72,7 +72,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -81,7 +81,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -90,7 +90,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -99,7 +99,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -108,7 +108,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -117,7 +117,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Everyone</SpeakerText>
                 <Characters>
-                    <Character type="null">everyone</Character>
+                    <Character type="meta">everyone</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -126,7 +126,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -137,7 +137,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -148,7 +148,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -157,7 +157,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -166,7 +166,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -175,7 +175,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -195,7 +195,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -222,7 +222,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -258,7 +258,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -289,7 +289,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -307,7 +307,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -325,7 +325,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -343,7 +343,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -361,7 +361,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -397,7 +397,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -442,7 +442,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Nellie</SpeakerText>
                 <Characters>
-                    <Character type="null">nellie</Character>
+                    <Character type="main">nellie</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -487,7 +487,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -527,7 +527,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Pete</SpeakerText>
                 <Characters>
-                    <Character type="null">pete</Character>
+                    <Character type="background">pete</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -536,7 +536,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Guys in breakroom</SpeakerText>
                 <Characters>
-                    <Character type="null">guys-in-breakroom</Character>
+                    <Character type="background">guys-in-breakroom</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -556,7 +556,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Pete</SpeakerText>
                 <Characters>
-                    <Character type="null">pete</Character>
+                    <Character type="background">pete</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -565,7 +565,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Clark</SpeakerText>
                 <Characters>
-                    <Character type="null">clark</Character>
+                    <Character type="background">clark</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -576,7 +576,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -607,7 +607,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Clark</SpeakerText>
                 <Characters>
-                    <Character type="null">clark</Character>
+                    <Character type="background">clark</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -871,7 +871,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -898,7 +898,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -916,7 +916,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -997,7 +997,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Nellie</SpeakerText>
                 <Characters>
-                    <Character type="null">nellie</Character>
+                    <Character type="main">nellie</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1008,7 +1008,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Business partner</SpeakerText>
                 <Characters>
-                    <Character type="null">business-partner</Character>
+                    <Character type="background">business-partner</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1026,7 +1026,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Business partner</SpeakerText>
                 <Characters>
-                    <Character type="null">business-partner</Character>
+                    <Character type="background">business-partner</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1062,7 +1062,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Business partner</SpeakerText>
                 <Characters>
-                    <Character type="null">business-partner</Character>
+                    <Character type="background">business-partner</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1080,7 +1080,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Business partner</SpeakerText>
                 <Characters>
-                    <Character type="null">business-partner</Character>
+                    <Character type="background">business-partner</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1098,7 +1098,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Business partner</SpeakerText>
                 <Characters>
-                    <Character type="null">business-partner</Character>
+                    <Character type="background">business-partner</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1116,7 +1116,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Business partner</SpeakerText>
                 <Characters>
-                    <Character type="null">business-partner</Character>
+                    <Character type="background">business-partner</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1134,7 +1134,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Business partner</SpeakerText>
                 <Characters>
-                    <Character type="null">business-partner</Character>
+                    <Character type="background">business-partner</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1244,7 +1244,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Nellie</SpeakerText>
                 <Characters>
-                    <Character type="null">nellie</Character>
+                    <Character type="main">nellie</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1253,7 +1253,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1271,7 +1271,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1280,7 +1280,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Nellie</SpeakerText>
                 <Characters>
-                    <Character type="null">nellie</Character>
+                    <Character type="main">nellie</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1298,7 +1298,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Nellie</SpeakerText>
                 <Characters>
-                    <Character type="null">nellie</Character>
+                    <Character type="main">nellie</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1379,7 +1379,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Nellie</SpeakerText>
                 <Characters>
-                    <Character type="null">nellie</Character>
+                    <Character type="main">nellie</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1594,7 +1594,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Pete</SpeakerText>
                 <Characters>
-                    <Character type="null">pete</Character>
+                    <Character type="background">pete</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1623,7 +1623,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Business partner</SpeakerText>
                 <Characters>
-                    <Character type="null">business-partner</Character>
+                    <Character type="background">business-partner</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1641,7 +1641,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Hank</SpeakerText>
                 <Characters>
-                    <Character type="null">hank</Character>
+                    <Character type="recurring">hank</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1650,7 +1650,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Business partner</SpeakerText>
                 <Characters>
-                    <Character type="null">business-partner</Character>
+                    <Character type="background">business-partner</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1659,7 +1659,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Hank</SpeakerText>
                 <Characters>
-                    <Character type="null">hank</Character>
+                    <Character type="recurring">hank</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1695,7 +1695,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Business partner</SpeakerText>
                 <Characters>
-                    <Character type="null">business-partner</Character>
+                    <Character type="background">business-partner</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1713,7 +1713,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Hank</SpeakerText>
                 <Characters>
-                    <Character type="null">hank</Character>
+                    <Character type="recurring">hank</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1724,7 +1724,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Secretary</SpeakerText>
                 <Characters>
-                    <Character type="null">secretary</Character>
+                    <Character type="background">secretary</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1742,7 +1742,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Secretary</SpeakerText>
                 <Characters>
-                    <Character type="null">secretary</Character>
+                    <Character type="background">secretary</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1894,7 +1894,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Molly</SpeakerText>
                 <Characters>
-                    <Character type="null">molly</Character>
+                    <Character type="background">molly</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1912,7 +1912,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Molly</SpeakerText>
                 <Characters>
-                    <Character type="null">molly</Character>
+                    <Character type="background">molly</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2085,7 +2085,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Pete</SpeakerText>
                 <Characters>
-                    <Character type="null">pete</Character>
+                    <Character type="background">pete</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2094,7 +2094,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2103,7 +2103,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Pete</SpeakerText>
                 <Characters>
-                    <Character type="null">pete</Character>
+                    <Character type="background">pete</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2112,7 +2112,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2121,7 +2121,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Pete</SpeakerText>
                 <Characters>
-                    <Character type="null">pete</Character>
+                    <Character type="background">pete</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2130,7 +2130,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2139,7 +2139,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Pete</SpeakerText>
                 <Characters>
-                    <Character type="null">pete</Character>
+                    <Character type="background">pete</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2148,7 +2148,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2157,7 +2157,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Pete</SpeakerText>
                 <Characters>
-                    <Character type="null">pete</Character>
+                    <Character type="background">pete</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2166,7 +2166,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2175,7 +2175,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Pete</SpeakerText>
                 <Characters>
-                    <Character type="null">pete</Character>
+                    <Character type="background">pete</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2184,7 +2184,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2415,7 +2415,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Clark</SpeakerText>
                 <Characters>
-                    <Character type="null">clark</Character>
+                    <Character type="background">clark</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2469,7 +2469,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Clark</SpeakerText>
                 <Characters>
-                    <Character type="null">clark</Character>
+                    <Character type="background">clark</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2525,7 +2525,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Colin</SpeakerText>
                 <Characters>
-                    <Character type="null">colin</Character>
+                    <Character type="background">colin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2543,7 +2543,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Colin</SpeakerText>
                 <Characters>
-                    <Character type="null">colin</Character>
+                    <Character type="background">colin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2561,7 +2561,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Colin</SpeakerText>
                 <Characters>
-                    <Character type="null">colin</Character>
+                    <Character type="background">colin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2579,7 +2579,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Colin</SpeakerText>
                 <Characters>
-                    <Character type="null">colin</Character>
+                    <Character type="background">colin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2664,7 +2664,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Molly</SpeakerText>
                 <Characters>
-                    <Character type="null">molly</Character>
+                    <Character type="background">molly</Character>
                 </Characters>
             </Speaker>
         </Quote>

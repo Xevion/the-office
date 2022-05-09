@@ -214,7 +214,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -346,7 +346,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -815,7 +815,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -833,7 +833,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1084,7 +1084,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1129,7 +1129,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1147,7 +1147,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1158,7 +1158,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1176,7 +1176,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1194,7 +1194,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1987,7 +1987,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2005,7 +2005,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2016,7 +2016,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2135,7 +2135,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2189,7 +2189,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Robert Dunder</SpeakerText>
                 <Characters>
-                    <Character type="null">robert-dunder</Character>
+                    <Character type="recurring">robert-dunder</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2216,7 +2216,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Robert Dunder</SpeakerText>
                 <Characters>
-                    <Character type="null">robert-dunder</Character>
+                    <Character type="recurring">robert-dunder</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2274,7 +2274,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Robert Dunder</SpeakerText>
                 <Characters>
-                    <Character type="null">robert-dunder</Character>
+                    <Character type="recurring">robert-dunder</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2292,7 +2292,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Robert Dunder</SpeakerText>
                 <Characters>
-                    <Character type="null">robert-dunder</Character>
+                    <Character type="recurring">robert-dunder</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2323,7 +2323,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Robert Dunder</SpeakerText>
                 <Characters>
-                    <Character type="null">robert-dunder</Character>
+                    <Character type="recurring">robert-dunder</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2341,7 +2341,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Robert Dunder</SpeakerText>
                 <Characters>
-                    <Character type="null">robert-dunder</Character>
+                    <Character type="recurring">robert-dunder</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2359,7 +2359,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Robert Dunder</SpeakerText>
                 <Characters>
-                    <Character type="null">robert-dunder</Character>
+                    <Character type="recurring">robert-dunder</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2377,7 +2377,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Robert Dunder</SpeakerText>
                 <Characters>
-                    <Character type="null">robert-dunder</Character>
+                    <Character type="recurring">robert-dunder</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2395,7 +2395,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Robert Dunder</SpeakerText>
                 <Characters>
-                    <Character type="null">robert-dunder</Character>
+                    <Character type="recurring">robert-dunder</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2413,7 +2413,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Robert Dunder</SpeakerText>
                 <Characters>
-                    <Character type="null">robert-dunder</Character>
+                    <Character type="recurring">robert-dunder</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2431,7 +2431,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Robert Dunder</SpeakerText>
                 <Characters>
-                    <Character type="null">robert-dunder</Character>
+                    <Character type="recurring">robert-dunder</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2716,7 +2716,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Amy</SpeakerText>
                 <Characters>
-                    <Character type="null">amy</Character>
+                    <Character type="background">amy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2734,7 +2734,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Amy</SpeakerText>
                 <Characters>
-                    <Character type="null">amy</Character>
+                    <Character type="background">amy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2752,7 +2752,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Amy</SpeakerText>
                 <Characters>
-                    <Character type="null">amy</Character>
+                    <Character type="background">amy</Character>
                 </Characters>
             </Speaker>
         </Quote>

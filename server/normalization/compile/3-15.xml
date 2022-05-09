@@ -152,7 +152,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Photographer</SpeakerText>
                 <Characters>
-                    <Character type="null">photographer</Character>
+                    <Character type="background">photographer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -214,7 +214,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Karen</SpeakerText>
                 <Characters>
-                    <Character type="null">karen</Character>
+                    <Character type="main">karen</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -292,7 +292,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Karen</SpeakerText>
                 <Characters>
-                    <Character type="null">karen</Character>
+                    <Character type="main">karen</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -310,7 +310,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Karen</SpeakerText>
                 <Characters>
-                    <Character type="null">karen</Character>
+                    <Character type="main">karen</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -683,7 +683,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Crowd</SpeakerText>
                 <Characters>
-                    <Character type="null">crowd</Character>
+                    <Character type="meta">crowd</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -725,7 +725,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Priest</SpeakerText>
                 <Characters>
-                    <Character type="null">priest</Character>
+                    <Character type="background">priest</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -752,7 +752,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Priest</SpeakerText>
                 <Characters>
-                    <Character type="null">priest</Character>
+                    <Character type="background">priest</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -770,7 +770,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Priest</SpeakerText>
                 <Characters>
-                    <Character type="null">priest</Character>
+                    <Character type="background">priest</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -779,7 +779,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bob Vance</SpeakerText>
                 <Characters>
-                    <Character type="null">bob-vance</Character>
+                    <Character type="recurring">bob-vance</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -788,7 +788,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Priest</SpeakerText>
                 <Characters>
-                    <Character type="null">priest</Character>
+                    <Character type="background">priest</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -837,7 +837,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bob Vance</SpeakerText>
                 <Characters>
-                    <Character type="null">bob-vance</Character>
+                    <Character type="recurring">bob-vance</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -951,7 +951,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Uncle Al</SpeakerText>
                 <Characters>
-                    <Character type="null">uncle-al</Character>
+                    <Character type="recurring">uncle-al</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -969,7 +969,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Uncle Al</SpeakerText>
                 <Characters>
-                    <Character type="null">uncle-al</Character>
+                    <Character type="recurring">uncle-al</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -987,7 +987,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Uncle Al</SpeakerText>
                 <Characters>
-                    <Character type="null">uncle-al</Character>
+                    <Character type="recurring">uncle-al</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1005,7 +1005,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Uncle Al</SpeakerText>
                 <Characters>
-                    <Character type="null">uncle-al</Character>
+                    <Character type="recurring">uncle-al</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1197,7 +1197,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Randy</SpeakerText>
                 <Characters>
-                    <Character type="null">randy</Character>
+                    <Character type="recurring">randy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1206,7 +1206,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Crowd</SpeakerText>
                 <Characters>
-                    <Character type="null">crowd</Character>
+                    <Character type="meta">crowd</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1215,7 +1215,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Unknown</SpeakerText>
                 <Characters>
-                    <Character type="null">unknown</Character>
+                    <Character type="background">unknown</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1224,7 +1224,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Randy</SpeakerText>
                 <Characters>
-                    <Character type="null">randy</Character>
+                    <Character type="recurring">randy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1233,7 +1233,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Crowd</SpeakerText>
                 <Characters>
-                    <Character type="null">crowd</Character>
+                    <Character type="meta">crowd</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1273,7 +1273,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bob Vance</SpeakerText>
                 <Characters>
-                    <Character type="null">bob-vance</Character>
+                    <Character type="recurring">bob-vance</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1291,7 +1291,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bob Vance</SpeakerText>
                 <Characters>
-                    <Character type="null">bob-vance</Character>
+                    <Character type="recurring">bob-vance</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1309,7 +1309,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bob Vance</SpeakerText>
                 <Characters>
-                    <Character type="null">bob-vance</Character>
+                    <Character type="recurring">bob-vance</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1327,7 +1327,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bob Vance</SpeakerText>
                 <Characters>
-                    <Character type="null">bob-vance</Character>
+                    <Character type="recurring">bob-vance</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1345,7 +1345,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bob Vance</SpeakerText>
                 <Characters>
-                    <Character type="null">bob-vance</Character>
+                    <Character type="recurring">bob-vance</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1568,7 +1568,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Karen</SpeakerText>
                 <Characters>
-                    <Character type="null">karen</Character>
+                    <Character type="main">karen</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1579,7 +1579,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Women</SpeakerText>
                 <Characters>
-                    <Character type="null">women</Character>
+                    <Character type="background">women</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1610,7 +1610,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Uncle Al</SpeakerText>
                 <Characters>
-                    <Character type="null">uncle-al</Character>
+                    <Character type="recurring">uncle-al</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1628,7 +1628,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Uncle Al</SpeakerText>
                 <Characters>
-                    <Character type="null">uncle-al</Character>
+                    <Character type="recurring">uncle-al</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1646,7 +1646,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Uncle Al</SpeakerText>
                 <Characters>
-                    <Character type="null">uncle-al</Character>
+                    <Character type="recurring">uncle-al</Character>
                 </Characters>
             </Speaker>
         </Quote>

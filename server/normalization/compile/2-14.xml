@@ -361,10 +361,9 @@
         <Quote>
             <QuoteText>[after going in to check out the smell]  Phew.  Oh!  No, mm-mm. [leaving quickly]</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">Pam and others</SpeakerText>
+                <SpeakerText annotated="true">{Pam} and others</SpeakerText>
                 <Characters>
                     <Character type="main">pam</Character>
-                    <Character type="null">others</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -400,7 +399,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -934,7 +933,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -952,7 +951,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -970,7 +969,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1546,7 +1545,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1582,7 +1581,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1600,7 +1599,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1649,7 +1648,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1667,7 +1666,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1929,7 +1928,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1947,7 +1946,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1965,7 +1964,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1994,7 +1993,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ed Begley</SpeakerText>
                 <Characters>
-                    <Character type="null">ed-begley</Character>
+                    <Character type="background">ed-begley</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2012,7 +2011,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ed Begley</SpeakerText>
                 <Characters>
-                    <Character type="null">ed-begley</Character>
+                    <Character type="background">ed-begley</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2030,7 +2029,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ed Begley</SpeakerText>
                 <Characters>
-                    <Character type="null">ed-begley</Character>
+                    <Character type="background">ed-begley</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2048,7 +2047,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ed Begley</SpeakerText>
                 <Characters>
-                    <Character type="null">ed-begley</Character>
+                    <Character type="background">ed-begley</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2066,7 +2065,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ed Begley</SpeakerText>
                 <Characters>
-                    <Character type="null">ed-begley</Character>
+                    <Character type="background">ed-begley</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2084,7 +2083,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ed Begley</SpeakerText>
                 <Characters>
-                    <Character type="null">ed-begley</Character>
+                    <Character type="background">ed-begley</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2102,7 +2101,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ed Begley</SpeakerText>
                 <Characters>
-                    <Character type="null">ed-begley</Character>
+                    <Character type="background">ed-begley</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2120,7 +2119,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ed Begley</SpeakerText>
                 <Characters>
-                    <Character type="null">ed-begley</Character>
+                    <Character type="background">ed-begley</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2138,7 +2137,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ed Begley</SpeakerText>
                 <Characters>
-                    <Character type="null">ed-begley</Character>
+                    <Character type="background">ed-begley</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2232,9 +2231,9 @@
         <Quote>
             <QuoteText>Hey, did you get that package I left for you?</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Todd</SpeakerText>
+                <SpeakerText annotated="false">Todd Packer</SpeakerText>
                 <Characters>
-                    <Character type="null">todd</Character>
+                    <Character type="main">todd-packer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2380,9 +2379,9 @@
         <Quote>
             <QuoteText>You have seven unheard messages.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Jim's Voicemail</SpeakerText>
+                <SpeakerText annotated="true">{Jim}'s Voicemail</SpeakerText>
                 <Characters>
-                    <Character type="null">jims-voicemail</Character>
+                    <Character type="main">jim</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3152,7 +3151,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3170,7 +3169,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>

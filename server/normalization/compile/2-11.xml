@@ -590,7 +590,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -720,7 +720,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -778,7 +778,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -796,7 +796,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -838,7 +838,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -856,7 +856,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -874,7 +874,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -892,7 +892,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -910,7 +910,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -928,7 +928,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -946,7 +946,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -964,7 +964,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -982,7 +982,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1000,7 +1000,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1020,7 +1020,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Katy</SpeakerText>
                 <Characters>
-                    <Character type="null">katy</Character>
+                    <Character type="recurring">katy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1038,7 +1038,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Katy</SpeakerText>
                 <Characters>
-                    <Character type="null">katy</Character>
+                    <Character type="recurring">katy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1056,7 +1056,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Katy</SpeakerText>
                 <Characters>
-                    <Character type="null">katy</Character>
+                    <Character type="recurring">katy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1083,7 +1083,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Katy</SpeakerText>
                 <Characters>
-                    <Character type="null">katy</Character>
+                    <Character type="recurring">katy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1110,7 +1110,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Katy</SpeakerText>
                 <Characters>
-                    <Character type="null">katy</Character>
+                    <Character type="recurring">katy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1139,7 +1139,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Brenda</SpeakerText>
                 <Characters>
-                    <Character type="null">brenda</Character>
+                    <Character type="background">brenda</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1157,7 +1157,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Brenda</SpeakerText>
                 <Characters>
-                    <Character type="null">brenda</Character>
+                    <Character type="background">brenda</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1175,7 +1175,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1202,7 +1202,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1220,7 +1220,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1238,7 +1238,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1256,7 +1256,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1267,7 +1267,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1289,7 +1289,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1307,7 +1307,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1365,10 +1365,10 @@
         <Quote>
             <QuoteText>[chanting] Snorkel shot! Snorkel shot!</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">Darryl and Katy</SpeakerText>
+                <SpeakerText annotated="true">{Darryl} and {Katy}</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
-                    <Character type="null">katy</Character>
+                    <Character type="main">darryl</Character>
+                    <Character type="recurring">katy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1404,7 +1404,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1498,7 +1498,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1516,7 +1516,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1534,7 +1534,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1552,7 +1552,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1590,7 +1590,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Katy</SpeakerText>
                 <Characters>
-                    <Character type="null">katy</Character>
+                    <Character type="recurring">katy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1610,7 +1610,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1637,7 +1637,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1655,7 +1655,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1715,7 +1715,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1762,7 +1762,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Katy</SpeakerText>
                 <Characters>
-                    <Character type="null">katy</Character>
+                    <Character type="recurring">katy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1780,7 +1780,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Katy</SpeakerText>
                 <Characters>
-                    <Character type="null">katy</Character>
+                    <Character type="recurring">katy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1798,7 +1798,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Katy</SpeakerText>
                 <Characters>
-                    <Character type="null">katy</Character>
+                    <Character type="recurring">katy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1809,7 +1809,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1847,7 +1847,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Brenda</SpeakerText>
                 <Characters>
-                    <Character type="null">brenda</Character>
+                    <Character type="background">brenda</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1865,7 +1865,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2361,7 +2361,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Brenda</SpeakerText>
                 <Characters>
-                    <Character type="null">brenda</Character>
+                    <Character type="background">brenda</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2379,7 +2379,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Brenda</SpeakerText>
                 <Characters>
-                    <Character type="null">brenda</Character>
+                    <Character type="background">brenda</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2406,7 +2406,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Brenda</SpeakerText>
                 <Characters>
-                    <Character type="null">brenda</Character>
+                    <Character type="background">brenda</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2570,7 +2570,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Brenda</SpeakerText>
                 <Characters>
-                    <Character type="null">brenda</Character>
+                    <Character type="background">brenda</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2626,7 +2626,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2675,7 +2675,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2693,7 +2693,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2711,7 +2711,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2787,7 +2787,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Captain Jack</SpeakerText>
                 <Characters>
-                    <Character type="null">captain-jack</Character>
+                    <Character type="recurring">captain-jack</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2805,7 +2805,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2823,7 +2823,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2841,7 +2841,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2859,7 +2859,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2877,7 +2877,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2897,7 +2897,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2930,7 +2930,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2948,7 +2948,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3015,7 +3015,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Katy</SpeakerText>
                 <Characters>
-                    <Character type="null">katy</Character>
+                    <Character type="recurring">katy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3033,7 +3033,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Katy</SpeakerText>
                 <Characters>
-                    <Character type="null">katy</Character>
+                    <Character type="recurring">katy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3042,7 +3042,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Katy</SpeakerText>
                 <Characters>
-                    <Character type="null">katy</Character>
+                    <Character type="recurring">katy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3060,7 +3060,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Katy</SpeakerText>
                 <Characters>
-                    <Character type="null">katy</Character>
+                    <Character type="recurring">katy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -3114,7 +3114,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Katy</SpeakerText>
                 <Characters>
-                    <Character type="null">katy</Character>
+                    <Character type="recurring">katy</Character>
                 </Characters>
             </Speaker>
         </Quote>

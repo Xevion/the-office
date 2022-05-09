@@ -132,7 +132,7 @@
             <Speaker>
                 <SpeakerText annotated="false">I.D. Photographer</SpeakerText>
                 <Characters>
-                    <Character type="null">id-photographer</Character>
+                    <Character type="background">id-photographer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -677,7 +677,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Photographer</SpeakerText>
                 <Characters>
-                    <Character type="null">photographer</Character>
+                    <Character type="background">photographer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -686,7 +686,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -851,7 +851,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Photographer</SpeakerText>
                 <Characters>
-                    <Character type="null">photographer</Character>
+                    <Character type="background">photographer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -869,7 +869,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Photographer</SpeakerText>
                 <Characters>
-                    <Character type="null">photographer</Character>
+                    <Character type="background">photographer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1216,7 +1216,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1424,7 +1424,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1482,7 +1482,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Photographer</SpeakerText>
                 <Characters>
-                    <Character type="null">photographer</Character>
+                    <Character type="background">photographer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2080,7 +2080,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Photographer</SpeakerText>
                 <Characters>
-                    <Character type="null">photographer</Character>
+                    <Character type="background">photographer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2098,7 +2098,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Photographer</SpeakerText>
                 <Characters>
-                    <Character type="null">photographer</Character>
+                    <Character type="background">photographer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2116,7 +2116,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Photographer</SpeakerText>
                 <Characters>
-                    <Character type="null">photographer</Character>
+                    <Character type="background">photographer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2163,7 +2163,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Photographer</SpeakerText>
                 <Characters>
-                    <Character type="null">photographer</Character>
+                    <Character type="background">photographer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2181,7 +2181,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Photographer</SpeakerText>
                 <Characters>
-                    <Character type="null">photographer</Character>
+                    <Character type="background">photographer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2199,7 +2199,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Photographer</SpeakerText>
                 <Characters>
-                    <Character type="null">photographer</Character>
+                    <Character type="background">photographer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2405,7 +2405,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Female Worker</SpeakerText>
                 <Characters>
-                    <Character type="null">female-worker</Character>
+                    <Character type="background">female-worker</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2620,7 +2620,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Photographer</SpeakerText>
                 <Characters>
-                    <Character type="null">photographer</Character>
+                    <Character type="background">photographer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2660,7 +2660,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Photographer</SpeakerText>
                 <Characters>
-                    <Character type="null">photographer</Character>
+                    <Character type="background">photographer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2702,7 +2702,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Photographer</SpeakerText>
                 <Characters>
-                    <Character type="null">photographer</Character>
+                    <Character type="background">photographer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2720,7 +2720,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Photographer</SpeakerText>
                 <Characters>
-                    <Character type="null">photographer</Character>
+                    <Character type="background">photographer</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2849,9 +2849,9 @@
         <Quote>
             <QuoteText>Excuse me, sir! Dwight Schrute, is that your real name?</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Hank the Security Guard</SpeakerText>
+                <SpeakerText annotated="false">Hank</SpeakerText>
                 <Characters>
-                    <Character type="null">hank-the-security-guard</Character>
+                    <Character type="recurring">hank</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2876,9 +2876,9 @@
         <Quote>
             <QuoteText>Good morning. Okay, go ahead.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Hank the Security Guard</SpeakerText>
+                <SpeakerText annotated="false">Hank</SpeakerText>
                 <Characters>
-                    <Character type="null">hank-the-security-guard</Character>
+                    <Character type="recurring">hank</Character>
                 </Characters>
             </Speaker>
         </Quote>

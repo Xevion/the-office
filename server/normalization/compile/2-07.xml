@@ -596,7 +596,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -641,7 +641,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -731,7 +731,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Hostess</SpeakerText>
                 <Characters>
-                    <Character type="null">hostess</Character>
+                    <Character type="background">hostess</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -758,7 +758,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -787,7 +787,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -823,7 +823,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -886,7 +886,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1101,7 +1101,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1130,7 +1130,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Everyone</SpeakerText>
                 <Characters>
-                    <Character type="null">everyone</Character>
+                    <Character type="meta">everyone</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1258,7 +1258,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1316,7 +1316,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1332,10 +1332,10 @@
         <Quote>
             <QuoteText>[singing] I want my baby back, baby back, baby back-</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">Michael and Christian</SpeakerText>
+                <SpeakerText annotated="true">{Michael} and {Christian}</SpeakerText>
                 <Characters>
                     <Character type="main">michael</Character>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1632,7 +1632,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1668,7 +1668,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1713,7 +1713,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1729,10 +1729,10 @@
         <Quote>
             <QuoteText>No.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">Michael and Christian</SpeakerText>
+                <SpeakerText annotated="true">{Michael} and {Christian}</SpeakerText>
                 <Characters>
                     <Character type="main">michael</Character>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1750,7 +1750,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1768,7 +1768,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1786,7 +1786,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1846,7 +1846,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1864,7 +1864,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1882,7 +1882,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1909,7 +1909,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Christian</SpeakerText>
                 <Characters>
-                    <Character type="null">christian</Character>
+                    <Character type="background">christian</Character>
                 </Characters>
             </Speaker>
         </Quote>

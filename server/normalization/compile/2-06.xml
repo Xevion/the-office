@@ -1460,7 +1460,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ira</SpeakerText>
                 <Characters>
-                    <Character type="null">ira</Character>
+                    <Character type="background">ira</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1478,7 +1478,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ira</SpeakerText>
                 <Characters>
-                    <Character type="null">ira</Character>
+                    <Character type="background">ira</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1590,7 +1590,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ira</SpeakerText>
                 <Characters>
-                    <Character type="null">ira</Character>
+                    <Character type="background">ira</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1617,7 +1617,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ira</SpeakerText>
                 <Characters>
-                    <Character type="null">ira</Character>
+                    <Character type="background">ira</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1644,7 +1644,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ira</SpeakerText>
                 <Characters>
-                    <Character type="null">ira</Character>
+                    <Character type="background">ira</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1671,7 +1671,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ira</SpeakerText>
                 <Characters>
-                    <Character type="null">ira</Character>
+                    <Character type="background">ira</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1770,7 +1770,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ira</SpeakerText>
                 <Characters>
-                    <Character type="null">ira</Character>
+                    <Character type="background">ira</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1788,7 +1788,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ira</SpeakerText>
                 <Characters>
-                    <Character type="null">ira</Character>
+                    <Character type="background">ira</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1806,7 +1806,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Ira</SpeakerText>
                 <Characters>
-                    <Character type="null">ira</Character>
+                    <Character type="background">ira</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1871,9 +1871,9 @@
         <Quote>
             <QuoteText>Seven new messages. First New Message. [Michael's voice] "Hi, Ryan. This is Saddam Hussein." Next new message. "Hi, Ryan. This is your girlfriend... and I'm mad!"</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Ryan's Voicemail</SpeakerText>
+                <SpeakerText annotated="true">{Ryan}'s Voicemail</SpeakerText>
                 <Characters>
-                    <Character type="null">ryans-voicemail</Character>
+                    <Character type="main">ryan</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2294,7 +2294,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Master</SpeakerText>
                 <Characters>
-                    <Character type="null">master</Character>
+                    <Character type="background">master</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2314,7 +2314,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Master</SpeakerText>
                 <Characters>
-                    <Character type="null">master</Character>
+                    <Character type="background">master</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2332,7 +2332,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Master</SpeakerText>
                 <Characters>
-                    <Character type="null">master</Character>
+                    <Character type="background">master</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2350,7 +2350,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Master</SpeakerText>
                 <Characters>
-                    <Character type="null">master</Character>
+                    <Character type="background">master</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2603,7 +2603,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Master</SpeakerText>
                 <Characters>
-                    <Character type="null">master</Character>
+                    <Character type="background">master</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2621,7 +2621,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Master</SpeakerText>
                 <Characters>
-                    <Character type="null">master</Character>
+                    <Character type="background">master</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2639,7 +2639,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Master</SpeakerText>
                 <Characters>
-                    <Character type="null">master</Character>
+                    <Character type="background">master</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2659,7 +2659,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Master</SpeakerText>
                 <Characters>
-                    <Character type="null">master</Character>
+                    <Character type="background">master</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2668,7 +2668,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Alyssa</SpeakerText>
                 <Characters>
-                    <Character type="null">alyssa</Character>
+                    <Character type="background">alyssa</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2677,7 +2677,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Master</SpeakerText>
                 <Characters>
-                    <Character type="null">master</Character>
+                    <Character type="background">master</Character>
                 </Characters>
             </Speaker>
         </Quote>

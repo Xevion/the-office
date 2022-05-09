@@ -14,7 +14,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Waiter</SpeakerText>
                 <Characters>
-                    <Character type="null">waiter</Character>
+                    <Character type="background">waiter</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -32,7 +32,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -50,7 +50,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -68,7 +68,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -86,7 +86,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -104,7 +104,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -122,7 +122,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -140,7 +140,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -158,7 +158,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -176,7 +176,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -192,9 +192,9 @@
         <Quote>
             <QuoteText>[in unison] Summer!</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">Deangelo/Michael</SpeakerText>
+                <SpeakerText annotated="true">{Deangelo}/{Michael}</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                     <Character type="main">michael</Character>
                 </Characters>
             </Speaker>
@@ -204,7 +204,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -215,7 +215,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -233,7 +233,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -251,7 +251,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -269,7 +269,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -287,7 +287,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -305,7 +305,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -323,7 +323,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -341,16 +341,16 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
         <Quote>
             <QuoteText>[looking up from phones in unison] Sorry...</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">Deangelo/Michael</SpeakerText>
+                <SpeakerText annotated="true">{Deangelo}/{Michael}</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                     <Character type="main">michael</Character>
                 </Characters>
             </Speaker>
@@ -369,7 +369,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -387,7 +387,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -405,7 +405,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -423,7 +423,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -441,7 +441,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -461,7 +461,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -490,7 +490,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -501,7 +501,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -519,7 +519,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -561,7 +561,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -579,7 +579,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -597,7 +597,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -628,7 +628,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -646,7 +646,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -664,7 +664,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -682,7 +682,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -713,7 +713,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -740,7 +740,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -758,7 +758,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -767,7 +767,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -776,7 +776,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -787,7 +787,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -852,7 +852,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -966,7 +966,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -993,7 +993,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1004,7 +1004,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1015,7 +1015,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1024,7 +1024,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1051,7 +1051,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1069,7 +1069,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1080,7 +1080,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1089,7 +1089,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1098,7 +1098,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1107,7 +1107,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1116,7 +1116,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1125,7 +1125,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1134,7 +1134,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1152,7 +1152,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1170,7 +1170,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1188,7 +1188,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1197,7 +1197,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1215,7 +1215,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1224,7 +1224,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1242,7 +1242,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1251,7 +1251,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1262,7 +1262,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1271,7 +1271,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1280,7 +1280,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1289,7 +1289,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1298,7 +1298,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1307,7 +1307,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1336,7 +1336,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1354,7 +1354,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1372,7 +1372,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1399,7 +1399,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1417,7 +1417,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1471,7 +1471,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1489,7 +1489,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1525,7 +1525,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1545,7 +1545,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1554,7 +1554,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1565,7 +1565,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1576,7 +1576,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1585,7 +1585,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1594,7 +1594,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1603,7 +1603,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1612,7 +1612,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1623,7 +1623,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1632,7 +1632,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Erin</SpeakerText>
                 <Characters>
-                    <Character type="null">erin</Character>
+                    <Character type="main">erin</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1641,7 +1641,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1659,7 +1659,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1695,7 +1695,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1704,7 +1704,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1733,9 +1733,9 @@
         <Quote>
             <QuoteText>[holds out cowboy boots for Darryl]</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Darryl's sister</SpeakerText>
+                <SpeakerText annotated="true">{Darryl}'s Sister</SpeakerText>
                 <Characters>
-                    <Character type="null">darryls-sister</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1744,16 +1744,16 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
         <Quote>
             <QuoteText>Hey, hey, hey! [holds up set of pistols in holsters]</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Darryl's sister</SpeakerText>
+                <SpeakerText annotated="true">{Darryl}'s Sister</SpeakerText>
                 <Characters>
-                    <Character type="null">darryls-sister</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1762,7 +1762,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1773,7 +1773,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1782,7 +1782,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1791,7 +1791,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1800,7 +1800,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1809,7 +1809,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1820,7 +1820,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1840,7 +1840,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Gabe</SpeakerText>
                 <Characters>
-                    <Character type="null">gabe</Character>
+                    <Character type="main">gabe</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1858,7 +1858,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Gabe</SpeakerText>
                 <Characters>
-                    <Character type="null">gabe</Character>
+                    <Character type="main">gabe</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1876,7 +1876,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Gabe</SpeakerText>
                 <Characters>
-                    <Character type="null">gabe</Character>
+                    <Character type="main">gabe</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1894,7 +1894,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Gabe</SpeakerText>
                 <Characters>
-                    <Character type="null">gabe</Character>
+                    <Character type="main">gabe</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1905,7 +1905,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1925,7 +1925,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1965,7 +1965,7 @@
             <Speaker>
                 <SpeakerText annotated="false">DeAngelo</SpeakerText>
                 <Characters>
-                    <Character type="null">deangelo</Character>
+                    <Character type="main">deangelo</Character>
                 </Characters>
             </Speaker>
         </Quote>

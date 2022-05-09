@@ -25,7 +25,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Delivery Man</SpeakerText>
                 <Characters>
-                    <Character type="null">delivery-man</Character>
+                    <Character type="background">delivery-man</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -603,7 +603,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Delivery Man</SpeakerText>
                 <Characters>
-                    <Character type="null">delivery-man</Character>
+                    <Character type="background">delivery-man</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -621,7 +621,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Delivery Man</SpeakerText>
                 <Characters>
-                    <Character type="null">delivery-man</Character>
+                    <Character type="background">delivery-man</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -639,7 +639,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Delivery Man</SpeakerText>
                 <Characters>
-                    <Character type="null">delivery-man</Character>
+                    <Character type="background">delivery-man</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -668,7 +668,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Craig</SpeakerText>
                 <Characters>
-                    <Character type="null">craig</Character>
+                    <Character type="background">craig</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -677,7 +677,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Josh</SpeakerText>
                 <Characters>
-                    <Character type="null">josh</Character>
+                    <Character type="recurring">josh</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -695,7 +695,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Josh</SpeakerText>
                 <Characters>
-                    <Character type="null">josh</Character>
+                    <Character type="recurring">josh</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -713,7 +713,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Craig</SpeakerText>
                 <Characters>
-                    <Character type="null">craig</Character>
+                    <Character type="background">craig</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -731,7 +731,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Craig</SpeakerText>
                 <Characters>
-                    <Character type="null">craig</Character>
+                    <Character type="background">craig</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -749,7 +749,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Josh</SpeakerText>
                 <Characters>
-                    <Character type="null">josh</Character>
+                    <Character type="recurring">josh</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -890,7 +890,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Josh</SpeakerText>
                 <Characters>
-                    <Character type="null">josh</Character>
+                    <Character type="recurring">josh</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -899,7 +899,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Craig</SpeakerText>
                 <Characters>
-                    <Character type="null">craig</Character>
+                    <Character type="background">craig</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -908,7 +908,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Josh</SpeakerText>
                 <Characters>
-                    <Character type="null">josh</Character>
+                    <Character type="recurring">josh</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -917,7 +917,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Craig</SpeakerText>
                 <Characters>
-                    <Character type="null">craig</Character>
+                    <Character type="background">craig</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -926,7 +926,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Josh</SpeakerText>
                 <Characters>
-                    <Character type="null">josh</Character>
+                    <Character type="recurring">josh</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -935,7 +935,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Craig</SpeakerText>
                 <Characters>
-                    <Character type="null">craig</Character>
+                    <Character type="background">craig</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -953,7 +953,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Craig</SpeakerText>
                 <Characters>
-                    <Character type="null">craig</Character>
+                    <Character type="background">craig</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -971,7 +971,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Josh</SpeakerText>
                 <Characters>
-                    <Character type="null">josh</Character>
+                    <Character type="recurring">josh</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -989,7 +989,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Josh</SpeakerText>
                 <Characters>
-                    <Character type="null">josh</Character>
+                    <Character type="recurring">josh</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1101,7 +1101,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1110,7 +1110,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Josh</SpeakerText>
                 <Characters>
-                    <Character type="null">josh</Character>
+                    <Character type="recurring">josh</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1128,7 +1128,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1155,7 +1155,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1177,7 +1177,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Josh</SpeakerText>
                 <Characters>
-                    <Character type="null">josh</Character>
+                    <Character type="recurring">josh</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1186,7 +1186,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1195,7 +1195,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Josh</SpeakerText>
                 <Characters>
-                    <Character type="null">josh</Character>
+                    <Character type="recurring">josh</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1204,7 +1204,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1264,7 +1264,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1282,7 +1282,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1302,7 +1302,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Delivery Man</SpeakerText>
                 <Characters>
-                    <Character type="null">delivery-man</Character>
+                    <Character type="background">delivery-man</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1414,7 +1414,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Dan Gore</SpeakerText>
                 <Characters>
-                    <Character type="null">dan-gore</Character>
+                    <Character type="background">dan-gore</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1432,7 +1432,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Craig</SpeakerText>
                 <Characters>
-                    <Character type="null">craig</Character>
+                    <Character type="background">craig</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1450,7 +1450,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Craig</SpeakerText>
                 <Characters>
-                    <Character type="null">craig</Character>
+                    <Character type="background">craig</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1459,7 +1459,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1468,7 +1468,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Craig</SpeakerText>
                 <Characters>
-                    <Character type="null">craig</Character>
+                    <Character type="background">craig</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1486,7 +1486,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Craig</SpeakerText>
                 <Characters>
-                    <Character type="null">craig</Character>
+                    <Character type="background">craig</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1504,7 +1504,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Craig</SpeakerText>
                 <Characters>
-                    <Character type="null">craig</Character>
+                    <Character type="background">craig</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1692,7 +1692,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1710,7 +1710,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1728,7 +1728,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1755,7 +1755,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1991,7 +1991,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2009,7 +2009,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2020,7 +2020,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2134,7 +2134,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Receptionist</SpeakerText>
                 <Characters>
-                    <Character type="null">receptionist</Character>
+                    <Character type="background">receptionist</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2152,7 +2152,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Receptionist</SpeakerText>
                 <Characters>
-                    <Character type="null">receptionist</Character>
+                    <Character type="background">receptionist</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2351,7 +2351,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Devon</SpeakerText>
                 <Characters>
-                    <Character type="null">devon</Character>
+                    <Character type="recurring">devon</Character>
                 </Characters>
             </Speaker>
         </Quote>

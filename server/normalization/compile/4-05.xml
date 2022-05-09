@@ -45,7 +45,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -63,7 +63,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -81,7 +81,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -99,7 +99,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -117,7 +117,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -265,7 +265,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -283,7 +283,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -527,7 +527,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -545,7 +545,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -563,7 +563,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -583,7 +583,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Receptionist</SpeakerText>
                 <Characters>
-                    <Character type="null">receptionist</Character>
+                    <Character type="background">receptionist</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -787,7 +787,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -823,7 +823,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -841,7 +841,7 @@
             <Speaker>
                 <SpeakerText annotated="false">David Wallace</SpeakerText>
                 <Characters>
-                    <Character type="null">david-wallace</Character>
+                    <Character type="main">david-wallace</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -970,7 +970,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -979,7 +979,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -988,7 +988,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1037,7 +1037,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Creed</SpeakerText>
                 <Characters>
-                    <Character type="null">creed</Character>
+                    <Character type="main">creed</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1048,20 +1048,20 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
         <Quote>
             <QuoteText>Call Michael or Stanley, Jim, Dwight or Creed. Call Andy and Kelly for your business paper needs.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">Andy, Creed, Kevin, Kelly, Darryl</SpeakerText>
+                <SpeakerText annotated="true">{Andy}, {Creed}, {Kevin}, {Kelly}, {Darryl}</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
-                    <Character type="null">creed</Character>
+                    <Character type="main">andy</Character>
+                    <Character type="main">creed</Character>
                     <Character type="main">kevin</Character>
                     <Character type="main">kelly</Character>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1070,17 +1070,17 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
         <Quote>
             <QuoteText>The people person's paper people.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">Andy, Creed, Kevin, Kelly</SpeakerText>
+                <SpeakerText annotated="true">{Andy}, {Creed}, {Kevin}, {Kelly}</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
-                    <Character type="null">creed</Character>
+                    <Character type="main">andy</Character>
+                    <Character type="main">creed</Character>
                     <Character type="main">kevin</Character>
                     <Character type="main">kelly</Character>
                 </Characters>
@@ -1091,17 +1091,17 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
         <Quote>
             <QuoteText>The people person's paper people.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">Andy, Creed, Kevin, Kelly</SpeakerText>
+                <SpeakerText annotated="true">{Andy}, {Creed}, {Kevin}, {Kelly}</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
-                    <Character type="null">creed</Character>
+                    <Character type="main">andy</Character>
+                    <Character type="main">creed</Character>
                     <Character type="main">kevin</Character>
                     <Character type="main">kelly</Character>
                 </Characters>
@@ -1121,7 +1121,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1139,7 +1139,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1150,7 +1150,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1325,17 +1325,17 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
         <Quote>
             <QuoteText>The people person's paper people.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">Andy, Creed, Kevin, Kelly</SpeakerText>
+                <SpeakerText annotated="true">{Andy}, {Creed}, {Kevin}, {Kelly}</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
-                    <Character type="null">creed</Character>
+                    <Character type="main">andy</Character>
+                    <Character type="main">creed</Character>
                     <Character type="main">kevin</Character>
                     <Character type="main">kelly</Character>
                 </Characters>
@@ -1346,17 +1346,17 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
         <Quote>
             <QuoteText>The people person's paper people.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">Andy, Creed, Kevin, Kelly</SpeakerText>
+                <SpeakerText annotated="true">{Andy}, {Creed}, {Kevin}, {Kelly}</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
-                    <Character type="null">creed</Character>
+                    <Character type="main">andy</Character>
+                    <Character type="main">creed</Character>
                     <Character type="main">kevin</Character>
                     <Character type="main">kelly</Character>
                 </Characters>
@@ -1376,17 +1376,17 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
         <Quote>
             <QuoteText>The people person's paper people.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">Andy, Creed, Kevin, Kelly</SpeakerText>
+                <SpeakerText annotated="true">{Andy}, {Creed}, {Kevin}, {Kelly}</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
-                    <Character type="null">creed</Character>
+                    <Character type="main">andy</Character>
+                    <Character type="main">creed</Character>
                     <Character type="main">kevin</Character>
                     <Character type="main">kelly</Character>
                 </Characters>
@@ -1406,7 +1406,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1424,7 +1424,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Darryl</SpeakerText>
                 <Characters>
-                    <Character type="null">darryl</Character>
+                    <Character type="main">darryl</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1444,7 +1444,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1462,7 +1462,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1661,7 +1661,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1679,7 +1679,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1697,7 +1697,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1715,7 +1715,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1733,7 +1733,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1742,7 +1742,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Both</SpeakerText>
                 <Characters>
-                    <Character type="null">both</Character>
+                    <Character type="meta">both</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1811,7 +1811,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Everyone</SpeakerText>
                 <Characters>
-                    <Character type="null">everyone</Character>
+                    <Character type="meta">everyone</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1820,7 +1820,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bartender</SpeakerText>
                 <Characters>
-                    <Character type="null">bartender</Character>
+                    <Character type="background">bartender</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1860,9 +1860,9 @@
         <Quote>
             <QuoteText>[Chariots of Fire theme plays] It all starts with an idea. But you can never tell where an idea will end up. [people passing a Corporate Memo around to each other] Because ideas spread, they change, grow. They connect us with the world. [Kelly catches paper airplane that says "I love you"] And in a fast moving world, where good news moves at the speed of time [newspaper with Andy saying "Hometown Boy Wins Race"], and bad news isn't always what it seems. [Dwight hands Phyllis paper that says "You have a son, and it's me"] Because when push comes to shove we all deserve a second chance. [Stanley finds paper that says "Turn your life around. Now hiring at Dunder Mifflin"] To score. [Jim throws paper in basket, Michael retrieves it; it says "World's Most Creative Boss"] Dunder Mifflin. Limitless paper in a paperless world.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="false">Michael's Ad</SpeakerText>
+                <SpeakerText annotated="true">{Michael}'s Ad</SpeakerText>
                 <Characters>
-                    <Character type="null">michaels-ad</Character>
+                    <Character type="background">michaels-ad</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1873,7 +1873,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Everyone</SpeakerText>
                 <Characters>
-                    <Character type="null">everyone</Character>
+                    <Character type="meta">everyone</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1891,7 +1891,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bartender</SpeakerText>
                 <Characters>
-                    <Character type="null">bartender</Character>
+                    <Character type="background">bartender</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1909,7 +1909,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bartender</SpeakerText>
                 <Characters>
-                    <Character type="null">bartender</Character>
+                    <Character type="background">bartender</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1927,7 +1927,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Bartender</SpeakerText>
                 <Characters>
-                    <Character type="null">bartender</Character>
+                    <Character type="background">bartender</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -1967,7 +1967,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Andy</SpeakerText>
                 <Characters>
-                    <Character type="null">andy</Character>
+                    <Character type="main">andy</Character>
                 </Characters>
             </Speaker>
         </Quote>
@@ -2389,7 +2389,7 @@
             <Speaker>
                 <SpeakerText annotated="false">Everyone</SpeakerText>
                 <Characters>
-                    <Character type="null">everyone</Character>
+                    <Character type="meta">everyone</Character>
                 </Characters>
             </Speaker>
         </Quote>
