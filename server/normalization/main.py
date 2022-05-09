@@ -154,6 +154,22 @@ def merge():
         character_file.write(etree.tostring(root, encoding=str, pretty_print=True))
 
 
+def valuify(value: str) -> str:
+    """
+    Simplifies character names into slug-like identifiers.
+
+    Woman #4 -> woman
+    Woman From Buffalo -> woman-from-buffalo
+    Edward R. Meow -> edward-r-meow
+    """
+    value = re.sub(r'\s+', '-', value.lower().strip())
+    value = re.sub(r'#\d+', '', value)
+    value = re.sub(r'\d+(?:st|nd|rd|th)', '', value)
+    value = re.match(r'^-*(.+[^-])-*$', value).group(1)
+    value = re.sub(r'[.\[\],;\'\"]', '', value)
+    return value
+
+
 @cli.command('ids')
 def ids():
     """Builds an XML file for identifying character id mappings"""
