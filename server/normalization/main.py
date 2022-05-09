@@ -270,7 +270,7 @@ def ids():
         if len(unseen_chars) > 0:
             for unseen in unseen_chars:
                 root.append(pre_existing[unseen])
-                logger.debug(f'Character preserved but not seen: {unseen}')
+                logger.debug(f'Character preserved but not seen: `{unseen}`')
 
     logger.debug('Exporting identifiers file.')
     with open(ConstantPaths.IDENTIFIERS, 'w') as identifier_file:
@@ -398,6 +398,8 @@ def compile() -> None:
     episode_files = os.listdir(EPISODES_DIR)
     logger.debug(f'Beginning processing for {len(episode_files)} episode files.')
 
+    pbar = enlighten.Counter(total=len(episode_files), unit='Episodes')
+
     for file in episode_files:
         file_path = os.path.join(EPISODES_DIR, file)
         output_path = os.path.join(COMPILE_DIR, file)
@@ -464,6 +466,8 @@ def compile() -> None:
         with open(output_path, 'w') as compile_file:
             etree.indent(compile_root, space=" " * 4)
             compile_file.write(etree.tostring(compile_root, encoding=str, pretty_print=True))
+
+        pbar.update()
 
     logger.info('Completed episode data compiling.')
 
