@@ -24,6 +24,7 @@ CUR_DIR = os.path.dirname(os.path.abspath(__file__))
 TRUTH_DIR = os.path.join(CUR_DIR, 'truth')
 CHARACTERS_DIR = os.path.join(CUR_DIR, 'characters')
 EPISODES_DIR = os.path.join(TRUTH_DIR, 'episodes')
+COMPILE_DIR = os.path.join(CUR_DIR, 'compile')
 RAW_DIR = os.path.abspath(os.path.join(CUR_DIR, '..', 'data', 'raw'))
 
 RAW_FILES = os.listdir(RAW_DIR)
@@ -316,7 +317,7 @@ def meta() -> None:
 
 @cli.command('all')
 @click.option('--confirm', is_flag=True, help='Force confirm through the confirmation prompt')
-def all(confirm: bool):
+def all(confirm: bool) -> None:
     """Runs all commands in order one after another."""
     logger.warning('`all` command running...')
     if confirm or click.confirm("This command can be very destructive to unstaged/uncommitted data, are you sure?"):
@@ -328,6 +329,8 @@ def all(confirm: bool):
         ids()
         logger.debug('Running `meta`')
         meta()
+    else:
+        logger.info('Canceled.')
 
 
 @cli.command('similar')
@@ -358,6 +361,56 @@ def similar(text: str, destination: Optional[bool], results: int, reversed: bool
     if reversed: results.reverse()
 
     print('\n'.join(results))
+
+
+@cli.command('compile')
+def compile() -> None:
+    logger.debug('Final compile started.')
+
+    if not os.path.exists(COMPILE_DIR):
+        os.makedirs(COMPILE_DIR)
+        logger.debug('Compile directory created.')
+
+    speaker_mapping: Dict[str, str] = OrderedDict()
+    logger.debug('Parsing speaker mappings...')
+    with open(ConstantPaths.SPEAKER_MAPPING, 'r') as speaker_mapping_file:
+        speakering_mapping_root: etree.ElementBase = etree.parse(speaker_mapping_file)
+        for mapping_element in speakering_mapping_root.xpath('//SpeakerMappings/Mapping'):
+            source = mapping_element.xpath('./Source/text()')[0]
+            destination = mapping_element.xpath('./Destination/text()')[0]
+
+            if source in speaker_mapping.keys():
+                logger.warning(f'Key Source `{source}` overwritten.')
+
+            speaker_mapping[source] = destination
+    logger.debug(f'{len(speaker_mapping.keys())} speaker mappings parsed.')
+
+    episode_files = os.listdir(EPISODES_DIR)
+    logger.debug(f'Beginning processing for {len(episode_files)} episode files.')
+
+    for file in episode_files:
+        file_path = os.path.join(EPISODES_DIR, file)
+        output_path = os.path.join(COMPILE_DIR, file)
+
+        compile_root = etree.Element('SceneList')
+
+        try:
+            with open(file_path, 'r') as ep_file:
+                episode_root: etree.ElementBase = etree.parse(ep_file)
+
+                for scene in episode_root.xpath('//SceneList/Scene'):
+                    for quote in scene.xpath('./Quote'):
+                        pass
+
+
+        except Exception as e:
+            logger.error(f"Failed while processing `{file}`", exc_info=e)
+
+        with open(output_path, 'w') as compile_file:
+            etree.indent(compile_root, space=" " * 4)
+            # compile_file.write(etree.tostring(compile_root, encoding=str, pretty_print=True))
+
+    logger.info('Completed episode data compiling.')
 
 
 if __name__ == '__main__':
