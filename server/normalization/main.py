@@ -497,7 +497,36 @@ def meta_update() -> None:
         identifier_file.write(etree.tostring(identifiers, encoding=str, pretty_print=True))
 
 
+@cli.command('check')
+@click.option('-v', '--verbose', is_flag=True, help='Show verbose results of where errors are found.')
+def check(verbose: bool) -> None:
+    """Check all files for errors or possible errors in output."""
 
+    with open(ConstantPaths.IDENTIFIERS, 'r') as identifier_file:
+        identifiers = etree.parse(identifier_file)
+
+    # Check that identifier RawText does not contain brackets
+    logger.debug('Checking RawText for issues.')
+    for raw_text in identifiers.xpath('//SpeakerList/Speaker/RawText/text()'):
+        if '{' in raw_text or '}' in raw_text:
+            logger.warning(f'Character `{raw_text}` contains a bracket in the <RawText> element.')
+
+    # Check that each character has AnnotatedText if annotated = true, same with reverse
+    logger.debug('Checking AnnotatedText elements for issues.')
+    for character in identifiers.xpath('//SpeakerList/Speaker'):
+        annotate_state: str = character.attrib.get("annotated")
+        speaker_name: str = character.find('RawText').text
+
+        if annotate_state is None:
+            logger.warning(f'Null annotation on `{speaker_name}`')
+        elif annotate_state == "true":
+            if character.find('AnnotatedText') is None:
+                logger.warning(f'Missing AnnotatedText on `{speaker_name}`')
+        elif annotate_state == "false":
+            if character.find('AnnotatedText') is not None:
+                logger.warning(f'False annotatation on `{speaker_name}`')
+        else:
+            logger.warning(f"Unexpected annotation state `{annotate_state}` on `{speaker_name}`")
 
 
 if __name__ == '__main__':
