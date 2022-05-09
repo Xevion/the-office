@@ -3,6 +3,7 @@ import logging
 import os
 import re
 import sys
+import copy
 import enlighten
 import coloredlogs
 from collections import Counter, OrderedDict
@@ -385,6 +386,15 @@ def compile() -> None:
             speaker_mapping[source] = destination
     logger.debug(f'{len(speaker_mapping.keys())} speaker mappings parsed.')
 
+    character_mappings: Dict[str, etree.ElementBase] = OrderedDict()
+    logger.debug('Acquiring character identification mappings...')
+    with open(ConstantPaths.IDENTIFIERS, 'r') as identifier_file:
+        speaker_list_root: etree.ElementBase = etree.parse(identifier_file)
+
+        for speaker in speaker_list_root.xpath('//SpeakerList/Speaker'):
+            raw_text = speaker.find('RawText').text
+            character_mappings[raw_text] = speaker
+
     episode_files = os.listdir(EPISODES_DIR)
     logger.debug(f'Beginning processing for {len(episode_files)} episode files.')
 
@@ -398,16 +408,62 @@ def compile() -> None:
             with open(file_path, 'r') as ep_file:
                 episode_root: etree.ElementBase = etree.parse(ep_file)
 
-                for scene in episode_root.xpath('//SceneList/Scene'):
-                    for quote in scene.xpath('./Quote'):
-                        pass
+                for truth_scene in episode_root.xpath('//SceneList/Scene'):
+                    compile_scene = etree.SubElement(compile_root, 'Scene')
+
+                    # Deleted scene marker handling
+                    if truth_scene.attrib.get("deleted", False):
+                        compile_scene.attrib["deleted"] = "true"
+                        compile_scene.attrib["deleted_scene"] = str(int(truth_scene.attrib["deleted"]))
+
+                    for truth_quote in truth_scene.xpath('./Quote'):
+                        truth_speaker: str = truth_quote.find('Speaker').text
+                        truth_text: str = truth_quote.find('Text').text
+
+                        # parent compiled Quote element
+                        compile_quote = etree.SubElement(compile_scene, 'Quote')
+
+                        # The text actually said in the quote
+                        quote_text_element = etree.SubElement(compile_quote, 'QuoteText')
+                        quote_text_element.text = truth_text
+
+                        # Speaker Parent Element
+                        speaker_element = etree.SubElement(compile_quote, 'Speaker')
+
+                        # This is the (possibly annotated) list of characters referenced by this quote's raw speaker.
+                        character_mapping: etree.ElementBase = character_mappings[speaker_mapping[truth_speaker]]
+                        isAnnotated = character_mapping.attrib.get("annotated", "false") == "true"
+
+                        # Speaker Text - the text displayed, annotated or not, that shows who exactly is speaking
+                        speaker_text_element = etree.SubElement(speaker_element, "SpeakerText")
+                        speaker_text_element.attrib["annotated"] = "true" if isAnnotated else "false"
+                        if isAnnotated:
+                            speaker_text_element.text = character_mapping.find('AnnotatedText').text
+                        else:
+                            speaker_text_element.text = character_mapping.find('RawText').text
+
+                        # The constituent referenced characters in the SpeakerText element
+                        characters_element = etree.SubElement(speaker_element, 'Characters')
+                        hasMultiple = character_mapping.find("Characters") is not None
+
+                        if hasMultiple:
+                            for character in character_mapping.xpath('./Characters/Character'):
+                                characters_element.append(copy.deepcopy(
+                                        character
+                                ))
+                        else:
+                            characters_element.append(copy.deepcopy(
+                                    character_mapping.find('Character')
+                            ))
+
+
 
         except Exception as e:
             logger.error(f"Failed while processing `{file}`", exc_info=e)
 
         with open(output_path, 'w') as compile_file:
             etree.indent(compile_root, space=" " * 4)
-            # compile_file.write(etree.tostring(compile_root, encoding=str, pretty_print=True))
+            compile_file.write(etree.tostring(compile_root, encoding=str, pretty_print=True))
 
     logger.info('Completed episode data compiling.')
 
