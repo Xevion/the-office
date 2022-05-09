@@ -1,3 +1,4 @@
+import json
 import logging
 import os
 import re
@@ -35,6 +36,7 @@ class Constants:
 
 @cli.command('truth')
 def truth():
+    """Step 1: Builds raw files into truth files."""
     logger.info("Processing all raw files into normalized truth files.")
 
     speakers = Counter()
@@ -103,7 +105,7 @@ def truth():
 
 @cli.command('merge')
 def merge():
-    """Merge all Speaker Mappings from source into one file."""
+    """Step 2: Merge all Speaker Mappings from source into one file."""
     speakerList = Counter()
 
     truth_files: List[str] = os.listdir(os.path.join(TRUTH_DIR, 'episodes'))
@@ -172,7 +174,7 @@ def valuify(value: str) -> str:
 
 @cli.command('ids')
 def ids():
-    """Builds an XML file for identifying character id mappings"""
+    """Step 3: Builds an XML file for identifying character id mappings"""
 
     logger.info("Building ID Character mapping file...")
     IDENTIFIER_FILE: str = os.path.join(CHARACTERS_DIR, 'identifiers.xml')
@@ -261,12 +263,41 @@ def ids():
         identifier_file.write(etree.tostring(root, encoding=str, pretty_print=True))
 
 
+@cli.command('meta')
+def meta() -> None:
+    logger.debug('Creating meta.json')
+
+    IDENTIFIERS_FILE = os.path.join(CHARACTERS_DIR, 'identifiers.xml')
+    with open(IDENTIFIERS_FILE, 'r') as identifiers_file:
+        speakers: List[str] = etree.parse(identifiers_file).xpath('//SpeakerList/Speaker')
+        logger.debug(f'{len(speakers)} speakers parsed.')
+
+    meta_data = OrderedDict()
+
+    for speaker in speakers:
+        characters = speaker.xpath('./Characters/Character') or speaker.xpath('./Character')
+        for character in characters:
+            name = character.text
+            type = character.attrib['type']
+            if type == 'null':
+                type = None
+
+            if type is not None or name not in meta_data.keys():
+                meta_data[name] = type
+
+    logger.debug(f'Writing {len(meta_data.keys())} meta values to disk.')
+    with open(os.path.join(TRUTH_DIR, 'meta.json'), 'w') as meta_file:
+        json.dump(meta_data, meta_file, indent=4)
+    logger.debug('Meta file written.')
+
+
 @cli.command('all')
 def all():
     """Runs all commands in order one after another."""
     truth()
     merge()
     ids()
+    meta()
 
 
 @cli.command('similar')
