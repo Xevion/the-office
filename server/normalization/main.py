@@ -24,7 +24,7 @@ TRUTH_DIR = os.path.join(CUR_DIR, 'truth')
 CHARACTERS_DIR = os.path.join(CUR_DIR, 'characters')
 EPISODES_DIR = os.path.join(TRUTH_DIR, 'episodes')
 COMPILE_DIR = os.path.join(CUR_DIR, 'compile')
-RAW_DIR = os.path.abspath(os.path.join(CUR_DIR, 'raw'))
+RAW_DIR = os.path.join(CUR_DIR, 'raw')
 
 RAW_FILES = os.listdir(RAW_DIR)
 
