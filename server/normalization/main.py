@@ -122,7 +122,7 @@ def truth():
 @cli.command('merge')
 def merge():
     """Step 2: Merge all Speaker Mappings from source into one file."""
-    speakerList = Counter()
+    speaker_list = Counter()
 
     truth_files: List[str] = os.listdir(EPISODES_DIR)
     logger.debug(f"{len(truth_files)} truth files available.")
@@ -133,36 +133,36 @@ def merge():
         with open(truth_path, 'r') as truth_file:
             root = etree.parse(truth_file)
             for speaker in root.xpath('//SceneList/Scene/Quote/Speaker/text()'):
-                speakerList[speaker] += 1
+                speaker_list[speaker] += 1
         pbar.update()
 
     logger.debug('Speakers acquired from Truth files.')
 
-    speakerMapping = OrderedDict()
+    speaker_mapping = OrderedDict()
     with open(ConstantPaths.SPEAKER_MAPPING, 'r') as speaker_mapping_file:
-        rootMappingElement: etree.ElementBase = etree.parse(speaker_mapping_file)
-        for mappingElement in rootMappingElement.xpath('//SpeakerMappings/Mapping'):
+        root_mapping_element: etree.ElementBase = etree.parse(speaker_mapping_file)
+        for mappingElement in root_mapping_element.xpath('//SpeakerMappings/Mapping'):
             source, destination = mappingElement.xpath('.//Source/text()')[0], mappingElement.xpath('.//Destination/text()')[0]
-            speakerMapping[source] = destination
+            speaker_mapping[source] = destination
 
     logger.debug('Mappings loaded.')
 
     root = etree.Element('CharacterList')
-    pbar = enlighten.Counter(total=len(speakerList.keys()), unit='Speakers')
+    pbar = enlighten.Counter(total=len(speaker_list.keys()), unit='Speakers')
     seen = set()
 
     logger.debug('Merging Speaker Mappings...')
-    for speaker in speakerList.keys():
-        while speakerMapping.get(speaker) is not None:
-            if speakerMapping.get(speaker) == speaker:
+    for speaker in speaker_list.keys():
+        while speaker_mapping.get(speaker) is not None:
+            if speaker_mapping.get(speaker) == speaker:
                 break
             else:
-                speaker = speakerMapping[speaker]
+                speaker = speaker_mapping[speaker]
 
         if speaker not in seen:
             seen.add(speaker)
-            characterElement = etree.SubElement(root, 'Character')
-            characterElement.text = speaker
+            character_element = etree.SubElement(root, 'Character')
+            character_element.text = speaker
             pbar.update()
 
     logger.debug("Speaker mappings merged. Exporting to `characters.xml`")
@@ -209,59 +209,59 @@ def ids():
         logger.debug('Identifier file exists already. Pre-existing Speakers will be kept.')
 
         with open(ConstantPaths.IDENTIFIERS, 'r') as identifier_file:
-            preidentifiers: etree.ElementBase = etree.parse(identifier_file)
+            pre_identifiers: etree.ElementBase = etree.parse(identifier_file)
 
         pre_existing = OrderedDict()
-        for speaker in preidentifiers.xpath('//SpeakerList/Speaker'):
-            speakerName = speaker.xpath('./RawText/text()')[0]
-            pre_existing[speakerName] = speaker
+        for speaker in pre_identifiers.xpath('//SpeakerList/Speaker'):
+            speaker_name = speaker.xpath('./RawText/text()')[0]
+            pre_existing[speaker_name] = speaker
 
     root = etree.Element('SpeakerList')
-    splitPatterns: List[str] = [r'\s*,\s*',
+    split_patterns: List[str] = [r'\s*,\s*',
                                 r'\s*&\s*',
                                 r'\s+and,?(?:\s+|$)',
                                 r'\s*[\\/]\s*']
-    splitPattern: str = '|'.join(splitPatterns)
+    split_pattern: str = '|'.join(split_patterns)
 
     existing_characters_count: int = 0
     new_characters_count: int = 0
 
     # Pre-existing character identifiers are kept at the top, in order.
-    for speakerName in characters:
+    for speaker_name in characters:
         if pre_existing is not None:
-            if speakerName in pre_existing.keys():
-                root.append(pre_existing[speakerName])
-                del pre_existing[speakerName]
+            if speaker_name in pre_existing.keys():
+                root.append(pre_existing[speaker_name])
+                del pre_existing[speaker_name]
                 existing_characters_count += 1
                 continue
             else:
-                logger.debug(f'New speaker: `{speakerName}`')
+                logger.debug(f'New speaker: `{speaker_name}`')
                 new_characters_count += 1
 
         # New speaker to insert
         speaker_element = etree.SubElement(root, 'Speaker', annotated="false")
         raw_text_element = etree.SubElement(speaker_element, "RawText")
-        raw_text_element.text = speakerName
+        raw_text_element.text = speaker_name
 
-        split_text: List[str] = re.split(splitPattern, speakerName)
+        split_text: List[str] = re.split(split_pattern, speaker_name)
         split_text = [split for split in split_text if re.match(r'\w{2,}', split) is not None]
 
-        isCompound: bool = len(split_text) > 1
-        isBackground: bool = re.search(r'#\d', speakerName) is not None  # Not fool-proof, but filters some out.
+        is_compound: bool = len(split_text) > 1
+        is_background: bool = re.search(r'#\d', speaker_name) is not None  # Not fool-proof, but filters some out.
 
-        if isCompound:
+        if is_compound:
             speaker_element.attrib['annotated'] = "true"
             annotated_text_element = etree.SubElement(speaker_element, 'AnnotatedText')
             characters_element = etree.SubElement(speaker_element, 'Characters')
-            annotated_text_element.text = speakerName
+            annotated_text_element.text = speaker_name
             for sub_character in split_text:
                 subcharacter_element = etree.SubElement(characters_element, 'Character')
                 subcharacter_element.text = valuify(sub_character)
                 subcharacter_element.attrib['type'] = 'null'
         else:
             character_element = etree.SubElement(speaker_element, 'Character')
-            character_element.attrib['type'] = 'background' if isBackground else 'null'
-            character_element.text = valuify(speakerName)
+            character_element.attrib['type'] = 'background' if is_background else 'null'
+            character_element.text = valuify(speaker_name)
 
     logger.debug(f'{new_characters_count} new speaker elements added. {existing_characters_count} speaker elements preserved.')
 
@@ -316,9 +316,9 @@ def meta() -> None:
     logger.debug('Meta file written.')
 
 
-@cli.command('all')
+@cli.command('run_all')
 @click.option('--confirm', is_flag=True, help='Force confirm through the confirmation prompt')
-def all(confirm: bool) -> None:
+def run_all(confirm: bool) -> None:
     """Runs all commands in order one after another."""
     logger.warning('`all` command running...')
     if confirm or click.confirm("This command can be very destructive to unstaged/uncommitted data, are you sure?"):
@@ -345,19 +345,19 @@ def similar(text: str, destination: Optional[bool], results: int, reversed: bool
     with open(ConstantPaths.SPEAKER_MAPPING, 'r') as mapping_file:
         root: etree.ElementBase = etree.parse(mapping_file)
 
-    mappingType: str = "Source"
+    mapping_type: str = "Source"
     if destination:
-        mappingType = "Destination"
+        mapping_type = "Destination"
 
     counts: Union[List[int], List[str]] = list(
             map(int, root.xpath('//SpeakerMappings/Mapping/@count')))  # Parse counts into integers for merge
-    speakers = root.xpath(f"//SpeakerMappings/Mapping/{mappingType}/text()")
+    speakers = root.xpath(f"//SpeakerMappings/Mapping/{mapping_type}/text()")
     if not no_merge: speakers, counts = marked_item_merge(speakers, counts)  # Merge identical speakers together
     if results == -1:
         results = len(speakers)
 
-    resultIndexes: List[int] = get_close_matches_indexes(text, speakers, results, 0)
-    results = [f'{speakers[i]} ({counts[i]})' for i in resultIndexes]
+    result_indexes: List[int] = get_close_matches_indexes(text, speakers, results, 0)
+    results = [f'{speakers[i]} ({counts[i]})' for i in result_indexes]
     results = [f'{i}. {item}' for i, item in enumerate(results, start=1)]
     if reversed: results.reverse()
 
@@ -375,8 +375,8 @@ def compile() -> None:
     speaker_mapping: Dict[str, str] = OrderedDict()
     logger.debug('Parsing speaker mappings...')
     with open(ConstantPaths.SPEAKER_MAPPING, 'r') as speaker_mapping_file:
-        speakering_mapping_root: etree.ElementBase = etree.parse(speaker_mapping_file)
-        for mapping_element in speakering_mapping_root.xpath('//SpeakerMappings/Mapping'):
+        speaker_mapping_root: etree.ElementBase = etree.parse(speaker_mapping_file)
+        for mapping_element in speaker_mapping_root.xpath('//SpeakerMappings/Mapping'):
             source = mapping_element.xpath('./Source/text()')[0]
             destination = mapping_element.xpath('./Destination/text()')[0]
 
@@ -434,21 +434,21 @@ def compile() -> None:
 
                         # This is the (possibly annotated) list of characters referenced by this quote's raw speaker.
                         character_mapping: etree.ElementBase = character_mappings[speaker_mapping[truth_speaker]]
-                        isAnnotated = character_mapping.attrib.get("annotated", "false") == "true"
+                        is_annotated = character_mapping.attrib.get("annotated", "false") == "true"
 
                         # Speaker Text - the text displayed, annotated or not, that shows who exactly is speaking
                         speaker_text_element = etree.SubElement(speaker_element, "SpeakerText")
-                        speaker_text_element.attrib["annotated"] = "true" if isAnnotated else "false"
-                        if isAnnotated:
+                        speaker_text_element.attrib["annotated"] = "true" if is_annotated else "false"
+                        if is_annotated:
                             speaker_text_element.text = character_mapping.find('AnnotatedText').text
                         else:
                             speaker_text_element.text = character_mapping.find('RawText').text
 
                         # The constituent referenced characters in the SpeakerText element
                         characters_element = etree.SubElement(speaker_element, 'Characters')
-                        hasMultiple = character_mapping.find("Characters") is not None
+                        has_multiple = character_mapping.find("Characters") is not None
 
-                        if hasMultiple:
+                        if has_multiple:
                             for character in character_mapping.xpath('./Characters/Character'):
                                 characters_element.append(copy.deepcopy(
                                         character
@@ -457,9 +457,6 @@ def compile() -> None:
                             characters_element.append(copy.deepcopy(
                                     character_mapping.find('Character')
                             ))
-
-
-
         except Exception as e:
             logger.error(f"Failed while processing `{file}`", exc_info=e)
 
