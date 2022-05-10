@@ -12,9 +12,7 @@ from typing import List, Optional, Union
 
 import click
 from lxml import etree
-
-sys.path[0] += '\\..\\..'
-from server.helpers import clean_string, get_close_matches_indexes, marked_item_merge
+from helpers import clean_string, get_close_matches_indexes, marked_item_merge
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger('normalization.main')
@@ -218,9 +216,9 @@ def ids():
 
     root = etree.Element('SpeakerList')
     split_patterns: List[str] = [r'\s*,\s*',
-                                r'\s*&\s*',
-                                r'\s+and,?(?:\s+|$)',
-                                r'\s*[\\/]\s*']
+                                 r'\s*&\s*',
+                                 r'\s+and,?(?:\s+|$)',
+                                 r'\s*[\\/]\s*']
     split_pattern: str = '|'.join(split_patterns)
 
     existing_characters_count: int = 0
