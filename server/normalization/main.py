@@ -34,11 +34,18 @@ def cli():
     pass
 
 
+@cli.group()
+def build():
+    """The last stage of data processing, building the JSON files used by the application & Algolia indexing."""
+
+
 class Constants:
     SPEAKER_MAPPING_XML = 'speaker_mapping.xml'
     IDENTIFIERS_XML = 'identifiers.xml'
     CHARACTERS_XML = 'characters.xml'
     META_JSON = 'meta.json'
+    EPISODE_DESCRIPTION_JSON = 'episode_descriptions.json'
+    CHARACTER_DESCRIPTION_JSON = 'character_descriptions.json'
 
 
 class ConstantPaths:
@@ -46,6 +53,8 @@ class ConstantPaths:
     IDENTIFIERS = os.path.join(CHARACTERS_DIR, Constants.IDENTIFIERS_XML)
     CHARACTERS = os.path.join(TRUTH_DIR, Constants.CHARACTERS_XML)
     META = os.path.join(TRUTH_DIR, Constants.META_JSON)
+    EP_DESC = os.path.join(CUR_DIR, Constants.EPISODE_DESCRIPTION_JSON)
+    CHAR_DESC = os.path.join(CUR_DIR, Constants.CHARACTER_DESCRIPTION_JSON)
 
 
 @cli.command('truth')
@@ -526,6 +535,107 @@ def check(verbose: bool) -> None:
     # TODO: Check for values in meta.json that are null
     # TODO: Check for values in meta.json that are not referenced anywhere in identifiers.xml
     # TODO: Check for character IDs in identifiers.xml that don't look correct (voice--on-phone)
+
+
+@build.command('app')
+@click.option('--path', type=str, default=BUILD_DIR, help='The output path for the application data files.')
+@click.option('--make-dir', is_flag=True, help='Create the output directory if it does not exist.')
+def app(path: str, make_dir: bool) -> None:
+    """Build the data files used by the application."""
+    logger.debug('Build process called for "app".')
+    logger.debug(f'Output Directory: "{os.path.relpath(path, os.getcwd())}"')
+
+    with open(ConstantPaths.EP_DESC, 'r') as episode_desc_file:
+        episode_desc = json.loads(episode_desc_file.read())
+
+    with open(ConstantPaths.CHAR_DESC, 'r') as character_desc_file:
+        character_desc = json.loads(character_desc_file.read())
+
+    if not os.path.exists(path):
+        if path == BUILD_DIR or make_dir:
+            os.makedirs(BUILD_DIR)
+            logger.debug('Build directory did not exist; it has been created.')
+        else:
+            logger.error('The output directory given does not exist.', click.BadOptionUsage("path", "Path supplied does not exist."))
+    elif not os.path.isdir(path):
+        logger.error("The output directory given is not a directory.", click.BadOptionUsage("path", "Path supplied is not a directory."))
+
+    episode_files = os.listdir(COMPILE_DIR)
+    logger.debug(f'Beginning processing of {len(episode_files)} compiled episode directories.')
+
+    progress = Progress(SpinnerColumn('dots10'), *Progress.get_default_columns(), MofNCompleteColumn(), TimeElapsedColumn())
+
+    all_season_data: List[List[dict]] = [[] for _ in episode_desc]
+
+    no_char_data = OrderedDict()
+
+    with progress:
+        for episodeFile in progress.track(episode_files, description='Building Episodes', update_period=0.01):
+            with open(os.path.join(COMPILE_DIR, episodeFile), 'r') as ep_file:
+                episode_root: etree.ElementBase = etree.parse(ep_file)
+
+            seasonNum, episodeNum = map(int, re.match(r'(\d+)-(\d+).xml', episodeFile).groups())
+            description = episode_desc[seasonNum - 1][episodeNum - 1]
+
+            # Count character appearances
+            characters = Counter()
+            all_characters = episode_root.xpath('./Scene/Quote/Speaker/Characters/Character')
+            for character in all_characters:
+                character_type = character.attrib['type']
+                if character_type in ['main', 'recurring']:
+                    characters[character.text] += 1
+
+            episode_characters: Dict[str, Dict[str, Union[str, int]]] = {}
+            for character_id, count in sorted(characters.items(), key=lambda item: item[1], reverse=True):
+                if character_id in character_desc.keys():
+                    character_name = character_desc[character_id]['name']
+                else:
+                    print(f'No character description: {character_id}')
+                    character_name = f'\"{character_id.capitalize()}\"'
+                    no_char_data[character_id] = None
+
+                episode_characters[character_id] = {
+                    'name': character_name,
+                    'appearances': count
+                }
+
+            scenes = [
+                {
+                    'quotes': [
+                        {
+                            'speaker': quote.xpath('./Speaker/SpeakerText')[0].text,
+                            'text': quote.find('QuoteText').text
+                        }
+                        for quote in scene.xpath('./Quote')]
+                } for scene in episode_root.xpath('./Scene')
+            ]
+
+            all_season_data[seasonNum - 1].append({
+                'title': description['title'],
+                'description': description['description'],
+                'characters': episode_characters,
+                'season_number': seasonNum,
+                'episode_number': episodeNum,
+                "scenes": scenes
+            })
+
+    season_episode_data: List[Tuple[int, int, Any]] = []
+
+    for season, season_data in enumerate(all_season_data, start=1):
+        for episode, episode_data in enumerate(season_data, start=1):
+            season_episode_data.append((season, episode, episode_data))
+
+    with progress:
+
+        for season, episode, episode_data in progress.track(season_episode_data, description='Saving episode data...', update_period=0.1):
+            season_directory = os.path.join(path, f'{season:02}')
+            if not os.path.exists(season_directory):
+                os.makedirs(season_directory)
+
+            episode_path = os.path.join(season_directory, f'{episode:02}.json')
+
+            with open(episode_path, 'w') as episode_file:
+                json.dump(episode_data, episode_file)
 
 
 if __name__ == '__main__':
