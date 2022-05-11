@@ -1,3 +1,0 @@
-FLASK_APP=server.create_app
-FLASK_ENV=development
-FLASK_DEBUG=1
