@@ -13,8 +13,11 @@ from typing import List, Optional, Union
 import click
 from lxml import etree
 from helpers import clean_string, get_close_matches_indexes, marked_item_merge
+from lxml import etree
+from rich.logging import RichHandler
+from rich.progress import MofNCompleteColumn, Progress, SpinnerColumn, TimeElapsedColumn, track
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO, format="%(message)s", datefmt="[%X]", handlers=[RichHandler(rich_tracebacks=True)])
 logger = logging.getLogger('normalization.main')
 logger.setLevel(logging.DEBUG)
 coloredlogs.install(level=logger.level, logger=logger)
@@ -133,15 +136,13 @@ def merge():
 
     truth_files: List[str] = os.listdir(EPISODES_DIR)
     logger.debug(f"{len(truth_files)} truth files available.")
-    pbar = enlighten.Counter(total=len(truth_files), unit='Files')
 
-    for truth_filename in truth_files:
+    for truth_filename in track(truth_files):
         truth_path = os.path.join(EPISODES_DIR, truth_filename)
         with open(truth_path, 'r') as truth_file:
             root = etree.parse(truth_file)
             for speaker in root.xpath('//SceneList/Scene/Quote/Speaker/text()'):
                 speaker_list[speaker] += 1
-        pbar.update()
 
     logger.debug('Speakers acquired from Truth files.')
 
@@ -155,11 +156,10 @@ def merge():
     logger.debug('Mappings loaded.')
 
     root = etree.Element('CharacterList')
-    pbar = enlighten.Counter(total=len(speaker_list.keys()), unit='Speakers')
     seen = set()
 
     logger.debug('Merging Speaker Mappings...')
-    for speaker in speaker_list.keys():
+    for speaker in track(speaker_list.keys(), 'Merging Map...'):
         while speaker_mapping.get(speaker) is not None:
             if speaker_mapping.get(speaker) == speaker:
                 break
@@ -170,7 +170,6 @@ def merge():
             seen.add(speaker)
             character_element = etree.SubElement(root, 'Character')
             character_element.text = speaker
-            pbar.update()
 
     logger.debug("Speaker mappings merged. Exporting to `characters.xml`")
 
@@ -405,9 +404,7 @@ def compile() -> None:
     episode_files = os.listdir(EPISODES_DIR)
     logger.debug(f'Beginning processing for {len(episode_files)} episode files.')
 
-    pbar = enlighten.Counter(total=len(episode_files), unit='Episodes')
-
-    for file in episode_files:
+    for file in track(episode_files, 'Compiling Episodes'):
         file_path = os.path.join(EPISODES_DIR, file)
         output_path = os.path.join(COMPILE_DIR, file)
 
