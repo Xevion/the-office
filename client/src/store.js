@@ -31,9 +31,15 @@ export default new Vuex.Store({
         // Merge many episodes data simultaneously
         [types.MERGE_EPISODES](state, payload) {
             for (const season of payload) {
-                for (const episode of season.episodes) {
-                    const s = season.season_id - 1;
-                    const e = episode.episode_id - 1;
+                for (const episode of season) {
+                    if (episode === null) {
+                        console.log(`Missing Episode`)
+                        continue;
+                    }
+
+                    const s = episode.season_number - 1;
+                    const e = episode.episode_number - 1;
+                    console.log(`Season ${s} Episode ${e}`);
                     state.quoteData[s].episodes[e] = Object.assign(state.quoteData[s].episodes[e], episode);
 
                     // If scenes are included for some reason, mark as a fully loaded episode
@@ -78,7 +84,7 @@ export default new Vuex.Store({
                     return
                 }
 
-                const path = `${process.env.VUE_APP_API_URL}/api/episode/${payload.season}/${payload.episode}/`;
+                const path = `/json/${payload.season.toString().padStart(2, "0")}/${payload.episode.toString().padStart(2, "0")}.json`;
                 axios.get(path)
                     .then((res) => {
                         // Push episode data
@@ -97,7 +103,7 @@ export default new Vuex.Store({
             })
         },
         [types.PRELOAD]({commit}) {
-            const path = `${process.env.VUE_APP_API_URL}/api/episodes/`;
+            const path = `/json/episodes.json`;
 
             axios.get(path)
                 .then((res) => {
@@ -111,7 +117,7 @@ export default new Vuex.Store({
         },
         [types.PRELOAD_CHARACTER]({commit}) {
             return new Promise((resolve, reject) => {
-                const path = `${process.env.VUE_APP_API_URL}/api/characters/`;
+                const path = `/json/characters.json`;
                 axios.get(path)
                     .then((res) => {
                         for (const [character_id, character_data] of Object.entries(res.data))
