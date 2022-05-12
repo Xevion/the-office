@@ -39,7 +39,6 @@ export default new Vuex.Store({
 
                     const s = episode.season_number - 1;
                     const e = episode.episode_number - 1;
-                    console.log(`Season ${s} Episode ${e}`);
                     state.quoteData[s].episodes[e] = Object.assign(state.quoteData[s].episodes[e], episode);
 
                     // If scenes are included for some reason, mark as a fully loaded episode
