@@ -1,6 +1,4 @@
 module.exports = {
-    outputDir: '../dist/',
-    assetsDir: './static',
     css: {
         loaderOptions: {
             sass: {
