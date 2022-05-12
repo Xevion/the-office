@@ -9,7 +9,11 @@
                 <b-list-group-item v-for="(character, character_id) in characters" :key="character_id">
                     <b-row align-v="start" align-content="start">
                         <b-col cols="5" md="4" lg="4" xl="3">
-                            <b-img-lazy fluid-grow class="px-2" src="https://via.placeholder.com/250"></b-img-lazy>
+                            <b-img-lazy fluid-grow class="px-2" :src="faceURL(character_id)"
+                                        :blank-src="faceURL(character_id, thumbnail = true)"
+                                        blank-width="200" blank-height="200"
+                            ></b-img-lazy>
+                            <!--                            <b-img fluid-grow class="px-2"></b-img>-->
                         </b-col>
                         <b-col>
                             <h4>
@@ -36,6 +40,7 @@ h4 {
         position: relative;
         top: 3px;
         color: #007fe0;
+
         &:hover {
             color: darken(#007fe0, 10%);
         }
@@ -50,6 +55,11 @@ import Skeleton from "@/components/Skeleton.vue";
 export default {
     components: {
         Skeleton
+    },
+    methods: {
+        faceURL(character, thumbnail = false) {
+            return `${process.env.VUE_APP_API_URL}/static/img/${character}/` + (thumbnail ? "face_thumb.webp" : "face.webp");
+        }
     },
     created() {
         this.$store.dispatch(types.PRELOAD_CHARACTER)

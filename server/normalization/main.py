@@ -1,17 +1,12 @@
+import copy
 import json
 import logging
 import os
 import re
-import sys
-import copy
-import enlighten
-import coloredlogs
 from collections import Counter, OrderedDict
-from pprint import pprint
-from typing import List, Optional, Union
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 import click
-from lxml import etree
 from helpers import clean_string, get_close_matches_indexes, marked_item_merge
 from lxml import etree
 from rich.logging import RichHandler
@@ -20,7 +15,6 @@ from rich.progress import MofNCompleteColumn, Progress, SpinnerColumn, TimeElaps
 logging.basicConfig(level=logging.INFO, format="%(message)s", datefmt="[%X]", handlers=[RichHandler(rich_tracebacks=True)])
 logger = logging.getLogger('normalization.main')
 logger.setLevel(logging.DEBUG)
-coloredlogs.install(level=logger.level, logger=logger)
 
 CUR_DIR = os.path.dirname(os.path.abspath(__file__))
 TRUTH_DIR = os.path.join(CUR_DIR, 'truth')
@@ -28,8 +22,10 @@ CHARACTERS_DIR = os.path.join(CUR_DIR, 'characters')
 EPISODES_DIR = os.path.join(TRUTH_DIR, 'episodes')
 COMPILE_DIR = os.path.join(CUR_DIR, 'compile')
 RAW_DIR = os.path.join(CUR_DIR, 'raw')
+BUILD_DIR = os.path.join(CUR_DIR, 'build')
 
 RAW_FILES = os.listdir(RAW_DIR)
+EPISODE_COUNTS = [6, 22, 23, 14, 26, 24, 24, 24, 23]
 
 
 @click.group()
@@ -43,6 +39,7 @@ def build():
 
 
 class Constants:
+    """Filename constants and such."""
     SPEAKER_MAPPING_XML = 'speaker_mapping.xml'
     IDENTIFIERS_XML = 'identifiers.xml'
     CHARACTERS_XML = 'characters.xml'
@@ -52,6 +49,7 @@ class Constants:
 
 
 class ConstantPaths:
+    """Fully resolved paths to constant files containing parseable information."""
     SPEAKER_MAPPING = os.path.join(TRUTH_DIR, Constants.SPEAKER_MAPPING_XML)
     IDENTIFIERS = os.path.join(CHARACTERS_DIR, Constants.IDENTIFIERS_XML)
     CHARACTERS = os.path.join(TRUTH_DIR, Constants.CHARACTERS_XML)
@@ -617,14 +615,13 @@ def app(path: str, make_dir: bool) -> None:
             })
 
     season_episode_data: List[Tuple[int, int, Any]] = []
-
     for season, season_data in enumerate(all_season_data, start=1):
         for episode, episode_data in enumerate(season_data, start=1):
             season_episode_data.append((season, episode, episode_data))
 
     with progress:
 
-        for season, episode, episode_data in progress.track(season_episode_data, description='Saving episode data...', update_period=0.1):
+        for season, episode, episode_data in  progress.track(season_episode_data, description='Saving episode data...', update_period=0.1):
             season_directory = os.path.join(path, f'{season:02}')
             if not os.path.exists(season_directory):
                 os.makedirs(season_directory)
@@ -634,6 +631,14 @@ def app(path: str, make_dir: bool) -> None:
             with open(episode_path, 'w') as episode_file:
                 json.dump(episode_data, episode_file)
 
+    episodes_path = os.path.join(path, 'episodes.json')
+    included: List[str] = ['characters', 'description', 'title', 'episode_number', 'season_number']
+    basic_episode_data = [[None for _ in range(count)] for count in EPISODE_COUNTS]
+    for season, episode, episode_data in season_episode_data:
+        basic_episode_data[season - 1][episode - 1] = {key: episode_data[key] for key in included}
+
+    with open(episodes_path, 'w') as episodes_file:
+        json.dump(basic_episode_data, episodes_file)
 
 if __name__ == '__main__':
     cli()

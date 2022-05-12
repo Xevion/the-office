@@ -18,8 +18,8 @@
             </template>
         </b-card>
         <div v-if="ready">
-            <b-card v-for="(scene, sceneIndex) in episode.scenes" :key="`scene-${sceneIndex}`" class="mb-1"
-                    body-class="p-0">
+            <b-card v-for="(scene, sceneIndex) in episode.scenes" :key="`scene-${sceneIndex}`"
+                    class="mb-1" body-class="p-0">
                 <b-card-text class="my-2">
                     <QuoteList :quotes="scene.quotes" :sceneIndex="sceneIndex"></QuoteList>
                     <span v-if="scene.deleted" class="mt-n2 mb-4 text-muted deleted-scene pl-2"

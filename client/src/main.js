@@ -2,11 +2,15 @@ import '@/scss/main.scss';
 import Vue from "vue";
 import {BootstrapVue, BootstrapVueIcons} from "bootstrap-vue";
 import InstantSearch from "vue-instantsearch";
+import VueProgressiveImage from 'vue-progressive-image'
 import VueClipboard from 'vue-clipboard2'
 import VueScrollTo from "vue-scrollto";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+
+
+Vue.use(VueProgressiveImage)
 
 Vue.use(VueScrollTo);
 Vue.use(BootstrapVue);
