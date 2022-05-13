@@ -3,6 +3,11 @@ name: Deploy to Firebase Hosting on merge
   push:
     branches:
       - master
+
+env:
+  VUE_APP_ALGOLIA_APP_ID: '${{ secrets.ALGOLIA_APP_ID }}'
+  VUE_APP_ALGOLIA_API_KEY: '${{ secrets.ALGOLIA_API_KEY }}'
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
