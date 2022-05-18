@@ -10,7 +10,17 @@
       {
         "source": "**",
         "destination": "/index.html"
+      },
+      {
+        "source": "/hello-world/",
+        "function": "helloWorld"
       }
+    ]
+  },
+  "functions": {
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint",
+      "npm --prefix \"$RESOURCE_DIR\" run build"
     ]
   }
 }
