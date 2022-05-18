@@ -2,6 +2,7 @@ import copy
 import json
 import logging
 import os
+import pprint
 import re
 from collections import Counter, OrderedDict
 from typing import Any, Dict, List, Optional, Tuple, Union
@@ -571,6 +572,7 @@ def app(path: str, make_dir: bool) -> None:
     all_season_data: List[List[dict]] = [[] for _ in episode_desc]
 
     no_char_data = OrderedDict()
+    all_appearances = Counter()
 
     with progress:
         for episodeFile in progress.track(episode_files, description='Building Episodes', update_period=0.01):
@@ -622,6 +624,8 @@ def app(path: str, make_dir: bool) -> None:
                 "scenes": scenes
             })
 
+            all_appearances += characters
+
     season_episode_data: List[Tuple[int, int, Any]] = []
     for season, season_data in enumerate(all_season_data, start=1):
         for episode, episode_data in enumerate(season_data, start=1):
@@ -648,6 +652,20 @@ def app(path: str, make_dir: bool) -> None:
 
     with open(episodes_path, 'w') as episodes_file:
         json.dump(basic_episode_data, episodes_file)
+
+    character_path = os.path.join(path, 'characters.json')
+
+    def merge(a, b) -> dict:
+        return {**a, **b}
+
+    character_data = {
+        id: merge(data, {'appearances': all_appearances.get(id, 0)})
+        for id, data in character_desc.items()
+    }
+
+    pprint.pprint(character_path)
+    with open(character_path, 'w') as character_file:
+        json.dump(character_data, character_file)
 
 
 if __name__ == '__main__':
