@@ -12,7 +12,8 @@ from lxml import etree
 from rich.logging import RichHandler
 from rich.progress import MofNCompleteColumn, Progress, SpinnerColumn, TimeElapsedColumn, track
 
-logging.basicConfig(level=logging.INFO, format="%(message)s", datefmt="[%X]", handlers=[RichHandler(rich_tracebacks=True)])
+logging.basicConfig(level=logging.INFO, format="%(message)s", datefmt="[%X]",
+                    handlers=[RichHandler(rich_tracebacks=True)])
 logger = logging.getLogger('normalization.main')
 logger.setLevel(logging.DEBUG)
 
@@ -101,7 +102,8 @@ def truth():
             except Exception:
                 logger.exception(f'Skipped {raw_file}: Malformed data.')
                 if quote:
-                    logger.info(f'Last quote seen "{quote if type(quote) is str else "|".join(quote)}" in section {section_num}')
+                    logger.info(
+                        f'Last quote seen "{quote if type(quote) is str else "|".join(quote)}" in section {section_num}')
             else:
                 truth_path = os.path.join(EPISODES_DIR, truth_filename)
                 with open(truth_path, 'w') as truth_file:
@@ -148,7 +150,8 @@ def merge():
     with open(ConstantPaths.SPEAKER_MAPPING, 'r') as speaker_mapping_file:
         root_mapping_element: etree.ElementBase = etree.parse(speaker_mapping_file)
         for mappingElement in root_mapping_element.xpath('//SpeakerMappings/Mapping'):
-            source, destination = mappingElement.xpath('.//Source/text()')[0], mappingElement.xpath('.//Destination/text()')[0]
+            source, destination = mappingElement.xpath('.//Source/text()')[0], \
+                                  mappingElement.xpath('.//Destination/text()')[0]
             speaker_mapping[source] = destination
 
     logger.debug('Mappings loaded.')
@@ -267,7 +270,8 @@ def ids():
             character_element.attrib['type'] = 'background' if is_background else 'null'
             character_element.text = valuify(speaker_name)
 
-    logger.debug(f'{new_characters_count} new speaker elements added. {existing_characters_count} speaker elements preserved.')
+    logger.debug(
+        f'{new_characters_count} new speaker elements added. {existing_characters_count} speaker elements preserved.')
 
     if pre_existing is not None:
         unseen_chars = list(pre_existing.keys())
@@ -343,7 +347,8 @@ def run_all(confirm: bool) -> None:
 @click.option('-d', '--destination', is_flag=True, help='Search Destination mapping instead of Source.')
 @click.option('-n', '--results', type=int, default=5, help='Specify the number of results to be returned.')
 @click.option('--no-merge', is_flag=True, help='Don\'t merge similar items together to make things easier.')
-@click.option('-r', '--reversed', is_flag=True, help='Reverse the results direction to help readability in the console.')
+@click.option('-r', '--reversed', is_flag=True,
+              help='Reverse the results direction to help readability in the console.')
 def similar(text: str, destination: Optional[bool], results: int, reversed: bool, no_merge: bool) -> None:
     """Locates the most similar character name in speaker mappings. Searches <Source> by default."""
     with open(ConstantPaths.SPEAKER_MAPPING, 'r') as mapping_file:
@@ -354,7 +359,7 @@ def similar(text: str, destination: Optional[bool], results: int, reversed: bool
         mapping_type = "Destination"
 
     counts: Union[List[int], List[str]] = list(
-            map(int, root.xpath('//SpeakerMappings/Mapping/@count')))  # Parse counts into integers for merge
+        map(int, root.xpath('//SpeakerMappings/Mapping/@count')))  # Parse counts into integers for merge
     speakers = root.xpath(f"//SpeakerMappings/Mapping/{mapping_type}/text()")
     if not no_merge: speakers, counts = marked_item_merge(speakers, counts)  # Merge identical speakers together
     if results == -1:
@@ -453,11 +458,11 @@ def compile() -> None:
                         if has_multiple:
                             for character in character_mapping.xpath('./Characters/Character'):
                                 characters_element.append(copy.deepcopy(
-                                        character
+                                    character
                                 ))
                         else:
                             characters_element.append(copy.deepcopy(
-                                    character_mapping.find('Character')
+                                character_mapping.find('Character')
                             ))
         except Exception as e:
             logger.error(f"Failed while processing `{file}`", exc_info=e)
@@ -551,14 +556,17 @@ def app(path: str, make_dir: bool) -> None:
             os.makedirs(BUILD_DIR)
             logger.debug('Build directory did not exist; it has been created.')
         else:
-            logger.error('The output directory given does not exist.', click.BadOptionUsage("path", "Path supplied does not exist."))
+            logger.error('The output directory given does not exist.',
+                         click.BadOptionUsage("path", "Path supplied does not exist."))
     elif not os.path.isdir(path):
-        logger.error("The output directory given is not a directory.", click.BadOptionUsage("path", "Path supplied is not a directory."))
+        logger.error("The output directory given is not a directory.",
+                     click.BadOptionUsage("path", "Path supplied is not a directory."))
 
     episode_files = os.listdir(COMPILE_DIR)
     logger.debug(f'Beginning processing of {len(episode_files)} compiled episode directories.')
 
-    progress = Progress(SpinnerColumn('dots10'), *Progress.get_default_columns(), MofNCompleteColumn(), TimeElapsedColumn())
+    progress = Progress(SpinnerColumn('dots10'), *Progress.get_default_columns(), MofNCompleteColumn(),
+                        TimeElapsedColumn())
 
     all_season_data: List[List[dict]] = [[] for _ in episode_desc]
 
@@ -621,7 +629,8 @@ def app(path: str, make_dir: bool) -> None:
 
     with progress:
 
-        for season, episode, episode_data in  progress.track(season_episode_data, description='Saving episode data...', update_period=0.1):
+        for season, episode, episode_data in progress.track(season_episode_data, description='Saving episode data...',
+                                                            update_period=0.1):
             season_directory = os.path.join(path, f'{season:02}')
             if not os.path.exists(season_directory):
                 os.makedirs(season_directory)
@@ -639,6 +648,7 @@ def app(path: str, make_dir: bool) -> None:
 
     with open(episodes_path, 'w') as episodes_file:
         json.dump(basic_episode_data, episodes_file)
+
 
 if __name__ == '__main__':
     cli()
