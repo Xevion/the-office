@@ -2,24 +2,26 @@
     <table class="quote-list px-3 w-100">
         <tr
             v-for="(quote, index) in quotes"
-            :key="`quote-${index}`"
             :id="`${sceneIndex}-${index}`"
+            :key="`quote-${index}`"
             :class="
-        $route.hash !== null &&
-        $route.hash.substring(1) === `${sceneIndex}-${index}`
-          ? 'highlight'
-          : ''
-      "
+                $route.hash !== null &&
+                    $route.hash.substring(1) === `${sceneIndex}-${index}`
+                    ? 'highlight'
+                    : ''
+            "
         >
-            <td class="quote-speaker pl-3" v-if="quote.speaker">
-        <span class="my-3">
-          {{ quote.speaker }}
-        </span>
+            <td v-if="quote.speaker" class="quote-speaker pl-3">
+                <span class="my-3">
+                    {{ quote.speaker }}
+                </span>
             </td>
-            <td class="quote-text w-100 pr-3">{{ quote.text }}</td>
+            <td class="quote-text w-100 pr-3">
+                {{ quote.text }}
+            </td>
             <td class="px-1 pl-2">
-                <a :href="quote_link(index)" @click="copy(index)" class="no-link">
-                    <b-icon icon="link45deg"></b-icon>
+                <a :href="quote_link(index)" class="no-link" @click="copy(index)">
+                    <b-icon icon="link45deg" />
                 </a>
             </td>
         </tr>

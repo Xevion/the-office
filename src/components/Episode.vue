@@ -1,29 +1,35 @@
 <template>
     <div>
-        <b-breadcrumb v-if="ready" :items="breadcrumbs"></b-breadcrumb>
+        <b-breadcrumb v-if="ready" :items="breadcrumbs" />
         <b-card v-else class="breadcrumb-skeleton mb-3">
-            <Skeleton style="width: 40%;"></Skeleton>
+            <Skeleton style="width: 40%;" />
         </b-card>
         <b-card class="mb-4">
             <template v-if="ready">
-                <h3 class="card-title">"{{ episode.title }}"</h3>
+                <h3 class="card-title">
+                    "{{ episode.title }}"
+                </h3>
                 <span>{{ episode.description }}</span>
-                <CharacterBadges v-if="episode && episode.characters" :characters="episode.characters"></CharacterBadges>
+                <CharacterBadges v-if="episode && episode.characters" :characters="episode.characters" />
             </template>
             <template v-else>
-                <Skeleton style="width: 30%;"></Skeleton>
-                <Skeleton style="width: 70%; height: 60%;"></Skeleton>
-                <Skeleton style="width: 45%; height: 60%;"></Skeleton>
-                <Skeleton style="width: 69%; height: 40%;"></Skeleton>
+                <Skeleton style="width: 30%;" />
+                <Skeleton style="width: 70%; height: 60%;" />
+                <Skeleton style="width: 45%; height: 60%;" />
+                <Skeleton style="width: 69%; height: 40%;" />
             </template>
         </b-card>
         <div v-if="ready">
-            <b-card v-for="(scene, sceneIndex) in episode.scenes" :key="`scene-${sceneIndex}`"
-                    class="mb-1" body-class="p-0">
+            <b-card
+                v-for="(scene, sceneIndex) in episode.scenes" :key="`scene-${sceneIndex}`"
+                class="mb-1" body-class="p-0"
+            >
                 <b-card-text class="my-2">
-                    <QuoteList :quotes="scene.quotes" :sceneIndex="sceneIndex"></QuoteList>
-                    <span v-if="scene.deleted" class="mt-n2 mb-4 text-muted deleted-scene pl-2"
-                          :footer="`Deleted Scene ${scene.deleted}`">
+                    <QuoteList :quotes="scene.quotes" :scene-index="sceneIndex" />
+                    <span
+                        v-if="scene.deleted" class="mt-n2 mb-4 text-muted deleted-scene pl-2"
+                        :footer="`Deleted Scene ${scene.deleted}`"
+                    >
                         Deleted Scene {{ scene.deleted }}
                     </span>
                 </b-card-text>
@@ -70,36 +76,6 @@ export default {
         CharacterBadges,
         Skeleton,
     },
-    created() {
-        // When page loads directly on this Episode initially, fetch data
-        this.fetch();
-    },
-    watch: {
-        // When route changes, fetch data for current Episode route
-        $route() {
-            this.$nextTick(() => {
-                this.fetch();
-            })
-        },
-    },
-    methods: {
-        fetch() {
-            // Fetch the episode, then scroll - already fetched episode should scroll immediately
-            this.$store.dispatch(types.FETCH_EPISODE, {season: this.params.season, episode: this.params.episode})
-                .then(() => {
-                    // Force update, as for some reason it doesn't update naturally. I hate it too.
-                    this.$forceUpdate()
-
-                    // Scroll down to quote
-                    if (this.$route.hash) {
-                        this.$nextTick(() => {
-                            const section = document.getElementById(this.$route.hash.substring(1));
-                            this.$scrollTo(section, 500, {easing: "ease-in"});
-                        });
-                    }
-                });
-        }
-    },
     computed: {
         episode() {
             return this.$store.getters.getEpisode(this.params.season, this.params.episode)
@@ -136,6 +112,36 @@ export default {
                     active: true
                 }
             ]
+        }
+    },
+    watch: {
+        // When route changes, fetch data for current Episode route
+        $route() {
+            this.$nextTick(() => {
+                this.fetch();
+            })
+        },
+    },
+    created() {
+        // When page loads directly on this Episode initially, fetch data
+        this.fetch();
+    },
+    methods: {
+        fetch() {
+            // Fetch the episode, then scroll - already fetched episode should scroll immediately
+            this.$store.dispatch(types.FETCH_EPISODE, {season: this.params.season, episode: this.params.episode})
+                .then(() => {
+                    // Force update, as for some reason it doesn't update naturally. I hate it too.
+                    this.$forceUpdate()
+
+                    // Scroll down to quote
+                    if (this.$route.hash) {
+                        this.$nextTick(() => {
+                            const section = document.getElementById(this.$route.hash.substring(1));
+                            this.$scrollTo(section, 500, {easing: "ease-in"});
+                        });
+                    }
+                });
         }
     }
 };

@@ -1,6 +1,6 @@
 <template>
     <div class="outer-skeleton">
-        <div class="skeleton" :class="[animated ? undefined : 'no-animate']" :style="[style, inner_style]"></div>
+        <div class="skeleton" :class="[animated ? undefined : 'no-animate']" :style="[style, inner_style]" />
     </div>
 </template>
 <style lang="scss" scoped>

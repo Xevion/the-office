@@ -1,22 +1,26 @@
 <template>
     <div>
-        <b-breadcrumb :items="breadcrumbs"></b-breadcrumb>
+        <b-breadcrumb :items="breadcrumbs" />
         <b-card v-if="ready">
             <b-list-group>
                 <b-list-group-item v-for="episode in season.episodes" :key="episode.episode_id">
                     <b-row align-v="start" align-content="start">
                         <b-col cols="5" md="4" lg="4" xl="3">
-                            <b-img-lazy fluid-grow class="px-2" src="https://via.placeholder.com/250"></b-img-lazy>
+                            <b-img-lazy fluid-grow class="px-2" src="https://via.placeholder.com/250" />
                         </b-col>
                         <b-col>
                             <h4>
                                 {{ episode.title }}
-                                <router-link class="no-link"
-                                             :to="getEpisodeRoute(season.season_id, episode.episode_id)">
-                                    <b-icon class="h6" icon="caret-right-fill"></b-icon>
+                                <router-link
+                                    class="no-link"
+                                    :to="getEpisodeRoute(season.season_id, episode.episode_id)"
+                                >
+                                    <b-icon class="h6" icon="caret-right-fill" />
                                 </router-link>
                             </h4>
-                            <p class="pl-3">{{ episode.description }}</p>
+                            <p class="pl-3">
+                                {{ episode.description }}
+                            </p>
                         </b-col>
                     </b-row>
                 </b-list-group-item>
@@ -42,11 +46,6 @@ h4 {
 
 <script>
 export default {
-    methods: {
-        getEpisodeRoute(s, e) {
-            return {name: 'Episode', params: {season: s, episode: e}}
-        }
-    },
     computed: {
         ready() {
             return this.$store.state.preloaded;
@@ -65,6 +64,11 @@ export default {
         },
         season() {
             return this.$store.state.quoteData[this.$route.params.season - 1];
+        }
+    },
+    methods: {
+        getEpisodeRoute(s, e) {
+            return {name: 'Episode', params: {season: s, episode: e}}
         }
     }
 }

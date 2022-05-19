@@ -1,13 +1,17 @@
 <template>
-    <b-card class="mb-1" body-class="p-0 expandable-result" footer-class="my-1"
-            @mouseover="hoverOn" @mouseleave="hoverOff" v-on:click="toggleExpansion"
-            :class="[expanded ? 'expanded' : '']">
+    <b-card
+        class="mb-1" body-class="p-0 expandable-result"
+        footer-class="my-1"
+        :class="[expanded ? 'expanded' : '']" @mouseover="hoverOn"
+        @mouseleave="hoverOff"
+        @click="toggleExpansion"
+    >
         <b-card-text class="mu-2 py-1 mb-1">
             <table v-if="expanded" class="quote-list px-3 py-1 w-100">
                 <tr
                     v-for="(quote, index) in above"
-                    class="secondary"
                     :key="`quote-a-${index}`"
+                    class="secondary"
                 >
                     <td class="quote-speaker my-3 pl-3">
                         <div>{{ quote.speaker }}</div>
@@ -20,16 +24,16 @@
                     <td
                         class="quote-speaker my-3 pl-3"
                         v-html="item._highlightResult.speaker.value"
-                    ></td>
+                    />
                     <td
                         class="quote-text w-100 pr-3"
                         v-html="item._highlightResult.text.value"
-                    ></td>
+                    />
                 </tr>
                 <tr
                     v-for="(quote, index) in below"
-                    class="secondary"
                     :key="`quote-b-${index}`"
+                    class="secondary"
                 >
                     <td class="quote-speaker my-3 pl-3">
                         <div>{{ quote.speaker }}</div>
@@ -44,16 +48,18 @@
                     <td
                         class="quote-speaker my-3 pl-3"
                         v-html="item._highlightResult.speaker.value"
-                    ></td>
+                    />
                     <td
                         class="quote-text w-100 pr-3"
                         v-html="item._highlightResult.text.value"
-                    ></td>
+                    />
                 </tr>
             </table>
-            <router-link v-if="expanded" class="no-link search-result-link w-100 text-muted mb-2 ml-2"
-                         :to="{name: 'Episode', params: { season: item.season, episode: item.episode_rel },
-                            hash: `#${item.section_rel - 1}-${item.quote_rel - 1}`, }">
+            <router-link
+                v-if="expanded" class="no-link search-result-link w-100 text-muted mb-2 ml-2"
+                :to="{name: 'Episode', params: { season: item.season, episode: item.episode_rel },
+                      hash: `#${item.section_rel - 1}-${item.quote_rel - 1}`, }"
+            >
                 Season {{ item.season }} Episode {{ item.episode_rel }} Scene
                 {{ item.section_rel }}
             </router-link>

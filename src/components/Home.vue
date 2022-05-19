@@ -7,16 +7,16 @@
             <b-card-text>
                 A Vue.js application serving you {{ stats.totals.quote }} quotes from your
                 favorite show - The Office.
-                <br/>
+                <br>
                 Click on a Season and Episode on the left-hand sidebar to view quotes.
                 Search for quotes with the instant searchbox.
             </b-card-text>
         </template>
         <b-card-text v-else>
-            <Skeleton style="width: 45%"></Skeleton>
-            <Skeleton style="width: 75%"></Skeleton>
-            <Skeleton style="width: 60%"></Skeleton>
-            <Skeleton style="width: 60%"></Skeleton>
+            <Skeleton style="width: 45%" />
+            <Skeleton style="width: 75%" />
+            <Skeleton style="width: 60%" />
+            <Skeleton style="width: 60%" />
         </b-card-text>
     </b-card>
 </template>
@@ -35,6 +35,9 @@ export default {
             stats: null,
         };
     },
+    created() {
+        this.getStats();
+    },
     methods: {
         getStats() {
             const path = `${process.env.VUE_APP_API_URL}/api/stats/`;
@@ -48,9 +51,6 @@ export default {
                     console.error(error);
                 });
         },
-    },
-    created() {
-        this.getStats();
     },
 };
 </script>

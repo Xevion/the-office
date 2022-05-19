@@ -2,7 +2,7 @@
     <div>
         <ais-hits>
             <div slot-scope="{ items }">
-                <SearchResult v-for="item in items" :item="item" :key="item.objectID"></SearchResult>
+                <SearchResult v-for="item in items" :key="item.objectID" :item="item" />
             </div>
         </ais-hits>
     </div>
