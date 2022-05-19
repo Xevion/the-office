@@ -654,6 +654,7 @@ def app(path: str, make_dir: bool) -> None:
         json.dump(basic_episode_data, episodes_file)
 
     character_path = os.path.join(path, 'characters.json')
+    character_folder = os.path.join(path, 'character')
 
     def merge(a, b) -> dict:
         return {**a, **b}
@@ -663,9 +664,17 @@ def app(path: str, make_dir: bool) -> None:
         for id, data in character_desc.items()
     }
 
-    pprint.pprint(character_path)
     with open(character_path, 'w') as character_file:
         json.dump(character_data, character_file)
+
+    # Ensure character folder exists before writing files
+    if not os.path.lexists(character_folder):
+        os.makedirs(character_folder)
+
+    for id, data in character_data.items():
+        character_path = os.path.join(path, 'character', id + '.json')
+        with open(character_path, 'w') as file:
+            json.dump(data, file)
 
 
 if __name__ == '__main__':
