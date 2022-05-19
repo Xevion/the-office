@@ -21,9 +21,8 @@ server/data/processed/**
 node_modules
 /dist
 
-# local env files
-.env.local
-.env.*.local
+# .env files
+.env
 
 # Log files
 npm-debug.log*
