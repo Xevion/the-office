@@ -167,6 +167,17 @@ export default new Vuex.Store({
         },
         getCharacter: (state) => (character_id) => {
             return state.characters[character_id];
+        },
+        getSortedCharacters: (state) => () => {
+            let keys =  Object.keys(state.characters);
+            console.log(keys)
+            keys.sort((a, b) => {
+                const a_count = state.characters[a].appearances;
+                const b_count = state.characters[b].appearances
+                if (a_count < b_count) return 1;
+                else return -1;
+            })
+            return keys;
         }
     }
 });
