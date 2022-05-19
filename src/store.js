@@ -131,7 +131,7 @@ export default new Vuex.Store({
         },
         [types.FETCH_CHARACTER]({commit}, character_id) {
             return new Promise((resolve, reject) => {
-                const path = `/json/character/${character_id}/`;
+                const path = `/json/character/${character_id}.json`;
                 axios.get(path)
                     .then((res) => {
                         commit(types.MERGE_CHARACTER, {id: character_id, characterData: res.data})
