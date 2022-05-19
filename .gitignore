@@ -1,22 +1,14 @@
 # Repository specific
 .vscode/**
 .idea/**
-migrations/**
-app.db
-keys.json
-app.db-journal
 test.html
 app/data/raw/*.html
 app/data/preprocess/*.json
-flaskenv
-algolia.json
 *.scss.css
 *.scss.css.map
 node_modules/**
-server/data/algolia/**
-server/data/html/**
-server/data/processed/**
-
+server/data/**
+/build
 .DS_Store
 node_modules
 /dist
