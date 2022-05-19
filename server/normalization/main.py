@@ -2,17 +2,15 @@ import copy
 import json
 import logging
 import os
-import pprint
 import re
+import shutil
 from collections import Counter, OrderedDict
 from typing import Any, Dict, List, Optional, Tuple, Union
 
 import click
 import requests
-import shutil
-from dotenv import load_dotenv
 import rich.progress
-
+from dotenv import load_dotenv
 from helpers import clean_string, get_close_matches_indexes, marked_item_merge
 from lxml import etree
 from rich.logging import RichHandler
@@ -113,7 +111,7 @@ def truth():
                 logger.exception(f'Skipped {raw_file}: Malformed data.')
                 if quote:
                     logger.info(
-                        f'Last quote seen "{quote if type(quote) is str else "|".join(quote)}" in section {section_num}')
+                            f'Last quote seen "{quote if type(quote) is str else "|".join(quote)}" in section {section_num}')
             else:
                 truth_path = os.path.join(EPISODES_DIR, truth_filename)
                 with open(truth_path, 'w') as truth_file:
@@ -281,7 +279,7 @@ def ids():
             character_element.text = valuify(speaker_name)
 
     logger.debug(
-        f'{new_characters_count} new speaker elements added. {existing_characters_count} speaker elements preserved.')
+            f'{new_characters_count} new speaker elements added. {existing_characters_count} speaker elements preserved.')
 
     if pre_existing is not None:
         unseen_chars = list(pre_existing.keys())
@@ -369,7 +367,7 @@ def similar(text: str, destination: Optional[bool], results: int, reversed: bool
         mapping_type = "Destination"
 
     counts: Union[List[int], List[str]] = list(
-        map(int, root.xpath('//SpeakerMappings/Mapping/@count')))  # Parse counts into integers for merge
+            map(int, root.xpath('//SpeakerMappings/Mapping/@count')))  # Parse counts into integers for merge
     speakers = root.xpath(f"//SpeakerMappings/Mapping/{mapping_type}/text()")
     if not no_merge: speakers, counts = marked_item_merge(speakers, counts)  # Merge identical speakers together
     if results == -1:
@@ -468,11 +466,11 @@ def compile() -> None:
                         if has_multiple:
                             for character in character_mapping.xpath('./Characters/Character'):
                                 characters_element.append(copy.deepcopy(
-                                    character
+                                        character
                                 ))
                         else:
                             characters_element.append(copy.deepcopy(
-                                character_mapping.find('Character')
+                                    character_mapping.find('Character')
                             ))
         except Exception as e:
             logger.error(f"Failed while processing `{file}`", exc_info=e)
@@ -578,7 +576,7 @@ def images() -> None:
                 episode_dir_path = os.path.join(IMG_EPISODES_DIR, f'{s:02}', f'{e:02}')
                 if not os.path.exists(episode_dir_path):
                     logger.debug('Creating directory: {}'.format(
-                        os.path.relpath(IMG_DIR, episode_dir_path)
+                            os.path.relpath(IMG_DIR, episode_dir_path)
                     ))
                     os.makedirs(episode_dir_path)
 
@@ -610,10 +608,10 @@ def images() -> None:
                                 continue
                             else:
                                 logger.warning(
-                                    'Image at {} will be overwritten.'.format(os.path.relpath(IMG_DIR, image_path)))
+                                        'Image at {} will be overwritten.'.format(os.path.relpath(IMG_DIR, image_path)))
 
                         logger.debug(
-                            'Downloading {}x{} image @ {}'.format(still['width'], still['height'], still['file_path']))
+                                'Downloading {}x{} image @ {}'.format(still['width'], still['height'], still['file_path']))
 
                         img_rsp = requests.get(still_url, stream=True)
                         if img_rsp.status_code == 200:
@@ -621,7 +619,7 @@ def images() -> None:
                                 img_rsp.raw.decode_content = True
                                 shutil.copyfileobj(img_rsp.raw, f)
                             logger.debug('Image downloaded to {}'.format(
-                                os.path.relpath(IMG_DIR, image_path)
+                                    os.path.relpath(IMG_DIR, image_path)
                             ))
                         else:
                             logger.warning('Failed to download image!')
@@ -671,7 +669,7 @@ def app(path: str, make_dir: bool) -> None:
             with open(os.path.join(COMPILE_DIR, episodeFile), 'r') as ep_file:
                 episode_root: etree.ElementBase = etree.parse(ep_file)
 
-            seasonNum, episodeNum = map(int, re.match(r'(\d+)-(\d+).xml', episodeFile).groups())
+            seasonNum, episodeNum = map(int, re.match(r'(\d+)-(\d+)\.xml', episodeFile).groups())
             description = episode_desc[seasonNum - 1][episodeNum - 1]
 
             # Count character appearances
@@ -711,20 +709,20 @@ def app(path: str, make_dir: bool) -> None:
                 'title': description['title'],
                 'description': description['description'],
                 'characters': episode_characters,
-                'season_number': seasonNum,
-                'episode_number': episodeNum,
+                'seasonNumber': seasonNum,
+                'episodeNumber': episodeNum,
                 "scenes": scenes
             })
 
             all_appearances += characters
 
     season_episode_data: List[Tuple[int, int, Any]] = []
-    for season, season_data in enumerate(all_season_data, start=1):
-        for episode, episode_data in enumerate(season_data, start=1):
+    for season_data in all_season_data:
+        for episode_data in season_data:
+            season, episode = episode_data['seasonNumber'], episode_data['episodeNumber']
             season_episode_data.append((season, episode, episode_data))
 
     with progress:
-
         for season, episode, episode_data in progress.track(season_episode_data, description='Saving episode data...',
                                                             update_period=0.1):
             season_directory = os.path.join(path, f'{season:02}')
@@ -737,7 +735,7 @@ def app(path: str, make_dir: bool) -> None:
                 json.dump(episode_data, episode_file)
 
     episodes_path = os.path.join(path, 'episodes.json')
-    included: List[str] = ['characters', 'description', 'title', 'episode_number', 'season_number']
+    included: List[str] = ['characters', 'description', 'title', 'episodeNumber', 'seasonNumber']
     basic_episode_data = [[None for _ in range(count)] for count in EPISODE_COUNTS]
     for season, episode, episode_data in season_episode_data:
         basic_episode_data[season - 1][episode - 1] = {key: episode_data[key] for key in included}
