@@ -11,6 +11,7 @@ markupsafe = "<2.1.0"
 unidecode = "*"
 lxml = "*"
 rich = "*"
+python-dotenv = "*"
 
 [dev-packages]
 

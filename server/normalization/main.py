@@ -8,10 +8,17 @@ from collections import Counter, OrderedDict
 from typing import Any, Dict, List, Optional, Tuple, Union
 
 import click
+import requests
+import shutil
+from dotenv import load_dotenv
+import rich.progress
+
 from helpers import clean_string, get_close_matches_indexes, marked_item_merge
 from lxml import etree
 from rich.logging import RichHandler
 from rich.progress import MofNCompleteColumn, Progress, SpinnerColumn, TimeElapsedColumn, track
+
+load_dotenv()
 
 logging.basicConfig(level=logging.INFO, format="%(message)s", datefmt="[%X]",
                     handlers=[RichHandler(rich_tracebacks=True)])
@@ -25,6 +32,8 @@ EPISODES_DIR = os.path.join(TRUTH_DIR, 'episodes')
 COMPILE_DIR = os.path.join(CUR_DIR, 'compile')
 RAW_DIR = os.path.join(CUR_DIR, 'raw')
 BUILD_DIR = os.path.join(CUR_DIR, 'build')
+IMG_DIR = os.path.join(CUR_DIR, 'img')
+IMG_EPISODES_DIR = os.path.join(IMG_DIR, 'episodes')
 
 RAW_FILES = os.listdir(RAW_DIR)
 EPISODE_COUNTS = [6, 22, 23, 14, 26, 24, 24, 24, 23]
@@ -536,6 +545,89 @@ def check(verbose: bool) -> None:
     # TODO: Check for values in meta.json that are null
     # TODO: Check for values in meta.json that are not referenced anywhere in identifiers.xml
     # TODO: Check for character IDs in identifiers.xml that don't look correct (voice--on-phone)
+
+
+@cli.command('images')
+def images() -> None:
+    """Requests all images from episoes as available on themoviedb.org"""
+
+    API_KEY = os.getenv('THEMOVIEDB_API_KEY')
+
+    API_URL = 'https://api.themoviedb.org/3'
+    GET_CONFIGURAITON = API_URL + '/configuration'
+    GET_EPISODE_IMAGES = API_URL + '/tv/{tv_id}/season/{season_number}/episode/{episode_number}/images'
+
+    the_office = 2316
+
+    # Get image still sizes & base url
+    configuration = requests.get(GET_CONFIGURAITON, {'api_key': API_KEY}).json()
+    IMG_BASE_URL = configuration['images']['secure_base_url']
+    STILL_SIZE = 'original'
+
+    with rich.progress.Progress() as progress:
+        season_task = progress.add_task('Overall', total=sum(EPISODE_COUNTS))
+        episode_task = progress.add_task('Season ?')
+
+        for season in range(9):
+            s = season + 1
+            progress.update(episode_task, description=f'Season {s}', total=EPISODE_COUNTS[season], completed=0)
+
+            for episode in range(EPISODE_COUNTS[season]):
+                e = episode + 1
+
+                episode_dir_path = os.path.join(IMG_EPISODES_DIR, f'{s:02}', f'{e:02}')
+                if not os.path.exists(episode_dir_path):
+                    logger.debug('Creating directory: {}'.format(
+                        os.path.relpath(IMG_DIR, episode_dir_path)
+                    ))
+                    os.makedirs(episode_dir_path)
+
+                logger.debug(f'Acquiring images for S{s}E{e}')
+                request_url = GET_EPISODE_IMAGES.format(tv_id=the_office,
+                                                        season_number=season + 1,
+                                                        episode_number=episode + 1)
+                logger.debug(request_url)
+                episode_images = requests.get(request_url, params={'api_key': API_KEY}).json()
+
+                if len(episode_images['stills']) < 1:
+                    logger.warning(f'No stills found for S{s}E{e}')
+                else:
+                    stills = episode_images['stills']
+                    logger.debug(f'{len(stills)} stills received for S{s}E{e}.')
+
+                    for i, still in enumerate(stills, start=1):
+                        file_extension = still['file_path'].split('.')[-1]
+                        image_path = os.path.join(episode_dir_path, f'{i:02}.{file_extension}')
+                        still_url = IMG_BASE_URL + STILL_SIZE + still["file_path"]
+
+                        if os.path.exists(image_path):
+                            head_response = requests.head(still_url)
+
+                            content_length = int(head_response.headers['Content-Length'])
+                            existing_file_size = os.stat(image_path).st_size
+                            if content_length == existing_file_size:
+                                logger.debug(f'Skipping already downloaded file ({content_length / (1024):.2f} KB).')
+                                continue
+                            else:
+                                logger.warning(
+                                    'Image at {} will be overwritten.'.format(os.path.relpath(IMG_DIR, image_path)))
+
+                        logger.debug(
+                            'Downloading {}x{} image @ {}'.format(still['width'], still['height'], still['file_path']))
+
+                        img_rsp = requests.get(still_url, stream=True)
+                        if img_rsp.status_code == 200:
+                            with open(image_path, 'wb') as f:
+                                img_rsp.raw.decode_content = True
+                                shutil.copyfileobj(img_rsp.raw, f)
+                            logger.debug('Image downloaded to {}'.format(
+                                os.path.relpath(IMG_DIR, image_path)
+                            ))
+                        else:
+                            logger.warning('Failed to download image!')
+
+                progress.update(episode_task, advance=1)
+                progress.update(season_task, advance=1)
 
 
 @build.command('app')
