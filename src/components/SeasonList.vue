@@ -16,7 +16,7 @@
                         <template v-for="(episode, index) in seasons[season.season_id - 1].episodes">
                             <template v-if="isPreloaded">
                                 <SeasonListItem
-                                    :key="`rl-${episode.episodeNumber}`"
+                                    :key="`rl-${index}`"
                                     :episode-number="episode.episodeNumber"
                                     :season-number="episode.seasonNumber"
                                     :title="episode.title"
