@@ -1,0 +1,8 @@
+public/json/* linguist-generated
+public/img/* linguist-generated
+server/normalization/img/* -linguist-vendored
+server/normalization/html/* -linguist-vendored
+server/normalization/compile/* -linguist-vendored
+server/normalization/build/* -linguist-vendored
+server/normalization/raw/* -linguist-vendored
+server/normalization/truth/* -linguist-vendored
