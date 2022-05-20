@@ -58,7 +58,7 @@
                         </b-col>
                     </b-row>
                 </b-container>
-                <ais-configure :click-analytics="true" />
+                <ais-configure :analytics="true" />
             </ais-instant-search>
             <Footer :build-moment="buildMoment" />
         </div>

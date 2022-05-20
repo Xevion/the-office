@@ -2,7 +2,8 @@
     <b-card
         class="mb-1" body-class="p-0 expandable-result"
         footer-class="my-1"
-        :class="[expanded ? 'expanded' : '']" @mouseover="hoverOn"
+        :class="[expanded ? 'expanded' : '']"
+        @mouseover="hoverOn"
         @mouseleave="hoverOff"
         @click="toggleExpansion"
     >
@@ -128,7 +129,7 @@ export default {
             // if first time expanding, fetch quotes
             if (!this.fetchQuotes()) {
                 this.hasExpanded = true;
-                this.fetchQuotes();
+                // this.fetchQuotes();
             }
         },
         hoverFetch() {
@@ -140,15 +141,15 @@ export default {
         },
         hoverOn() {
             // Schedule a fetching event
-            this.timeoutID = setTimeout(this.hoverFetch, 300);
+            // this.timeoutID = setTimeout(this.hoverFetch, 300);
         },
         hoverOff() {
             // Hover is off. Unschedule event if it has not already fetched.
-            clearTimeout(this.timeoutID);
+            if (this.timeoutID !== null)
+                clearTimeout(this.timeoutID);
         },
         fetchQuotes() {
-            const path = `${process.env.VUE_APP_API_URL}/api/quote_surround?season=\
-${this.item.season}&episode=${this.item.episode_rel}&scene=${this.item.section_rel}&quote=${this.item.quote_rel}`;
+            const path = `/api/quote/surrounding?season=${this.item.season}&episode=${this.item.episode_rel}&scene=${this.item.section_rel}&quote=${this.item.quote_rel}`;
             axios
                 .get(path)
                 .then((res) => {
