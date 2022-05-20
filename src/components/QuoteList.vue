@@ -16,9 +16,7 @@
                     {{ quote.speaker }}
                 </span>
             </td>
-            <td class="quote-text w-100 pr-3">
-                {{ quote.text }}
-            </td>
+            <td class="quote-text w-100 pr-3" v-html="transform(quote.text)" />
             <td class="px-1 pl-2">
                 <a :href="quote_link(index)" class="no-link" @click="copy(index)">
                     <b-icon icon="link45deg" />
@@ -41,6 +39,12 @@ export default {
         },
     },
     methods: {
+        transform(quoteText) {
+            if (quoteText.includes("[")) {
+                return quoteText.replace(/\[([^\]]+)]/, '<i>[$1]</i>')
+            }
+            return quoteText
+        },
         quote_link(quoteIndex) {
             return `/${this.$route.params.season}/${this.$route.params.episode}#${this.sceneIndex}-${quoteIndex}`;
         },
