@@ -15,13 +15,12 @@
                     <b-list-group>
                         <template v-for="(episode, index) in seasons[season.season_id - 1].episodes">
                             <template v-if="isPreloaded">
-                                <b-list-group-item
-                                    :id="`s-${season.season_id}-ep-${episode.episode_id}`" :key="`rl-${episode.episode_id}`"
-                                    class="no-link episode-item"
-                                    :to="{name: 'Episode', params: { season: season.season_id, episode: episode.episode_id }, }"
-                                >
-                                    Episode {{ episode.episode_id }} - "{{ episode.title }}"
-                                </b-list-group-item>
+                                <SeasonListItem
+                                    :key="`rl-${episode.episodeNumber}`"
+                                    :episode-number="episode.episodeNumber"
+                                    :season-number="episode.seasonNumber"
+                                    :title="episode.title"
+                                />
                                 <b-popover
                                     :key="`bpop-${episode.episode_id}`" triggers="hover"
                                     placement="right" delay="25"
@@ -45,13 +44,15 @@
 </template>
 
 <script>
-import Skeleton from './Skeleton.vue';
+import Skeleton from '@/components/Skeleton';
+import SeasonListItem from "@/components/SeasonListItem";
 import {types} from "@/mutation_types";
 
 export default {
     name: "SeasonList",
     components: {
-        Skeleton
+        Skeleton,
+        SeasonListItem
     },
     computed: {
         seasons() {
