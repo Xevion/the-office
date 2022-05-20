@@ -1,6 +1,14 @@
 module.exports = {
+    root: true,
+    env: {
+        node: true
+    },
+    parserOptions: {
+        parser: "babel-eslint",
+    },
     extends: [
         'eslint:recommended',
+        'plugin:vue/essential',
         'plugin:vue/recommended' // Use this if you are using Vue.js 2.x.
     ],
     rules: {
