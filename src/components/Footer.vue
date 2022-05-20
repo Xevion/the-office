@@ -1,6 +1,6 @@
 <template>
-    <div class="footer-dark">
-        <footer>
+    <div class="outer-footer">
+        <footer class="inner-footer">
             <b-container>
                 <b-row style="text-align: center">
                     <ul>
@@ -47,10 +47,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.footer-dark {
-    margin-top: auto;
+.outer-footer {
+    height: 100px;
+    width:100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
 
-    padding: 50px 0;
+.inner-footer {
+    margin: 0 auto;
+    height: 100%;
     color: #6d6d6d;
 
     .build-time {
