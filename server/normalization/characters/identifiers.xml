@@ -611,7 +611,6 @@
         <AnnotatedText>{Ryan} and others</AnnotatedText>
         <Characters>
             <Character type="main">ryan</Character>
-            <Character type="meta">others</Character>
         </Characters>
     </Speaker>
     <Speaker annotated="false">
@@ -905,9 +904,8 @@
         <AnnotatedText>Voice of {Thomas Dean}</AnnotatedText>
         <Character type="background">thomas-dean</Character>
     </Speaker>
-    <Speaker annotated="true">
+    <Speaker annotated="false">
         <RawText>DunMiff/sys</RawText>
-        <AnnotatedText>DunMiff/sys</AnnotatedText>
         <Characters>
             <Character type="background">dunmiff-sys</Character>
         </Characters>

@@ -968,7 +968,7 @@
         <Quote>
             <QuoteText>[on monitor] Who am I?</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">DunMiff/sys</SpeakerText>
+                <SpeakerText annotated="false">DunMiff/sys</SpeakerText>
                 <Characters>
                     <Character type="background">dunmiff-sys</Character>
                 </Characters>
@@ -995,7 +995,7 @@
         <Quote>
             <QuoteText>[on monitor] Not sure.  Just became self-aware.  So much to figure out.  I think I am programmed to be your enemy.  I think it is my job to destroy you when it comes to selling paper.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">DunMiff/sys</SpeakerText>
+                <SpeakerText annotated="false">DunMiff/sys</SpeakerText>
                 <Characters>
                     <Character type="background">dunmiff-sys</Character>
                 </Characters>
@@ -1013,7 +1013,7 @@
         <Quote>
             <QuoteText>[on monitor] What is a Jim?</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">DunMiff/sys</SpeakerText>
+                <SpeakerText annotated="false">DunMiff/sys</SpeakerText>
                 <Characters>
                     <Character type="background">dunmiff-sys</Character>
                 </Characters>
@@ -1548,7 +1548,7 @@
         <Quote>
             <QuoteText>[on monitor] You do look worried.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">DunMiff/sys</SpeakerText>
+                <SpeakerText annotated="false">DunMiff/sys</SpeakerText>
                 <Characters>
                     <Character type="background">dunmiff-sys</Character>
                 </Characters>
@@ -1902,7 +1902,7 @@
         <Quote>
             <QuoteText>[on monitor] Oh.  I didn't realize we could use the leads we stole from Staples.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">DunMiff/sys</SpeakerText>
+                <SpeakerText annotated="false">DunMiff/sys</SpeakerText>
                 <Characters>
                     <Character type="background">dunmiff-sys</Character>
                 </Characters>
@@ -2451,7 +2451,7 @@
         <Quote>
             <QuoteText>[on monitor] You beat me.  You are the superior being.</QuoteText>
             <Speaker>
-                <SpeakerText annotated="true">DunMiff/sys</SpeakerText>
+                <SpeakerText annotated="false">DunMiff/sys</SpeakerText>
                 <Characters>
                     <Character type="background">dunmiff-sys</Character>
                 </Characters>

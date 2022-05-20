@@ -159,7 +159,6 @@
                 <SpeakerText annotated="true">{Ryan} and others</SpeakerText>
                 <Characters>
                     <Character type="main">ryan</Character>
-                    <Character type="meta">others</Character>
                 </Characters>
             </Speaker>
         </Quote>

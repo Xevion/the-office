@@ -479,8 +479,6 @@ def compile() -> None:
             etree.indent(compile_root, space=" " * 4)
             compile_file.write(etree.tostring(compile_root, encoding=str, pretty_print=True))
 
-        pbar.update()
-
     logger.info('Completed episode data compiling.')
 
 
@@ -694,16 +692,45 @@ def app(path: str, make_dir: bool) -> None:
                     'appearances': count
                 }
 
-            scenes = [
-                {
-                    'quotes': [
-                        {
-                            'speaker': quote.xpath('./Speaker/SpeakerText')[0].text,
-                            'text': quote.find('QuoteText').text
+            scenes = []
+            for scene in episode_root.xpath('./Scene'):
+                quotes = []
+
+                for quote in scene.xpath('./Quote'):
+                    speaker_text = quote.xpath('./Speaker/SpeakerText')[0]
+                    is_annotated = speaker_text.attrib['annotated'] == 'true'
+                    quote_text = quote.find('QuoteText').text
+
+                    quote_json = {
+                        'speaker': speaker_text.text,
+                        'text': quote_text,
+                        "isAnnotated": is_annotated
+                    }
+
+                    if is_annotated:
+                        character_elements = quote.xpath('./Speaker/Characters/Character')
+                        split_speaker_text: List[str] = re.split(r'({[^}]+})', speaker_text.text)
+                        if len(split_speaker_text[0]) == 0: del split_speaker_text[0]
+                        if len(split_speaker_text[-1]) == 0: del split_speaker_text[-1]
+                        text_start: int = 0 if split_speaker_text[0].startswith('{') else 1
+
+                        # {Jim}, {Dwight}, and {Andy}'s Computer
+                        # [jim, dwight, andy]
+                        # -> {jim}, {dwight}, and {andy}'s Computer
+
+                        quote_json['characters'] = {
+                            character.text: None for character in character_elements
                         }
-                        for quote in scene.xpath('./Quote')]
-                } for scene in episode_root.xpath('./Scene')
-            ]
+
+                        for i, character in enumerate(character_elements):
+                            index = text_start + (i * 2)
+                            quote_json['characters'][character.text] = split_speaker_text[index][1:-1]
+                            split_speaker_text[index] = '{' + character.text + '}'
+
+                        quote_json['speaker'] = ''.join(split_speaker_text)
+
+                    quotes.append(quote_json)
+                scenes.append({'quotes': quotes})
 
             all_season_data[seasonNum - 1].append({
                 'title': description['title'],
