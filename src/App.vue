@@ -54,6 +54,7 @@
                     </b-col>
                     <b-col lg="8" xl="7" md="12" class="pt-md-2 pt-lg-0">
                         <router-view />
+                        <Footer :build-moment="buildMoment" />
                     </b-col>
                 </b-row>
             </b-container>
@@ -63,6 +64,17 @@
 </template>
 
 <style lang="scss">
+html, body {
+    min-height: 100vh;
+}
+
+#app {
+    min-height: 100vh;
+}
+.ais-InstantSearch {
+    height: 100%;
+}
+
 .outer-skeleton:not(:first-child) {
     display: none;
 }
@@ -115,12 +127,15 @@ import algoliasearch from "algoliasearch/lite";
 import SeasonList from "./components/SeasonList.vue";
 import "instantsearch.css/themes/algolia-min.css";
 import Skeleton from "./components/Skeleton.vue";
+import Footer from "./components/Footer.vue"
+import moment from "moment";
 
 export default {
     name: "App",
     components: {
         SeasonList,
-        Skeleton
+        Skeleton,
+        Footer
     },
     data() {
         return {
@@ -134,6 +149,9 @@ export default {
     computed: {
         showBreakpointMarker() {
             return process.env.NODE_ENV === 'development';
+        },
+        buildMoment() {
+            return moment(document.documentElement.dataset.buildTimestampUtc)
         }
     },
     methods: {
