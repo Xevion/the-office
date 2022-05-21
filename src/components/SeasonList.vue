@@ -60,11 +60,11 @@ export default {
         },
         // if SeasonList episode data (titles/descriptions) is loaded and ready
         isPreloaded() {
-            return this.$store.state.preloaded;
+            return this.$store.getters.checkPreloaded('episodes');
         }
     },
     created() {
-        this.$store.dispatch(types.PRELOAD)
+        this.$store.dispatch(types.PRELOAD_EPISODES)
     },
     methods: {},
 };

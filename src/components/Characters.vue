@@ -1,29 +1,34 @@
 <template>
     <div>
-        <b-breadcrumb v-if="ready" :items="breadcrumbs"></b-breadcrumb>
+        <b-breadcrumb v-if="ready" :items="breadcrumbs" />
         <b-card v-else class="breadcrumb-skeleton mb-3">
-            <Skeleton style="width: 40%;"></Skeleton>
+            <Skeleton style="width: 40%;" />
         </b-card>
         <b-card v-if="ready">
             <b-list-group>
-                <b-list-group-item v-for="(character, character_id) in characters" :key="character_id">
+                <b-list-group-item v-for="id in sorted_character_ids" :key="id">
                     <b-row align-v="start" align-content="start">
                         <b-col cols="5" md="4" lg="4" xl="3">
-                            <b-img-lazy fluid-grow class="px-2" :src="faceURL(character_id)"
-                                        :blank-src="faceURL(character_id, thumbnail = true)"
-                                        blank-width="200" blank-height="200"
-                            ></b-img-lazy>
-                            <!--                            <b-img fluid-grow class="px-2"></b-img>-->
+                            <b-img-lazy
+                                fluid-grow class="px-2"
+                                :src="faceURL(id)"
+                                :blank-src="faceURL(id, true)"
+                                blank-width="200" blank-height="200"
+                            />
                         </b-col>
                         <b-col>
                             <h4>
-                                {{ character.name || character_id }}
-                                <router-link class="no-link"
-                                             :to="{ name: 'Character', params: {character: character_id} }">
-                                    <b-icon class="h6" icon="caret-right-fill"></b-icon>
+                                {{ characters[id].name || id }}
+                                <router-link
+                                    class="no-link"
+                                    :to="{ name: 'Character', params: {character: id} }"
+                                >
+                                    <b-icon class="h6" icon="caret-right-fill" />
                                 </router-link>
                             </h4>
-                            <p class="pl-3">{{ character.summary }}</p>
+                            <p class="pl-3">
+                                {{ characters[id].summary }}
+                            </p>
                         </b-col>
                     </b-row>
                 </b-list-group-item>
@@ -56,21 +61,12 @@ export default {
     components: {
         Skeleton
     },
-    methods: {
-        faceURL(character, thumbnail = false) {
-            return `${process.env.VUE_APP_API_URL}/static/img/${character}/` + (thumbnail ? "face_thumb.webp" : "face.webp");
-        }
-    },
-    created() {
-        this.$store.dispatch(types.PRELOAD_CHARACTER)
-            .then(() => {
-                // recompute computed properties since Vuex won't do it
-                this.$forceUpdate();
-            });
-    },
     computed: {
         ready() {
             return this.$store.state.preloaded;
+        },
+        sorted_character_ids() {
+            return this.$store.getters.getSortedCharacters();
         },
         characters() {
             return this.$store.state.characters;
@@ -80,6 +76,17 @@ export default {
                 {text: 'Home', to: {name: 'Home'}},
                 {text: 'Characters', active: true}
             ]
+        }
+    },
+    async mounted() {
+        await this.$store.dispatch(types.PRELOAD_CHARACTERS)
+
+        // Re-compute computed properties since Vuex won't do it
+        this.$forceUpdate();
+    },
+    methods: {
+        faceURL(character, thumbnail = false) {
+            return `/img/${character}/` + (thumbnail ? "face_thumb" : "face") + ".webp";
         }
     }
 }

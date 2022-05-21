@@ -67,7 +67,7 @@ export default new Vuex.Store({
         [types.MERGE_CHARACTERS](state, payload) {
             // Iterate and store.
             for (const [charId, charData] of Object.entries(payload.characters)) {
-                state.characters[charId] = charData;
+                Vue.set(state.characters, charId, charData)
             }
         },
     },
@@ -99,7 +99,7 @@ export default new Vuex.Store({
                     });
             })
         },
-        [types.PRELOAD]({commit}) {
+        [types.PRELOAD_EPISODES]({commit}) {
             const path = `/json/episodes.json`;
 
             axios.get(path)
@@ -112,7 +112,10 @@ export default new Vuex.Store({
                     console.error(error);
                 })
         },
-        async [types.FETCH_CHARACTERS]({commit}) {
+        async [types.PRELOAD_CHARACTERS]({commit, getters}) {
+            if (getters.checkPreloaded('characters'))
+                return
+
             const path = `/json/characters.json`;
             let res = null;
             try {
@@ -123,10 +126,14 @@ export default new Vuex.Store({
             }
 
             commit(types.MERGE_CHARACTERS, {characters: res.data})
-            commit(types.SET_PRELOADED, {type: 'characters', status: 'true'})
+            commit(types.SET_PRELOADED, {type: 'characters', status: true})
         }
     },
     getters: {
+        checkPreloaded: (state) => (identifier) => {
+            // Check whether a certain resource identifier is preloaded
+            return state.preloaded[identifier] === true;
+        },
         // Check whether a episode has been fetched yet
         isFetched: (state) => (season, episode) => {
             const ep = state.quoteData[season - 1].episodes[episode - 1];
