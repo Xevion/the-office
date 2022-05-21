@@ -20,7 +20,8 @@ export default new Vuex.Store({
         seasonCount: 9,
         episodeCount: episodeCount,
         quoteData: baseData,
-        preloaded: false,
+        preloaded: {episodes: false, characters: false},
+        characters_loaded: false,
         characters: {}
     },
     mutations: {
@@ -57,20 +58,17 @@ export default new Vuex.Store({
             if (payload.episodeData.scenes !== undefined)
                 state.quoteData[s].episodes[e].loaded = true;
         },
-        [types.SET_PRELOADED](state, status) {
-            state.preloaded = status;
+        [types.SET_PRELOADED](state, payload) {
+            state.preloaded[payload.type] = payload.status;
         },
         [types.SET_CHARACTER](state, payload) {
             state.characters[payload.id] = payload.characterData
         },
-        [types.MERGE_CHARACTER](state, payload) {
-            const id = payload.id;
-            // If character has not been defined in character list yet, simply set the characterData
-            if (state.characters[id] === undefined)
-                state.characters[id] = payload.characterData
-            // Otherwise use intended merge & overwrite effect.
-            else
-                state.characters[id] = Object.assign(state.characters[id], payload.characterData)
+        [types.MERGE_CHARACTERS](state, payload) {
+            // Iterate and store.
+            for (const [charId, charData] of Object.entries(payload.characters)) {
+                state.characters[charId] = charData;
+            }
         },
     },
     actions: {
@@ -107,41 +105,25 @@ export default new Vuex.Store({
             axios.get(path)
                 .then((res) => {
                     commit(types.MERGE_EPISODES, res.data)
-                    commit(types.SET_PRELOADED, true);
+                    commit(types.SET_PRELOADED, {type: 'episodes', status: true});
                 })
                 .catch((error) => {
                     // eslint-disable-next-line no-console
                     console.error(error);
                 })
         },
-        [types.PRELOAD_CHARACTER]({commit}) {
-            return new Promise((resolve, reject) => {
-                const path = `/json/characters.json`;
-                axios.get(path)
-                    .then((res) => {
-                        for (const [character_id, character_data] of Object.entries(res.data))
-                            commit(types.MERGE_CHARACTER, {id: character_id, characterData: character_data})
-                        resolve();
-                    })
-                    .catch((error) => {
-                        console.error(error);
-                        reject()
-                    })
-            })
-        },
-        [types.FETCH_CHARACTER]({commit}, character_id) {
-            return new Promise((resolve, reject) => {
-                const path = `/json/character/${character_id}.json`;
-                axios.get(path)
-                    .then((res) => {
-                        commit(types.MERGE_CHARACTER, {id: character_id, characterData: res.data})
-                        resolve();
-                    })
-                    .catch((error) => {
-                        reject();
-                        console.error(error);
-                    })
-            })
+        async [types.FETCH_CHARACTERS]({commit}) {
+            const path = `/json/characters.json`;
+            let res = null;
+            try {
+                res = await axios.get(path)
+            } catch (error) {
+                console.error(error);
+                throw error
+            }
+
+            commit(types.MERGE_CHARACTERS, {characters: res.data})
+            commit(types.SET_PRELOADED, {type: 'characters', status: 'true'})
         }
     },
     getters: {
