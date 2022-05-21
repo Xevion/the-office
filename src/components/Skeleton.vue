@@ -1,27 +1,47 @@
 <template>
     <div class="outer-skeleton">
-        <div class="skeleton" :class="[animated ? undefined : 'no-animate']" :style="[style, inner_style]" />
+        <div
+            class="skeleton"
+            :class="[animated ? undefined : 'no-animate']"
+            :style="[style, innerStyle]"
+        />
     </div>
 </template>
-<style lang="scss" scoped>
-.skeleton {
-    width: 100%;
-    display: block;
-    line-height: 1;
-    background-size: 200px 100%;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(90deg, var(--secondary-color, $grey-4), var(--primary-color, $grey-6), var(--secondary-color, $grey-4));
-    background-color: var(--secondary-color, $grey-4);
-    animation: 1.25s ease-in-out 0s infinite normal none running SkeletonLoading;
-    border-radius: var(--border-radius, 3px);
 
-    &.no-animate {
-        animation: none;
+<style lang="scss">
+.breadcrumb-skeleton {
+    height: 48px;
+
+    & > .card-body {
+        padding: 0 0 0 1em;
+        display: flex;
+        align-items: center;
     }
 }
 
 .outer-skeleton {
-    padding: 0.2em 0;
+    padding: 0.35em 0.3em 0.35em 0.35em;
+
+    .breadcrumb-skeleton > {
+        display: inline-block;
+    }
+
+    .skeleton {
+        width: 100%;
+        height: 100%;
+        display: block;
+        line-height: 1;
+        background-size: 200px 100%;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(90deg, var(--secondary-color, $grey-4), var(--primary-color, $grey-6), var(--secondary-color, $grey-4));
+        background-color: var(--secondary-color, $grey-4);
+        animation: 1.25s ease-in-out 0s infinite normal none running SkeletonLoading;
+        border-radius: var(--border-radius, 3px);
+
+        &.no-animate {
+            animation: none;
+        }
+    }
 }
 
 @-webkit-keyframes SkeletonLoading {
@@ -33,7 +53,7 @@
     }
 }
 
-@keyframes SkeletonLoa,ding {
+@keyframes SkeletonLoading {
     0% {
         background-position: -200px 0;
     }
@@ -41,19 +61,16 @@
         background-position: calc(200px + 100%) 0;
     }
 }
-
-span {
-    font-size: 24px;
-}
 </style>
 
 <script>
 export default {
     props: {
-        inner_style: {
-            type: Object
+        innerStyle: {
+            type: Object,
+            default: null,
         },
-        inner_class: {
+        innerClass: {
             type: String,
             default: ''
         },
@@ -61,22 +78,25 @@ export default {
             type: Boolean,
             default: true
         },
-        border_radius: {
+        borderRadius: {
             type: String,
+            default: ''
         },
-        primary_color: {
+        primaryColor: {
             type: String,
+            default: '',
         },
-        secondary_color: {
+        secondaryColor: {
             type: String,
+            default: '',
         }
     },
     computed: {
         style() {
             return {
-                '--primary-color': this.primary_color,
-                '--secondary-color': this.secondary_color,
-                '--border-radius': this.border_radius
+                '--primary-color': this.primaryColor,
+                '--secondary-color': this.secondaryColor,
+                '--border-radius': this.borderRadius
             }
         }
     }

@@ -38,19 +38,6 @@
     </div>
 </template>
 
-<style lang="scss" scoped>
-.breadcrumb-skeleton {
-    background-color: $grey-3;
-    height: 48px;
-
-    & > .card-body {
-        padding: 0 0 0 1em;
-        display: flex;
-        align-items: center;
-    }
-}
-</style>
-
 <style lang="scss">
 .card-title {
     font-family: "Montserrat", sans-serif;
@@ -127,7 +114,7 @@ export default {
         this.fetch();
     },
     methods: {
-        fetch() {
+        async fetch() {
             // Fetch the episode, then scroll - already fetched episode should scroll immediately
             this.$store.dispatch(types.FETCH_EPISODE, {season: this.params.season, episode: this.params.episode})
                 .then(() => {
