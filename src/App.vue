@@ -42,11 +42,12 @@
                     <b-row class="my-3 pl-1" cols="12">
                         <b-col lg="3" xl="2" md="12">
                             <ais-search-box ref="searchbox" placeholder="Search here…" @keydown.native="showResults" />
-                            <Skeleton
-                                secondary_color="#3e3e3e" border_radius="1px"
-                                primary_color="#4A4A4A"
-                                :inner_style="{ 'min-height': '35.6px' }"
-                            />
+                            <!--<Skeleton
+                                secondary-color="#3e3e3e"
+                                border-radius="1px"
+                                primary-color="#4A4A4A"
+                                :inner-style="{ 'min-height': '35.6px' }"
+                            />-->
                         </b-col>
                     </b-row>
                     <b-row align-h="start" cols="12">
@@ -84,10 +85,6 @@ html, body, #app {
 
 .ais-InstantSearch {
     height: 100%;
-}
-
-.outer-skeleton:not(:first-child) {
-    display: none;
 }
 
 .ais-SearchBox-form {
@@ -137,7 +134,6 @@ html, body, #app {
 import algoliasearch from "algoliasearch/lite";
 import SeasonList from "./components/SeasonList.vue";
 import "instantsearch.css/themes/algolia-min.css";
-import Skeleton from "./components/Skeleton.vue";
 import Footer from "./components/Footer.vue"
 import moment from "moment";
 
@@ -145,7 +141,6 @@ export default {
     name: "App",
     components: {
         SeasonList,
-        Skeleton,
         Footer
     },
     data() {
