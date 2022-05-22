@@ -22,7 +22,7 @@
                             </router-link>
                         </b-nav-item>
                         <b-nav-item href="#">
-                            <router-link :to="{ name: 'Home' }" class="no-link">
+                            <router-link :to="{ name: 'About' }" class="no-link">
                                 About
                             </router-link>
                         </b-nav-item>

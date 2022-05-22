@@ -6,6 +6,7 @@ import SearchResults from "@/components/SearchResults.vue";
 import Character from "@/components/Character.vue";
 import Season from "@/components/Season.vue";
 import Characters from "@/components/Characters";
+import About from "@/components/About";
 
 Vue.use(Router);
 
@@ -16,6 +17,11 @@ export default new Router({
             path: "/",
             name: "Home",
             component: Home,
+        },
+        {
+            path: "/about/",
+            name: "About",
+            component: About,
         },
         {
             path: "/characters/",
