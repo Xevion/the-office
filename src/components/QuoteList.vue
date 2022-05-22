@@ -12,9 +12,10 @@
             "
         >
             <td v-if="quote.speaker" class="quote-speaker pl-3">
-                <span class="my-3">
+                <DynamicSpeaker v-if="quote.isAnnotated" :text="quote.speaker" :characters="quote.characters" class="my-3" />
+                <router-link v-else :to="{name: 'Character', params: {character: quote.character}}" class="speaker-bg">
                     {{ quote.speaker }}
-                </span>
+                </router-link>
             </td>
             <td class="quote-text w-100 pr-3" v-html="transform(quote.text)" />
             <td class="px-1 pl-2">
@@ -26,8 +27,26 @@
     </table>
 </template>
 
+<style lang="scss">
+.speaker-bg {
+    color: $grey-8;
+}
+
+.speaker-link {
+    &, &:hover {
+        color: $grey-10;
+        cursor: pointer;
+    }
+}
+</style>
+
 <script>
+import DynamicSpeaker from "@/components/DynamicSpeaker";
+
 export default {
+    components: {
+        DynamicSpeaker
+    },
     props: {
         sceneIndex: {
             required: true,
