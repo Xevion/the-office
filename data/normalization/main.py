@@ -729,6 +729,8 @@ def app(path: str, make_dir: bool) -> None:
                             split_speaker_text[index] = '{' + character.text + '}'
 
                         quote_json['speaker'] = ''.join(split_speaker_text)
+                    else:
+                        quote_json['character'] = quote.xpath('./Speaker/Characters/Character/text()')[0]
 
                     quotes.append(quote_json)
                 scenes.append({'quotes': quotes})
