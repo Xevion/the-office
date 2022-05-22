@@ -16,21 +16,15 @@
                 </b-navbar-brand>
                 <b-collapse id="nav-collapse" is-nav>
                     <b-navbar-nav>
-                        <b-nav-item href="#">
-                            <router-link :to="{ name: 'Home' }" class="no-link">
-                                Home
-                            </router-link>
-                        </b-nav-item>
-                        <b-nav-item href="#">
-                            <router-link :to="{ name: 'About' }" class="no-link">
-                                About
-                            </router-link>
-                        </b-nav-item>
-                        <b-nav-item href="#">
-                            <router-link :to="{ name: 'Characters' }" class="no-link">
-                                Characters
-                            </router-link>
-                        </b-nav-item>
+                        <router-link :to="{ name: 'Home' }" class="nav-link no-link">
+                            Home
+                        </router-link>
+                        <router-link :to="{ name: 'About' }" class="nav-link no-link">
+                            About
+                        </router-link>
+                        <router-link :to="{ name: 'Characters' }" class="nav-link no-link">
+                            Characters
+                        </router-link>
                     </b-navbar-nav>
                 </b-collapse>
             </b-navbar>
