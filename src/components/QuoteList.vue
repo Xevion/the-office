@@ -41,7 +41,7 @@ export default {
     methods: {
         transform(quoteText) {
             if (quoteText.includes("[")) {
-                return quoteText.replace(/\[([^\]]+)]/, ' <i>[$1]</i> ')
+                return quoteText.replace(/\[([^\]]+)]/g, ' <i>[$1]</i> ')
             }
             return quoteText
         },
