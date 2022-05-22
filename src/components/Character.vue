@@ -75,9 +75,12 @@ export default {
             })
         }
     },
+    created() {
+        this.fetchCharacter();
+    },
     methods: {
         fetchCharacter() {
-            this.$store.dispatch(types.FETCH_CHARACTER, this.$route.params.character)
+            this.$store.dispatch(types.PRELOAD_CHARACTERS)
                 .then(() => {
                     this.character = this.$store.getters.getCharacter(this.$route.params.character);
                 })
