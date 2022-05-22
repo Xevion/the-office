@@ -34,7 +34,7 @@ export default {
     },
     computed: {
         buildTimeString() {
-            return this.buildMoment.format('MMM do, YYYY [at] h:mm A zz')
+            return this.buildMoment.format('MMM Do, YYYY [at] h:mm A zz')
         },
         buildISOString() {
             return this.buildMoment.toISOString()
