@@ -13,7 +13,7 @@
         >
             <td v-if="quote.speaker" class="quote-speaker pl-3">
                 <DynamicSpeaker v-if="quote.isAnnotated" :text="quote.speaker" :characters="quote.characters" class="my-3" />
-                <router-link v-else :to="{name: 'Character', params: {character: quote.character}}" class="speaker-bg">
+                <router-link v-else :to="{name: 'Character', params: {character: quote.character}}" class="speaker-link">
                     {{ quote.speaker }}
                 </router-link>
             </td>
