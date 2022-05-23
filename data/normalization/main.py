@@ -635,8 +635,9 @@ def images() -> None:
 
 @build.command('app')
 @click.option('--path', type=str, default=BUILD_DIR, help='The output path for the application data files.')
+@click.option('--mega', type=click.Path(file_okay=False, exists=True), default=None, help='The output path for the "mega episode file".')
 @click.option('--make-dir', is_flag=True, help='Create the output directory if it does not exist.')
-def app(path: str, make_dir: bool) -> None:
+def app(path: str, mega: str, make_dir: bool) -> None:
     """Build the data files used by the application."""
     logger.debug('Build process called for "app".')
     logger.debug(f'Output Directory: "{os.path.relpath(path, os.getcwd())}"')
@@ -758,9 +759,13 @@ def app(path: str, make_dir: bool) -> None:
             season, episode = episode_data['seasonNumber'], episode_data['episodeNumber']
             season_episode_data.append((season, episode, episode_data))
 
+    mega_file_data: List[List[Any]] = [[None for _ in range(count)] for count in EPISODE_COUNTS]
+
     with progress:
         for season, episode, episode_data in progress.track(season_episode_data, description='Saving episode data...',
                                                             update_period=0.1):
+            mega_file_data[season - 1][episode - 1] = episode_data
+
             season_directory = os.path.join(path, f'{season:02}')
             if not os.path.exists(season_directory):
                 os.makedirs(season_directory)
@@ -769,6 +774,11 @@ def app(path: str, make_dir: bool) -> None:
 
             with open(episode_path, 'w') as episode_file:
                 json.dump(episode_data, episode_file)
+
+    if mega is not None:
+        with open(os.path.join(mega, 'data.json'), 'w') as mega_file:
+            json.dump(mega_file_data, mega_file)
+        logger.debug('Mega data file written.')
 
     episodes_path = os.path.join(path, 'episodes.json')
     included: List[str] = ['characters', 'description', 'title', 'episodeNumber', 'seasonNumber']
