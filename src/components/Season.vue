@@ -8,6 +8,8 @@
                         <b-col cols="5" md="4" lg="4" xl="3">
                             <b-img-lazy
                                 fluid-grow class="px-2"
+                                width="200" height="200"
+                                blank-width="200" blank-height="200"
                                 :src="getUrl(episode.episodeNumber, episode.seasonNumber)"
                                 :blank-src="getUrl(episode.episodeNumber, episode.seasonNumber, true)"
                             />
@@ -52,7 +54,7 @@ h4 {
 export default {
     computed: {
         ready() {
-            return this.$store.state.preloaded;
+            return this.$store.getters.checkPreloaded('episodes');
         },
         breadcrumbs() {
             return [

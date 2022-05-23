@@ -11,6 +11,7 @@
                                     fluid-grow class="px-2"
                                     :src="faceURL(id)"
                                     :blank-src="faceURL(id, true)"
+                                    width="200" height="200"
                                     blank-width="200" blank-height="200"
                                 />
                             </b-col>
