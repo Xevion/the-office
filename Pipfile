@@ -12,6 +12,7 @@ unidecode = "*"
 lxml = "*"
 rich = "*"
 python-dotenv = "*"
+imghdr = "*"
 
 [dev-packages]
 
