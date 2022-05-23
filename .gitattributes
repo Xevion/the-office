@@ -1,9 +1,8 @@
-server/normalization/html/* linguist-documentation
-server/normalization/html/*.html linguist-vendored
+data/normalization/html/* linguist-vendored
 public/json/** linguist-generated
 public/img/** linguist-generated
-server/normalization/img/** linguist-vendored
-server/normalization/compile/** linguist-vendored
-server/normalization/build/** linguist-vendored
-server/normalization/raw/** linguist-vendored
-server/normalization/truth/** linguist-vendored
+data/normalization/img/** linguist-vendored
+data/normalization/compile/** linguist-vendored
+data/normalization/build/** linguist-vendored
+data/normalization/raw/** linguist-vendored
+data/normalization/truth/** linguist-vendored
