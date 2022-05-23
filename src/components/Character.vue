@@ -65,9 +65,6 @@ export default {
             ];
         },
     },
-    created() {
-        this.fetchCharacter();
-    },
     watch: {
         $route() {
             this.$nextTick(() => {
