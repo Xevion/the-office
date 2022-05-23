@@ -3,7 +3,7 @@
         <b-breadcrumb :items="breadcrumbs" />
         <b-card v-if="ready">
             <b-list-group>
-                <b-list-group-item v-for="episode in season.episodes" :key="episode.episode_id">
+                <b-list-group-item v-for="episode in season.episodes" :key="episode.episodeNumber">
                     <b-row align-v="start" align-content="start">
                         <b-col cols="5" md="4" lg="4" xl="3">
                             <b-img-lazy
@@ -19,7 +19,7 @@
                                 {{ episode.title }}
                                 <router-link
                                     class="no-link"
-                                    :to="getEpisodeRoute(season.season_id, episode.episode_id)"
+                                    :to="getEpisodeRoute(episode.seasonNumber, episode.episodeNumber)"
                                 >
                                     <b-icon class="h6" icon="caret-right-fill" />
                                 </router-link>
