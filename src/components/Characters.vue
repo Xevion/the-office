@@ -111,7 +111,7 @@ export default {
     },
     methods: {
         faceURL(character, thumbnail = false) {
-            return `/img/${character}/` + (thumbnail ? "face_thumb" : "face") + ".webp";
+            return `/img/${character}/` + (thumbnail ? "face_thumb" : "face") + ".jpeg";
         }
     }
 }

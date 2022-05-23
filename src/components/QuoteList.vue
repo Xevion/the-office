@@ -36,6 +36,7 @@
     &, &:hover {
         color: $grey-10;
         cursor: pointer;
+        text-decoration: none;
     }
 }
 </style>
