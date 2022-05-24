@@ -1,15 +1,24 @@
 <template>
     <b-card>
-        <template v-if="stats">
+        <template v-if="ready">
             <h4>
                 The Office Quotes
             </h4>
             <b-card-text>
-                A Vue.js application serving you {{ stats.totals.quote }} quotes from your
+                A Vue.js application serving you 54,000+ quotes from your
                 favorite show - The Office.
                 <br>
                 Click on a Season and Episode on the left-hand sidebar to view quotes.
                 Search for quotes with the instant searchbox.
+                <br>
+                This site is going through a big update & re-model, so the homepage isn't quite ready.
+                However, as of the time of writing this, most everything else is setup.
+                <hr>
+                <p style="text-align: center">
+                    Check out the <router-link :to="{'name': 'About'}">
+                        about page
+                    </router-link> for more info on what this website is.
+                </p>
             </b-card-text>
         </template>
         <b-card-text v-else>
@@ -35,8 +44,14 @@ export default {
             stats: null,
         };
     },
+    computed: {
+        ready() {
+            return true;
+            // return this.stats != null;
+        }
+    },
     created() {
-        this.getStats();
+        // this.getStats();
     },
     methods: {
         getStats() {
