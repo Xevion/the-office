@@ -149,7 +149,7 @@ export default {
                 clearTimeout(this.timeoutID);
         },
         fetchQuotes() {
-            const path = `/api/quote/surrounding?season=${this.item.season}&episode=${this.item.episode_rel}&scene=${this.item.section_rel}&quote=${this.item.quote_rel}`;
+            const path = `/api/surrounding?season=${this.item.season}&episode=${this.item.episode_rel}&scene=${this.item.section_rel}&quote=${this.item.quote_rel}`;
             axios
                 .get(path)
                 .then((res) => {
