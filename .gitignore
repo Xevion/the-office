@@ -1,17 +1,15 @@
 # Repository specific
 .vscode/**
 .idea/**
-test.html
-app/data/raw/*.html
-app/data/preprocess/*.json
 *.scss.css
 *.scss.css.map
 node_modules/**
-server/data/**
 /build
 .DS_Store
 node_modules
 /dist
+*.log
+*.cache
 
 # .env files
 .env
