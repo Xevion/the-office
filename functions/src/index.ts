@@ -11,7 +11,7 @@ let quoteData: any = null;
 
 export const surrounding = functions.https.onRequest(
     async (request, response) => {
-        const params = {season: -1, episode: -1, scene: -1, quote: -1};
+        const params = {season: -1, episode: -1, scene: -1, quote: -1, radius: -1};
         try {
             params.season = Number(request.query.season);
             params.episode = Number(request.query.episode);
@@ -26,7 +26,7 @@ export const surrounding = functions.https.onRequest(
         const minRadius = 1;
         const maxRadius = 5;
         const defaultRadius = 2;
-        const radius = Math.min(Math.max(Number(request.query.radius) || defaultRadius, minRadius), maxRadius);
+        params.radius = Math.min(Math.max(Number(request.query.radius) || defaultRadius, minRadius), maxRadius);
 
         // Check that all query parameters were given correctly.
         for (const [k, v] of Object.entries(params)) {
@@ -46,8 +46,8 @@ export const surrounding = functions.https.onRequest(
         const surrounding = {center: sceneData[params.quote - 1], above: [], below: []};
         const quoteIndex = params.quote - 1;
 
-        if (radius > 0) {
-            for (let i = 0; i < radius; i++) {
+        if (params.radius > 0) {
+            for (let i = 0; i < params.radius; i++) {
                 const topIndex = quoteIndex - (i + 1);
                 const bottomIndex = quoteIndex + (i + 1);
 
@@ -61,5 +61,5 @@ export const surrounding = functions.https.onRequest(
             }
         }
 
-        response.send(surrounding).end();
+        response.send({...surrounding, params}).end();
     });
