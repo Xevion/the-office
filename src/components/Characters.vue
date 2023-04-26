@@ -24,6 +24,9 @@
                                     >
                                         <b-icon class="h6" icon="caret-right-fill" />
                                     </router-link>
+                                    <span class="h6 font-italic" style="opacity: 50%;">
+                                        {{ characters[id].actor }}
+                                    </span>
                                 </h4>
                                 <p class="pl-3">
                                     {{ characters[id].summary }}
