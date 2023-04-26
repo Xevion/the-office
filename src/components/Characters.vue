@@ -8,7 +8,7 @@
                         <b-row align-v="start" align-content="start">
                             <b-col cols="5" md="4" lg="4" xl="3">
                                 <b-img-lazy
-                                    fluid-grow class="px-2"
+                                    fluid-grow class="rounded-sm"
                                     :src="faceURL(id)"
                                     :blank-src="faceURL(id, true)"
                                     width="200" height="200"
