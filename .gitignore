@@ -1,31 +1,36 @@
-# Repository specific
-.log*
-.vscode/**
-.idea/**
-*.scss.css
-*.scss.css.map
-node_modules/**
-/build
-.DS_Store
-node_modules
-/dist
+# Logs
+logs
 *.log
-*.cache
-
-# .env files
-.env
-
-# Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+.DS_Store
+dist
+dist-ssr
+coverage
+*.local
+
+/cypress/videos/
+/cypress/screenshots/
 
 # Editor directories and files
-.idea
-.vscode
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+*.tsbuildinfo
+
+# Repository specific
+*.scss.css
+*.scss.css.map
+build
+*.cache
+my-vue-app/
+
+# .env files
+.env

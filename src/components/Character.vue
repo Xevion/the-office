@@ -1,87 +1,107 @@
 <template>
-    <div>
-        <b-breadcrumb v-if="ready" :items="breadcrumbs"></b-breadcrumb>
-        <b-card v-else class="breadcrumb-skeleton mb-3">
-            <Skeleton style="width: 40%;"></Skeleton>
-        </b-card>
-        <b-card>
-            <h4 v-if="ready">{{ character.name }}</h4>
-            <Skeleton v-else style="max-width: 30%"></Skeleton>
-            <b-card-body v-if="ready">
-                {{ character.summary }}
-            </b-card-body>
-        </b-card>
-    </div>
+  <div>
+    <BBreadcrumb v-if="ready" :items="breadcrumbs" />
+    <BCard v-else class="breadcrumb-skeleton mb-3">
+      <Skeleton style="width: 40%"></Skeleton>
+    </BCard>
+    <BCard>
+      <h4 v-if="ready">{{ character?.name }}</h4>
+      <Skeleton v-else style="max-width: 30%"></Skeleton>
+      <BCard-body v-if="ready">
+        {{ character?.summary }}
+      </BCard-body>
+    </BCard>
+  </div>
 </template>
 
 <style lang="scss" scoped>
-.breadcrumb-skeleton {
-    background-color: $grey-3;
-    height: 48px;
+@use '@/scss/_variables.scss' as *;
 
-    & > .card-body {
-        padding: 0 0 0 1em;
-        display: flex;
-        align-items: center;
-    }
+.breadcrumb-skeleton {
+  background-color: $gray-100;
+  height: 48px;
+
+  & > .card-body {
+    padding: 0 0 0 1em;
+    display: flex;
+    align-items: center;
+  }
 }
 </style>
 
-<script>
-import Skeleton from './Skeleton.vue';
-import {types} from "@/mutation_types";
+<script lang="ts">
+import { defineComponent, nextTick } from 'vue'
+import Skeleton from './Skeleton.vue'
+import { BBreadcrumb } from 'bootstrap-vue-next'
+import useStore from '@/store'
 
-export default {
-    name: 'Character',
-    components: {
-        Skeleton,
+interface BreadcrumbItem {
+  text: string
+  to?: { name: string }
+  active?: boolean
+}
+
+export default defineComponent({
+  name: 'CharacterPage',
+
+  components: {
+    Skeleton,
+    BBreadcrumb,
+  },
+
+  setup() {
+    const store = useStore()
+    return {
+      store,
+    }
+  },
+  computed: {
+    character() {
+      return this.store.characters[this.$route.params.character as string]
     },
-    data() {
-        return {
-            character: null
-        }
+    ready(): boolean {
+      return this.character !== undefined
     },
-    computed: {
-        ready() {
-            return this.character !== undefined && this.character !== null;
+
+    breadcrumbs(): BreadcrumbItem[] {
+      return [
+        {
+          text: 'Home',
+          to: { name: 'Home' },
         },
-        breadcrumbs() {
-            return [
-                {
-                    text: 'Home',
-                    to: {name: 'Home'},
-                },
-                {
-                    text: 'Characters',
-                    to: {name: 'Characters'},
-                },
-                {
-                    text:
-                        this.character !== null && this.character !== undefined
-                            ? this.character.name || this.$route.params.character
-                            : this.$route.params.character,
-                    active: true,
-                },
-            ];
+        {
+          text: 'Characters',
+          to: { name: 'Characters' },
         },
-    },
-    watch: {
-        $route() {
-            this.$nextTick(() => {
-                this.fetchCharacter();
-            })
-        }
-    },
-    created() {
-        this.fetchCharacter();
-    },
-    methods: {
-        fetchCharacter() {
-            this.$store.dispatch(types.PRELOAD_CHARACTERS)
-                .then(() => {
-                    this.character = this.$store.getters.getCharacter(this.$route.params.character);
-                })
+        {
+          text: this.character?.name || (this.$route.params.character as string),
+          active: true,
         },
+      ]
     },
-};
+  },
+
+  watch: {
+    '$route.params.character'() {
+      nextTick(() => {
+        this.fetchCharacter()
+      })
+    },
+  },
+
+  mounted() {
+    this.fetchCharacter()
+  },
+
+  methods: {
+    async fetchCharacter(): Promise<void> {
+      try {
+        await this.store.preloadCharacters()
+        this.character = this.store.characters[this.$route.params.character as string]
+      } catch (error) {
+        console.error('Error fetching character:', error)
+      }
+    },
+  },
+})
 </script>

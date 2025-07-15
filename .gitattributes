@@ -1,3 +1,5 @@
+* text=auto eol=lf
+
 data/normalization/html/* linguist-vendored
 public/json/** linguist-generated
 public/img/** linguist-generated

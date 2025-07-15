@@ -1,20 +1,25 @@
 <template>
     <div>
         <ais-hits>
-            <div slot-scope="{ items }">
+            <template v-slot="{ items }">
+<div>
                 <SearchResult v-for="item in items" :key="item.objectID" :item="item" />
             </div>
+</template>
         </ais-hits>
     </div>
 </template>
 
-<script>
-import SearchResult from "./SearchResult.vue";
+<script lang="ts">
+import { defineComponent } from 'vue';
 
-export default {
-    name: "SearchResults",
-    components: {
-        SearchResult,
-    },
-};
+import SearchResult from "@/components/SearchResult.vue";
+
+export default defineComponent({
+  name: "SearchResults",
+
+  components: {
+      SearchResult,
+  },
+});
 </script>

@@ -1,5 +1,7 @@
 name: Deploy to Firebase Hosting on PR
-'on': pull_request
+
+on:
+  workflow_dispatch:
 
 env:
   VUE_APP_ALGOLIA_APP_ID: '${{ secrets.ALGOLIA_APP_ID }}'

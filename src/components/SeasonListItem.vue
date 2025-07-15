@@ -1,61 +1,58 @@
-<template>
-    <b-list-group-item
-        v-if="dataAvailable"
-        :id="`s-${seasonNumber}-ep-${episodeNumber}`"
-        :to="{name: 'Episode', params: { season: seasonNumber, episode: episodeNumber }, }"
-        class="no-link episode-item" @mouseover="hoverOn"
-        @mouseleave="hoverOff"
-    >
-        Episode {{ episodeNumber }} - "{{ title }}"
-    </b-list-group-item>
-    <b-list-group-item v-else>
-        <Skeleton style="width: 90%" />
-    </b-list-group-item>
-</template>
+<script setup lang="ts">
+import type { HTMLAttributes } from 'vue';
+import { RouterLink } from 'vue-router';
+import { cn } from '@/lib/utils';
+import useStore from '@/store';
+import { ref } from 'vue';
 
-<script>
-import {types} from "@/mutation_types";
-import Skeleton from "@/components/Skeleton";
+const store = useStore();
 
-export default {
-    name: "SeasonListItem",
-    components: {
-        Skeleton
-    },
-    props: {
-        episodeNumber: {type: Number, default: null, required: false},
-        seasonNumber: {type: Number, default: null, required: false},
-        title: {type: String, default: null, required: false}
-    },
-    data() {
-        return {
-            timeoutID: null
-        }
-    },
-    computed: {
-        dataAvailable() {
-            return this.episodeNumber !== null &&
-                this.seasonNumber !== null &&
-                this.title !== null;
-        }
-    },
-    methods: {
-        hoverFetch() {
-            this.$store.dispatch(types.FETCH_EPISODE, {season: this.seasonNumber, episode: this.episodeNumber})
-        },
-        hoverOn() {
-            this.timeoutID = setTimeout(this.hoverFetch, 800);
-        },
-        hoverOff() {
-            if (this.timeoutID !== null) {
-                clearTimeout(this.timeoutID)
-                this.timeoutID = null;
-            }
-        }
-    }
-}
+const props = defineProps<
+  {
+    episodeNumber: number;
+    seasonNumber: number;
+    title: string;
+  } & { class?: HTMLAttributes['class'] }
+>();
+
+const timeoutID = ref<number | null>(null);
+
+const startHover = () => {
+  timeoutID.value = setTimeout(() => {
+    store.fetchEpisode({ season: props.seasonNumber, episode: props.episodeNumber });
+  }, 500);
+};
+
+const stopHover = () => {
+  if (timeoutID.value !== null) {
+    clearTimeout(timeoutID.value);
+    timeoutID.value = null;
+  }
+};
 </script>
 
-<style scoped>
+<template>
+  <RouterLink
+    tabindex="0"
+    :aria-label="`Episode ${episodeNumber}: ${title}`"
+    :id="`s-${seasonNumber}-ep-${episodeNumber}`"
+    :to="{ name: 'Episode', params: { season: seasonNumber, episode: episodeNumber } }"
+    :class="
+      cn(
+        'group/item focus-visible:ring-ring focus-visible:bg-accent/50 ml-2 flex py-3 pr-3 pl-4 leading-6 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2',
+        props.class,
+      )
+    "
+    @mouseover="startHover"
+    @mouseleave="stopHover"
+  >
+    <span class="text-foreground/50 pr-2 select-none" :aria-hidden="true">{{
+      episodeNumber.toString().padStart(2, '0')
+    }}</span>
+    <span class="text-foreground/80 group-hover/item:text-black">
+      &OpenCurlyDoubleQuote;{{ title }}&CloseCurlyDoubleQuote;
+    </span>
+  </RouterLink>
+</template>
 
-</style>
+<style scoped></style>

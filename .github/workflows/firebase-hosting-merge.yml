@@ -1,8 +1,7 @@
 name: Deploy to Firebase Hosting on merge
-'on':
-  push:
-    branches:
-      - master
+
+on:
+  workflow_dispatch:
 
 env:
   VUE_APP_ALGOLIA_APP_ID: '${{ secrets.ALGOLIA_APP_ID }}'

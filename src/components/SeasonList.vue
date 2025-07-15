@@ -1,71 +1,61 @@
-<template>
-    <div class="accordion" role="tablist">
-        <b-card v-for="season in seasons" :key="season.season_id" class="season-item">
-            <b-card-header v-b-toggle="'accordion-' + season.season_id" header-tag="header" role="tab">
-                <a v-if="isPreloaded" class="no-link align-items-center justify-content-between d-flex">
-                    <h5 class="mb-0 pu-0 mu-0 season-title">
-                        Season {{ season.season_id }}
-                    </h5>
-                    <b-icon class="" icon="chevron-down" />
-                </a>
-                <Skeleton v-else />
-            </b-card-header>
-            <b-collapse :id="'accordion-' + season.season_id" accordion="accordion-season-list">
-                <b-card-body class="h-100 px-0">
-                    <b-list-group>
-                        <template v-for="(episode, index) in seasons[season.season_id - 1].episodes">
-                            <template v-if="isPreloaded">
-                                <SeasonListItem
-                                    :key="`rl-${index}`"
-                                    :episode-number="episode.episodeNumber"
-                                    :season-number="episode.seasonNumber"
-                                    :title="episode.title"
-                                />
-                                <b-popover
-                                    :key="`bpop-${episode.episode_id}`" triggers="hover"
-                                    placement="right" delay="25"
-                                    :target="`s-${season.season_id}-ep-${episode.episode_id}`"
-                                >
-                                    <template v-slot:title>
-                                        {{ episode.title }}
-                                    </template>
-                                    {{ episode.description }}
-                                </b-popover>
-                            </template>
-                            <b-list-group-item v-else :key="index" class="no-link episode-item">
-                                <Skeleton />
-                            </b-list-group-item>
-                        </template>
-                    </b-list-group>
-                </b-card-body>
-            </b-collapse>
-        </b-card>
-    </div>
-</template>
+<script setup lang="ts">
+import SeasonListItem from '@/components/SeasonListItem.vue';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
+import { ChevronDown } from 'lucide-vue-next';
+import { computed } from 'vue';
+import { cn } from '@/lib/utils';
 
-<script>
-import Skeleton from '@/components/Skeleton';
-import SeasonListItem from "@/components/SeasonListItem";
-import {types} from "@/mutation_types";
+import useStore from '@/store';
 
-export default {
-    name: "SeasonList",
-    components: {
-        Skeleton,
-        SeasonListItem
-    },
-    computed: {
-        seasons() {
-            return this.$store.state.quoteData;
-        },
-        // if SeasonList episode data (titles/descriptions) is loaded and ready
-        isPreloaded() {
-            return this.$store.getters.checkPreloaded('episodes');
-        }
-    },
-    created() {
-        this.$store.dispatch(types.PRELOAD_EPISODES)
-    },
-    methods: {},
-};
+const store = useStore();
+store.preloadEpisodes();
+const seasons = computed(() => store.quoteData);
 </script>
+
+<template>
+  <Accordion type="single" class="font-roboto-slab ml-1 w-[300px]" collapsible>
+    <AccordionItem
+      v-for="season in store.quoteData"
+      :key="season.season_id"
+      :value="`season-${season.season_id}`"
+      class="group"
+    >
+      <AccordionTrigger
+        :class="
+          cn(
+            'text-foreground/80 cursor-pointer border border-t-transparent bg-white/90 pr-6 pl-5 text-xl group-hover:border-zinc-400 hover:no-underline',
+            season.season_id !== 9 ? 'border-b-transparent' : 'border-b',
+          )
+        "
+      >
+        Season {{ season.season_id }}
+        <template #icon>
+          <ChevronDown
+            aria-hidden="true"
+            class="text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-1.5 transition-transform duration-200"
+          />
+        </template>
+      </AccordionTrigger>
+      <AccordionContent
+        class="text-foreground/80 border-t border-r pb-0 group-hover:border-t-transparent"
+      >
+        <template v-for="(episode, index) in seasons[season.season_id - 1].episodes">
+          <template v-if="'title' in episode">
+            <SeasonListItem
+              class="bg-white/90 hover:bg-gray-100"
+              :key="`rl-${index}`"
+              :episode-number="episode.episodeNumber"
+              :season-number="episode.seasonNumber"
+              :title="episode.title"
+            />
+          </template>
+        </template>
+      </AccordionContent>
+    </AccordionItem>
+  </Accordion>
+</template>
