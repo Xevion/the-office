@@ -15,7 +15,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'DynamicSpeaker',
@@ -28,7 +28,7 @@ export default defineComponent({
   computed: {
     texts() {
       return this.text.split(/({[^}]+})/).map((item) => {
-        const id = item.substring(1, item.length - 1)
+        const id = item.substring(1, item.length - 1);
         if (item.startsWith('{'))
           return {
             text: this.characters[id],
@@ -36,12 +36,12 @@ export default defineComponent({
               name: 'Character',
               params: { character: id },
             },
-          }
-        else return item
-      })
+          };
+        else return item;
+      });
     },
   },
-})
+});
 </script>
 
 <style scoped></style>

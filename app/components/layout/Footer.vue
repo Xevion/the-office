@@ -27,8 +27,8 @@
 </template>
 
 <script lang="ts">
-import { BContainer, BRow } from 'bootstrap-vue-next'
-import { defineComponent } from 'vue'
+import { BContainer, BRow } from 'bootstrap-vue-next';
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   name: 'FooterComponent',
@@ -44,16 +44,16 @@ export default defineComponent({
 
   computed: {
     buildTimeString() {
-      return this.buildMoment.format('MMM Do, YYYY [at] h:mm A zz')
+      return this.buildMoment.format('MMM Do, YYYY [at] h:mm A zz');
     },
     buildISOString() {
-      return this.buildMoment.toISOString()
+      return this.buildMoment.toISOString();
     },
     latestCommitUrl() {
-      return `https://github.com/Xevion/the-office/commit/${import.meta.env.VUE_APP_GIT_HASH}`
+      return `https://github.com/Xevion/the-office/commit/${import.meta.env.VUE_APP_GIT_HASH}`;
     },
   },
-})
+});
 </script>
 
 <style lang="scss" scoped>

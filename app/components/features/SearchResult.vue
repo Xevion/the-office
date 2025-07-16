@@ -8,8 +8,8 @@
     @mouseleave="hoverOff"
     @click="toggleExpansion"
   >
-    <BCardText class="mu-2 py-1 mb-1">
-      <table v-if="expanded" class="quote-list px-3 py-1 w-100">
+    <BCardText class="mu-2 mb-1 py-1">
+      <table v-if="expanded" class="quote-list w-100 px-3 py-1">
         <tr v-for="(quote, index) in above" :key="`quote-a-${index}`" class="secondary">
           <td class="quote-speaker my-3 pl-3">
             <div>{{ quote.speaker }}</div>
@@ -31,7 +31,7 @@
           </td>
         </tr>
       </table>
-      <table v-else class="quote-list px-3 py-1 w-100">
+      <table v-else class="quote-list w-100 px-3 py-1">
         <tr>
           <td class="quote-speaker my-3 pl-3" v-html="item._highlightResult.speaker.value" />
           <td class="quote-text w-100 pr-3" v-html="item._highlightResult.text.value" />
@@ -39,7 +39,7 @@
       </table>
       <RouterLink
         v-if="expanded"
-        class="no-link search-result-link w-100 text-muted mb-2 ml-2"
+        class="no-link search-result-link text-muted mb-2 ml-2 w-100"
         :to="{
           name: 'Episode',
           params: { season: item.season, episode: item.episode_rel },
@@ -92,9 +92,9 @@
 </style>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
-import axios from 'axios'
+import axios from 'axios';
 
 export default defineComponent({
   props: ['item'],
@@ -106,29 +106,29 @@ export default defineComponent({
       above: null,
       below: null,
       timeoutID: null,
-    }
+    };
   },
 
   computed: {
     fetched() {
-      return this.above !== null || this.below !== null
+      return this.above !== null || this.below !== null;
     },
   },
 
   methods: {
     toggleExpansion() {
-      this.expanded = !this.expanded
+      this.expanded = !this.expanded;
       // if first time expanding, fetch quotes
       if (!this.fetchQuotes()) {
-        this.hasExpanded = true
+        this.hasExpanded = true;
         // this.fetchQuotes();
       }
     },
     hoverFetch() {
       if (!this.fetched && !this.fetching) {
-        this.fetching = true
-        this.fetchQuotes()
-        this.fetching = false
+        this.fetching = true;
+        this.fetchQuotes();
+        this.fetching = false;
       }
     },
     hoverOn() {
@@ -137,20 +137,20 @@ export default defineComponent({
     },
     hoverOff() {
       // Hover is off. Unschedule event if it has not already fetched.
-      if (this.timeoutID !== null) clearTimeout(this.timeoutID)
+      if (this.timeoutID !== null) clearTimeout(this.timeoutID);
     },
     fetchQuotes() {
-      const path = `/api/surrounding?season=${this.item.season}&episode=${this.item.episode_rel}&scene=${this.item.section_rel}&quote=${this.item.quote_rel}`
+      const path = `/api/surrounding?season=${this.item.season}&episode=${this.item.episode_rel}&scene=${this.item.section_rel}&quote=${this.item.quote_rel}`;
       axios
         .get(path)
         .then((res) => {
-          this.above = res.data.above
-          this.below = res.data.below
+          this.above = res.data.above;
+          this.below = res.data.below;
         })
         .catch((error) => {
-          console.error(error)
-        })
+          console.error(error);
+        });
     },
   },
-})
+});
 </script>

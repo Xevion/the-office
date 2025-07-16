@@ -5,7 +5,7 @@
       :id="`character-${character_id}`"
       :key="character.name"
       squared
-      class="mx-2 my-1 character-button"
+      class="character-button mx-2 my-1"
       size="sm"
       :title="`${character.appearances} Quote${character.appearances > 1 ? 's' : ''}`"
       :to="{ name: 'Character', params: { character: character_id } }"
@@ -19,8 +19,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import { BButton, BBadge } from 'bootstrap-vue-next'
+import { defineComponent } from 'vue';
+import { BButton, BBadge } from 'bootstrap-vue-next';
 
 export default defineComponent({
   components: {
@@ -34,5 +34,5 @@ export default defineComponent({
       required: true,
     },
   },
-})
+});
 </script>

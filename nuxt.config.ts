@@ -1,4 +1,4 @@
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/image',
     'shadcn-nuxt',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
   ],
   shadcn: {
     prefix: '',
@@ -22,5 +22,5 @@ export default defineNuxtConfig({
   },
   typescript: {
     typeCheck: true,
-  }
-})
+  },
+});
