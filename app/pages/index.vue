@@ -12,7 +12,7 @@
         However, as of the time of writing this, most everything else is setup.
         <hr />
         <p style="text-align: center">
-          Check out the <RouterLink :to="{ name: 'About' }"> about page </RouterLink> for more info
+          Check out the <NuxtLink :to="{ name: 'About' }"> about page </NuxtLink> for more info
           on what this website is.
         </p>
       </BCardText>

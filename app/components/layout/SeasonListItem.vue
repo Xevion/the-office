@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue';
-import { RouterLink } from 'vue-router';
 import { cn } from '@/lib/utils';
 import useStore from '@/store';
 import { ref } from 'vue';
@@ -15,7 +14,7 @@ const props = defineProps<
   } & { class?: HTMLAttributes['class'] }
 >();
 
-const timeoutID = ref<number | null>(null);
+const timeoutID = ref<ReturnType<typeof setTimeout> | null>(null);
 
 const startHover = () => {
   timeoutID.value = setTimeout(() => {
@@ -32,10 +31,10 @@ const stopHover = () => {
 </script>
 
 <template>
-  <RouterLink
+  <NuxtLink
+    :id="`s-${seasonNumber}-ep-${episodeNumber}`"
     tabindex="0"
     :aria-label="`Episode ${episodeNumber}: ${title}`"
-    :id="`s-${seasonNumber}-ep-${episodeNumber}`"
     :to="{ name: 'Episode', params: { season: seasonNumber, episode: episodeNumber } }"
     :class="
       cn(
@@ -52,7 +51,7 @@ const stopHover = () => {
     <span class="text-foreground/80 group-hover/item:text-black">
       &OpenCurlyDoubleQuote;{{ title }}&CloseCurlyDoubleQuote;
     </span>
-  </RouterLink>
+  </NuxtLink>
 </template>
 
 <style scoped></style>

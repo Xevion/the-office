@@ -9,7 +9,6 @@ import {
 import { ChevronDown } from 'lucide-vue-next';
 import { computed } from 'vue';
 import { cn } from '@/lib/utils';
-
 import useStore from '@/store';
 
 const store = useStore();
@@ -47,8 +46,8 @@ const seasons = computed(() => store.quoteData);
         <template v-for="(episode, index) in seasons[season.season_id - 1].episodes">
           <template v-if="'title' in episode">
             <SeasonListItem
-              class="bg-white/90 hover:bg-gray-100"
               :key="`rl-${index}`"
+              class="bg-white/90 hover:bg-gray-100"
               :episode-number="episode.episodeNumber"
               :season-number="episode.seasonNumber"
               :title="episode.title"

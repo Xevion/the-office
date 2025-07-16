@@ -20,12 +20,12 @@
             <BCol>
               <h4>
                 {{ episode.title }}
-                <RouterLink
+                <NuxtLink
                   class="no-link"
                   :to="getEpisodeRoute(episode.seasonNumber, episode.episodeNumber)"
                 >
                   <b-icon class="h6" icon="caret-right-fill" />
-                </RouterLink>
+                </NuxtLink>
               </h4>
               <p class="pl-3">
                 {{ episode.description }}

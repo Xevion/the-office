@@ -37,7 +37,7 @@
           <td class="quote-text w-100 pr-3" v-html="item._highlightResult.text.value" />
         </tr>
       </table>
-      <RouterLink
+      <NuxtLink
         v-if="expanded"
         class="no-link search-result-link text-muted mb-2 ml-2 w-100"
         :to="{
@@ -48,7 +48,7 @@
       >
         Season {{ item.season }} Episode {{ item.episode_rel }} Scene
         {{ item.section_rel }}
-      </RouterLink>
+      </NuxtLink>
     </BCardText>
   </BCard>
 </template>

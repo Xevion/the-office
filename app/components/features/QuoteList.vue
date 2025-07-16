@@ -17,13 +17,13 @@
           :characters="quote.characters"
           class="my-3"
         />
-        <RouterLink
+        <NuxtLink
           v-else
           :to="{ name: 'Character', params: { character: quote.character } }"
           class="speaker-link"
         >
           {{ quote.speaker }}
-        </RouterLink>
+        </NuxtLink>
       </td>
       <td class="quote-text w-100 pr-3" v-html="transform(quote.text)" />
       <td class="px-1 pl-2">

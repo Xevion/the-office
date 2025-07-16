@@ -21,12 +21,12 @@
               <BCol>
                 <h4>
                   {{ characters[id].name || id }}
-                  <RouterLink
+                  <NuxtLink
                     class="no-link"
                     :to="{ name: 'Character', params: { character: id } }"
                   >
                     <b-icon class="h6" icon="caret-right-fill" />
-                  </RouterLink>
+                  </NuxtLink>
                   <span class="h6 font-italic" style="opacity: 50%">
                     {{ characters[id].actor }}
                   </span>
