@@ -1,9 +1,122 @@
+<script setup lang="ts">
+import QuoteList from '@/components/features/QuoteList.vue';
+import CharacterBadges from '@/components/features/CharacterBadges.vue';
+import Skeleton from '@/components/common/Skeleton.vue';
+import Breadcrumb from '@/components/common/Breadcrumb.vue';
+import { computed } from 'vue';
+// import { useRoute } from 'vue-router';
+
+// const route = useRoute();
+
+const route = {
+  params: {
+    season: '1',
+    episode: '1',
+  },
+};
+
+const breadcrumbs = computed(() => {
+  return [
+    { text: 'Home', to: { name: 'Home' } },
+    { text: `Season ${route.params.season}`, to: { name: 'Season', season: route.params.season } },
+    {
+      text: `Episode ${route.params.episode}`,
+      to: { name: 'Episode', season: route.params.season, episode: route.params.episode },
+    },
+  ];
+});
+
+// export default defineComponent({
+//   name: 'EpisodeComponent',
+
+//   components: {
+//     QuoteList,
+//     CharacterBadges,
+//     Skeleton,
+//     BBreadcrumb,
+//   },
+
+//   computed: {
+//     episode() {
+//       return this.$store.getters.getEpisode(this.params.season, this.params.episode);
+//     },
+//     // Shorthand - literally useless, why does everything to have such long prefixes in dot notation
+//     params() {
+//       return this.$route.params;
+//     },
+//     ready() {
+//       return this.$store.getters.isFetched(this.params.season, this.params.episode);
+//     },
+//     breadcrumbs() {
+//       return [
+//         {
+//           text: 'Home',
+//           to: {
+//             name: 'Home',
+//           },
+//         },
+//         {
+//           text: `Season ${this.$route.params.season}`,
+//           to: {
+//             name: 'Season',
+//             season: this.$route.params.season,
+//           },
+//         },
+//         {
+//           text: `Episode ${this.$route.params.episode}`,
+//           to: {
+//             name: 'Episode',
+//             season: this.$route.params.season,
+//             episode: this.$route.params.episode,
+//           },
+//           active: true,
+//         },
+//       ];
+//     },
+//   },
+
+//   watch: {
+//     // When route changes, fetch data for current Episode route
+//     $route() {
+//       nextTick(() => {
+//         this.fetch();
+//       });
+//     },
+//   },
+
+//   created() {
+//     // When page loads directly on this Episode initially, fetch data
+//     this.fetch();
+//   },
+
+//   methods: {
+//     async fetch() {
+//       // Fetch the episode, then scroll - already fetched episode should scroll immediately
+//       this.$store
+//         .dispatch(types.FETCH_EPISODE, { season: this.params.season, episode: this.params.episode })
+//         .then(() => {
+//           // Force update, as for some reason it doesn't update naturally. I hate it too.
+//           this.$forceUpdate();
+
+//           // Scroll down to quote
+//           if (this.$route.hash) {
+//             nextTick(() => {
+//               const section = document.getElementById(this.$route.hash.substring(1));
+//               this.$scrollTo(section, 500, { easing: 'ease-in' });
+//             });
+//           }
+//         });
+//     },
+//   },
+// });
+</script>
+
 <template>
-  <div>
-    <BBreadcrumb v-if="ready" :items="breadcrumbs" />
-    <BCard v-else class="breadcrumb-skeleton mb-3">
+  <div class="h-full w-full p-4">
+    <Breadcrumb :items="breadcrumbs" />
+    <!-- <BCard v-else class="breadcrumb-skeleton mb-3">
       <Skeleton style="width: 40%" />
-    </BCard>
+    </BCard> -->
     <BCard class="mb-4">
       <template v-if="ready">
         <h3 class="card-title">"{{ episode.title }}"</h3>
@@ -50,96 +163,3 @@
   line-height: 12px;
 }
 </style>
-
-<script lang="ts">
-import { defineComponent, nextTick } from 'vue';
-
-import QuoteList from '@/components/features/QuoteList.vue';
-import CharacterBadges from '@/components/features/CharacterBadges.vue';
-import Skeleton from '@/components/common/Skeleton.vue';
-import { BBreadcrumb } from 'bootstrap-vue-next';
-
-export default defineComponent({
-  name: 'EpisodeComponent',
-
-  components: {
-    QuoteList,
-    CharacterBadges,
-    Skeleton,
-    BBreadcrumb,
-  },
-
-  computed: {
-    episode() {
-      return this.$store.getters.getEpisode(this.params.season, this.params.episode);
-    },
-    // Shorthand - literally useless, why does everything to have such long prefixes in dot notation
-    params() {
-      return this.$route.params;
-    },
-    ready() {
-      return this.$store.getters.isFetched(this.params.season, this.params.episode);
-    },
-    breadcrumbs() {
-      return [
-        {
-          text: 'Home',
-          to: {
-            name: 'Home',
-          },
-        },
-        {
-          text: `Season ${this.$route.params.season}`,
-          to: {
-            name: 'Season',
-            season: this.$route.params.season,
-          },
-        },
-        {
-          text: `Episode ${this.$route.params.episode}`,
-          to: {
-            name: 'Episode',
-            season: this.$route.params.season,
-            episode: this.$route.params.episode,
-          },
-          active: true,
-        },
-      ];
-    },
-  },
-
-  watch: {
-    // When route changes, fetch data for current Episode route
-    $route() {
-      nextTick(() => {
-        this.fetch();
-      });
-    },
-  },
-
-  created() {
-    // When page loads directly on this Episode initially, fetch data
-    this.fetch();
-  },
-
-  methods: {
-    async fetch() {
-      // Fetch the episode, then scroll - already fetched episode should scroll immediately
-      this.$store
-        .dispatch(types.FETCH_EPISODE, { season: this.params.season, episode: this.params.episode })
-        .then(() => {
-          // Force update, as for some reason it doesn't update naturally. I hate it too.
-          this.$forceUpdate();
-
-          // Scroll down to quote
-          if (this.$route.hash) {
-            nextTick(() => {
-              const section = document.getElementById(this.$route.hash.substring(1));
-              this.$scrollTo(section, 500, { easing: 'ease-in' });
-            });
-          }
-        });
-    },
-  },
-});
-</script>

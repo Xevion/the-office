@@ -37,12 +37,12 @@ const router = createRouter({
       component: Character,
     },
     {
-      path: '/:season/',
+      path: '/season/:season',
       name: 'Season',
       component: Season,
     },
     {
-      path: '/:season/:episode',
+      path: '/episode/:episode',
       name: 'Episode',
       component: Episode,
     },
