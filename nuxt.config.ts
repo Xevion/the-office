@@ -22,15 +22,5 @@ export default defineNuxtConfig({
   },
   typescript: {
     typeCheck: true,
-    tsConfig: {
-      compilerOptions: {
-        allowSyntheticDefaultImports: true,
-        allowArbitraryExtensions: true,
-        baseUrl: '.',
-        paths: {
-          '@/*': ['./src/*'],
-        },
-      },
-    }
   }
 })
