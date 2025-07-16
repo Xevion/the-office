@@ -28,7 +28,7 @@
           <QuoteList :quotes="scene.quotes" :scene-index="sceneIndex" />
           <span
             v-if="scene.deleted"
-            class="mt-n2 mb-4 text-muted deleted-scene pl-2"
+            class="mt-n2 text-muted deleted-scene mb-4 pl-2"
             :footer="`Deleted Scene ${scene.deleted}`"
           >
             Deleted Scene {{ scene.deleted }}
@@ -52,12 +52,12 @@
 </style>
 
 <script lang="ts">
-import { defineComponent, nextTick } from 'vue'
+import { defineComponent, nextTick } from 'vue';
 
-import QuoteList from '@/components/QuoteList.vue'
-import CharacterBadges from '@/components/CharacterBadges.vue'
-import Skeleton from '@/components/Skeleton.vue'
-import { BBreadcrumb } from 'bootstrap-vue-next'
+import QuoteList from '@/components/features/QuoteList.vue';
+import CharacterBadges from '@/components/features/CharacterBadges.vue';
+import Skeleton from '@/components/common/Skeleton.vue';
+import { BBreadcrumb } from 'bootstrap-vue-next';
 
 export default defineComponent({
   name: 'EpisodeComponent',
@@ -71,14 +71,14 @@ export default defineComponent({
 
   computed: {
     episode() {
-      return this.$store.getters.getEpisode(this.params.season, this.params.episode)
+      return this.$store.getters.getEpisode(this.params.season, this.params.episode);
     },
     // Shorthand - literally useless, why does everything to have such long prefixes in dot notation
     params() {
-      return this.$route.params
+      return this.$route.params;
     },
     ready() {
-      return this.$store.getters.isFetched(this.params.season, this.params.episode)
+      return this.$store.getters.isFetched(this.params.season, this.params.episode);
     },
     breadcrumbs() {
       return [
@@ -104,7 +104,7 @@ export default defineComponent({
           },
           active: true,
         },
-      ]
+      ];
     },
   },
 
@@ -112,14 +112,14 @@ export default defineComponent({
     // When route changes, fetch data for current Episode route
     $route() {
       nextTick(() => {
-        this.fetch()
-      })
+        this.fetch();
+      });
     },
   },
 
   created() {
     // When page loads directly on this Episode initially, fetch data
-    this.fetch()
+    this.fetch();
   },
 
   methods: {
@@ -129,17 +129,17 @@ export default defineComponent({
         .dispatch(types.FETCH_EPISODE, { season: this.params.season, episode: this.params.episode })
         .then(() => {
           // Force update, as for some reason it doesn't update naturally. I hate it too.
-          this.$forceUpdate()
+          this.$forceUpdate();
 
           // Scroll down to quote
           if (this.$route.hash) {
             nextTick(() => {
-              const section = document.getElementById(this.$route.hash.substring(1))
-              this.$scrollTo(section, 500, { easing: 'ease-in' })
-            })
+              const section = document.getElementById(this.$route.hash.substring(1));
+              this.$scrollTo(section, 500, { easing: 'ease-in' });
+            });
           }
-        })
+        });
     },
   },
-})
+});
 </script>

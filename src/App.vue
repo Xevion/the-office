@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SeasonList from '@/components/SeasonList.vue';
+import SeasonList from '@/components/layout/SeasonList.vue';
 import { ref } from 'vue';
 import logoSrc from '@/assets/logo.svg';
 
@@ -21,14 +21,14 @@ const headings = [
   <div class="min-h-screen bg-gray-50">
     <!-- Header -->
     <header
-      class="bg-white px-4 py-3 border-b border-gray-200 fixed top-0 left-0 right-0 z-40 flex items-center h-24"
+      class="fixed top-0 right-0 left-0 z-40 flex h-24 items-center border-b border-gray-200 bg-white px-4 py-3"
     >
-      <div class="flex items-center w-full justify-between">
+      <div class="flex w-full items-center justify-between">
         <div class="flex items-center space-x-4">
           <!-- Mobile menu button -->
           <button
             @click="toggleSidebar"
-            class="lg:hidden p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+            class="rounded-md p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-inset lg:hidden"
           >
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path
@@ -42,33 +42,33 @@ const headings = [
 
           <!-- Logo/Brand -->
           <div class="flex">
-            <img :src="logoSrc" alt="The Office Logo" class="h-full max-w-[225px] py-4 mr-6" />
+            <img :src="logoSrc" alt="The Office Logo" class="mr-6 h-full max-w-[225px] py-4" />
           </div>
         </div>
 
         <!-- Header Navigation -->
         <nav
-          class="hidden text-gray-800 md:flex items-center space-x-2 font-display text-2xl tracking-widest lowercase"
+          class="font-display hidden items-center space-x-2 text-2xl tracking-widest text-gray-800 lowercase md:flex"
         >
           <RouterLink
             v-for="heading in headings"
             :key="heading.name"
             :to="heading.href"
-            class="hover:text-blue-600 px-3 py-2 transition-[color]"
+            class="px-3 py-2 transition-[color] hover:text-blue-600"
           >
             {{ heading.name }}
           </RouterLink>
         </nav>
 
         <!-- Search bar -->
-        <div class="hidden md:flex items-center">
+        <div class="hidden items-center md:flex">
           <div class="relative">
             <input
               type="text"
               placeholder="Search..."
-              class="w-64 pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
+              class="w-64 rounded-lg border border-gray-300 py-2 pr-4 pl-10 outline-none focus:border-transparent focus:ring-2 focus:ring-blue-500"
             />
-            <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+            <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
               <svg
                 class="h-5 w-5 text-gray-400"
                 fill="none"
@@ -88,7 +88,7 @@ const headings = [
       </div>
     </header>
 
-    <div class="flex mt-24">
+    <div class="mt-24 flex">
       <!-- Sidebar -->
       <div class="pl-8">
         <SeasonList />
@@ -98,13 +98,13 @@ const headings = [
       <div
         v-if="sidebarOpen"
         @click="toggleSidebar"
-        class="fixed inset-0 z-20 bg-black bg-opacity-50 lg:hidden"
+        class="bg-opacity-50 fixed inset-0 z-20 bg-black lg:hidden"
       ></div>
 
       <!-- Main Content -->
       <main class="col-span-8 lg:ml-0">
         <div class="p-6">
-          <h2 class="text-2xl text-gray-900 mb-6">Welcome to The Office</h2>
+          <h2 class="mb-6 text-2xl text-gray-900">Welcome to The Office</h2>
           <p class="text-gray-600">
             This is your main content area. You can add your router-view or other components here.
           </p>

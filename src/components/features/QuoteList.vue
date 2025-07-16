@@ -1,5 +1,5 @@
 <template>
-  <table class="quote-list px-3 w-100">
+  <table class="quote-list w-100 px-3">
     <tr
       v-for="(quote, index) in quotes"
       :id="`${sceneIndex}-${index}`"
@@ -53,9 +53,9 @@
 </style>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
-import DynamicSpeaker from '@/components/DynamicSpeaker.vue'
+import DynamicSpeaker from '@/components/features/DynamicSpeaker.vue';
 
 export default defineComponent({
   components: {
@@ -76,16 +76,16 @@ export default defineComponent({
   methods: {
     transform(quoteText) {
       if (quoteText.includes('[')) {
-        return quoteText.replace(/\[([^\]]+)]/g, ' <i>[$1]</i> ')
+        return quoteText.replace(/\[([^\]]+)]/g, ' <i>[$1]</i> ');
       }
-      return quoteText
+      return quoteText;
     },
     quote_link(quoteIndex) {
-      return `/${this.$route.params.season}/${this.$route.params.episode}#${this.sceneIndex}-${quoteIndex}`
+      return `/${this.$route.params.season}/${this.$route.params.episode}#${this.sceneIndex}-${quoteIndex}`;
     },
     copy(quoteIndex) {
-      this.$copyText(import.meta.env.VUE_APP_BASE_URL + this.quote_link(quoteIndex))
+      this.$copyText(import.meta.env.VUE_APP_BASE_URL + this.quote_link(quoteIndex));
     },
   },
-})
+});
 </script>

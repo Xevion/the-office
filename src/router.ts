@@ -1,12 +1,12 @@
-import Home from '@/components/Home.vue'
-import Episode from '@/components/Episode.vue'
-import SearchResults from '@/components/SearchResults.vue'
-import Character from '@/components/Character.vue'
-import Season from '@/components/Season.vue'
-import Characters from '@/components/Characters.vue'
-import About from '@/components/About.vue'
+import Home from '@/views/Home.vue';
+import Episode from '@/views/Episode.vue';
+import SearchResults from '@/views/SearchResults.vue';
+import Character from '@/views/Character.vue';
+import Season from '@/views/Season.vue';
+import Characters from '@/views/Characters.vue';
+import About from '@/views/About.vue';
 
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -51,16 +51,16 @@ const router = createRouter({
   scrollBehavior(to, from, savedPosition) {
     // https://router.vuejs.org/guide/advanced/scroll-behavior.html
     if (to.hash) {
-      return { el: to.hash, behavior: 'smooth' }
+      return { el: to.hash, behavior: 'smooth' };
     }
     if (savedPosition) {
-      return savedPosition
+      return savedPosition;
     }
     return {
       x: 0,
       y: 0,
-    }
+    };
   },
-})
+});
 
-export default router
+export default router;

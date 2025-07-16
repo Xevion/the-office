@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SeasonListItem from '@/components/SeasonListItem.vue';
+import SeasonListItem from '@/components/layout/SeasonListItem.vue';
 import {
   Accordion,
   AccordionContent,

@@ -87,11 +87,11 @@ h4 {
 </style>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
-import Skeleton from '@/components/Skeleton.vue'
-import ImageSkeleton from '@/components/ImageSkeleton.vue'
-import { BBreadcrumb, BImg } from 'bootstrap-vue-next'
+import Skeleton from '@/components/common/Skeleton.vue';
+import ImageSkeleton from '@/components/common/ImageSkeleton.vue';
+import { BBreadcrumb, BImg } from 'bootstrap-vue-next';
 
 export default defineComponent({
   name: 'CharactersComponent',
@@ -105,24 +105,24 @@ export default defineComponent({
 
   computed: {
     ready() {
-      return this.$store.getters.checkPreloaded('characters')
+      return this.$store.getters.checkPreloaded('characters');
     },
     sorted_character_ids() {
-      return this.$store.getters.getSortedCharacters()
+      return this.$store.getters.getSortedCharacters();
     },
     characters() {
-      return this.$store.state.characters
+      return this.$store.state.characters;
     },
     breadcrumbs() {
       return [
         { text: 'Home', to: { name: 'Home' } },
         { text: 'Characters', active: true },
-      ]
+      ];
     },
   },
 
   async mounted() {
-    await this.$store.dispatch(types.PRELOAD_CHARACTERS)
+    await this.$store.dispatch(types.PRELOAD_CHARACTERS);
 
     // Re-compute computed properties since Vuex won't do it
     // this.$forceUpdate();
@@ -130,8 +130,8 @@ export default defineComponent({
 
   methods: {
     faceURL(character, thumbnail = false) {
-      return `/img/${character}/` + (thumbnail ? 'face_thumb' : 'face') + '.jpeg'
+      return `/img/${character}/` + (thumbnail ? 'face_thumb' : 'face') + '.jpeg';
     },
   },
-})
+});
 </script>

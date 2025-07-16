@@ -30,15 +30,15 @@
 </style>
 
 <script lang="ts">
-import { defineComponent, nextTick } from 'vue'
-import Skeleton from './Skeleton.vue'
-import { BBreadcrumb } from 'bootstrap-vue-next'
-import useStore from '@/store'
+import { defineComponent, nextTick } from 'vue';
+import Skeleton from '@/components/common/Skeleton.vue';
+import { BBreadcrumb } from 'bootstrap-vue-next';
+import useStore from '@/store';
 
 interface BreadcrumbItem {
-  text: string
-  to?: { name: string }
-  active?: boolean
+  text: string;
+  to?: { name: string };
+  active?: boolean;
 }
 
 export default defineComponent({
@@ -50,17 +50,17 @@ export default defineComponent({
   },
 
   setup() {
-    const store = useStore()
+    const store = useStore();
     return {
       store,
-    }
+    };
   },
   computed: {
     character() {
-      return this.store.characters[this.$route.params.character as string]
+      return this.store.characters[this.$route.params.character as string];
     },
     ready(): boolean {
-      return this.character !== undefined
+      return this.character !== undefined;
     },
 
     breadcrumbs(): BreadcrumbItem[] {
@@ -77,31 +77,31 @@ export default defineComponent({
           text: this.character?.name || (this.$route.params.character as string),
           active: true,
         },
-      ]
+      ];
     },
   },
 
   watch: {
     '$route.params.character'() {
       nextTick(() => {
-        this.fetchCharacter()
-      })
+        this.fetchCharacter();
+      });
     },
   },
 
   mounted() {
-    this.fetchCharacter()
+    this.fetchCharacter();
   },
 
   methods: {
     async fetchCharacter(): Promise<void> {
       try {
-        await this.store.preloadCharacters()
-        this.character = this.store.characters[this.$route.params.character as string]
+        await this.store.preloadCharacters();
+        this.character = this.store.characters[this.$route.params.character as string];
       } catch (error) {
-        console.error('Error fetching character:', error)
+        console.error('Error fetching character:', error);
       }
     },
   },
-})
+});
 </script>

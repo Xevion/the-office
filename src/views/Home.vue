@@ -27,11 +27,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
-import axios from 'axios'
-import Skeleton from './Skeleton.vue'
-import { BCardText, BCard } from 'bootstrap-vue-next'
+import axios from 'axios';
+import Skeleton from '@/components/common/Skeleton.vue';
+import { BCardText, BCard } from 'bootstrap-vue-next';
 
 export default defineComponent({
   name: 'HomeComponent',
@@ -45,12 +45,12 @@ export default defineComponent({
   data() {
     return {
       stats: null,
-    }
+    };
   },
 
   computed: {
     ready() {
-      return true
+      return true;
       // return this.stats != null;
     },
   },
@@ -61,16 +61,16 @@ export default defineComponent({
 
   methods: {
     getStats() {
-      const path = `${import.meta.env.VUE_APP_API_URL}/api/stats/`
+      const path = `${import.meta.env.VUE_APP_API_URL}/api/stats/`;
       axios
         .get(path)
         .then((res) => {
-          this.stats = res.data
+          this.stats = res.data;
         })
         .catch((error) => {
-          console.error(error)
-        })
+          console.error(error);
+        });
     },
   },
-})
+});
 </script>
