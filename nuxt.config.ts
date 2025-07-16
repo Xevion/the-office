@@ -5,6 +5,12 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   css: ['~/assets/tailwind.css', '@fontsource-variable/roboto-slab', '@fontsource/open-sans'],
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/sitemap.xml', '/robots.txt'],
+    },
+  },
   vite: {
     plugins: [tailwindcss()],
   },
