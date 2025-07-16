@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <BBreadcrumb v-if="ready" :items="breadcrumbs" />
     <BCard v-else class="breadcrumb-skeleton mb-3">
@@ -104,4 +104,12 @@ export default defineComponent({
     },
   },
 });
-</script>
+</script> -->
+
+
+<script setup lang="ts"></script>
+<template>
+  <div>
+    <h1>Character</h1>
+  </div>
+</template>

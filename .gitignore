@@ -1,35 +1,26 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
 # Logs
 logs
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
+# Misc
 .DS_Store
-dist
-dist-ssr
-coverage
-*.local
+.fleet
+.idea
 
-/cypress/videos/
-/cypress/screenshots/
-
-# Editor directories and files
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-*.tsbuildinfo
-
-# Repository specific
-*.scss.css
-*.scss.css.map
-build
-*.cache
-
-# .env files
+# Local env files
 .env
+.env.*
+!.env.example
+
+build/

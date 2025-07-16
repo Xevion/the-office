@@ -1,27 +1,21 @@
 <script setup lang="ts">
 import QuoteList from '@/components/features/QuoteList.vue';
-import CharacterBadges from '@/components/features/CharacterBadges.vue';
+// import CharacterBadges from '@/components/features/CharacterBadges.vue';
 import Skeleton from '@/components/common/Skeleton.vue';
 import Breadcrumb from '@/components/common/Breadcrumb.vue';
 import { computed } from 'vue';
-// import { useRoute } from 'vue-router';
 
-// const route = useRoute();
+const route = useRoute();
 
-const route = {
-  params: {
-    season: '1',
-    episode: '1',
-  },
-};
+const params = { season: 1, episode: route.params.id };
 
 const breadcrumbs = computed(() => {
   return [
-    { text: 'Home', to: { name: 'Home' } },
-    { text: `Season ${route.params.season}`, to: { name: 'Season', season: route.params.season } },
+    { text: 'Home', to: '/' },
+    { text: `Season ${params.season}`, to: `/season/${params.season}` },
     {
-      text: `Episode ${route.params.episode}`,
-      to: { name: 'Episode', season: route.params.season, episode: route.params.episode },
+      text: `Episode ${params.episode}`,
+      to: `/episode/${params.episode}`,
     },
   ];
 });
@@ -117,7 +111,7 @@ const breadcrumbs = computed(() => {
     <!-- <BCard v-else class="breadcrumb-skeleton mb-3">
       <Skeleton style="width: 40%" />
     </BCard> -->
-    <BCard class="mb-4">
+    <!-- <BCard class="mb-4">
       <template v-if="ready">
         <h3 class="card-title">"{{ episode.title }}"</h3>
         <span>{{ episode.description }}</span>
@@ -129,8 +123,8 @@ const breadcrumbs = computed(() => {
         <Skeleton style="width: 45%; height: 60%" />
         <Skeleton style="width: 69%; height: 40%" />
       </template>
-    </BCard>
-    <div v-if="ready">
+    </BCard> -->
+    <!-- <div v-if="ready">
       <BCard
         v-for="(scene, sceneIndex) in episode.scenes"
         :key="`scene-${sceneIndex}`"
@@ -148,7 +142,7 @@ const breadcrumbs = computed(() => {
           </span>
         </BCardText>
       </BCard>
-    </div>
+    </div> -->
   </div>
 </template>
 

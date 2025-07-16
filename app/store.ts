@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia';
-import axios from 'axios';
 
 export interface Character {
   name: string;
@@ -127,49 +126,49 @@ const useStore = defineStore('main', {
         }
 
         const path = `/json/${payload.season.toString().padStart(2, '0')}/${payload.episode.toString().padStart(2, '0')}.json`;
-        axios
-          .get(path)
-          .then((res) => {
-            // Push episode data
-            this.mergeEpisode({
-              season: payload.season,
-              episode: payload.episode,
-              episodeData: res.data,
-            });
-            resolve();
-          })
-          .catch((error) => {
-            console.error(error);
-            reject(error);
-          });
+        // axios
+        //   .get(path)
+        //   .then((res) => {
+        //     // Push episode data
+        //     this.mergeEpisode({
+        //       season: payload.season,
+        //       episode: payload.episode,
+        //       episodeData: res.data,
+        //     });
+        //     resolve();
+        //   })
+        //   .catch((error) => {
+        //     console.error(error);
+        //     reject(error);
+        //   });
       });
     },
     preloadEpisodes(): void {
       const path = `/json/episodes.json`;
 
-      axios
-        .get(path)
-        .then((res) => {
-          this.mergeEpisodes(res.data as Episode[][]);
-          this.setPreloaded({ type: 'episodes', status: true });
-        })
-        .catch((error) => {
-          console.error(error);
-        });
+      // axios
+      //   .get(path)
+      //   .then((res) => {
+      //     this.mergeEpisodes(res.data as Episode[][]);
+      //     this.setPreloaded({ type: 'episodes', status: true });
+      //   })
+      //   .catch((error) => {
+      //     console.error(error);
+      //   });
     },
     async preloadCharacters(): Promise<void> {
       if (this.checkPreloaded('characters')) return;
 
       const path = `/json/characters.json`;
       let res = null;
-      try {
-        res = await axios.get(path);
-      } catch (error) {
-        console.error(error);
-        throw error;
-      }
+      // try {
+      //   res = await axios.get(path);
+      // } catch (error) {
+      //   console.error(error);
+      //   throw error;
+      // }
 
-      this.mergeCharacters({ characters: res.data });
+      // this.mergeCharacters({ characters: res.data });
       this.setPreloaded({ type: 'characters', status: true });
     },
   },

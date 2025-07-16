@@ -1,5 +1,5 @@
 <template>
-  <BCard>
+  <!-- <BCard>
     <template v-if="ready">
       <h4>The Office Quotes</h4>
       <BCardText>
@@ -23,54 +23,51 @@
       <Skeleton style="width: 60%" />
       <Skeleton style="width: 60%" />
     </BCardText>
-  </BCard>
+  </BCard> -->
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-
-import axios from 'axios';
 import Skeleton from '@/components/common/Skeleton.vue';
-import { BCardText, BCard } from 'bootstrap-vue-next';
 
-export default defineComponent({
-  name: 'HomeComponent',
+// export default defineComponent({
+//   name: 'HomeComponent',
 
-  components: {
-    Skeleton,
-    BCardText,
-    BCard,
-  },
+//   components: {
+//     Skeleton,
+//     BCardText,
+//     BCard,
+//   },
 
-  data() {
-    return {
-      stats: null,
-    };
-  },
+//   data() {
+//     return {
+//       stats: null,
+//     };
+//   },
 
-  computed: {
-    ready() {
-      return true;
-      // return this.stats != null;
-    },
-  },
+//   computed: {
+//     ready() {
+//       return true;
+//       // return this.stats != null;
+//     },
+//   },
 
-  created() {
-    // this.getStats();
-  },
+//   created() {
+//     // this.getStats();
+//   },
 
-  methods: {
-    getStats() {
-      const path = `${import.meta.env.VUE_APP_API_URL}/api/stats/`;
-      axios
-        .get(path)
-        .then((res) => {
-          this.stats = res.data;
-        })
-        .catch((error) => {
-          console.error(error);
-        });
-    },
-  },
-});
+//   methods: {
+//     getStats() {
+//       const path = `${import.meta.env.VUE_APP_API_URL}/api/stats/`;
+//       axios
+//         .get(path)
+//         .then((res) => {
+//           this.stats = res.data;
+//         })
+//         .catch((error) => {
+//           console.error(error);
+//         });
+//     },
+//   },
+// });
 </script>

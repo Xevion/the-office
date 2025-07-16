@@ -11,7 +11,7 @@ const toggleSidebar = () => {
 };
 
 const headings = [
-  { name: 'Home', href: '/' },
+  { href: '/' },
   { name: 'Episodes', href: '/episodes' },
   { name: 'Characters', href: '/characters' },
   { name: 'Seasons', href: '/seasons' },

@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <template v-if="ready">
       <BBreadcrumb v-if="ready" :items="breadcrumbs" />
@@ -25,7 +25,7 @@
                     class="no-link"
                     :to="{ name: 'Character', params: { character: id } }"
                   >
-                    <!-- <b-icon class="h6" icon="caret-right-fill" /> -->
+                    <b-icon class="h6" icon="caret-right-fill" />
                   </RouterLink>
                   <span class="h6 font-italic" style="opacity: 50%">
                     {{ characters[id].actor }}
@@ -135,3 +135,12 @@ export default defineComponent({
   },
 });
 </script>
+-->
+
+
+<script setup lang="ts"></script>
+<template>
+  <div>
+    <h1>About</h1>
+  </div>
+</template>
