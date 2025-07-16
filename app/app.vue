@@ -28,8 +28,8 @@ const headings = [
         <div class="flex items-center space-x-4">
           <!-- Mobile menu button -->
           <button
-            @click="toggleSidebar"
             class="rounded-md p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:ring-2 focus:ring-blue-500 focus:outline-none focus:ring-inset lg:hidden"
+            @click="toggleSidebar"
           >
             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path
@@ -51,14 +51,14 @@ const headings = [
         <nav
           class="font-display hidden items-center space-x-2 text-2xl tracking-widest text-gray-800 lowercase md:flex"
         >
-          <RouterLink
+          <NuxtLink
             v-for="heading in headings"
             :key="heading.name"
             :to="heading.href"
             class="px-3 py-2 transition-[color] hover:text-blue-600"
           >
             {{ heading.name }}
-          </RouterLink>
+          </NuxtLink>
         </nav>
 
         <!-- Search bar -->
@@ -77,13 +77,13 @@ const headings = [
       <!-- Sidebar Overlay for mobile -->
       <div
         v-if="sidebarOpen"
-        @click="toggleSidebar"
         class="bg-opacity-50 fixed inset-0 z-20 bg-black lg:hidden"
-      ></div>
+        @click="toggleSidebar"
+      />
 
       <!-- Main Content -->
       <main class="col-span-8 lg:ml-0">
-        <RouterView />
+        <NuxtPage />
       </main>
     </div>
   </div>
