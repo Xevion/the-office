@@ -30,7 +30,6 @@ coverage
 *.scss.css.map
 build
 *.cache
-my-vue-app/
 
 # .env files
 .env
