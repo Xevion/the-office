@@ -2,4 +2,6 @@
 import withNuxt from './.nuxt/eslint.config.mjs';
 
 // Your custom configs here
-export default withNuxt();
+export default withNuxt({
+  ignores: ['app/components/ui/**'],
+});
