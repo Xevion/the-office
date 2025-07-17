@@ -4,6 +4,10 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  site: {
+    url: 'the-office.xevion.dev',
+    name: 'The Office',
+  },
   css: ['~/assets/tailwind.css', '@fontsource-variable/roboto-slab', '@fontsource/open-sans'],
   nitro: {
     prerender: {
@@ -21,6 +25,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     'shadcn-nuxt',
     '@pinia/nuxt',
+    '@nuxtjs/sitemap',
   ],
   shadcn: {
     prefix: '',
