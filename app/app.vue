@@ -43,7 +43,7 @@ const headings = [
 
           <!-- Logo/Brand -->
           <div class="flex">
-            <img :src="logoSrc" alt="The Office Logo" class="mr-6 h-full max-w-[225px] py-4" />
+            <img :src="logoSrc" alt="The Office Logo" class="mr-6 h-full max-w-[225px] py-4" >
           </div>
         </div>
 

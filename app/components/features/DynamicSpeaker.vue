@@ -1,10 +1,10 @@
 <template>
   <span>
     <template v-for="(constituent, index) in texts">
-      <NuxtLink class="speaker-link" v-if="constituent.route" :key="index" :to="constituent.route">
+      <NuxtLink v-if="constituent.route" :key="index" class="speaker-link" :to="constituent.route">
         {{ constituent.text }}
       </NuxtLink>
-      <span class="speaker-bg" v-else :key="'plain-' + index">{{ constituent }}</span>
+      <span v-else :key="'plain-' + index" class="speaker-bg">{{ constituent }}</span>
     </template>
   </span>
 </template>

@@ -25,6 +25,7 @@
           {{ quote.speaker }}
         </NuxtLink>
       </td>
+      <!-- eslint-disable-next-line vue/no-v-html -->
       <td class="quote-text w-100 pr-3" v-html="transform(quote.text)" />
       <td class="px-1 pl-2">
         <a :href="quote_link(index)" class="no-link" @click="copy(index)">
@@ -34,6 +35,44 @@
     </tr>
   </table>
 </template>
+
+<script lang="ts">
+// import { defineComponent } from 'vue';
+
+// import DynamicSpeaker from '@/components/features/DynamicSpeaker.vue';
+
+// export default defineComponent({
+//   components: {
+//     DynamicSpeaker,
+//   },
+
+//   props: {
+//     sceneIndex: {
+//       required: true,
+//       type: Number,
+//     },
+//     quotes: {
+//       required: true,
+//       type: Array,
+//     },
+//   },
+
+//   methods: {
+//     transform(quoteText) {
+//       if (quoteText.includes('[')) {
+//         return quoteText.replace(/\[([^\]]+)]/g, ' <i>[$1]</i> ');
+//       }
+//       return quoteText;
+//     },
+//     quote_link(quoteIndex) {
+//       return `/${this.$route.params.season}/${this.$route.params.episode}#${this.sceneIndex}-${quoteIndex}`;
+//     },
+//     copy(quoteIndex) {
+//       this.$copyText(import.meta.env.VUE_APP_BASE_URL + this.quote_link(quoteIndex));
+//     },
+//   },
+// });
+</script>
 
 <style lang="scss">
 @use '@/scss/_variables.scss' as *;
@@ -51,41 +90,3 @@
   }
 }
 </style>
-
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-import DynamicSpeaker from '@/components/features/DynamicSpeaker.vue';
-
-export default defineComponent({
-  components: {
-    DynamicSpeaker,
-  },
-
-  props: {
-    sceneIndex: {
-      required: true,
-      type: Number,
-    },
-    quotes: {
-      required: true,
-      type: Array,
-    },
-  },
-
-  methods: {
-    transform(quoteText) {
-      if (quoteText.includes('[')) {
-        return quoteText.replace(/\[([^\]]+)]/g, ' <i>[$1]</i> ');
-      }
-      return quoteText;
-    },
-    quote_link(quoteIndex) {
-      return `/${this.$route.params.season}/${this.$route.params.episode}#${this.sceneIndex}-${quoteIndex}`;
-    },
-    copy(quoteIndex) {
-      this.$copyText(import.meta.env.VUE_APP_BASE_URL + this.quote_link(quoteIndex));
-    },
-  },
-});
-</script>

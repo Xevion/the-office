@@ -8,6 +8,49 @@
   </div>
 </template>
 
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  props: {
+    innerStyle: {
+      type: Object,
+      default: null,
+    },
+    innerClass: {
+      type: String,
+      default: '',
+    },
+    animated: {
+      type: Boolean,
+      default: true,
+    },
+    borderRadius: {
+      type: String,
+      default: '',
+    },
+    primaryColor: {
+      type: String,
+      default: '',
+    },
+    secondaryColor: {
+      type: String,
+      default: '',
+    },
+  },
+
+  computed: {
+    style() {
+      return {
+        '--primary-color': this.primaryColor,
+        '--secondary-color': this.secondaryColor,
+        '--border-radius': this.borderRadius,
+      };
+    },
+  },
+});
+</script>
+
 <style lang="scss">
 @use '@/scss/_variables.scss' as *;
 
@@ -69,46 +112,3 @@
   }
 }
 </style>
-
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  props: {
-    innerStyle: {
-      type: Object,
-      default: null,
-    },
-    innerClass: {
-      type: String,
-      default: '',
-    },
-    animated: {
-      type: Boolean,
-      default: true,
-    },
-    borderRadius: {
-      type: String,
-      default: '',
-    },
-    primaryColor: {
-      type: String,
-      default: '',
-    },
-    secondaryColor: {
-      type: String,
-      default: '',
-    },
-  },
-
-  computed: {
-    style() {
-      return {
-        '--primary-color': this.primaryColor,
-        '--secondary-color': this.secondaryColor,
-        '--border-radius': this.borderRadius,
-      };
-    },
-  },
-});
-</script>

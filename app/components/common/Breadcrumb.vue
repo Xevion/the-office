@@ -25,7 +25,7 @@ const props = defineProps<
         <BreadcrumbSeparator v-if="index !== 0" />
         <BreadcrumbItem>
           <BreadcrumbLink class="text-gray-600" as-child>
-            <NuxtLink :to="item.to" v-if="index !== lastIndex">
+            <NuxtLink v-if="index !== lastIndex" :to="item.to">
               {{ item.text }}
             </NuxtLink>
             <span v-else>{{ item.text }}</span>

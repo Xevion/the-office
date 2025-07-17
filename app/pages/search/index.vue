@@ -1,7 +1,7 @@
 <template>
   <div>
     <ais-hits>
-      <template v-slot="{ items }">
+      <template #default="{ items }">
         <div>
           <SearchResult v-for="item in items" :key="item.objectID" :item="item" />
         </div>

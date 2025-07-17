@@ -1,5 +1,4 @@
-<template>
-  <!-- <BCard>
+<!-- <BCard>
     <template v-if="ready">
       <h4>The Office Quotes</h4>
       <BCardText>
@@ -24,12 +23,13 @@
       <Skeleton style="width: 60%" />
     </BCardText>
   </BCard> -->
+
+<template>
+  <div>
+    <h1>About</h1>
+  </div>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue';
-import Skeleton from '@/components/common/Skeleton.vue';
-
+<script setup lang="ts">
 // export default defineComponent({
 //   name: 'HomeComponent',
 

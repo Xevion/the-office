@@ -1,5 +1,5 @@
 <template>
-  <BCard
+  <!-- <BCard
     class="mb-1"
     body-class="p-0 expandable-result"
     footer-class="my-1"
@@ -50,8 +50,71 @@
         {{ item.section_rel }}
       </NuxtLink>
     </BCardText>
-  </BCard>
+  </BCard> -->
+  <div>SearchResult</div>
 </template>
+
+<script setup lang="ts">
+// import { defineComponent } from 'vue';
+
+// export default defineComponent({
+//   props: ['item'],
+
+//   data() {
+//     return {
+//       expanded: false,
+//       fetching: false,
+//       above: null,
+//       below: null,
+//       timeoutID: null,
+//     };
+//   },
+
+//   computed: {
+//     fetched() {
+//       return this.above !== null || this.below !== null;
+//     },
+//   },
+
+//   methods: {
+//     toggleExpansion() {
+//       this.expanded = !this.expanded;
+//       // if first time expanding, fetch quotes
+//       if (!this.fetchQuotes()) {
+//         this.hasExpanded = true;
+//         // this.fetchQuotes();
+//       }
+//     },
+//     hoverFetch() {
+//       if (!this.fetched && !this.fetching) {
+//         this.fetching = true;
+//         this.fetchQuotes();
+//         this.fetching = false;
+//       }
+//     },
+//     hoverOn() {
+//       // Schedule a fetching event
+//       // this.timeoutID = setTimeout(this.hoverFetch, 300);
+//     },
+//     hoverOff() {
+//       // Hover is off. Unschedule event if it has not already fetched.
+//       if (this.timeoutID !== null) clearTimeout(this.timeoutID);
+//     },
+//     fetchQuotes() {
+//       const path = `/api/surrounding?season=${this.item.season}&episode=${this.item.episode_rel}&scene=${this.item.section_rel}&quote=${this.item.quote_rel}`;
+//       axios
+//         .get(path)
+//         .then((res) => {
+//           this.above = res.data.above;
+//           this.below = res.data.below;
+//         })
+//         .catch((error) => {
+//           console.error(error);
+//         });
+//     },
+//   },
+// });
+</script>
 
 <style lang="scss">
 @use '@/scss/_variables.scss' as *;
@@ -90,67 +153,3 @@
   font-family: 'Montserrat', sans-serif;
 }
 </style>
-
-<script lang="ts">
-import { defineComponent } from 'vue';
-
-import axios from 'axios';
-
-export default defineComponent({
-  props: ['item'],
-
-  data() {
-    return {
-      expanded: false,
-      fetching: false,
-      above: null,
-      below: null,
-      timeoutID: null,
-    };
-  },
-
-  computed: {
-    fetched() {
-      return this.above !== null || this.below !== null;
-    },
-  },
-
-  methods: {
-    toggleExpansion() {
-      this.expanded = !this.expanded;
-      // if first time expanding, fetch quotes
-      if (!this.fetchQuotes()) {
-        this.hasExpanded = true;
-        // this.fetchQuotes();
-      }
-    },
-    hoverFetch() {
-      if (!this.fetched && !this.fetching) {
-        this.fetching = true;
-        this.fetchQuotes();
-        this.fetching = false;
-      }
-    },
-    hoverOn() {
-      // Schedule a fetching event
-      // this.timeoutID = setTimeout(this.hoverFetch, 300);
-    },
-    hoverOff() {
-      // Hover is off. Unschedule event if it has not already fetched.
-      if (this.timeoutID !== null) clearTimeout(this.timeoutID);
-    },
-    fetchQuotes() {
-      const path = `/api/surrounding?season=${this.item.season}&episode=${this.item.episode_rel}&scene=${this.item.section_rel}&quote=${this.item.quote_rel}`;
-      axios
-        .get(path)
-        .then((res) => {
-          this.above = res.data.above;
-          this.below = res.data.below;
-        })
-        .catch((error) => {
-          console.error(error);
-        });
-    },
-  },
-});
-</script>
