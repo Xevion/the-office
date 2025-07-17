@@ -7,7 +7,6 @@ import {
   BreadcrumbSeparator,
 } from '@/components/ui/breadcrumb';
 import type { HTMLAttributes } from 'vue';
-import { cn } from '@/lib/utils';
 import { computed } from 'vue';
 
 const lastIndex = computed(() => props.items.length - 1);
