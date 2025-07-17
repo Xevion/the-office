@@ -1,21 +1,31 @@
 <script setup lang="ts">
-import QuoteList from '@/components/features/QuoteList.vue';
+// import QuoteList from '@/components/features/QuoteList.vue';
 // import CharacterBadges from '@/components/features/CharacterBadges.vue';
-import Skeleton from '@/components/common/Skeleton.vue';
+// import Skeleton from '@/components/common/Skeleton.vue';
 import Breadcrumb from '@/components/common/Breadcrumb.vue';
 import { computed } from 'vue';
 
-const route = useRoute();
+import episodes from '@/../public/json/episodes.json';
+import { slugify } from '@/lib/utils';
 
-const params = { season: 1, episode: route.params.id };
+const { params } = useRoute();
+const episodeSlug = params.id;
+
+const episode = computed(() => {
+  return (
+    episodes
+      .flatMap((season) => season.map((episode) => episode))
+      .find((episode) => slugify(episode?.title ?? '') === episodeSlug) ?? null
+  );
+});
 
 const breadcrumbs = computed(() => {
   return [
     { text: 'Home', to: '/' },
-    { text: `Season ${params.season}`, to: `/season/${params.season}` },
+    { text: `Season ${episode.value?.seasonNumber}`, to: `/season/${episode.value?.seasonNumber}` },
     {
-      text: `Episode ${params.episode}`,
-      to: `/episode/${params.episode}`,
+      text: `Episode ${episode.value?.episodeNumber}`,
+      to: `/episode/${episode.value?.episodeNumber}`,
     },
   ];
 });
